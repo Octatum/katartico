@@ -24,6 +24,11 @@ time, mark, audio, video {
 	line-height: normal;
 }
 
+body {
+	background-image: url('../assets/background.svg');
+	background-color: black;
+}
+
 body.ReactModal__Body--open {
 	overflow: hidden;
 }
@@ -55,6 +60,11 @@ body.ReactModal__Body--open {
 	src: url("/fonts/Nunito-Light.ttf");
 	font-weight: lighter;
 	font-style: normal;
+}
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src: url("../../../static/fonts/Cocogoose Pro Semilight-trial.ttf");
 }
 
 strong {
