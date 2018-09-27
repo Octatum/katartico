@@ -67,6 +67,11 @@ body.ReactModal__Body--open {
     src: url("../../../static/fonts/Cocogoose Pro Semilight-trial.ttf");
 }
 
+@font-face {
+    font-family: 'Berthold';
+    src: url("../../../static/fonts/Berthold Akzidenz Grotesk BE Regular.otf");
+}
+
 strong {
   font-weight: bold;
 }
