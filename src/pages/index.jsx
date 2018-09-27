@@ -79,7 +79,6 @@ const P = styled.p `
   line-height: 26px;
   color: white;
   text-align: center;
-  text-transform: uppercase;
   position: relative;
 `
 
