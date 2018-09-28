@@ -1,12 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import '../components/Layout/index.css';
-
-import 'splitting/dist/splitting.css';
-import 'splitting/dist/splitting-cells.css';
-import Splitting from 'splitting';
-
 import quoteImg from '../components/assets/quote.svg';
 import logoImg from '../components/assets/logo.svg';
 import lineImg from '../components/assets/line.svg';
@@ -151,8 +145,6 @@ const Footer = styled.div`
     font-size: 0.8em;
   }
 `;
-
-Splitting();
 
 const IndexPage = () => (
   <AppLayout>
