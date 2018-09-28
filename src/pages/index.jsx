@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import '../components/Layout/index.css';
+
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import Splitting from "splitting";
 
 import quoteImg from '../components/assets/quote.svg';
 import logoImg from '../components/assets/logo.svg';
@@ -16,28 +21,34 @@ const QuoteStyleTop = styled.img `
   width: 164.41px;
   height: 248.41px;
   position: absolute;
-  left: 70.66px;
-  top: 59.63px;
+  left: 3.7%;
+  top: 5.5%;
 `
 
 const QuoteStyleBottom = styled.img `
   width: 164.41px;
   height: 248.41px;
   position: absolute;
-  right: 70.66px;
-  bottom: 59.63px;
+  right: 3.7%;
+  bottom: 5.5%;
+`
+
+const LogoContainer = styled.div `
+  top: 11.9%;
+  left: 37.8%;
+  position: absolute;
 `
 
 const Logo = styled.img `
   width: 444.27px;
   height: 339.48px;
-  top: 128.56px;
-  position: relative;
+  top: 70px;
   margin: 0 auto;
   display: block;
+  position: relative;
 `
 
-const H3 = styled.div `
+const H3 = styled.p `
   font-size: 48px;
   font-family: 'COCOGOOSE', sans-serif;
   font-style: DemiBold;
@@ -45,7 +56,7 @@ const H3 = styled.div `
   color: white;
   text-align: center;
   text-transform: uppercase;
-  top: 140.96px;
+  top: 130.96px;
   position: relative;
 `
 
@@ -55,12 +66,12 @@ const Line = styled.img `
   margin: 0 auto;
   display: block;
   position: relative;
-  top: 162px;
+  top: 140px;
 `
 
 const Container = styled.div `
   position: relative;
-  top: 180px;
+  top: 170px;
 `
 
 const H4 = styled.div `
@@ -71,7 +82,15 @@ const H4 = styled.div `
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  margin: 5px;
 `
+
+const Span = styled.span `
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+`
+
 
 const P = styled.p `
   font-size: 22px;
@@ -93,11 +112,13 @@ const Footer = styled.div `
   width: 100%;
 `
 
+Splitting();
+
 const IndexPage = () => (
   <Layout>
     <QuoteStyleTop src={quoteImg} />
     <Logo src={logoImg} />
-    <H3>Nos estamos renovando</H3>
+    <H3><Span>N</Span>os <Span>e</Span>stamos <Span>r</Span>enovando</H3>
     <Line src={lineImg} />
     <Container>
       <H4>Contáctanos</H4>
