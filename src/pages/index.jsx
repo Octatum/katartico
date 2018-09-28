@@ -3,131 +3,181 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import '../components/Layout/index.css';
 
-import "splitting/dist/splitting.css";
-import "splitting/dist/splitting-cells.css";
-import Splitting from "splitting";
+import 'splitting/dist/splitting.css';
+import 'splitting/dist/splitting-cells.css';
+import Splitting from 'splitting';
 
 import quoteImg from '../components/assets/quote.svg';
 import logoImg from '../components/assets/logo.svg';
 import lineImg from '../components/assets/line.svg';
-import Layout from '../components/Layout';
+import AppLayout from '../components/Layout';
+import backgroundImage from '../components/assets/background.svg';
+import { device } from '../utilities/device';
 
 const Header = styled.h1`
   font-size: 3em;
   color: darkred;
 `;
 
-const QuoteStyleTop = styled.img `
-  width: 164.41px;
-  height: 248.41px;
-  position: absolute;
-  left: 3.7%;
-  top: 5.5%;
-`
+const Layout = styled.div`
+  background-image: url('${backgroundImage}');
+  background-color: black;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
-const QuoteStyleBottom = styled.img `
-  width: 164.41px;
-  height: 248.41px;
+const QuoteStyle = styled.img`
+  --margin: 2em;
+  width: 7em;
   position: absolute;
-  right: 3.7%;
-  bottom: 5.5%;
-`
 
-const LogoContainer = styled.div `
+  ${device.laptop} {
+    --margin: 1.5em;
+    width: 7em;
+  }
+
+  ${device.tablet} {
+    --margin: 1.5em;
+    width: 5em;
+  }
+
+  ${device.mobile} {
+    --margin: 1em;
+    width: 2em;
+  }
+`;
+
+const QuoteStyleTop = styled(QuoteStyle)`
+  top: var(--margin);
+  left: var(--margin);
+`;
+
+const QuoteStyleBottom = styled(QuoteStyle)`
+  bottom: var(--margin);
+  right: var(--margin);
+`;
+
+const LogoContainer = styled.div`
   top: 11.9%;
   left: 37.8%;
-  position: absolute;
-`
+`;
 
-const Logo = styled.img `
-  width: 444.27px;
-  height: 339.48px;
-  top: 70px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-`
+const Logo = styled.img`
+  width: 30vw;
+  min-width: 15em;
+  margin-bottom: 1em;
+`;
 
-const H3 = styled.p `
-  font-size: 48px;
+const H3 = styled.p`
+  font-size: 2.5em;
   font-family: 'COCOGOOSE', sans-serif;
   font-style: DemiBold;
   line-height: 56px;
+  width: 80%;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  top: 130.96px;
-  position: relative;
-`
 
-const Line = styled.img `
-  text-align: center;
+  ${device.tablet} {
+    font-size: 2em;
+  }
+
+  ${device.mobile} {
+    font-size: 1.5em;
+  }
+`;
+
+const Line = styled.div`
   height: 4.5px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  top: 140px;
-`
+  width: 30%;
+  background-color: #950900;
+  margin: 0.5em 0;
+`;
 
-const Container = styled.div `
-  position: relative;
-  top: 170px;
-`
+const Container = styled.div`
+`;
 
-const H4 = styled.div `
-  font-size: 30px;
+const H4 = styled.div`
+  font-size: 2em;
   font-family: 'COCOGOOSE', sans-serif;
   line-height: 30px;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  position: relative;
   margin: 5px;
-`
 
-const Span = styled.span `
+  ${device.tablet} {
+    font-size: 1.5em;
+  }
+
+  ${device.mobile} {
+    font-size: 1.2em;
+  }
+`;
+
+const Span = styled.span`
   font-family: 'COCOGOOSE', sans-serif;
-  font-size: 60px;
+  font-size: 1.5em;
   text-transform: uppercase;
-`
+`;
 
-
-const P = styled.p `
-  font-size: 22px;
+const P = styled.p`
+  font-size: 1.5em;
   font-family: 'Berthold', sans-serif;
-  line-height: 26px;
+  line-height: 1.2em;
   color: white;
   text-align: center;
-  position: relative;
-`
+  
+  ${device.mobile} {
+    font-size: 1.2em;
+  }
+`;
 
-const Footer = styled.div `
+const Footer = styled.div`
   font-family: 'Berthold', sans-serif;
-  font-size: 16px;
-  height: 19px;
   text-align: center;
+  width: 70%;
   color: white;
-  position: fixed;
-  bottom: 37px;
-  width: 100%;
-`
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 1em;
+
+  ${device.tablet} {
+    font-size: 0.8em;
+  }
+`;
 
 Splitting();
 
 const IndexPage = () => (
-  <Layout>
-    <QuoteStyleTop src={quoteImg} />
-    <Logo src={logoImg} />
-    <H3><Span>N</Span>os <Span>e</Span>stamos <Span>r</Span>enovando</H3>
-    <Line src={lineImg} />
-    <Container>
-      <H4>Contáctanos</H4>
-      <P>rafael@katartico.mx</P>
-      <P>(644) 145 1956</P>
-    </Container>
-    <Footer>Copyright © Todos los derechos reservados. Katartico 2018. Desarrollo por Katartico | Octatum</Footer>
-    <QuoteStyleBottom src={quoteImg} />
-  </Layout>
+  <AppLayout>
+    <Layout>
+      <QuoteStyleTop src={quoteImg} />
+      <QuoteStyleBottom src={quoteImg} />
+      <Logo src={logoImg} />
+      <H3>
+        <Span>N</Span>
+        os <Span>e</Span>
+        stamos <Span>r</Span>
+        enovando
+      </H3>
+      <Line />
+      <Container>
+        <H4>Contáctanos</H4>
+        <P>rafael@katartico.mx</P>
+        <P>(644) 145 1956</P>
+      </Container>
+      <Footer>
+        Copyright © Todos los derechos reservados. Katartico 2018. Desarrollo por
+        Katartico | Octatum
+      </Footer>
+    </Layout>
+  </AppLayout>
 );
 
 export default IndexPage;

@@ -13,9 +13,7 @@ const Layout = ({ children }) => (
       ]}>
       <html lang="en" />
     </Helmet>
-    <div>
-      {children}
-    </div>
+    <div>{children}</div>
   </React.Fragment>
 );
 

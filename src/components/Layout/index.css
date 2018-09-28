@@ -24,11 +24,6 @@ time, mark, audio, video {
 	line-height: normal;
 }
 
-body {
-	background-image: url('../assets/background.svg');
-	background-color: black;
-}
-
 body.ReactModal__Body--open {
 	overflow: hidden;
 }
