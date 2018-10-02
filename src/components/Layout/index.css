@@ -24,8 +24,8 @@ time, mark, audio, video {
 	line-height: normal;
 }
 
-body.ReactModal__Body--open {
-	overflow: hidden;
+body {
+	background: black;
 }
 
 @font-face {
