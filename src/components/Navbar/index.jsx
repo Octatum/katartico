@@ -13,7 +13,7 @@ const Container = styled.div`
   box-shadow: 0 0 9px 9px #950900;
   background: black;
   color: white;
-  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ::after {
     content: '';
@@ -37,7 +37,7 @@ const FlexBox = styled.div`
   position: relative;
   height: 100%;
   padding: 2em 3em;
-  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   .mini & {
     padding: 1em 3em;
@@ -60,7 +60,7 @@ const LinksDiv = styled.div`
   overflow: auto;
   background: black;
   box-shadow: 0 0 9px 9px transparent;
-  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   &.open {
     max-height: 70vh;
