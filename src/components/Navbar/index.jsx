@@ -92,6 +92,8 @@ const SocialMedia = styled.div`
 `
 
 const MenuButton = styled.button`
+  display: flex;
+  align-items: baseline;
   height: 60%;
   border: 0;
   font-size: 1.5em;
@@ -99,15 +101,8 @@ const MenuButton = styled.button`
   color: inherit;
   cursor: pointer;
 
-  ::before {
-    content: 'X';
-    padding-right: 0.5em;
-    opacity: 0;
-    transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
-  }
-
-  &.open::before {
-    opacity: 1;
+  i {
+    margin-right: 0.5em;
   }
 `
 
@@ -119,6 +114,7 @@ class Navbar extends Component {
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
+    this.handleScroll();
   }
 
   componentWillUnmount = () => {
@@ -155,7 +151,10 @@ class Navbar extends Component {
             <Link href="/"><i className="fab fa-linkedin-in fa-lg fa-fw"/></Link>
           </SocialMedia>
         </LinksDiv>
-        <MenuButton className={this.state.open && 'open'} onClick={this.handleDropdown}>MENÚ</MenuButton>
+        <MenuButton className={this.state.open && 'open'} onClick={this.handleDropdown}>
+          <i className={this.state.open ? "fas fa-times" : "fas fa-bars"}/>
+          <span>MENÚ</span>
+        </MenuButton>
       </FlexBox>
     </Container>
   )
