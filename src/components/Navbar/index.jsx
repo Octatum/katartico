@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import logoImg from '../../components/assets/logo.svg';
@@ -12,6 +12,16 @@ const Container = styled.div`
   box-shadow: 0 0 9px 9px #950900;
   background: black;
   color: white;
+
+  ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 18px;
+    background: black;
+  }
 `
 
 const FlexBox = styled.div`
@@ -34,20 +44,16 @@ const LinksDiv = styled.div`
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  ${'' /* height: 0; */}
+  max-height: 0;
   width: 50%;
-  ${'' /* overflow: hidden; */}
+  overflow: auto;
   background: black;
-  box-shadow: 0 0 9px 9px #950900, 0 -9px transparent;
+  box-shadow: 0 0 9px 9px transparent;
+  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
 
-  ::before {
-    content: '';
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    right: -18px;
-    height: 18px;
-    background: black;
+  &.open {
+    max-height: 70vh;
+    box-shadow: 0 0 9px 9px #950900;
   }
 `
 
@@ -81,29 +87,52 @@ const MenuButton = styled.button`
   background: inherit;
   color: inherit;
   cursor: pointer;
+
+  ::before {
+    content: 'X';
+    padding-right: 0.5em;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
+  }
+
+  &.open::before {
+    opacity: 1;
+  }
 `
 
-const Navbar = () => (
-  <Container>
-    <FlexBox>
-      <Logo src={logoImg}/>
-      <LinksDiv>
-        <Anchors>
-          <Link href="/"><span>I</span>NICIO</Link>
-          <Link href="/"><span>N</span>OSOTROS</Link>
-          <Link href="/"><span>S</span>ERVICIOS</Link>
-          <Link href="/"><span>P</span>ORTAFOLIO</Link>
-          <Link href="/"><span>C</span>ONTACTO</Link>
-        </Anchors>
-        <SocialMedia>
-          <Link href="/"><i className="fab fa-facebook-f fa-lg"/></Link>
-          <Link href="/"><i className="fab fa-instagram fa-lg"/></Link>
-          <Link href="/"><i className="fab fa-linkedin-in fa-lg"/></Link>
-        </SocialMedia>
-      </LinksDiv>
-      <MenuButton>MENÚ</MenuButton>
-    </FlexBox>
-  </Container>
-);
+class Navbar extends Component {
+  state = {
+    open: false
+  }
+
+  handleDropdown = () => {
+    this.setState((prevState) => ({
+      open: !prevState.open
+    }));
+  }
+
+  render = () => (
+    <Container>
+      <FlexBox>
+        <Logo src={logoImg}/>
+        <LinksDiv className={this.state.open && 'open'}>
+          <Anchors>
+            <Link href="/"><span>I</span>NICIO</Link>
+            <Link href="/"><span>N</span>OSOTROS</Link>
+            <Link href="/"><span>S</span>ERVICIOS</Link>
+            <Link href="/"><span>P</span>ORTAFOLIO</Link>
+            <Link href="/"><span>C</span>ONTACTO</Link>
+          </Anchors>
+          <SocialMedia>
+            <Link href="/"><i className="fab fa-facebook-f fa-lg fa-fw"/></Link>
+            <Link href="/"><i className="fab fa-instagram fa-lg fa-fw"/></Link>
+            <Link href="/"><i className="fab fa-linkedin-in fa-lg fa-fw"/></Link>
+          </SocialMedia>
+        </LinksDiv>
+        <MenuButton className={this.state.open && 'open'} onClick={this.handleDropdown}>MENÚ</MenuButton>
+      </FlexBox>
+    </Container>
+  )
+}
 
 export default Navbar;
