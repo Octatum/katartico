@@ -4,6 +4,7 @@ import AppLayout from '../components/Layout';
 
 import backgroundImage from '../components/assets/background.svg';
 import About from '../components/Home/About';
+import Services from '../components/Home/Services';
 
 const Layout = styled.div`
   display: flex;
@@ -20,6 +21,7 @@ const IndexPage = () => (
   <AppLayout>
     <Layout>
       <About/>
+      <Services/>
     </Layout>
   </AppLayout>
 );

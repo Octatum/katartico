@@ -12,7 +12,7 @@ const Header = styled.h2`
   ::before {
     content: '';
     position: absolute;
-    top: -3px;
+    top: 0;
     height: 1px;
     width: 100%;
     background: ${props => props.theme.white};
