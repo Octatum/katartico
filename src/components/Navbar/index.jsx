@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import logoImg from '../../components/assets/logo.svg';
+import miniLogoImg from '../../components/assets/mini-logo.svg';
 
 const Container = styled.div`
   position: sticky;
@@ -12,6 +13,7 @@ const Container = styled.div`
   box-shadow: 0 0 9px 9px #950900;
   background: black;
   color: white;
+  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
 
   ::after {
     content: '';
@@ -22,6 +24,10 @@ const Container = styled.div`
     height: 18px;
     background: black;
   }
+
+  &.mini {
+    height: 83px;
+  }
 `
 
 const FlexBox = styled.div`
@@ -31,6 +37,11 @@ const FlexBox = styled.div`
   position: relative;
   height: 100%;
   padding: 2em 3em;
+  transition: all 0.3s cubic-bezier(.45,.05,.55,.95);
+
+  .mini & {
+    padding: 1em 3em;
+  }
 `
 
 const Logo = styled.img`
@@ -102,7 +113,22 @@ const MenuButton = styled.button`
 
 class Navbar extends Component {
   state = {
-    open: false
+    open: false,
+    minimize: false
+  }
+
+  componentDidMount = () => {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    this.setState({
+      minimize: (window.pageYOffset > 0)
+    });
   }
 
   handleDropdown = () => {
@@ -112,9 +138,9 @@ class Navbar extends Component {
   }
 
   render = () => (
-    <Container>
+    <Container className={this.state.minimize && 'mini'}>
       <FlexBox>
-        <Logo src={logoImg}/>
+        <Logo src={this.state.minimize ? miniLogoImg : logoImg}/>
         <LinksDiv className={this.state.open && 'open'}>
           <Anchors>
             <Link href="/"><span>I</span>NICIO</Link>
