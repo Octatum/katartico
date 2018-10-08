@@ -12,8 +12,8 @@ const Layout = styled.div`
   min-height: 100vh;
   padding-top: 1em;
   background-image: url('${backgroundImage}');
-  background-color: black;
-  color: white;
+  background-color: ${props => props.theme.black};
+  color: ${props => props.theme.white};
 `;
 
 const IndexPage = () => (

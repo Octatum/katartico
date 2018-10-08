@@ -15,7 +15,7 @@ const Header = styled.h2`
     top: -3px;
     height: 1px;
     width: 100%;
-    background: grey;
+    background: ${props => props.theme.white};
   }
 `
 
@@ -34,7 +34,7 @@ const Quote = styled.div`
     transform: translateX(-50%);
     width: 30%;
     height: 4px;
-    background: #950900;
+    background: ${props => props.theme.main};
   }
 `
 
@@ -42,7 +42,7 @@ const BigPicture = styled.div`
   height: 300px;
   width: 100%;
   margin: 2em 0;
-  background: #950900;
+  background: ${props => props.theme.main};
 `
 
 const About = () => (
