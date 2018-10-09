@@ -56,8 +56,8 @@ const Portafolio = () => (
   <Section>
     <Header>Portafolio</Header>
     <LogosDiv>
-      {content.map((image) => (
-        <Logo src={image}/>
+      {content.map((image, index) => (
+        <Logo key={index} src={image}/>
       ))}
     </LogosDiv>
     <BigPicture/>
