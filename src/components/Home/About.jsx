@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Section from '../Section';
 
 const Header = styled.h2`
   position: relative;
-  font-size: 1.5em;
   padding: 0.5em 0;
   margin: 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 
   ::before {
     content: '';
@@ -17,6 +19,11 @@ const Header = styled.h2`
     width: 100%;
     background: ${props => props.theme.white};
   }
+`
+
+const Link = styled(_Link)`
+  text-decoration: none;
+  color: inherit;
 `
 
 const Quote = styled.div`
@@ -47,7 +54,7 @@ const BigPicture = styled.div`
 
 const About = () => (
   <Section>
-    <Header>Nosotros</Header>
+    <Header><Link to='/about'>Nosotros</Link></Header>
     <Quote>
       Insert your inspirational quote right here...
     </Quote>

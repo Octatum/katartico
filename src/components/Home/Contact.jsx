@@ -5,9 +5,10 @@ import Section from '../Section';
 
 const Header = styled.h2`
   position: relative;
-  font-size: 1.5em;
   padding: 0.5em 0;
   margin: 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 
   ::before {
     content: '';
@@ -100,7 +101,7 @@ class Contact extends Component {
   }
 
   render = () => (
-    <Section>
+    <Section id="contacto">
       <Header>Contacto</Header>
       <Form>
         <Data>

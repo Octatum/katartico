@@ -8,8 +8,8 @@ const Container = styled.div`
   padding: 1em 0;
 `
 
-const Section = ({ children }) => (
-  <Container>
+const Section = ({ children, id }) => (
+  <Container id={id}>
     {children}
   </Container>
 );

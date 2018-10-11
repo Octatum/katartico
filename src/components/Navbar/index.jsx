@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import logoImg from '../../components/assets/logo.svg';
@@ -74,15 +75,21 @@ const Anchors = styled.div`
   align-items: center;
 `
 
-const Link = styled.a`
+const Link = styled(_Link)`
   margin: 1rem 0;
-  color: inherit;
   font-size: 1.3em;
+  color: inherit;
   text-decoration: none;
 
   span {
     font-size: 1.1em;
   }
+`
+
+const Anchor = styled.a`
+  margin: 1rem 0;
+  font-size: 1.5em;
+  color: inherit;
 `
 
 const SocialMedia = styled.div`
@@ -106,6 +113,44 @@ const MenuButton = styled.button`
   }
 `
 
+const links = [
+  {
+    path: '/',
+    name: <p><span>I</span>NICIO</p>
+  },
+  {
+    path: '/about',
+    name: <p><span>N</span>OSOTROS</p>
+  },
+  {
+    path: '/portafolio',
+    name: <p><span>S</span>ERVICIOS</p>
+  },
+  {
+    path: '/services',
+    name: <p><span>P</span>ORTAFOLIO</p>
+  },
+  {
+    path: '/#contacto',
+    name: <p><span>C</span>ONTACTO</p>
+  },
+];
+
+const socialMediaLinks = [
+  {
+    path: '/',
+    faName: 'fa-facebook-f'
+  },
+  {
+    path: '/',
+    faName: 'fa-instagram'
+  },
+  {
+    path: '/',
+    faName: 'fa-linkedin-in'
+  },
+]
+
 class Navbar extends Component {
   state = {
     open: false,
@@ -127,7 +172,7 @@ class Navbar extends Component {
     });
   }
 
-  handleDropdown = () => {
+  toggleDropdown = () => {
     this.setState((prevState) => ({
       open: !prevState.open
     }));
@@ -139,19 +184,21 @@ class Navbar extends Component {
         <Logo src={this.state.minimize ? miniLogoImg : logoImg}/>
         <LinksDiv className={this.state.open && 'open'}>
           <Anchors>
-            <Link href="/"><span>I</span>NICIO</Link>
-            <Link href="/"><span>N</span>OSOTROS</Link>
-            <Link href="/"><span>S</span>ERVICIOS</Link>
-            <Link href="/"><span>P</span>ORTAFOLIO</Link>
-            <Link href="/"><span>C</span>ONTACTO</Link>
+            {links.map((item, index) => (
+              <Link key={index} to={item.path} onClick={this.toggleDropdown}>
+                {item.name}
+              </Link>
+            ))}
           </Anchors>
           <SocialMedia>
-            <Link href="/"><i className="fab fa-facebook-f fa-lg fa-fw"/></Link>
-            <Link href="/"><i className="fab fa-instagram fa-lg fa-fw"/></Link>
-            <Link href="/"><i className="fab fa-linkedin-in fa-lg fa-fw"/></Link>
+            {socialMediaLinks.map((item, index) => (
+              <Anchor key={index} href={item.path}>
+                <i className={`fab ${item.faName} fa-lg fa-fw`}/>
+              </Anchor>
+            ))}
           </SocialMedia>
         </LinksDiv>
-        <MenuButton className={this.state.open && 'open'} onClick={this.handleDropdown}>
+        <MenuButton className={this.state.open && 'open'} onClick={this.toggleDropdown}>
           <i className={this.state.open ? "fas fa-times" : "fas fa-bars"}/>
           <span>MENÚ</span>
         </MenuButton>

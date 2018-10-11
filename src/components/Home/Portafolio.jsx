@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Section from '../Section';
@@ -11,9 +12,10 @@ import torreLuzImg from '../assets/logos/torre-luz.svg';
 
 const Header = styled.h2`
   position: relative;
-  font-size: 1.5em;
   padding: 0.5em 0;
   margin: 0 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 
   ::before {
     content: '';
@@ -23,6 +25,11 @@ const Header = styled.h2`
     width: 100%;
     background: ${props => props.theme.white};
   }
+`
+
+const Link = styled(_Link)`
+  text-decoration: none;
+  color: inherit;
 `
 
 const LogosDiv = styled.div`
@@ -54,7 +61,7 @@ const content = [
 
 const Portafolio = () => (
   <Section>
-    <Header>Portafolio</Header>
+    <Header><Link to='/portafolio'>Portafolio</Link></Header>
     <LogosDiv>
       {content.map((image, index) => (
         <Logo key={index} src={image}/>
