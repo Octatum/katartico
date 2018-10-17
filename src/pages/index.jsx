@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import AppLayout from '../components/Layout';
 
 import backgroundImage from '../components/assets/background.svg';
+import Video from '../components/Home/Video';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import Portafolio from '../components/Home/Portafolio';
@@ -22,6 +23,7 @@ const Layout = styled.div`
 const IndexPage = () => (
   <AppLayout>
     <Layout>
+      <Video/>
       <About/>
       <Services/>
       <Portafolio/>
