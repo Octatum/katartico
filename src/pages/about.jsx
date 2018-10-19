@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 
-import backgroundImage from '../components/assets/background.svg';
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,7 +9,6 @@ const Container = styled.div`
   position: relative;
   min-height: 100vh;
   padding: 4em 2em;
-  background-image: url('${backgroundImage}');
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
