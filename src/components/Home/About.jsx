@@ -19,12 +19,12 @@ const Header = styled.h2`
     width: 100%;
     background: ${props => props.theme.white};
   }
-`
+`;
 
 const Link = styled(_Link)`
   text-decoration: none;
   color: inherit;
-`
+`;
 
 const Quote = styled.div`
   position: relative;
@@ -43,22 +43,22 @@ const Quote = styled.div`
     height: 4px;
     background: ${props => props.theme.main};
   }
-`
+`;
 
 const BigPicture = styled.div`
   height: 300px;
   width: 100%;
   margin: 2em 0;
   background: ${props => props.theme.main};
-`
+`;
 
 const About = () => (
   <Section>
-    <Header><Link to='/about'>Nosotros</Link></Header>
-    <Quote>
-      Insert your inspirational quote right here...
-    </Quote>
-    <BigPicture/>
+    <Header>
+      <Link to="/about">Nosotros</Link>
+    </Header>
+    <Quote>Insert your inspirational quote right here...</Quote>
+    <BigPicture />
   </Section>
 );
 

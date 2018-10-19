@@ -20,34 +20,34 @@ const Header = styled.h2`
     width: 100%;
     background: ${props => props.theme.white};
   }
-`
+`;
 
 const Link = styled(_Link)`
   text-decoration: none;
   color: inherit;
-`
+`;
 
 const Apostrophes = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
   margin: 0 10%;
-`
+`;
 
 const Item = styled.div`
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
   padding: 1em;
-`
+`;
 
 const InnerItem = styled.div`
   position: relative;
-`
+`;
 
 const Image = styled.img`
   height: 160px;
-`
+`;
 
 const Text = styled.p`
   position: absolute;
@@ -56,23 +56,25 @@ const Text = styled.p`
   right: 0;
   font-size: 1.2em;
   font-weight: bold;
-`
+`;
 
 const content = [
-  "Construcción de Marca",
-  "Campañas Publicitarias",
-  "Presencia Digital",
-  "Ejecuciones Creativas"
-]
+  'Construcción de Marca',
+  'Campañas Publicitarias',
+  'Presencia Digital',
+  'Ejecuciones Creativas',
+];
 
 const Services = () => (
   <Section>
-    <Header><Link to='/services'>Servicios</Link></Header>
+    <Header>
+      <Link to="/services">Servicios</Link>
+    </Header>
     <Apostrophes>
       {content.map((item, index) => (
-        <Item key={index}>
+        <Item key={item}>
           <InnerItem>
-            <Image src={apostropheImg}/>
+            <Image src={apostropheImg} />
             <Text>{item}</Text>
           </InnerItem>
         </Item>

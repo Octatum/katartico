@@ -3,12 +3,10 @@ import styled from 'styled-components';
 import quoteImg from '../components/assets/quote.svg';
 import logoImg from '../components/assets/logo.svg';
 import AppLayout from '../components/Layout';
-import backgroundImage from '../components/assets/background.svg';
 import { device } from '../utilities/device';
 
 const Layout = styled.div`
   --margin-size: 2em;
-  background-image: url('${backgroundImage}');
   background-size: 100%;
   background-color: black;
   min-height: calc(100vh - var(--margin-size) * 2);
@@ -122,7 +120,7 @@ const P = styled.p`
   font-family: 'Berthold', sans-serif;
   color: white;
   text-align: center;
-  
+
   ${device.mobile} {
     font-size: 0.7em;
   }
@@ -191,8 +189,8 @@ const IndexPage = () => (
         <P>(644) 145 1956</P>
       </ContactContainer>
       <Footer>
-        Copyright © Todos los derechos reservados. Katartico 2018. Desarrollo por
-        Katartico | Octatum
+        Copyright © Todos los derechos reservados. Katartico 2018. Desarrollo
+        por Katartico | Octatum
       </Footer>
     </Layout>
   </AppLayout>

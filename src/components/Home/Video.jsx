@@ -11,13 +11,13 @@ const Wrapper = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
-`
+`;
 
 const ReactPlayer = styled(_ReactPlayer)`
   width: 100%;
   height: auto;
   max-height: 360px;
-`
+`;
 
 const PlayButton = styled.i`
   position: absolute;
@@ -30,20 +30,20 @@ const PlayButton = styled.i`
   :hover {
     opacity: 0.7;
   }
-`
+`;
 
 class Video extends Component {
   state = {
-    playing: false
-  }
+    playing: false,
+  };
 
   playerRef = React.createRef();
 
   togglePlayback = () => {
-    this.setState((prevState) => ({
-      playing: !prevState.playing
+    this.setState(prevState => ({
+      playing: !prevState.playing,
     }));
-  }
+  };
 
   render = () => (
     <Section>
@@ -54,12 +54,15 @@ class Video extends Component {
           muted
           onEnded={this.togglePlayback}
         />
-        {!this.state.playing &&
-          <PlayButton onClick={this.togglePlayback} className="fas fa-play fa-6x"/>
-        }
+        {!this.state.playing && (
+          <PlayButton
+            onClick={this.togglePlayback}
+            className="fas fa-play fa-6x"
+          />
+        )}
       </Wrapper>
     </Section>
-  )
+  );
 }
 
 export default Video;

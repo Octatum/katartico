@@ -13,6 +13,7 @@
     "hex-rgba": "^1.0.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
     "react-player": "^1.6.6",
     "react-scroll": "^1.7.10",
@@ -26,7 +27,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.js' '**/*.jsx'",
+    "format": "prettier --write './src/**/*.js' './src/**/*.jsx'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

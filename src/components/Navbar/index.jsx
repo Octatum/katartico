@@ -3,20 +3,21 @@ import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import hexToRgba from 'hex-rgba';
+import Headroom from 'react-headroom';
 
 import logoImg from '../../components/assets/logo.svg';
 import miniLogoImg from '../../components/assets/mini-logo.svg';
+import throttle from '../../utilities/throttle';
 
 const Container = styled.div`
-  position: sticky;
   top: 0;
   z-index: 1;
-  height: 140px;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  height: 9rem;
 
   ::after {
     content: '';
@@ -24,32 +25,32 @@ const Container = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    height: 18px;
+    height: 1rem;
     background: black;
   }
 
-  &.mini {
-    height: 83px;
+  .headroom--pinned & {
+    transition: unset;
+    height: 5rem;
   }
-`
+`;
 
-const FlexBox = styled.div`
+const FlexBox = styled.div.attrs({
+  style: ({mini}) => ({
+    padding: mini ? '1em 3em': '2em 3em'
+  })
+})`
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   height: 100%;
-  padding: 2em 3em;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-
-  .mini & {
-    padding: 1em 3em;
-  }
-`
+`;
 
 const Logo = styled.img`
   height: 100%;
-`
+`;
 
 const LinksDiv = styled.div`
   display: flex;
@@ -64,18 +65,19 @@ const LinksDiv = styled.div`
   background: black;
   box-shadow: 0 0 9px 9px transparent;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  /** Para animaciones que no se ejecutaran muchas veces, es valido hacer esto **/
 
-  &.open {
+  ${({open}) => open && `
     max-height: 70vh;
-    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
-  }
-`
+    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};  
+  `}
+`;
 
 const LinkList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const Link = styled(_Link)`
   margin: 1rem 0;
@@ -84,34 +86,25 @@ const Link = styled(_Link)`
   text-decoration: none;
   cursor: pointer;
 
-  span {
+  ::first-letter{
     font-size: 1.1em;
   }
-`
+`;
 
-const ScrollLink = styled(_ScrollLink)`
-  margin: 1rem 0;
-  font-size: 1.3em;
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-
-  span {
-    font-size: 1.1em;
-  }
-`
+// Es posible cambiar el estilo de un componente a otro, usando styled components
+const ScrollLink = Link.withComponent(_ScrollLink);
 
 const Anchor = styled.a`
   margin: 1rem 0;
   font-size: 1.5em;
   color: inherit;
-`
+`;
 
 const SocialMedia = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-`
+`;
 
 const MenuButton = styled.button`
   display: flex;
@@ -126,120 +119,139 @@ const MenuButton = styled.button`
   i {
     margin-right: 0.5em;
   }
-`
+`;
 
 const links = [
   {
     path: '/',
-    name: <p><span>I</span>NICIO</p>
+    name: 'inicio'
   },
   {
-    path: '/about',
-    name: <p><span>N</span>OSOTROS</p>
+    path: '/nosotros',
+    name: 'nosotros'
   },
   {
     path: '/portafolio',
-    name: <p><span>S</span>ERVICIOS</p>
+    name: 'portafolio'
   },
   {
-    path: '/services',
-    name: <p><span>P</span>ORTAFOLIO</p>
+    path: '/servicios',
+    name: 'servicios'
   },
   {
     path: '/',
     hash: 'contact',
-    name: <p><span>C</span>ONTACTO</p>
+    name: 'contacto',
   },
 ];
 
 const socialMediaLinks = [
   {
     path: '/',
-    faName: 'fa-facebook-f'
+    faName: 'fa-facebook-f',
   },
   {
     path: '/',
-    faName: 'fa-instagram'
+    faName: 'fa-instagram',
   },
   {
     path: '/',
-    faName: 'fa-linkedin-in'
+    faName: 'fa-linkedin-in',
   },
-]
+];
 
 class Navbar extends Component {
   state = {
     open: false,
-    minimize: false
+    minimize: false,
+  };
+
+  constructor(props) {
+    super(props);
+
+    this.handleScroll = this.handleScroll.bind(this);
+
+    this.handleScroll = throttle(this.handleScroll, 1000 / 30);
   }
 
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
     this.handleScroll();
-  }
+  };
 
   componentWillUnmount = () => {
     window.removeEventListener('scroll', this.handleScroll);
-  }
+  };
 
-  handleScroll = () => {
-    this.setState({
-      minimize: (window.pageYOffset > 0)
-    });
-  }
-
-  toggleDropdown = () => {
-    this.setState((prevState) => ({
-      open: !prevState.open
+  handleScroll() {
+    console.log("Time!");
+    this.setState(() => ({
+      minimize: window.pageYOffset > 0,
     }));
   }
 
-  navbarLinks = () => (
-    links.map((item, index) => {
+  toggleDropdown = () => {
+    this.setState(prevState => ({
+      open: !prevState.open,
+    }));
+  };
+
+  render = () => {
+    const navbarLinks = links.map((item, index) => {
       if (item.path === this.props.path) {
         return (
           <ScrollLink
             key={index}
             to={item.hash ? item.hash : 'top'}
+            duration={300}
+            onClick={this.toggleDropdown}
             smooth
-            duration={500}
-            onClick={this.toggleDropdown}>
+          >
             {item.name}
           </ScrollLink>
         );
-      } else {
-        return (
-          <Link key={index} to={`${item.path}${item.hash ? `#${item.hash}` : ''}`} onClick={this.toggleDropdown}>
-            {item.name}
-          </Link>
-        );
       }
-    })
-  )
+      return (
+        <Link
+          key={index}
+          to={`${item.path}`}
+          onClick={this.toggleDropdown}
+        >
+          {item.name}
+        </Link>
+      );
+    });
 
-  render = () => (
-    <Container className={this.state.minimize && 'mini'}>
-      <FlexBox>
-        <Logo src={this.state.minimize ? miniLogoImg : logoImg}/>
-        <LinksDiv className={this.state.open && 'open'}>
-          <LinkList>
-            {this.navbarLinks()}
-          </LinkList>
-          <SocialMedia>
-            {socialMediaLinks.map((item, index) => (
-              <Anchor key={index} href={item.path}>
-                <i className={`fab ${item.faName} fa-lg fa-fw`}/>
-              </Anchor>
-            ))}
-          </SocialMedia>
-        </LinksDiv>
-        <MenuButton className={this.state.open && 'open'} onClick={this.toggleDropdown}>
-          <i className={this.state.open ? "fas fa-times" : "fas fa-bars"}/>
-          <span>MENÚ</span>
-        </MenuButton>
-      </FlexBox>
-    </Container>
-  )
+    return (
+      <Headroom>
+        <Container mini={this.state.minimize}>
+          <FlexBox mini={this.state.minimize}>
+            <Logo  src={miniLogoImg} />
+            <LinksDiv open={this.state.open}>
+              <LinkList>{navbarLinks}</LinkList>
+              <SocialMedia>
+                {socialMediaLinks.map((item, index) => (
+                  <Anchor key={index} href={item.path}>
+                    <i className={`fab ${item.faName} fa-lg fa-fw`} />
+                  </Anchor>
+                ))}
+              </SocialMedia>
+            </LinksDiv>
+            {/*
+              styled components puede hacer uso de props para calcular este tipo de estilos
+              className={this.state.open && 'open'}
+            */}
+            <MenuButton
+              onClick={this.toggleDropdown}
+            >
+              <i className={this.state.open ? 'fas fa-times' : 'fas fa-bars'} />
+              <span>MENÚ</span>
+            </MenuButton>
+          </FlexBox>
+        </Container>
+      </Headroom>
+    );
+  };
 }
 
 export default Navbar;

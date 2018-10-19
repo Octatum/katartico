@@ -24,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font: inherit;
-	font-family: "Nunito", serif;
+	font-family: "Akzidenz", serif;
 	line-height: normal;
 }
 
@@ -33,42 +33,13 @@ body {
 }
 
 @font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+	font-family: 'Cocogoose';
+	src: url("/fonts/cocogoose.ttf");
 }
 
 @font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Italic.ttf");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Bold.ttf");
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Light.ttf");
-	font-weight: lighter;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'COCOGOOSE';
-    src: url("../../../static/fonts/Cocogoose Pro Semilight-trial.ttf");
-}
-
-@font-face {
-    font-family: 'Berthold';
-    src: url("../../../static/fonts/Berthold Akzidenz Grotesk BE Regular.otf");
+	font-family: 'Akzidenz';
+	src: url("/fonts/akzidenz.otf");
 }
 
 strong {

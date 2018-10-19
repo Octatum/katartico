@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Element } from 'react-scroll';
 import Layout from '../components/Layout';
 
-import backgroundImage from '../components/assets/background.svg';
 import Video from '../components/Home/Video';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
@@ -16,20 +15,19 @@ const Container = styled.div`
   position: relative;
   min-height: 100vh;
   padding-top: 1em;
-  background-image: url('${backgroundImage}');
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
 
-const IndexPage = (props) => (
+const IndexPage = props => (
   <Layout path={props.location.pathname}>
     <Container>
-      <Video/>
-      <About/>
-      <Services/>
-      <Portafolio/>
-      <Element name='contact'>
-        <Contact/>
+      <Video />
+      <About />
+      <Services />
+      <Portafolio />
+      <Element name="contact">
+        <Contact />
       </Element>
     </Container>
   </Layout>

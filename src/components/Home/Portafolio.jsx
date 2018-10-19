@@ -25,12 +25,12 @@ const Header = styled.h2`
     width: 100%;
     background: ${props => props.theme.white};
   }
-`
+`;
 
 const Link = styled(_Link)`
   text-decoration: none;
   color: inherit;
-`
+`;
 
 const LogoGrid = styled.div`
   display: grid;
@@ -41,26 +41,27 @@ const LogoGrid = styled.div`
     'a2 a2 a3 a3'
     'a4 a5 a5 a5';
   margin: 1em 2em;
-`
+  align-items: center;
+`;
 
 const GridItem = styled.div`
   display: flex;
   align-items: center;
   grid-area: ${props => props.area};
-`
+`;
 
 const Logo = styled.img`
   height: 100%;
   max-width: 100%;
   padding: 1em;
-`
+`;
 
 const BigPicture = styled.div`
   height: 130px;
   width: 90%;
   margin: 3em auto 1em;
   background: ${props => props.theme.main};
-`
+`;
 
 const content = [
   tecImg,
@@ -68,20 +69,22 @@ const content = [
   incubadoraImg,
   newMariasImg,
   jimjamsImg,
-  torreLuzImg
+  torreLuzImg,
 ];
 
 const Portafolio = () => (
   <Section>
-    <Header><Link to='/portafolio'>Portafolio</Link></Header>
+    <Header>
+      <Link to="/portafolio">Portafolio</Link>
+    </Header>
     <LogoGrid>
       {content.map((item, index) => (
-        <GridItem area={`a${index}`}>
-          <Logo key={index} src={item}/>
+        <GridItem key={index} area={`a${index}`}>
+          <Logo src={item} />
         </GridItem>
       ))}
     </LogoGrid>
-    <BigPicture/>
+    <BigPicture />
   </Section>
 );
 
