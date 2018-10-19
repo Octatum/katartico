@@ -39,13 +39,15 @@ const Field = styled.div`
 `
 
 const Label = styled.p`
-  min-width: 20%;
+  min-width: 5em;
   padding-right: 0.5em;
+  margin: 4px 0;
+  align-self: ${props => props.top ? 'flex-start' : 'flex-end'}
 `
 
 const Input = styled.input`
   flex: 1;
-  padding: 0.5em;
+  padding: 0.3em;
   font-family: inherit;
   font-size: inherit;
 `
@@ -53,7 +55,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   flex: 1;
   min-height: 100px;
-  padding: 0.5em;
+  padding: 0.3em;
   font-family: inherit;
   font-size: inherit;
   resize: none;
@@ -101,7 +103,7 @@ class Contact extends Component {
   }
 
   render = () => (
-    <Section id="contacto">
+    <Section>
       <Header>Contacto</Header>
       <Form>
         <Data>
@@ -130,7 +132,7 @@ class Contact extends Component {
             />
           </Field>
           <Field>
-            <Label>Mensaje</Label>
+            <Label top>Mensaje</Label>
             <TextArea
               disabled={this.state.messageSent}
               name='message'

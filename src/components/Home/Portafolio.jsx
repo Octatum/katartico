@@ -32,14 +32,26 @@ const Link = styled(_Link)`
   color: inherit;
 `
 
-const LogosDiv = styled.div`
+const LogoGrid = styled.div`
+  display: grid;
+  grid-template-columns: 40% 10% 10% 40%;
+  grid-template-rows: 1.5fr 2fr 2fr;
+  grid-template-areas:
+    'a0 a0 a0 a1'
+    'a2 a2 a3 a3'
+    'a4 a5 a5 a5';
+  margin: 1em 2em;
+`
+
+const GridItem = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 1em;
+  align-items: center;
+  grid-area: ${props => props.area};
 `
 
 const Logo = styled.img`
+  height: 100%;
+  max-width: 100%;
   padding: 1em;
 `
 
@@ -57,16 +69,18 @@ const content = [
   newMariasImg,
   jimjamsImg,
   torreLuzImg
-]
+];
 
 const Portafolio = () => (
   <Section>
     <Header><Link to='/portafolio'>Portafolio</Link></Header>
-    <LogosDiv>
-      {content.map((image, index) => (
-        <Logo key={index} src={image}/>
+    <LogoGrid>
+      {content.map((item, index) => (
+        <GridItem area={`a${index}`}>
+          <Logo key={index} src={item}/>
+        </GridItem>
       ))}
-    </LogosDiv>
+    </LogoGrid>
     <BigPicture/>
   </Section>
 );

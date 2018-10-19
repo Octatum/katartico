@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 
 import Navbar from '../Navbar';
 import './index.css';
@@ -12,7 +12,7 @@ const theme = {
   black: '#000',
 }
 
-const Layout = ({ children }) => (
+const Layout = ({ children, path }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Helmet
@@ -23,7 +23,8 @@ const Layout = ({ children }) => (
         <html lang="en" />
       </Helmet>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossOrigin="anonymous"/>
-      <Navbar/>
+      <div id='top'/>
+      <Navbar path={path}/>
       {children}
     </React.Fragment>
   </ThemeProvider>
@@ -31,6 +32,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  path: PropTypes.string,
 };
 
 export default Layout;

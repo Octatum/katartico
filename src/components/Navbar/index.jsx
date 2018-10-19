@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
+import { Link as _ScrollLink } from 'react-scroll';
+import hexToRgba from 'hex-rgba';
 
 import logoImg from '../../components/assets/logo.svg';
 import miniLogoImg from '../../components/assets/mini-logo.svg';
@@ -11,7 +13,7 @@ const Container = styled.div`
   z-index: 1;
   height: 140px;
   margin-bottom: 16px;
-  box-shadow: 0 0 9px 9px #950900;
+  box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -65,11 +67,11 @@ const LinksDiv = styled.div`
 
   &.open {
     max-height: 70vh;
-    box-shadow: 0 0 9px 9px #950900;
+    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
   }
 `
 
-const Anchors = styled.div`
+const LinkList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,6 +82,19 @@ const Link = styled(_Link)`
   font-size: 1.3em;
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+
+  span {
+    font-size: 1.1em;
+  }
+`
+
+const ScrollLink = styled(_ScrollLink)`
+  margin: 1rem 0;
+  font-size: 1.3em;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 
   span {
     font-size: 1.1em;
@@ -131,7 +146,8 @@ const links = [
     name: <p><span>P</span>ORTAFOLIO</p>
   },
   {
-    path: '/#contacto',
+    path: '/',
+    hash: 'contact',
     name: <p><span>C</span>ONTACTO</p>
   },
 ];
@@ -178,18 +194,37 @@ class Navbar extends Component {
     }));
   }
 
+  navbarLinks = () => (
+    links.map((item, index) => {
+      if (item.path === this.props.path) {
+        return (
+          <ScrollLink
+            key={index}
+            to={item.hash ? item.hash : 'top'}
+            smooth
+            duration={500}
+            onClick={this.toggleDropdown}>
+            {item.name}
+          </ScrollLink>
+        );
+      } else {
+        return (
+          <Link key={index} to={`${item.path}${item.hash ? `#${item.hash}` : ''}`} onClick={this.toggleDropdown}>
+            {item.name}
+          </Link>
+        );
+      }
+    })
+  )
+
   render = () => (
     <Container className={this.state.minimize && 'mini'}>
       <FlexBox>
         <Logo src={this.state.minimize ? miniLogoImg : logoImg}/>
         <LinksDiv className={this.state.open && 'open'}>
-          <Anchors>
-            {links.map((item, index) => (
-              <Link key={index} to={item.path} onClick={this.toggleDropdown}>
-                {item.name}
-              </Link>
-            ))}
-          </Anchors>
+          <LinkList>
+            {this.navbarLinks()}
+          </LinkList>
           <SocialMedia>
             {socialMediaLinks.map((item, index) => (
               <Anchor key={index} href={item.path}>

@@ -52,7 +52,7 @@ const Image = styled.img`
 const Text = styled.p`
   position: absolute;
   top: 18px;
-  left: 14px;
+  left: 11px;
   right: 0;
   font-size: 1.2em;
   font-weight: bold;
