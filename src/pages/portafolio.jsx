@@ -1,41 +1,77 @@
 import React from 'react';
 import styled from 'styled-components';
-import AppLayout from '../components/Layout';
+import Layout from '../components/Layout';
 
-const Layout = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
   min-height: 100vh;
-  padding-top: 1em;
+  padding: 5rem 10vw;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
-
-  h3, h4 {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 2em;
-    font-weight: bold;
-  }
-
-  h4 {
-    font-size: 1.5em;
-    font-style: italic;
-  }
 `;
 
-const Portafolio = props => (
-  <AppLayout>
-    <Layout>
-      <h3>Still making this site! Thanks for your patience!~</h3>
-      <h4>Portafolio → {props.location.pathname}</h4>
-    </Layout>
-  </AppLayout>
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5% 10%;
+  width: 100%;
+`
+
+const GridItem = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: grey;
+  }
+`
+
+const SquarePicture = styled.div`
+  width: 100%;
+  background: ${props => props.theme.main};
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+`
+
+const ItemTitle = styled.p`
+  font-size: 1.2em;
+  width: 100%;
+  margin: 4px 0;
+`
+
+const content = [
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+]
+
+const Portafolio = () => (
+  <Layout>
+    <Container>
+      <Grid>
+        {content.map((item, index) => (
+          <GridItem key={index}>
+            <SquarePicture/>
+            <ItemTitle>{item}</ItemTitle>
+          </GridItem>
+        ))}
+      </Grid>
+    </Container>
+  </Layout>
 );
 
 export default Portafolio;

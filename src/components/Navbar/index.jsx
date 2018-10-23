@@ -5,7 +5,6 @@ import { Link as _ScrollLink } from 'react-scroll';
 import hexToRgba from 'hex-rgba';
 import Headroom from 'react-headroom';
 
-import logoImg from '../../components/assets/logo.svg';
 import miniLogoImg from '../../components/assets/mini-logo.svg';
 import throttle from '../../utilities/throttle';
 
@@ -69,7 +68,7 @@ const LinksDiv = styled.div`
 
   ${({open}) => open && `
     max-height: 70vh;
-    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};  
+    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
   `}
 `;
 
