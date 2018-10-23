@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 
@@ -51,27 +52,61 @@ const ItemTitle = styled.p`
   margin: 4px 0;
 `
 
-const content = [
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-]
+// const content = [
+//   '1',
+//   '2',
+//   '3',
+//   '4',
+//   '5',
+// ]
 
-const Portafolio = () => (
+const Portafolio = ({
+  data: {
+    allMarkdownRemark: {
+      edges: projects
+    }
+  }
+}) => (
   <Layout>
     <Container>
       <Grid>
-        {content.map((item, index) => (
+        {projects.map((item, index) => (
           <GridItem key={index}>
-            <SquarePicture/>
-            <ItemTitle>{item}</ItemTitle>
+            <Link to={item.node.frontmatter.path}>
+              <SquarePicture />
+            </Link>
+            <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
           </GridItem>
         ))}
+        {/* {content.map((item, index) => (
+          <GridItem key={index}>
+            <SquarePicture />
+            <ItemTitle>{item}</ItemTitle>
+          </GridItem>
+        ))} */}
       </Grid>
     </Container>
   </Layout>
 );
 
-export default Portafolio;
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                title
+                path
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Portafolio data={data} {...props} />}
+  />
+);
+
+// export default Portafolio;
