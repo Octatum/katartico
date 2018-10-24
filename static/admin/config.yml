@@ -6,13 +6,13 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: projects
-    label: Proyectos
-    folder: content/projects
+  - name: "projects"
+    label: "Proyectos"
+    folder: "content/projects"
     create: true
     fields:
-      - { name: path, label: Ruta }
-      - { name: title, label: Titulo }
-      - { name: index, label: Indice, widget: number, valueType: int, min: 1 }
-      - { name: type, label: heheheheheh, widget: hidden, default: projects }
-      - { name: body, label: Contenido, widget: markdown }
+      - { name: "path", label: "Ruta" }
+      - { name: "title", label: "Titulo" }
+      - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+      - { name: "type", label: "heheheheheh", widget: "hidden", default: "projects" }
+      - { name: "body", label: "Contenido", widget: "markdown" }
