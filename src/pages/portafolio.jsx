@@ -55,25 +55,29 @@ const ItemTitle = styled.p`
 const Portafolio = ({
   data: {
     allMarkdownRemark: {
-      edges: projects
+      edges
     }
   }
-}) => (
-  <Layout>
-    <Container>
-      <Grid>
-        {projects.map((item, index) => (
-          <GridItem key={index}>
-            <Link to={item.node.frontmatter.path}>
-              <SquarePicture />
-            </Link>
-            <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
-          </GridItem>
-        ))}
-      </Grid>
-    </Container>
-  </Layout>
-);
+}) => {
+  const projects = edges || [];
+
+  return (
+    <Layout>
+      <Container>
+        <Grid>
+          {projects.map((item, index) => (
+            <GridItem key={index}>
+              <Link to={item.node.frontmatter.path}>
+                <SquarePicture />
+              </Link>
+              <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
+            </GridItem>
+          ))}
+        </Grid>
+      </Container>
+    </Layout>
+  );
+}
 
 export default props => (
   <StaticQuery
