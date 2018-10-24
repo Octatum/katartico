@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import hexToRgba from 'hex-rgba';
 import Headroom from 'react-headroom';
@@ -51,7 +51,7 @@ const Logo = styled.img`
   height: 100%;
 `;
 
-const LinksDiv = styled.div`
+const Menu = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -105,20 +105,117 @@ const SocialMedia = styled.div`
   justify-content: space-evenly;
 `;
 
-const MenuButton = styled.button`
+const BurgerMenu = styled.div`
   display: flex;
-  align-items: baseline;
-  height: 60%;
-  border: 0;
-  font-size: 1.5em;
-  background: inherit;
-  color: inherit;
-  cursor: pointer;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
+`
 
-  i {
-    margin-right: 0.5em;
+const BurgerText = styled.span`
+  display: block;
+  transition: opacity 200ms ease-out, transform 200ms cubic-bezier(.34, .55, .25, .83);
+  font-size: 1.5em;
+
+  .open & {
+    opacity: 0;
+    transform: translateX(-50px);
   }
-`;
+`
+
+const BurgerRegion = styled.div`
+  position: relative;
+  height: 1.85em;
+  width: 40px;
+  margin-left: 1rem;
+  cursor: pointer;
+`
+
+const topBarOpen = keyframes`
+  50% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+`
+
+const bottomBarOpen = keyframes`
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+  100% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+`
+
+const topBarClose = keyframes`
+  0% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0, 12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+`
+
+const bottomBarClose = keyframes`
+  0% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+`
+
+const BurgerBar = styled.span`
+  --menu-animation-duration: 400ms;
+  --menu-animation-timing: ease-out;
+
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-top: 6px solid ${props => props.theme.white};
+  transform-origin: 50% 50%;
+  transition: transform var(--menu-animation-duration) var(--menu-animation-timing);
+
+  &:nth-child(1) {
+    top: 0;
+    animation: ${topBarClose} var(--menu-animation-duration) var(--menu-animation-timing) forwards;
+  }
+
+  &:nth-child(2) {
+    top: 12px;
+    opacity: 1;
+    transition: transform var(--menu-animation-duration) var(--menu-animation-timing), opacity 0ms linear calc(var(--menu-animation-duration) / 2);
+  }
+
+  &:nth-child(3) {
+    top: 24px;
+    animation: ${bottomBarClose} var(--menu-animation-duration) var(--menu-animation-timing) forwards;
+  }
+
+  .open & {
+    &:nth-child(1) {
+      animation: ${topBarOpen} var(--menu-animation-duration) var(--menu-animation-timing) forwards;
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+      transition: transform var(--menu-animation-duration) var(--menu-animation-timing), opacity 0ms linear calc(var(--menu-animation-duration) / 2);
+    }
+
+    &:nth-child(3) {
+      animation: ${bottomBarOpen} var(--menu-animation-duration) var(--menu-animation-timing) forwards;
+    }
+  }
+`
 
 const links = [
   {
@@ -144,7 +241,7 @@ const links = [
   },
 ];
 
-const socialMediaLinks = [
+const socialMedia = [
   {
     path: '/',
     faName: 'fa-facebook-f',
@@ -221,31 +318,29 @@ class Navbar extends Component {
       );
     });
 
+    const socialMediaLinks = socialMedia.map((item, index) => (
+      <Anchor key={index} href={item.path}>
+        <i className={`fab ${item.faName} fa-lg fa-fw`} />
+      </Anchor>
+    ));
+
     return (
       <Headroom>
         <Container mini={this.state.minimize}>
           <FlexBox mini={this.state.minimize}>
-            <Logo  src={miniLogoImg} />
-            <LinksDiv open={this.state.open}>
+            <Logo src={miniLogoImg} />
+            <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
-              <SocialMedia>
-                {socialMediaLinks.map((item, index) => (
-                  <Anchor key={index} href={item.path}>
-                    <i className={`fab ${item.faName} fa-lg fa-fw`} />
-                  </Anchor>
-                ))}
-              </SocialMedia>
-            </LinksDiv>
-            {/*
-              styled components puede hacer uso de props para calcular este tipo de estilos
-              className={this.state.open && 'open'}
-            */}
-            <MenuButton
-              onClick={this.toggleDropdown}
-            >
-              <i className={this.state.open ? 'fas fa-times' : 'fas fa-bars'} />
-              <span>MENÚ</span>
-            </MenuButton>
+              <SocialMedia>{socialMediaLinks}</SocialMedia>
+            </Menu>
+            <BurgerMenu className={this.state.open && 'open'}>
+              <BurgerText>Menú</BurgerText>
+              <BurgerRegion onClick={this.toggleDropdown}>
+                <BurgerBar />
+                <BurgerBar />
+                <BurgerBar />
+              </BurgerRegion>
+            </BurgerMenu>
           </FlexBox>
         </Container>
       </Headroom>
