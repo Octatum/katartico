@@ -14,7 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   min-height: 100vh;
-  padding-top: 1em;
+  padding-top: 3em;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
@@ -22,7 +22,6 @@ const Container = styled.div`
 const IndexPage = props => (
   <Layout path={props.location.pathname}>
     <Container>
-      <Video />
       <About />
       <Services />
       <Portafolio />

@@ -19,12 +19,16 @@ const ReactPlayer = styled(_ReactPlayer)`
   max-height: 360px;
 `;
 
-const PlayButton = styled.i`
+const PlayButton = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: ${props => props.theme.main};
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: calc(40px + 40px * 0.866) solid ${props => props.theme.main};
   cursor: pointer;
 
   :hover {
@@ -57,7 +61,6 @@ class Video extends Component {
         {!this.state.playing && (
           <PlayButton
             onClick={this.togglePlayback}
-            className="fas fa-play fa-6x"
           />
         )}
       </Wrapper>

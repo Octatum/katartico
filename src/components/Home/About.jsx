@@ -3,6 +3,7 @@ import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Section from '../Section';
+import Video from './Video';
 
 const Header = styled.h2`
   position: relative;
@@ -58,7 +59,7 @@ const About = () => (
       <Link to="/about">Nosotros</Link>
     </Header>
     <Quote>Insert your inspirational quote right here...</Quote>
-    <BigPicture />
+    <Video />
   </Section>
 );
 
