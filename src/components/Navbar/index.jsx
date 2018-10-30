@@ -16,7 +16,7 @@ const Container = styled.div`
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  height: 9rem;
+  height: 6rem;
 
   ::after {
     content: '';
@@ -66,9 +66,9 @@ const Menu = styled.div`
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   /** Para animaciones que no se ejecutaran muchas veces, es valido hacer esto **/
 
-  ${({open}) => open && `
+  ${props => props.open && `
     max-height: 70vh;
-    box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
+    box-shadow: 0 0 9px 9px ${hexToRgba(props.theme.main, 40)};
   `}
 `;
 
