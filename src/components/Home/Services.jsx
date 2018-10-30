@@ -31,7 +31,7 @@ const Apostrophes = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
-  margin: 0 10%;
+  margin: 0 5%;
 `;
 
 const Item = styled.div`
@@ -46,15 +46,14 @@ const InnerItem = styled.div`
 `;
 
 const Image = styled.img`
-  height: 160px;
+  height: 115px;
 `;
 
 const Text = styled.p`
   position: absolute;
-  top: 18px;
-  left: 11px;
-  right: 0;
-  font-size: 1.2em;
+  top: 8px;
+  left: 7px;
+  font-size: 1.1em;
   font-weight: bold;
 `;
 
