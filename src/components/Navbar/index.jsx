@@ -299,7 +299,7 @@ class Navbar extends Component {
           <ScrollLink
             key={index}
             to={item.hash ? item.hash : 'top'}
-            duration={300}
+            duration={1000}
             onClick={this.toggleDropdown}
             smooth
           >
