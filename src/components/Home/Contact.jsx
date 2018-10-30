@@ -39,17 +39,20 @@ const Field = styled.div`
 `;
 
 const Label = styled.p`
+  position: relative;
+  bottom: ${props => props.top ? '0' : '-3px'};
   min-width: 5em;
   padding-right: 0.5em;
-  margin: 4px 0;
-  align-self: ${props => (props.top ? 'flex-start' : 'flex-end')};
+  align-self: ${props => props.top ? 'flex-start' : 'flex-end'};
 `;
 
 const Input = styled.input`
   flex: 1;
   padding: 0.3em;
+  border: 0;
   font-family: inherit;
   font-size: inherit;
+  border: 0;
 `;
 
 const TextArea = styled.textarea`
