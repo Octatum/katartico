@@ -9,14 +9,10 @@ import presencia from '../components/Services/assets/presencia.png';
 
 const Layout = styled.div`
   position: relative;
-  ${'' /* min-height: 100vh; */}
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
   padding: 5rem 5vw;
 
-  ${'' /* display: flex;
-  align-items: center;
-  justify-content: center; */}
   grid-gap: 2rem;
 
   @supports(display: grid) {
@@ -76,12 +72,29 @@ const ItemContent = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  height: 100%;
   width: 100%;
 `
 
 const ElementHeader = styled.div`
   text-transform: uppercase;
   max-width: 70%;
+
+  ${Item}:hover & {
+    position: absolute;
+    bottom: 60%;
+  }
+
+  ${Item}:hover &::after {
+    content: "";
+    display: block;
+    background-image: radial-gradient(at center center, white, rgba(255, 255, 255, 0) 70%);
+    height: 0.2em;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    transition: inherit;
+  }
 `;
 
 const ElementBody = styled.div`
@@ -93,18 +106,9 @@ const ElementBody = styled.div`
   height: 0;
   transform: scaleY(0);
 
-  ::before {
-    content: "";
-    display: block;
-    background-image: radial-gradient(at center center, white, rgba(255, 255, 255, 0) 70%);
-    height: 0.2em;
-    width: 80%;
-    margin-top: 0.5em;
-    margin-bottom: 0.75em;
-    transition: inherit;
-  }
-
   ${Item}:hover & {
+    position: absolute;
+    top: 40%;
     height: auto;
     transform: scaleY(1);
   }
