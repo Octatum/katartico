@@ -49,10 +49,6 @@ const Item = styled.div`
     padding-bottom: 100%;
   }
 
-  * {
-    z-index: 1;
-  }
-
   &:hover {
     ::before {
       background-color: rgba(71, 11, 11, 0.8);
