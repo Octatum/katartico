@@ -80,13 +80,14 @@ const LinkList = styled.div`
 
 const Link = styled(_Link)`
   margin: 1rem 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
 
   ::first-letter{
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 `;
 
