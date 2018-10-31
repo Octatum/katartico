@@ -8,8 +8,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 100vh;
-  padding: 5rem 10vw;
+  margin: 5rem 7vw;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
