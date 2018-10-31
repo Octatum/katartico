@@ -9,6 +9,7 @@ import miniLogoImg from '../../components/assets/mini-logo.svg';
 import throttle from '../../utilities/throttle';
 
 const Container = styled.div`
+  position: sticky;
   top: 0;
   z-index: 1;
   margin-bottom: 1rem;
@@ -26,11 +27,6 @@ const Container = styled.div`
     right: 0;
     height: 1rem;
     background: black;
-  }
-
-  .headroom--pinned & {
-    transition: unset;
-    height: 5rem;
   }
 `;
 
@@ -328,25 +324,23 @@ class Navbar extends Component {
     ));
 
     return (
-      <Headroom>
-        <Container mini={this.state.minimize}>
-          <FlexBox mini={this.state.minimize}>
-            <Logo src={miniLogoImg} />
-            <Menu open={this.state.open}>
-              <LinkList>{navbarLinks}</LinkList>
-              <SocialMedia>{socialMediaLinks}</SocialMedia>
-            </Menu>
-            <BurgerMenu className={this.state.open && 'open'}>
-              <BurgerRegion onClick={this.toggleDropdown}>
-                <BurgerBar />
-                <BurgerBar />
-                <BurgerBar />
-              </BurgerRegion>
-              <BurgerText>Menú</BurgerText>
-            </BurgerMenu>
-          </FlexBox>
-        </Container>
-      </Headroom>
+      <Container mini={this.state.minimize}>
+        <FlexBox mini={this.state.minimize}>
+          <Logo src={miniLogoImg} />
+          <Menu open={this.state.open}>
+            <LinkList>{navbarLinks}</LinkList>
+            <SocialMedia>{socialMediaLinks}</SocialMedia>
+          </Menu>
+          <BurgerMenu className={this.state.open && 'open'}>
+            <BurgerText>Menú</BurgerText>
+            <BurgerRegion onClick={this.toggleDropdown}>
+              <BurgerBar />
+              <BurgerBar />
+              <BurgerBar />
+            </BurgerRegion>
+          </BurgerMenu>
+        </FlexBox>
+      </Container>
     );
   };
 }
