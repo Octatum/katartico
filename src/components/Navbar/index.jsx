@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const FlexBox = styled.div.attrs({
   style: ({mini}) => ({
-    padding: mini ? '1em 3em': '2em 3em'
+    padding: mini ? '1.5em 3em': '1em 3em'
   })
 })`
   display: flex;
