@@ -332,12 +332,12 @@ class Navbar extends Component {
             <SocialMedia>{socialMediaLinks}</SocialMedia>
           </Menu>
           <BurgerMenu className={this.state.open && 'open'}>
-            <BurgerText>Menú</BurgerText>
             <BurgerRegion onClick={this.toggleDropdown}>
               <BurgerBar />
               <BurgerBar />
               <BurgerBar />
             </BurgerRegion>
+            <BurgerText>Menú</BurgerText>
           </BurgerMenu>
         </FlexBox>
       </Container>
