@@ -60,7 +60,7 @@ const Menu = styled.div`
   transform: translateX(-50%);
   max-height: 0;
   width: 50%;
-  overflow: auto;
+  overflow: hidden;
   background: black;
   box-shadow: 0 0 9px 9px transparent;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
