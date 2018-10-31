@@ -115,13 +115,15 @@ const BurgerMenu = styled.div`
 `
 
 const BurgerText = styled.span`
-  display: block;
-  transition: opacity 200ms ease-out, transform 200ms cubic-bezier(.34, .55, .25, .83);
+  display: inline-block;
+  transition: opacity 300ms ease-out, max-width 300ms cubic-bezier(.34, .55, .25, .83);
   font-size: 1.5em;
+  max-width: 3em;
+  overflow: hidden;
 
   .open & {
     opacity: 0;
-    transform: translateX(-50px);
+    max-width: 0;
   }
 `
 
@@ -129,7 +131,7 @@ const BurgerRegion = styled.div`
   position: relative;
   height: 1.85em;
   width: 40px;
-  margin-left: 1rem;
+  margin: 0 1rem;
   cursor: pointer;
 `
 
@@ -335,12 +337,12 @@ class Navbar extends Component {
               <SocialMedia>{socialMediaLinks}</SocialMedia>
             </Menu>
             <BurgerMenu className={this.state.open && 'open'}>
-              <BurgerText>Menú</BurgerText>
               <BurgerRegion onClick={this.toggleDropdown}>
                 <BurgerBar />
                 <BurgerBar />
                 <BurgerBar />
               </BurgerRegion>
+              <BurgerText>Menú</BurgerText>
             </BurgerMenu>
           </FlexBox>
         </Container>
