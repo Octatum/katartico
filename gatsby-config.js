@@ -9,6 +9,13 @@ module.exports = {
         name: 'projects-md',
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/about`,
+        name: 'about-us-md',
+      }
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms'
   ],

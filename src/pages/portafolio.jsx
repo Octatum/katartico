@@ -83,7 +83,10 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          sort: {fields: frontmatter___index},
+          filter: {fileAbsolutePath: {regex: "/.+/projects/.+/"}}
+        ) {
           edges {
             node {
               frontmatter {
