@@ -9,36 +9,34 @@ import presencia from '../components/Services/assets/presencia.png';
 
 const Layout = styled.div`
   position: relative;
-  min-height: 100vh;
+  ${'' /* min-height: 100vh; */}
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
   padding: 5rem 5vw;
 
-  display: flex;
+  ${'' /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */}
   grid-gap: 2rem;
 
   @supports(display: grid) {
     display: grid;
-    grid-template: repeat(2, minmax(17rem, 45vh)) / repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
 `;
 
 const Item = styled.div`
   width: 100%;
-  height: 100%;
+  max-height: 230px;
+  max-width: 230px;
+  margin: 0 auto;
   background-image: url('${({image}) => image}');
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
   transition: 0.3s linear all;
 
-  ::before {
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -49,13 +47,19 @@ const Item = styled.div`
     transition: inherit;
   }
 
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
   * {
     z-index: 1;
   }
 
   &:hover {
     ::before {
-      background-color: rgba(71, 11, 11, 0.8);    
+      background-color: rgba(71, 11, 11, 0.8);
     }
   }
 
@@ -64,8 +68,19 @@ const Item = styled.div`
   text-shadow: 0px 0.3em 0.3em black;
 `;
 
+const ItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+`
+
 const ElementHeader = styled.div`
-  text-transform: uppercase;  
+  text-transform: uppercase;
   max-width: 70%;
 `;
 
@@ -99,47 +114,73 @@ const ListItem = styled.div`
   padding-bottom: 1em;
 `;
 
+const content = [
+  {
+    image: branding,
+    header: "Construcción de marca",
+    body: (
+      <ElementBody>
+        <ListItem>Naming</ListItem>
+        <ListItem>Branding</ListItem>
+      </ElementBody>
+    )
+  },
+  {
+    image: campania,
+    header: "Campañas publicitarias",
+    body: (
+      <ElementBody>
+        <ListItem>ATL</ListItem>
+        <ListItem>BTL</ListItem>
+      </ElementBody>
+    )
+  },
+  {
+    image: ejecuciones,
+    header: "Ejecuciones creativas",
+    body: (
+      <ElementBody>
+        <ListItem>Diseño gráfico</ListItem>
+        <ListItem>Fotografía</ListItem>
+        <ListItem>Video</ListItem>
+      </ElementBody>
+    )
+  },
+  {
+    image: presencia,
+    header: "Presencia digital",
+    body: (
+      <ElementBody>
+        <ListItem>Desarrollo web</ListItem>
+        <ListItem>Community management</ListItem>
+        <ListItem>Marketing digital</ListItem>
+      </ElementBody>
+    )
+  },
+]
+
 const Services = props => (
   <AppLayout>
     <Layout>
-      <Item image={branding}>
-        <ElementHeader>
-          Construcción de marca
-        </ElementHeader>
-        <ElementBody>
-          <ListItem>Naming</ListItem>
-          <ListItem>Branding</ListItem>
-        </ElementBody>
-      </Item>
-      <Item image={campania}>
-        <ElementHeader>
-          Campañas publicitarias
-        </ElementHeader>
-        <ElementBody>
-          <ListItem>ATL</ListItem>
-          <ListItem>BTL</ListItem>
-        </ElementBody>
-      </Item>
-      <Item image={ejecuciones}>
-        <ElementHeader>
-          Ejecuciones creativas
-        </ElementHeader>
-        <ElementBody>
-          <ListItem>Diseño gráfico</ListItem>
-          <ListItem>Fotografía</ListItem>
-          <ListItem>Video</ListItem>
-        </ElementBody>
-      </Item>
-      <Item image={presencia}>
-        <ElementHeader>
-          Presencia digital
-        </ElementHeader>
-        <ElementBody>
-          <ListItem>Desarrollo web</ListItem>
-          <ListItem>Community management</ListItem>
-          <ListItem>Marketing digital</ListItem>
-        </ElementBody>
-      </Item>
+      {content.map((item, index) => (
+        <Item key={index} image={item.image}>
+          <ItemContent>
+            <ElementHeader>{item.header}</ElementHeader>
+            {item.body}
+          </ItemContent>
+        </Item>
+      ))}
+      {/* <Item image={branding}>
+        <ItemContent>
+          <ElementHeader>
+        Construcción de marca
+          </ElementHeader>
+          <ElementBody>
+        <ListItem>Naming</ListItem>
+        <ListItem>Branding</ListItem>
+          </ElementBody>
+        </ItemContent>
+      </Item> */}
     </Layout>
   </AppLayout>
 );
