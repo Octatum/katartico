@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Element } from 'react-scroll';
+import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 
 import Video from '../components/Home/Video';
@@ -21,6 +22,7 @@ const Container = styled.div`
 
 const IndexPage = props => (
   <Layout path={props.location.pathname}>
+    <Helmet title="Inicio" />
     <Container>
       <About />
       <Services />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
+import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
@@ -60,6 +61,7 @@ const About = props => {
 
   return (
     <Layout path={props.location.pathname}>
+      <Helmet title="Nosotros" />
       <Container>
         <Picture />
         <Introduction center fontSize="1.3">

@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import AppLayout from '../components/Layout';
 
@@ -165,6 +166,7 @@ const content = [
 
 const Services = props => (
   <AppLayout>
+      <Helmet title="Servicios" />
     <Layout>
       {content.map((item, index) => (
         <Item key={index} image={item.image}>

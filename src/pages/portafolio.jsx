@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql, StaticQuery } from 'gatsby';
+import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 
@@ -60,6 +61,7 @@ const Portafolio = ({
 
   return (
     <Layout>
+      <Helmet title="Portafolio" />
       <Container>
         <Grid>
           {projects.map((item, index) => (

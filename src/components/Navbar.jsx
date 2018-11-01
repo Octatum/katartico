@@ -3,21 +3,19 @@ import { Link as _Link } from 'gatsby';
 import styled, { keyframes } from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import hexToRgba from 'hex-rgba';
-import Headroom from 'react-headroom';
 
-import miniLogoImg from '../../components/assets/mini-logo.svg';
-import throttle from '../../utilities/throttle';
+import miniLogoImg from './assets/mini-logo.svg';
+import throttle from '../utilities/throttle';
 
 const Container = styled.div`
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1;
-  margin-bottom: 1rem;
   box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  height: 6rem;
+  flex: ${({mini}) => mini ? 1 : 1.3};
 
   ::after {
     content: '';
@@ -32,7 +30,7 @@ const Container = styled.div`
 
 const FlexBox = styled.div.attrs({
   style: ({ mini }) => ({
-    padding: mini ? '1em 3em' : '2em 3em',
+    padding: mini ? '0 3em' : '0 3em',
   }),
 })`
   display: flex;
@@ -56,11 +54,10 @@ const Menu = styled.div`
   transform: translateX(-50%);
   max-height: 0;
   width: 50%;
-  overflow: auto;
+  overflow: hidden;
   background: black;
   box-shadow: 0 0 9px 9px transparent;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  /** Para animaciones que no se ejecutaran muchas veces, es valido hacer esto **/
 
   ${props =>
     props.open &&

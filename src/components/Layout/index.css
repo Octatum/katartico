@@ -45,3 +45,23 @@ body {
 strong {
   font-weight: bold;
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
