@@ -6,14 +6,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/projects`,
-        name: 'projects-md',
+        name: 'projects',
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/about`,
-        name: 'about-us-md',
+        name: 'about-us',
       }
     },
     'gatsby-transformer-remark',
