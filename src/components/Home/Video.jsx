@@ -55,6 +55,7 @@ class Video extends Component {
         <ReactPlayer
           url={movie}
           playing={this.state.playing}
+          playsinline
           muted
           onEnded={this.togglePlayback}
         />
