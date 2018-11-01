@@ -9,13 +9,14 @@ exports.createPages = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___title] }
-        filter: { fileAbsolutePath: { regex: "/.+/projects/.+/" } }
+        filter: {frontmatter: {type: {eq: "project"}}}
         limit: 1000
       ) {
         edges {
           node {
             frontmatter {
               path
+              type
             }
           }
         }
