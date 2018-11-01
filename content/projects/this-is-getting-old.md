@@ -2,6 +2,7 @@
 path: "/project/this-is-getting-old"
 title: "Aand another one"
 index: 4
+type: "project"
 ---
 ## Company X
 ### Project Y

@@ -1,5 +1,7 @@
 ---
+title: "María Elisa Ríos"
 index: 1
+type: "team-member"
 ---
 ## María Elisa Ríos
 

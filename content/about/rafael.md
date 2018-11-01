@@ -1,5 +1,7 @@
 ---
+title: "Rafael Camacho Ruiz"
 index: 2
+type: "team-member"
 ---
 ## Rafael Camacho Ruiz
 

@@ -2,6 +2,7 @@
 path: "/project/im-so-sorry"
 title: "Okay, I'm done now"
 index: 5
+type: "project"
 ---
 ## DJ Khaled
 ### His master plan
