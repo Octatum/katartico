@@ -18,36 +18,38 @@ const ChildrenContainer = styled.div`
 
 class ChildViewport extends React.Component {
   state = {
-    shouldMinimizeNavbar: false
-  }
+    shouldMinimizeNavbar: false,
+  };
   constructor(props) {
     super(props);
 
-    this.handleWaypointPositionChange = this.handleWaypointPositionChange.bind(this);
+    this.handleWaypointPositionChange = this.handleWaypointPositionChange.bind(
+      this
+    );
   }
 
   handleWaypointPositionChange(position) {
     this.setState(() => {
       return {
-        shouldMinimizeNavbar: position.currentPosition === "above"
-      }
-    })
+        shouldMinimizeNavbar: position.currentPosition === 'above',
+      };
+    });
   }
 
   render() {
     return (
       <Viewport>
-        <Navbar path={this.props.path} minimize={this.state.shouldMinimizeNavbar} />
+        <Navbar
+          path={this.props.path}
+          minimize={this.state.shouldMinimizeNavbar}
+        />
         <ChildrenContainer>
-          <Waypoint 
-            onPositionChange={this.handleWaypointPositionChange}
-          />
+          <Waypoint onPositionChange={this.handleWaypointPositionChange} />
           {this.props.children}
         </ChildrenContainer>
       </Viewport>
     );
   }
-
 }
 
 export default ChildViewport;

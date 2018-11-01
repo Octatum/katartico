@@ -89,6 +89,7 @@ const Anchor = styled.a`
   margin: 1rem 0;
   font-size: 1.5em;
   color: inherit;
+  text-transform: uppercase;
 `;
 
 const SocialMedia = styled.div`
@@ -261,7 +262,7 @@ const socialMedia = [
 class Navbar extends Component {
   state = {
     open: false,
-  };  
+  };
 
   toggleDropdown = () => {
     this.setState(prevState => ({
