@@ -15,7 +15,7 @@ const Layout = styled.div`
 
   grid-gap: 2rem;
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   }
@@ -26,7 +26,7 @@ const Item = styled.div`
   max-height: 230px;
   max-width: 230px;
   margin: 0 auto;
-  background-image: url('${({image}) => image}');
+  background-image: url('${({ image }) => image}');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -70,7 +70,7 @@ const ItemContent = styled.div`
   transform: translateY(-50%);
   height: 100%;
   width: 100%;
-`
+`;
 
 const ElementHeader = styled.div`
   text-transform: uppercase;
@@ -82,9 +82,13 @@ const ElementHeader = styled.div`
   }
 
   ${Item}:hover &::after {
-    content: "";
+    content: '';
     display: block;
-    background-image: radial-gradient(at center center, white, rgba(255, 255, 255, 0) 70%);
+    background-image: radial-gradient(
+      at center center,
+      white,
+      rgba(255, 255, 255, 0) 70%
+    );
     height: 0.2em;
     width: 100%;
     margin-top: 0.5em;
@@ -117,47 +121,47 @@ const ListItem = styled.div`
 const content = [
   {
     image: branding,
-    header: "Construcción de marca",
+    header: 'Construcción de marca',
     body: (
       <ElementBody>
         <ListItem>Naming</ListItem>
         <ListItem>Branding</ListItem>
       </ElementBody>
-    )
+    ),
   },
   {
     image: campania,
-    header: "Campañas publicitarias",
+    header: 'Campañas publicitarias',
     body: (
       <ElementBody>
         <ListItem>ATL</ListItem>
         <ListItem>BTL</ListItem>
       </ElementBody>
-    )
+    ),
   },
   {
     image: ejecuciones,
-    header: "Ejecuciones creativas",
+    header: 'Ejecuciones creativas',
     body: (
       <ElementBody>
         <ListItem>Diseño gráfico</ListItem>
         <ListItem>Fotografía</ListItem>
         <ListItem>Video</ListItem>
       </ElementBody>
-    )
+    ),
   },
   {
     image: presencia,
-    header: "Presencia digital",
+    header: 'Presencia digital',
     body: (
       <ElementBody>
         <ListItem>Desarrollo web</ListItem>
         <ListItem>Community management</ListItem>
         <ListItem>Marketing digital</ListItem>
       </ElementBody>
-    )
+    ),
   },
-]
+];
 
 const Services = props => (
   <AppLayout>

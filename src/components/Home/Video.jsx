@@ -59,11 +59,7 @@ class Video extends Component {
           muted
           onEnded={this.togglePlayback}
         />
-        {!this.state.playing && (
-          <PlayButton
-            onClick={this.togglePlayback}
-          />
-        )}
+        {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
       </Wrapper>
     </Section>
   );

@@ -41,7 +41,7 @@ const LogoGrid = styled.div`
     'a2 a2 a3 a3'
     'a4 a5 a5 a5';
   margin: 1.5em;
-  align-items: center
+  align-items: center;
 `;
 
 const GridItem = styled.div`
@@ -50,7 +50,7 @@ const GridItem = styled.div`
   justify-content: flex-start;
   grid-area: ${props => props.area};
 
-  &:nth-child(2n+1) > img {
+  &:nth-child(2n + 1) > img {
     padding-right: 1em;
   }
 

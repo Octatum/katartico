@@ -40,10 +40,10 @@ const Field = styled.div`
 
 const Label = styled.p`
   position: relative;
-  bottom: ${props => props.top ? '0' : '-3px'};
+  bottom: ${props => (props.top ? '0' : '-3px')};
   min-width: 5em;
   padding-right: 0.5em;
-  align-self: ${props => props.top ? 'flex-start' : 'flex-end'};
+  align-self: ${props => (props.top ? 'flex-start' : 'flex-end')};
 `;
 
 const Input = styled.input`

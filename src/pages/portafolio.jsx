@@ -18,7 +18,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5% 10%;
   width: 100%;
-`
+`;
 
 const GridItem = styled.div`
   position: relative;
@@ -26,37 +26,35 @@ const GridItem = styled.div`
   height: 100%;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
     background: grey;
   }
-`
+`;
 
 const SquarePicture = styled.div`
   width: 100%;
   background: ${props => props.theme.main};
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     padding-bottom: 100%;
   }
-`
+`;
 
 const ItemTitle = styled.p`
   font-size: 1.2em;
   width: 100%;
   margin: 4px 0;
-`
+`;
 
 const Portafolio = ({
   data: {
-    allMarkdownRemark: {
-      edges
-    }
-  }
+    allMarkdownRemark: { edges },
+  },
 }) => {
   const projects = edges || [];
 
@@ -76,15 +74,15 @@ const Portafolio = ({
       </Container>
     </Layout>
   );
-}
+};
 
 export default props => (
   <StaticQuery
     query={graphql`
       query {
         allMarkdownRemark(
-          sort: {fields: frontmatter___index},
-          filter: {fileAbsolutePath: {regex: "/.+/projects/.+/"}}
+          sort: { fields: frontmatter___index }
+          filter: { fileAbsolutePath: { regex: "/.+/projects/.+/" } }
         ) {
           edges {
             node {

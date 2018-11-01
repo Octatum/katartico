@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const FlexBox = styled.div.attrs({
   style: ({ mini }) => ({
-    padding: mini ? '1.5em 3em' : '1em 3em',
+    padding: mini ? '1em 3em' : '2em 3em',
   }),
 })`
   display: flex;
@@ -56,7 +56,7 @@ const Menu = styled.div`
   transform: translateX(-50%);
   max-height: 0;
   width: 50%;
-  overflow: hidden;
+  overflow: auto;
   background: black;
   box-shadow: 0 0 9px 9px transparent;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -78,14 +78,13 @@ const LinkList = styled.div`
 
 const Link = styled(_Link)`
   margin: 1rem 0;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
   cursor: pointer;
 
   ::first-letter {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 `;
 
@@ -113,16 +112,14 @@ const BurgerMenu = styled.div`
 `;
 
 const BurgerText = styled.span`
-  display: inline-block;
-  transition: opacity 300ms ease-out,
-    max-width 300ms cubic-bezier(0.34, 0.55, 0.25, 0.83);
+  display: block;
+  transition: opacity 200ms ease-out,
+    transform 200ms cubic-bezier(0.34, 0.55, 0.25, 0.83);
   font-size: 1.5em;
-  max-width: 3em;
-  overflow: hidden;
 
   .open & {
     opacity: 0;
-    max-width: 0;
+    transform: translateX(-50px);
   }
 `;
 
@@ -130,7 +127,7 @@ const BurgerRegion = styled.div`
   position: relative;
   height: 1.85em;
   width: 40px;
-  margin: 0 1rem;
+  margin-left: 1rem;
   cursor: pointer;
 `;
 
@@ -340,12 +337,12 @@ class Navbar extends Component {
             <SocialMedia>{socialMediaLinks}</SocialMedia>
           </Menu>
           <BurgerMenu className={this.state.open && 'open'}>
+            <BurgerText>Menú</BurgerText>
             <BurgerRegion onClick={this.toggleDropdown}>
               <BurgerBar />
               <BurgerBar />
               <BurgerBar />
             </BurgerRegion>
-            <BurgerText>Menú</BurgerText>
           </BurgerMenu>
         </FlexBox>
       </Container>

@@ -34,7 +34,7 @@ const MarkdownContainer = styled.div`
   p:first-of-type {
     padding-top: 1em;
   }
-`
+`;
 
 const PhotoGrid = styled.div`
   display: grid;
@@ -48,44 +48,41 @@ const PhotoGrid = styled.div`
   position: relative;
   height: 84vw;
   width: 84vw;
-`
+`;
 
 const Picture = styled.div`
   height: 100%;
   width: 100%;
   background: ${props => props.theme.main};
   grid-area: ${props => props.area};
-`
+`;
 
 export default function Template({ data }) {
   const {
-    markdownRemark: {
-      frontmatter,
-      html
-    }
+    markdownRemark: { frontmatter, html },
   } = data;
 
   return (
     <Layout>
       <Container>
-        <MarkdownContainer dangerouslySetInnerHTML={{__html: html}} />
+        <MarkdownContainer dangerouslySetInnerHTML={{ __html: html }} />
         <PhotoGrid>
-          <Picture area='a1'/>
-          <Picture area='a2'/>
-          <Picture area='a3'/>
-          <Picture area='a4'/>
-          <Picture area='a5'/>
-          <Picture area='a6'/>
-          <Picture area='a7'/>
+          <Picture area="a1" />
+          <Picture area="a2" />
+          <Picture area="a3" />
+          <Picture area="a4" />
+          <Picture area="a5" />
+          <Picture area="a6" />
+          <Picture area="a7" />
         </PhotoGrid>
       </Container>
     </Layout>
-  )
+  );
 }
 
 export const pageQuery = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: {path: {eq: $path}}) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         title
         path
@@ -93,4 +90,4 @@ export const pageQuery = graphql`
       html
     }
   }
-`
+`;
