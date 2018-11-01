@@ -166,7 +166,7 @@ const content = [
 
 const Services = props => (
   <AppLayout>
-      <Helmet title="Servicios" />
+    <Helmet title="Servicios" />
     <Layout>
       {content.map((item, index) => (
         <Item key={index} image={item.image}>

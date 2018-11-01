@@ -15,7 +15,7 @@ const Container = styled.div`
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  flex: ${({mini}) => mini ? 1 : 1.3};
+  flex: ${({ mini }) => (mini ? 1 : 1.3)};
 
   ::after {
     content: '';
@@ -28,11 +28,8 @@ const Container = styled.div`
   }
 `;
 
-const FlexBox = styled.div.attrs({
-  style: ({ mini }) => ({
-    padding: mini ? '0 3em' : '0 3em',
-  }),
-})`
+const FlexBox = styled.div`
+  padding: 0 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -264,32 +261,7 @@ const socialMedia = [
 class Navbar extends Component {
   state = {
     open: false,
-    minimize: false,
-  };
-
-  constructor(props) {
-    super(props);
-
-    this.handleScroll = this.handleScroll.bind(this);
-
-    this.handleScroll = throttle(this.handleScroll, 1000 / 30);
-  }
-
-  componentDidMount = () => {
-    window.addEventListener('scroll', this.handleScroll);
-    this.handleScroll();
-  };
-
-  componentWillUnmount = () => {
-    window.removeEventListener('scroll', this.handleScroll);
-  };
-
-  handleScroll() {
-    console.log('Time!');
-    this.setState(() => ({
-      minimize: window.pageYOffset > 0,
-    }));
-  }
+  };  
 
   toggleDropdown = () => {
     this.setState(prevState => ({
@@ -326,8 +298,8 @@ class Navbar extends Component {
     ));
 
     return (
-      <Container mini={this.state.minimize}>
-        <FlexBox mini={this.state.minimize}>
+      <Container mini={this.props.minimize}>
+        <FlexBox mini={this.props.minimize}>
           <Logo src={miniLogoImg} />
           <Menu open={this.state.open}>
             <LinkList>{navbarLinks}</LinkList>
