@@ -16,7 +16,7 @@ const Layout = ({ children, path }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <Helmet
-        titleTemplate={'%s - Katartico'}
+        titleTemplate={'Katartico Agencia de Publicidad - %s'}
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },

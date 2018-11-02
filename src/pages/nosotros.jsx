@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const Introduction = styled.p`
   line-height: 1.2;
-  font-size: 1.3em;
+  font-size: 17px;
   text-align: center;
   margin: 2rem 0;
 `;
@@ -36,15 +36,15 @@ const Person = styled.div`
   margin-bottom: 2em;
 
   h2 {
-    font-size: 5vw;
+    font-size: 1.3em;
     font-weight: bold;
     width: 100%;
   }
 
   p {
-    font-size: 2.4vw;
+    font-size: 17px;
     line-height: 1.2;
-    margin: 1.5rem 0;
+    margin: 1em 0;
   }
 
   em {

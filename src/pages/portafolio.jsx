@@ -17,7 +17,8 @@ const Container = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5% 10%;
+  grid-gap: 5%;
+  grid-row-gap: 3vmax;
   width: 100%;
 `;
 

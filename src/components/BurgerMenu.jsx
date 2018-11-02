@@ -24,7 +24,7 @@ const BurgerText = styled.span`
 const BurgerRegion = styled.div`
   position: relative;
   height: 1.85em;
-  width: 40px;
+  width: 2rem;
   margin-left: 1rem;
   cursor: pointer;
 `;
@@ -34,7 +34,7 @@ const topBarOpen = keyframes`
     transform: translate3d(0, 12px, 0);
   }
   100% {
-    transform: translate3d(0, 12px, 0) rotate(45deg);
+    transform: translate3d(0, 12px, 0) rotate(60deg);
   }
 `;
 
@@ -43,13 +43,13 @@ const bottomBarOpen = keyframes`
     transform: translate3d(0, -12px, 0);
   }
   100% {
-    transform: translate3d(0, -12px, 0) rotate(-45deg);
+    transform: translate3d(0, -12px, 0) rotate(-60deg);
   }
 `;
 
 const topBarClose = keyframes`
   0% {
-    transform: translate3d(0, 12px, 0) rotate(45deg);
+    transform: translate3d(0, 12px, 0) rotate(60deg);
   }
   50% {
     transform: translate3d(0, 12px, 0) rotate(0deg);
@@ -61,7 +61,7 @@ const topBarClose = keyframes`
 
 const bottomBarClose = keyframes`
   0% {
-    transform: translate3d(0, -12px, 0) rotate(-45deg);
+    transform: translate3d(0, -12px, 0) rotate(-60deg);
   }
   50% {
     transform: translate3d(0, -12px, 0) rotate(0deg);
@@ -78,7 +78,7 @@ const BurgerBar = styled.span`
   display: block;
   position: absolute;
   width: 100%;
-  border-top: 6px solid ${props => props.theme.white};
+  border-top: 4px solid ${props => props.theme.white};
   transform-origin: 50% 50%;
   transition: transform var(--menu-animation-duration)
     var(--menu-animation-timing);
@@ -90,7 +90,7 @@ const BurgerBar = styled.span`
   }
 
   &:nth-child(2) {
-    top: 12px;
+    top: 8px;
     opacity: 1;
     transition: transform var(--menu-animation-duration)
         var(--menu-animation-timing),
@@ -98,7 +98,7 @@ const BurgerBar = styled.span`
   }
 
   &:nth-child(3) {
-    top: 24px;
+    top: 16px;
     animation: ${bottomBarClose} var(--menu-animation-duration)
       var(--menu-animation-timing) forwards;
   }

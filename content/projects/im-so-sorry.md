@@ -1,6 +1,6 @@
 ---
 path: "/project/im-so-sorry"
-title: "Okay, I'm done now"
+title: "I'm done "
 index: 5
 type: "project"
 ---

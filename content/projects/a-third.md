@@ -1,6 +1,6 @@
 ---
 path: "/project/a-third"
-title: "And another one"
+title: "And another"
 index: 3
 type: "project"
 ---

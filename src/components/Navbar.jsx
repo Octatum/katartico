@@ -11,7 +11,9 @@ const Container = styled.div`
   position: relative;
   top: 0;
   z-index: 1;
-  box-shadow: 0 0 9px 9px ${props => hexToRgba(props.theme.main, 40)};
+  -webkit-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
+-moz-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
+box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -72,14 +74,14 @@ const LinkList = styled.div`
 
 const Link = styled(_Link)`
   margin: 1rem 0;
-  font-size: 1.3em;
+  font-size: 1em;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 
   ::first-letter {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 `;
 
@@ -88,7 +90,7 @@ const ScrollLink = Link.withComponent(_ScrollLink);
 
 const Anchor = styled.a`
   margin: 1rem 0;
-  font-size: 1.5em;
+  font-size: 1em;
   color: inherit;
   text-transform: uppercase;
 `;
@@ -109,12 +111,12 @@ const links = [
     name: 'nosotros',
   },
   {
-    path: '/portafolio',
-    name: 'portafolio',
-  },
-  {
     path: '/servicios',
     name: 'servicios',
+  },
+  {
+    path: '/portafolio',
+    name: 'portafolio',
   },
   {
     path: '/',

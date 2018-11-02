@@ -24,7 +24,7 @@ const MarkdownContainer = styled.div`
 
   h3 {
     font-size: 1.4em;
-    font-weight: bold;
+    font-style: italic;
   }
 
   p {

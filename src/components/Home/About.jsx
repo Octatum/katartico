@@ -11,15 +11,6 @@ const Header = styled.h2`
   margin: 0 1em;
   font-size: 1.5em;
   font-weight: bold;
-
-  ::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    height: 1px;
-    width: 100%;
-    background: ${props => props.theme.white};
-  }
 `;
 
 const Link = styled(_Link)`
