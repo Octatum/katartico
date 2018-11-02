@@ -17,7 +17,7 @@ const BurgerText = styled.span`
 
   .open & {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(50px);
   }
 `;
 
@@ -131,7 +131,7 @@ function BurgerMenu(props) {
         <BurgerBar />
         <BurgerBar />
       </BurgerRegion>
-      <BurgerText>Menú</BurgerText>
+      <BurgerText>&nbsp; Menú</BurgerText>
     </Container>
   );
 }

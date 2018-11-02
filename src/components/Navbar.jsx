@@ -75,6 +75,7 @@ const Link = styled(_Link)`
   font-size: 1.3em;
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
 
   ::first-letter {
