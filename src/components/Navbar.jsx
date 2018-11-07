@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
+import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
+import { breakpoints, device } from '../utilities/device';
 
 import miniLogoImg from './assets/mini-logo.svg';
 
@@ -71,6 +73,11 @@ const LinkList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${device.laptop} {
+    flex-direction: row;
+    margin-left: auto;
+  }
 `;
 
 const Link = styled(_Link)`
@@ -83,6 +90,15 @@ const Link = styled(_Link)`
 
   ::first-letter {
     font-size: 1.2em;
+  }
+
+  ${device.tablet} {
+    font-size: 1.1em;
+  }
+
+  ${device.laptop} {
+    font-size: 1em;
+    margin: 1.5rem;
   }
 `;
 
@@ -100,6 +116,15 @@ const SocialMedia = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.3em;
+
+  ${device.tablet} {
+    margin: 0 1rem 0 auto;
+  }
+
+  ${device.laptop} {
+    margin: 0 1rem;
+  }
 `;
 
 const links = [
@@ -183,15 +208,32 @@ class Navbar extends Component {
     return (
       <Container mini={this.props.minimize}>
         <FlexBox>
+          {console.log(device)}
           <Logo src={miniLogoImg} mini={this.props.minimize} />
-          <Menu open={this.state.open}>
+          <MediaQuery maxWidth={breakpoints.tablet - 1}>
+            <Menu open={this.state.open}>
+              <LinkList>{navbarLinks}</LinkList>
+              <SocialMedia>{socialMediaLinks}</SocialMedia>
+            </Menu>
+            <BurgerMenu
+              open={this.state.open}
+              toggleDropdown={this.toggleDropdown}
+            />
+          </MediaQuery>
+          <MediaQuery minWidth={breakpoints.tablet} maxWidth={breakpoints.laptop - 1}>
+            <Menu open={this.state.open}>
+              <LinkList>{navbarLinks}</LinkList>
+            </Menu>
+            <SocialMedia>{socialMediaLinks}</SocialMedia>
+            <BurgerMenu
+              open={this.state.open}
+              toggleDropdown={this.toggleDropdown}
+            />
+          </MediaQuery>
+          <MediaQuery minWidth={breakpoints.laptop}>
             <LinkList>{navbarLinks}</LinkList>
             <SocialMedia>{socialMediaLinks}</SocialMedia>
-          </Menu>
-          <BurgerMenu
-            open={this.state.open}
-            toggleDropdown={this.toggleDropdown}
-          />
+          </MediaQuery>
         </FlexBox>
       </Container>
     );
