@@ -12,8 +12,8 @@ const Container = styled.div`
   top: 0;
   z-index: 1;
   -webkit-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
--moz-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
+  -moz-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
+  box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -31,7 +31,7 @@ box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
 `;
 
 const FlexBox = styled.div`
-  padding: 0 3em;
+  padding: 1em 3em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +41,8 @@ const FlexBox = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 100%;
+  height: ${({ mini }) => (mini ? '3em' : '4em')};
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 `;
 
 const Menu = styled.div`
@@ -181,8 +182,8 @@ class Navbar extends Component {
 
     return (
       <Container mini={this.props.minimize}>
-        <FlexBox mini={this.props.minimize}>
-          <Logo src={miniLogoImg} />
+        <FlexBox>
+          <Logo src={miniLogoImg} mini={this.props.minimize} />
           <Menu open={this.state.open}>
             <LinkList>{navbarLinks}</LinkList>
             <SocialMedia>{socialMediaLinks}</SocialMedia>

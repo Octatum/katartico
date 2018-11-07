@@ -23,36 +23,35 @@ const BurgerText = styled.span`
 
 const BurgerRegion = styled.div`
   position: relative;
-  height: 1.85em;
+  height: 1.5em;
   width: 2rem;
-  margin-left: 1rem;
   cursor: pointer;
 `;
 
 const topBarOpen = keyframes`
   50% {
-    transform: translate3d(0, 12px, 0);
+    transform: translate3d(0, 8px, 0);
   }
   100% {
-    transform: translate3d(0, 12px, 0) rotate(60deg);
+    transform: translate3d(0, 8px, 0) rotate(45deg);
   }
 `;
 
 const bottomBarOpen = keyframes`
   50% {
-    transform: translate3d(0, -12px, 0);
+    transform: translate3d(0, -8px, 0);
   }
   100% {
-    transform: translate3d(0, -12px, 0) rotate(-60deg);
+    transform: translate3d(0, -8px, 0) rotate(-45deg);
   }
 `;
 
 const topBarClose = keyframes`
   0% {
-    transform: translate3d(0, 12px, 0) rotate(60deg);
+    transform: translate3d(0, 8px, 0) rotate(45deg);
   }
   50% {
-    transform: translate3d(0, 12px, 0) rotate(0deg);
+    transform: translate3d(0, 8px, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -61,10 +60,10 @@ const topBarClose = keyframes`
 
 const bottomBarClose = keyframes`
   0% {
-    transform: translate3d(0, -12px, 0) rotate(-60deg);
+    transform: translate3d(0, -8px, 0) rotate(-45deg);
   }
   50% {
-    transform: translate3d(0, -12px, 0) rotate(0deg);
+    transform: translate3d(0, -8px, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, 0, 0);
