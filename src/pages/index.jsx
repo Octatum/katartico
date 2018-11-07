@@ -15,7 +15,7 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   min-height: 100vh;
-  padding-top: 3em;
+  padding: 3em 0;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;

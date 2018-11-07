@@ -48,6 +48,7 @@ const Label = styled.p`
 
 const Input = styled.input`
   flex: 1;
+  min-width: 0;
   padding: 0.3em;
   border: 0;
   font-family: inherit;
@@ -57,6 +58,7 @@ const Input = styled.input`
 
 const TextArea = styled.textarea`
   flex: 1;
+  min-width: 0;
   min-height: 100px;
   padding: 0.3em;
   font-family: inherit;
@@ -65,7 +67,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  width: 25%;
+  min-width: 25%;
   padding: 0.5em;
   margin-left: auto;
   border: none;
