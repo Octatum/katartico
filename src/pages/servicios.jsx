@@ -71,11 +71,12 @@ const ItemContent = styled.div`
   transform: translateY(-50%);
   height: 100%;
   width: 100%;
+  font-size: 0.8rem;
 `;
 
 const ElementHeader = styled.div`
   text-transform: uppercase;
-  max-width: 70%;
+  max-width: 95%;
 
   ${Item}:hover & {
     position: absolute;
@@ -99,7 +100,7 @@ const ElementHeader = styled.div`
 `;
 
 const ElementBody = styled.div`
-  max-width: 70%;
+  max-width: 90%;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -110,13 +111,14 @@ const ElementBody = styled.div`
   ${Item}:hover & {
     position: absolute;
     top: 40%;
+    bottom: 0;
     height: auto;
     transform: scaleY(1);
   }
 `;
 
 const ListItem = styled.div`
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 `;
 
 const content = [
@@ -176,17 +178,6 @@ const Services = props => (
           </ItemContent>
         </Item>
       ))}
-      {/* <Item image={branding}>
-        <ItemContent>
-          <ElementHeader>
-        Construcción de marca
-          </ElementHeader>
-          <ElementBody>
-        <ListItem>Naming</ListItem>
-        <ListItem>Branding</ListItem>
-          </ElementBody>
-        </ItemContent>
-      </Item> */}
     </Layout>
   </AppLayout>
 );
