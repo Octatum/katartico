@@ -1,7 +1,9 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
+
+import apostropheImg from '../components/assets/apostrophe.svg';
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +15,27 @@ const Container = styled.div`
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
+
+const BackButton = styled(_Link)`
+  position: relative;
+  height: 4em;
+  width: 4.5em;
+  align-self: flex-start;
+  margin: 2em 0;
+  text-decoration: none;
+  color: inherit;
+
+  img {
+    height: 100%;
+  }
+
+  ::after {
+    content: "Regresar";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+`
 
 const MarkdownContainer = styled.div`
   margin-bottom: 3rem;
@@ -65,6 +88,9 @@ export default function Template({ data }) {
   return (
     <Layout>
       <Container>
+        <BackButton to="/portafolio">
+          <img src={apostropheImg} />
+        </BackButton>
         <MarkdownContainer dangerouslySetInnerHTML={{ __html: html }} />
         <PhotoGrid>
           <Picture area="a1" />
@@ -75,6 +101,9 @@ export default function Template({ data }) {
           <Picture area="a6" />
           <Picture area="a7" />
         </PhotoGrid>
+        <BackButton to="/portafolio">
+          <img src={apostropheImg} />
+        </BackButton>
       </Container>
     </Layout>
   );
