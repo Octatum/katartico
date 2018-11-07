@@ -37,13 +37,6 @@ const Quote = styled.div`
   }
 `;
 
-const BigPicture = styled.div`
-  height: 300px;
-  width: 100%;
-  margin: 2em 0;
-  background: ${props => props.theme.main};
-`;
-
 const About = () => (
   <Section>
     <Header>

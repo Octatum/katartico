@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
+import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 
 import apostropheImg from '../components/assets/apostrophe.svg';
@@ -25,10 +26,6 @@ const BackButton = styled(_Link)`
   text-decoration: none;
   color: inherit;
 
-  img {
-    height: 100%;
-  }
-
   ::after {
     content: "Regresar";
     position: absolute;
@@ -37,7 +34,11 @@ const BackButton = styled(_Link)`
   }
 `
 
-const MarkdownContainer = styled.div`
+const Apostrophe = styled.img`
+  height: 100%;
+`
+
+const ReactMarkdown = styled(_ReactMarkdown)`
   margin-bottom: 3rem;
 
   h2 {
@@ -82,16 +83,16 @@ const Picture = styled.div`
 
 export default function Template({ data }) {
   const {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: { rawMarkdownBody },
   } = data;
 
   return (
     <Layout>
       <Container>
         <BackButton to="/portafolio">
-          <img src={apostropheImg} />
+          <Apostrophe src={apostropheImg} />
         </BackButton>
-        <MarkdownContainer dangerouslySetInnerHTML={{ __html: html }} />
+        <ReactMarkdown source={rawMarkdownBody} />
         <PhotoGrid>
           <Picture area="a1" />
           <Picture area="a2" />
@@ -102,7 +103,7 @@ export default function Template({ data }) {
           <Picture area="a7" />
         </PhotoGrid>
         <BackButton to="/portafolio">
-          <img src={apostropheImg} />
+          <Apostrophe src={apostropheImg} />
         </BackButton>
       </Container>
     </Layout>
@@ -112,11 +113,7 @@ export default function Template({ data }) {
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      frontmatter {
-        title
-        path
-      }
-      html
+      rawMarkdownBody
     }
   }
 `;

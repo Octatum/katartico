@@ -1,7 +1,7 @@
 import BurgerMenu from './BurgerMenu';
 import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import hexToRgba from 'hex-rgba';
 

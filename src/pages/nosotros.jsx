@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-import ReactMarkdown from 'react-markdown';
+import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 
 const Container = styled.div`
@@ -34,7 +34,9 @@ const Person = styled.div`
   font-size: 1em;
   text-align: left;
   margin-bottom: 2em;
+`;
 
+const ReactMarkdown = styled(_ReactMarkdown)`
   h2 {
     font-size: 1.3em;
     font-weight: bold;
@@ -50,7 +52,7 @@ const Person = styled.div`
   em {
     font-style: italic;
   }
-`;
+`
 
 const About = props => {
   const {

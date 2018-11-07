@@ -4,7 +4,6 @@ import { Element } from 'react-scroll';
 import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 
-import Video from '../components/Home/Video';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import Portafolio from '../components/Home/Portafolio';
