@@ -3,6 +3,7 @@ import { Link, graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
+import { device } from '../utilities/device';
 
 const Container = styled.div`
   display: flex;
@@ -20,12 +21,28 @@ const Grid = styled.div`
   grid-gap: 5%;
   grid-row-gap: 3vmax;
   width: 100%;
+
+  ${device.tablet} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  ${device.laptop} {
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
+
+const GridItemContainer = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+`
 
 const GridItem = styled.div`
   position: relative;
-  width: 100%;
   height: 100%;
+  max-height: calc(230px + 4em);
+  width: 100%;
+  max-width: 230px;
 
   &::after {
     content: '';
@@ -66,12 +83,14 @@ const Portafolio = ({
       <Container>
         <Grid>
           {projects.map((item, index) => (
-            <GridItem key={index}>
-              <Link to={item.node.frontmatter.path}>
-                <SquarePicture />
-              </Link>
-              <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
-            </GridItem>
+            <GridItemContainer>
+              <GridItem key={index}>
+                <Link to={item.node.frontmatter.path}>
+                  <SquarePicture />
+                </Link>
+                <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
+              </GridItem>
+            </GridItemContainer>
           ))}
         </Grid>
       </Container>
