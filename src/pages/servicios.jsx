@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import AppLayout from '../components/Layout';
+import { device } from '../utilities/device';
 
 import branding from '../components/Services/assets/branding.png';
 import campania from '../components/Services/assets/campania.png';
@@ -19,6 +20,12 @@ const Layout = styled.div`
   @supports (display: grid) {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  ${device.laptop} {
+    @supports (display: grid) {
+      grid-template: 500px / repeat(4, 1fr);
+    }
   }
 `;
 
@@ -59,6 +66,21 @@ const Item = styled.div`
   color: white;
   text-align: center;
   text-shadow: 0px 0.3em 0.3em black;
+
+  ${device.tablet} {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  ${device.laptop} {
+    height: 100%;
+    max-height: none;
+    max-width: 200px;
+
+    &::after {
+      display: none;
+    }
+  }
 `;
 
 const ItemContent = styled.div`
@@ -72,6 +94,10 @@ const ItemContent = styled.div`
   height: 100%;
   width: 100%;
   font-size: 0.8rem;
+
+  ${device.tablet} {
+    font-size: 1.2rem;
+  }
 `;
 
 const ElementHeader = styled.div`
@@ -97,6 +123,14 @@ const ElementHeader = styled.div`
     margin-bottom: 0.75em;
     transition: inherit;
   }
+
+  ${device.laptop} {
+    max-width: 85%;
+
+    ${Item}:hover & {
+      bottom: 50%;
+    }
+  }
 `;
 
 const ElementBody = styled.div`
@@ -114,6 +148,14 @@ const ElementBody = styled.div`
     bottom: 0;
     height: auto;
     transform: scaleY(1);
+  }
+
+  ${device.laptop} {
+    width: 80%;
+
+    ${Item}:hover & {
+      top: 50%;
+    }
   }
 `;
 
