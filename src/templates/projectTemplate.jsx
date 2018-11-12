@@ -2,8 +2,9 @@ import React from 'react';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
+import MediaQuery from 'react-responsive';
 import Layout from '../components/Layout';
-import { device } from '../utilities/device';
+import { breakpoints, device } from '../utilities/device';
 
 import apostropheImg from '../components/assets/apostrophe.svg';
 
@@ -37,6 +38,12 @@ const BackButton = styled(_Link)`
 
 const Apostrophe = styled.img`
   height: 100%;
+`
+
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
 `
 
 const ReactMarkdown = styled(_ReactMarkdown)`
@@ -73,6 +80,11 @@ const ReactMarkdown = styled(_ReactMarkdown)`
       font-size: 1.2em;
     }
   }
+
+  ${device.laptop} {
+    width: 60%;
+    margin: 0;
+  }
 `;
 
 const PhotoGrid = styled.div`
@@ -90,9 +102,17 @@ const PhotoGrid = styled.div`
     grid-gap: 1em;
     position: relative;
     height: 84vw;
-    max-height: 750px;
     width: 84vw;
-    max-width: 750px;
+  }
+
+  ${device.laptop} {
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas:
+      'a1 a2 a3'
+      'a4 a4 a3'
+      'a5 a6 a6';
+    grid-gap: 2em;
   }
 `;
 
@@ -104,9 +124,9 @@ const Picture = styled.div`
 
   ${device.tablet} {
     height: 100%;
-    width: 100%;
+    width: ${props => props.large ? '20em' : '100%'};
     margin: 0;
-    grid-area: ${props => props.area};
+    grid-area: ${props => props.large ? '' : props.area};
   }
 `;
 
@@ -121,16 +141,34 @@ export default function Template({ data }) {
         <BackButton to="/portafolio">
           <Apostrophe src={apostropheImg} />
         </BackButton>
-        <ReactMarkdown source={rawMarkdownBody} />
-        <PhotoGrid>
-          <Picture area="a1" />
-          <Picture area="a2" />
-          <Picture area="a3" />
-          <Picture area="a4" />
-          <Picture area="a5" />
-          <Picture area="a6" />
-          <Picture area="a7" />
-        </PhotoGrid>
+        {/* Mobile/Tablet view */}
+        <MediaQuery maxWidth={breakpoints.laptop - 1}>
+          <ReactMarkdown source={rawMarkdownBody} />
+          <PhotoGrid>
+            <Picture area="a1" />
+            <Picture area="a2" />
+            <Picture area="a3" />
+            <Picture area="a4" />
+            <Picture area="a5" />
+            <Picture area="a6" />
+            <Picture area="a7" />
+          </PhotoGrid>
+        </MediaQuery>
+        {/* Desktop view */}
+        <MediaQuery minWidth={breakpoints.laptop}>
+          <TextContainer>
+            <ReactMarkdown source={rawMarkdownBody} />
+            <Picture large />
+          </TextContainer>
+          <PhotoGrid>
+            <Picture area="a1" />
+            <Picture area="a2" />
+            <Picture area="a3" />
+            <Picture area="a4" />
+            <Picture area="a5" />
+            <Picture area="a6" />
+          </PhotoGrid>
+        </MediaQuery>
         <BackButton to="/portafolio">
           <Apostrophe src={apostropheImg} />
         </BackButton>
