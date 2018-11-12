@@ -93,7 +93,13 @@ const GridItem = styled.div`
 
 const Logo = styled.img`
   height: 100%;
+  width: 100%;
   max-width: 300px;
+  margin: 1em;
+
+  ${device.tablet} {
+    margin: 0;
+  }
 `;
 
 const BigPicture = styled.div`
