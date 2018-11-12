@@ -209,6 +209,7 @@ class Navbar extends Component {
       <Container mini={this.props.minimize}>
         <FlexBox>
           <Logo src={miniLogoImg} mini={this.props.minimize} />
+          {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
@@ -219,6 +220,7 @@ class Navbar extends Component {
               toggleDropdown={this.toggleDropdown}
             />
           </MediaQuery>
+          {/* Tablet view */}
           <MediaQuery minWidth={breakpoints.tablet} maxWidth={breakpoints.laptop - 1}>
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
@@ -229,6 +231,7 @@ class Navbar extends Component {
               toggleDropdown={this.toggleDropdown}
             />
           </MediaQuery>
+          {/* Desktop view */}
           <MediaQuery minWidth={breakpoints.laptop}>
             <LinkList>{navbarLinks}</LinkList>
             <SocialMedia>{socialMediaLinks}</SocialMedia>
