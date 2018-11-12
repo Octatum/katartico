@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import _ReactPlayer from 'react-player';
@@ -17,6 +18,10 @@ const ReactPlayer = styled(_ReactPlayer)`
   width: 100%;
   height: auto;
   max-height: 360px;
+
+  ${device.laptop} {
+    max-height: 540px;
+  }
 `;
 
 const PlayButton = styled.div`
@@ -58,6 +63,8 @@ class Video extends Component {
           playsinline
           muted
           onEnded={this.togglePlayback}
+          width='100%'
+          height='100%'
         />
         {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
       </Wrapper>

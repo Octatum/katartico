@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { device } from '../../utilities/device';
 
 import Section from '../Section';
+import apostropheImg from '../assets/apostrophe.svg';
 
 const Header = styled.h2`
   position: relative;
@@ -20,10 +22,19 @@ const Header = styled.h2`
   }
 `;
 
+const FormContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  padding: 0 5%;
+`
+
 const Form = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 3rem;
+  align-self: center;
+  width: 100%;
+  max-width: 600px;
   font-size: 1.2em;
 `;
 
@@ -79,6 +90,22 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const ApostropheDiv = styled.div`
+  display: none;
+  width: 10em;
+  padding-top: 1em;
+
+  ${device.laptop} {
+    display: flex;
+    align-items: flex-start;
+  }
+`
+
+const Apostrophe = styled.img`
+  width: 100%;
+  opacity: 0.8;
+`
+
 class Contact extends Component {
   state = {
     messageSent: false,
@@ -110,47 +137,52 @@ class Contact extends Component {
   render = () => (
     <Section>
       <Header>Contacto</Header>
-      <Form>
-        <Data>
-          <Field>
-            <Label>Nombre</Label>
-            <Input
-              disabled={this.state.messageSent}
-              type="text"
-              name="name"
-              autoComplete="name"
-              value={this.state.name}
-              onChange={this.handleChange}
-              required
-            />
-          </Field>
-          <Field>
-            <Label>Correo</Label>
-            <Input
-              disabled={this.state.messageSent}
-              type="text"
-              name="email"
-              autoComplete="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-              required
-            />
-          </Field>
-          <Field>
-            <Label top>Mensaje</Label>
-            <TextArea
-              disabled={this.state.messageSent}
-              name="message"
-              value={this.state.message}
-              onChange={this.handleChange}
-              required
-            />
-          </Field>
-        </Data>
-        <Button disabled={this.state.messageSent} onClick={this.dummyAlert}>
-          Enviar
-        </Button>
-      </Form>
+      <FormContainer>
+        <Form>
+          <Data>
+            <Field>
+              <Label>Nombre</Label>
+              <Input
+                disabled={this.state.messageSent}
+                type="text"
+                name="name"
+                autoComplete="name"
+                value={this.state.name}
+                onChange={this.handleChange}
+                required
+              />
+            </Field>
+            <Field>
+              <Label>Correo</Label>
+              <Input
+                disabled={this.state.messageSent}
+                type="text"
+                name="email"
+                autoComplete="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                required
+              />
+            </Field>
+            <Field>
+              <Label top>Mensaje</Label>
+              <TextArea
+                disabled={this.state.messageSent}
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+                required
+              />
+            </Field>
+          </Data>
+          <Button disabled={this.state.messageSent} onClick={this.dummyAlert}>
+            Enviar
+          </Button>
+        </Form>
+        <ApostropheDiv>
+          <Apostrophe src={apostropheImg} />
+        </ApostropheDiv>
+      </FormContainer>
     </Section>
   );
 }

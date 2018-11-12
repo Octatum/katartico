@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
+import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import bissuImg from '../assets/logos/bissu.svg';
@@ -40,8 +41,25 @@ const LogoGrid = styled.div`
     'a0 a0 a0 a1'
     'a2 a2 a3 a3'
     'a4 a5 a5 a5';
+  max-height: 20em;
   margin: 1.5em;
   align-items: center;
+
+  ${device.tablet} {
+    grid-template-columns: 35% 25% 15% 25%;
+    grid-template-rows: 45% auto 45%;
+    grid-template-areas:
+      'a0 a1 a1 a2'
+      '. . . .'
+      'a3 a4 a5 a5';
+    height: 20em;
+    max-height: none;
+    padding: 0 1em;
+  }
+
+  ${device.laptop} {
+    max-height: 25em;
+  }
 `;
 
 const GridItem = styled.div`
@@ -61,11 +79,21 @@ const GridItem = styled.div`
   &:nth-child(2n) > img {
     padding-left: 1em;
   }
+
+  ${device.tablet} {
+    justify-content: center !important;
+    height: 100%;
+    padding: 0 10%;
+
+    & > img {
+      padding: 0 !important;
+    }
+  }
 `;
 
 const Logo = styled.img`
   height: 100%;
-  max-width: 100%;
+  max-width: 300px;
 `;
 
 const BigPicture = styled.div`

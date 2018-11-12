@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
+import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import apostropheImg from '../assets/apostrophe.svg';
@@ -30,8 +31,14 @@ const Link = styled(_Link)`
 const Apostrophes = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 75%;
   padding: 1em 0;
   margin: 0 5%;
+  align-self: center;
+
+  ${device.tablet} {
+    width: 90%;
+  }
 `;
 
 const Item = styled.div`
@@ -39,6 +46,10 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   padding: 1em;
+
+  ${device.tablet} {
+    flex: 1 1 25%;
+  }
 `;
 
 const InnerItem = styled.div`
@@ -47,6 +58,14 @@ const InnerItem = styled.div`
 
 const Image = styled.img`
   height: 115px;
+
+  ${device.tablet} {
+    height: 150px;
+  }
+
+  ${device.laptop} {
+    height: 190px;
+  }
 `;
 
 const Text = styled.p`
@@ -55,6 +74,18 @@ const Text = styled.p`
   left: 7px;
   font-size: 1.1em;
   font-weight: bold;
+
+  ${device.tablet} {
+    font-size: 1.3em;
+    top: 12px;
+    left: 10px;
+  }
+
+  ${device.laptop} {
+    font-size: 1.4em;
+    top: 20px;
+    left: 12px;
+  }
 `;
 
 const content = [

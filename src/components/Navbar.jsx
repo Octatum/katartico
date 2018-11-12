@@ -208,7 +208,6 @@ class Navbar extends Component {
     return (
       <Container mini={this.props.minimize}>
         <FlexBox>
-          {console.log(device)}
           <Logo src={miniLogoImg} mini={this.props.minimize} />
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Menu open={this.state.open}>

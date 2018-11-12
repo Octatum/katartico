@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
+import { device } from '../../utilities/device'
 
 import Section from '../Section';
 import Video from './Video';
@@ -34,6 +35,10 @@ const Quote = styled.div`
     width: 30%;
     height: 4px;
     background: ${props => props.theme.main};
+  }
+
+  ${device.laptop} {
+    font-size: 1.5em;
   }
 `;
 
