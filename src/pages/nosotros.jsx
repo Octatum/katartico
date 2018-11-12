@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
+import { device } from '../utilities/device';
 
 const Container = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   min-height: 100vh;
-  padding: 4em 6vw;
+  padding: 3em 6vw 1em;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 `;
@@ -21,20 +22,51 @@ const Introduction = styled.p`
   font-size: 17px;
   text-align: center;
   margin: 2rem 0;
+
+  ${device.tablet} {
+    font-size: 1.3em;
+  }
 `;
 
 const Picture = styled.div`
-  height: ${props => (props.large ? '270px' : '200px')};
+  height: 200px;
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
+
+  ${device.tablet} {
+    height: 300px;
+  }
 `;
+
+const PeopleDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  ${device.laptop} {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+`
 
 const Person = styled.div`
   font-size: 1em;
   text-align: left;
   margin-bottom: 2em;
+
+  ${device.laptop} {
+    width: 40%;
+    max-width: 400px;
+    margin: 0 1em 1em;
+  }
 `;
+
+const PersonPicture = styled(Picture)`
+  ${device.laptop} {
+    height: 250px;
+  }
+`
 
 const ReactMarkdown = styled(_ReactMarkdown)`
   h2 {
@@ -51,6 +83,12 @@ const ReactMarkdown = styled(_ReactMarkdown)`
 
   em {
     font-style: italic;
+  }
+
+  ${device.tablet} {
+    h2 {
+      font-size: 2em;
+    }
   }
 `
 
@@ -78,12 +116,14 @@ const About = props => {
             la que hacemos las cosas.
           </strong>
         </Introduction>
-        {people.map((item, index) => (
-          <Person key={index}>
-            <Picture />
-            <ReactMarkdown source={item.node.rawMarkdownBody} />
-          </Person>
-        ))}
+        <PeopleDiv>
+          {people.map((item, index) => (
+            <Person key={index}>
+              <PersonPicture />
+              <ReactMarkdown source={item.node.rawMarkdownBody} />
+            </Person>
+          ))}
+        </PeopleDiv>
       </Container>
     </Layout>
   );
