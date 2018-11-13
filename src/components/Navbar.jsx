@@ -81,6 +81,7 @@ const LinkList = styled.div`
 `;
 
 const Link = styled(_Link)`
+  position: relative;
   margin: 1rem 0;
   font-size: 1em;
   color: inherit;
@@ -104,6 +105,28 @@ const Link = styled(_Link)`
 
 // Es posible cambiar el estilo de un componente a otro, usando styled components
 const ScrollLink = Link.withComponent(_ScrollLink);
+
+const Svg = styled.svg`
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  height: calc(100% + 16px);
+  width: calc(100% + 16px);
+  transform: rotate(180deg);
+`
+
+const Rectangle = styled.rect`
+  fill: transparent;
+  stroke: ${props => props.theme.main};
+  stroke-width: 4px;
+  stroke-dasharray: 400%;
+  stroke-dashoffset: 400%;
+  transition: all 0.7s cubic-bezier(.22,.61,.36,1);
+
+  ${Svg}:hover & {
+    stroke-dashoffset: 0%;
+  }
+`
 
 const Anchor = styled.a`
   margin: 1rem 0;
@@ -188,12 +211,14 @@ class Navbar extends Component {
             onClick={this.toggleDropdown}
             smooth
           >
+            <Svg><Rectangle height="100%" width="100%" /></Svg>
             {item.name}
           </ScrollLink>
         );
       }
       return (
         <Link key={index} to={`${item.path}`} onClick={this.toggleDropdown}>
+          <Svg><Rectangle height="100%" width="100%" /></Svg>
           {item.name}
         </Link>
       );
