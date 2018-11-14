@@ -5,7 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 50vh;
-  margin: 0 2em;
+  margin: 1em 2em;
 `;
 
 const Section = ({ children, id }) => <Container id={id}>{children}</Container>;
