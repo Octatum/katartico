@@ -24,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font: inherit;
-	font-family: "Akzidenz", serif;
+	font-family: "Lato", serif;
 	line-height: normal;
 }
 
@@ -33,13 +33,8 @@ body {
 }
 
 @font-face {
-	font-family: 'Cocogoose';
-	src: url("/fonts/cocogoose.ttf");
-}
-
-@font-face {
-	font-family: 'Akzidenz';
-	src: url("/fonts/akzidenz.otf");
+	font-family: 'Lato';
+	src: url("/fonts/Lato.ttf");
 }
 
 strong {
@@ -58,10 +53,10 @@ strong {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #888; 
+	background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #555; 
+	background: #555;
 }

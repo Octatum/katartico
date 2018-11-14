@@ -70,7 +70,7 @@ const PersonPicture = styled(Picture)`
 
 const ReactMarkdown = styled(_ReactMarkdown)`
   h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
     width: 100%;
   }

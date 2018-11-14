@@ -85,11 +85,16 @@ const Link = styled(_Link)`
   margin: 1rem 0;
   font-size: 1em;
   color: inherit;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 
-  ::first-letter {
+  span {
+    display: inline-block;
+  }
+
+  span::first-letter {
     font-size: 1.2em;
   }
 
@@ -153,24 +158,24 @@ const SocialMedia = styled.div`
 const links = [
   {
     path: '/',
-    name: 'inicio',
+    name: <span>inicio</span>,
   },
   {
     path: '/nosotros',
-    name: 'nosotros',
+    name: <span>nosotros</span>,
   },
   {
     path: '/servicios',
-    name: 'servicios',
+    name: <span>servicios</span>,
   },
   {
     path: '/portafolio',
-    name: 'portafolio',
+    name: <span>portafolio</span>,
   },
   {
     path: '/',
     hash: 'contact',
-    name: 'contacto',
+    name: <span>contacto</span>,
   },
 ];
 
