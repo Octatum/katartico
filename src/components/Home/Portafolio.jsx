@@ -13,8 +13,8 @@ import torreLuzImg from '../assets/logos/torre-luz.svg';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em 0;
-  margin: 0 1.5rem;
+  padding: 0.5em;
+  margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -22,8 +22,9 @@ const Header = styled.h2`
     content: '';
     position: absolute;
     top: 0;
+    left: -1em;
+    right: 0;
     height: 1px;
-    width: 100%;
     background: ${props => props.theme.white};
   }
 `;

@@ -8,10 +8,20 @@ import Video from './Video';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em 0;
-  margin: 0 1em;
+  padding: 0.5em;
+  margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;
+
+  ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1em;
+    right: 0;
+    height: 1px;
+    background: ${props => props.theme.white};
+  }
 `;
 
 const Link = styled(_Link)`
