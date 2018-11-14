@@ -25,7 +25,7 @@ const Header = styled.h2`
 
 const FormContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex: 1;
   padding: 0 5%;
 `
@@ -95,6 +95,7 @@ const ApostropheDiv = styled.div`
   display: none;
   width: 10em;
   padding-top: 1em;
+  margin-left: 6em;
 
   ${device.laptop} {
     display: flex;
