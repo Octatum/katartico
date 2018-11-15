@@ -17,6 +17,10 @@ const Container = styled.div`
   margin: 2rem 8vw;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
+
+  ${device.laptop} {
+    margin: 2rem 2vw;
+  }
 `;
 
 const BackButton = styled(_Link)`
@@ -43,7 +47,7 @@ const Apostrophe = styled.img`
 const TextContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2em;
+  margin: 2em 5em 1em;
 `
 
 const ReactMarkdown = styled(_ReactMarkdown)`
@@ -91,6 +95,7 @@ const PhotoGrid = styled.div`
   display: grid;
   grid-template: 1fr / 1fr;
   width: 100%;
+  margin: 1em 0;
 
   ${device.tablet} {
     grid-template-columns: 3.3fr 1fr 2fr 1.5fr 1fr;
