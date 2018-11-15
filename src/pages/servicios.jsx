@@ -73,9 +73,9 @@ const Item = styled.div`
   }
 
   ${device.laptop} {
-    height: 100%;
+    height: 28em;
     max-height: none;
-    max-width: 200px;
+    max-width: 220px;
 
     &::after {
       display: none;
@@ -141,6 +141,7 @@ const ElementBody = styled.div`
   align-items: center;
   height: 0;
   transform: scaleY(0);
+  font-size: 0.9em;
 
   ${Item}:hover & {
     position: absolute;
