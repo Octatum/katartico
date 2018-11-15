@@ -36,23 +36,16 @@ const Link = styled(_Link)`
 
 const LogoGrid = styled.div`
   display: grid;
-  grid-template-columns: 40% 10% 10% 40%;
-  grid-template-rows: 1.5fr 2fr 2fr;
-  grid-template-areas:
-    'a0 a0 a0 a1'
-    'a2 a2 a3 a3'
-    'a4 a5 a5 a5';
-  max-height: 20em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-height: 25em;
   margin: 1.5em;
   align-items: center;
 
   ${device.tablet} {
-    grid-template-columns: 35% 25% 15% 25%;
-    grid-template-rows: 45% auto 45%;
-    grid-template-areas:
-      'a0 a1 a1 a2'
-      '. . . .'
-      'a3 a4 a5 a5';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2em;
     height: 20em;
     max-height: none;
     padding: 0 1em;
@@ -126,7 +119,7 @@ const Portafolio = () => (
     </Header>
     <LogoGrid>
       {content.map((item, index) => (
-        <GridItem key={index} area={`a${index}`}>
+        <GridItem key={index}>
           <Logo src={item} />
         </GridItem>
       ))}
