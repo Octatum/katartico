@@ -18,7 +18,7 @@ const ChildrenContainer = styled.div`
 
 const Footer = styled.div`
   width: 100%;
-  padding: 1em 0;
+  padding: 3em 0 1em;
   color: ${props => props.theme.white};
   text-align: center;
 `
