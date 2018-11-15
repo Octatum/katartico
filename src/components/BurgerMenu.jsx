@@ -14,11 +14,6 @@ const BurgerText = styled.span`
   transition: opacity 200ms ease-out,
     transform 200ms cubic-bezier(0.34, 0.55, 0.25, 0.83);
   font-size: 1.5em;
-
-  .open & {
-    opacity: 0;
-    transform: translateX(50px);
-  }
 `;
 
 const BurgerRegion = styled.div`
