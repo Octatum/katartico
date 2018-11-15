@@ -144,7 +144,6 @@ const SocialMedia = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 1.3em;
 
   ${device.tablet} {
     margin: 0 1rem 0 auto;
@@ -154,6 +153,20 @@ const SocialMedia = styled.div`
     margin: 0 1rem;
   }
 `;
+
+const SocialMediaIcon = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+
+  ${device.tablet} {
+    width: 1em;
+    margin: 0 0.25em;
+    font-size: 1.2em;
+  }
+`
 
 const links = [
   {
@@ -230,9 +243,11 @@ class Navbar extends Component {
     });
 
     const socialMediaLinks = socialMedia.map((item, index) => (
-      <Anchor key={index} href={item.path}>
-        <i className={`fab ${item.faName} fa-lg fa-fw`} />
-      </Anchor>
+      <SocialMediaIcon>
+        <Anchor key={index} href={item.path}>
+          <i className={`fab ${item.faName}`} />
+        </Anchor>
+      </SocialMediaIcon>
     ));
 
     return (
