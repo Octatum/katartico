@@ -13,9 +13,9 @@ const Container = styled.div`
   position: relative;
   top: 0;
   z-index: 1;
-  -webkit-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
-  -moz-box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
-  box-shadow: 1px 4px 42px 11px rgba(156,36,32,1);
+  -webkit-box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8);
+  -moz-box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8);
+  box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8)
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -65,7 +65,7 @@ const Menu = styled.div`
     props.open &&
     `
     max-height: 70vh;
-    box-shadow: 0 0 9px 9px ${hexToRgba(props.theme.main, 40)};
+    box-shadow: 0px 0 20px 10px ${hexToRgba(props.theme.main, 60)};
   `};
 `;
 
