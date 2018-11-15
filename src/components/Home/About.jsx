@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import { device } from '../../utilities/device'
 
 import Section from '../Section';
-import Video from './Video';
+import VideoPlayer from './VideoPlayer';
+import movie from '../assets/intro_animation.mp4';
 
 const Header = styled.h2`
   position: relative;
@@ -58,7 +59,7 @@ const About = () => (
       <Link to="/about">Nosotros</Link>
     </Header>
     <Quote>Insert your inspirational quote right here...</Quote>
-    <Video />
+    <VideoPlayer movie={movie} />
   </Section>
 );
 

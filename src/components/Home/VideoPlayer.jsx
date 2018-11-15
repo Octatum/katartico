@@ -4,7 +4,6 @@ import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import _ReactPlayer from 'react-player';
-import movie from '../assets/intro_animation.mp4';
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,12 +14,12 @@ const Wrapper = styled.div`
 `;
 
 const ReactPlayer = styled(_ReactPlayer)`
-  width: 100%;
+  width: ${props => props.big ? '100vw' : '100%'};
   height: auto;
-  max-height: 360px;
+  max-height: ${props => props.big ? 'none' : '360px'};
 
   ${device.laptop} {
-    max-height: 540px;
+    max-height: ${props => props.big ? 'none' : '540px'};
   }
 `;
 
@@ -41,9 +40,9 @@ const PlayButton = styled.div`
   }
 `;
 
-class Video extends Component {
+class VideoPlayer extends Component {
   state = {
-    playing: false,
+    playing: true,
   };
 
   playerRef = React.createRef();
@@ -55,21 +54,20 @@ class Video extends Component {
   };
 
   render = () => (
-    <Section>
-      <Wrapper>
-        <ReactPlayer
-          url={movie}
-          playing={this.state.playing}
-          playsinline
-          muted
-          onEnded={this.togglePlayback}
-          width='100%'
-          height='100%'
-        />
-        {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
-      </Wrapper>
-    </Section>
+    <Wrapper>
+      <ReactPlayer
+        url={this.props.movie}
+        playing={this.state.playing}
+        playsinline
+        muted
+        onEnded={this.togglePlayback}
+        width='100%'
+        height='100%'
+        big={this.props.big}
+      />
+      {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
+    </Wrapper>
   );
 }
 
-export default Video;
+export default VideoPlayer;

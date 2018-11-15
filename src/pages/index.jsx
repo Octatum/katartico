@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import Helmet from 'react-helmet';
 import Layout from '../components/Layout';
 
+import IntroVideo from '../components/Home/IntroVideo';
 import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import Portafolio from '../components/Home/Portafolio';
@@ -23,6 +24,7 @@ const IndexPage = props => (
   <Layout path={props.location.pathname}>
     <Helmet title="Inicio" />
     <Container>
+      <IntroVideo />
       <About />
       <Services />
       <Portafolio />
