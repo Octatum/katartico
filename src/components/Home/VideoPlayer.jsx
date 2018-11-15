@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
-
-import Section from '../Section';
 import _ReactPlayer from 'react-player';
+import { device } from '../../utilities/device';
 
 const Wrapper = styled.div`
   display: flex;
