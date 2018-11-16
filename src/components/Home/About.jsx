@@ -9,7 +9,7 @@ import movie from '../assets/intro_animation.mp4';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em;
+  padding: 1em;
   margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;

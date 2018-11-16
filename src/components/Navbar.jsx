@@ -7,7 +7,7 @@ import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
 import { breakpoints, device } from '../utilities/device';
 
-import miniLogoImg from './assets/mini-logo.svg';
+import miniLogoImg from './assets/iconoKatartico.svg';
 
 const Container = styled.div`
   position: relative;

@@ -25,6 +25,10 @@ const Layout = styled.div`
   ${device.laptop} {
     @supports (display: grid) {
       grid-template: 500px / repeat(4, 1fr);
+
+      grid-gap: 0.1rem;
+
+  
     }
   }
 `;
@@ -73,9 +77,9 @@ const Item = styled.div`
   }
 
   ${device.laptop} {
-    height: 28em;
+    height: 30em;
     max-height: none;
-    max-width: 220px;
+    max-width: 260px;
 
     &::after {
       display: none;

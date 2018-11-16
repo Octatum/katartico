@@ -18,7 +18,7 @@ const BurgerText = styled.span`
 
 const BurgerRegion = styled.div`
   position: relative;
-  height: 1.5em;
+  height: 1em;
   width: 2rem;
   cursor: pointer;
 `;
@@ -28,7 +28,7 @@ const topBarOpen = keyframes`
     transform: translate3d(0, 8px, 0);
   }
   100% {
-    transform: translate3d(0, 8px, 0) rotate(45deg);
+    transform: translate3d(0, 8px, 0) rotate(55deg);
   }
 `;
 
@@ -37,7 +37,7 @@ const bottomBarOpen = keyframes`
     transform: translate3d(0, -8px, 0);
   }
   100% {
-    transform: translate3d(0, -8px, 0) rotate(-45deg);
+    transform: translate3d(0, -8px, 0) rotate(-55deg);
   }
 `;
 
@@ -71,8 +71,8 @@ const BurgerBar = styled.span`
 
   display: block;
   position: absolute;
-  width: 100%;
-  border-top: 4px solid ${props => props.theme.white};
+  width: 80%;
+  border-top: 2px solid ${props => props.theme.white};
   transform-origin: 50% 50%;
   transition: transform var(--menu-animation-duration)
     var(--menu-animation-timing);
@@ -125,7 +125,7 @@ function BurgerMenu(props) {
         <BurgerBar />
         <BurgerBar />
       </BurgerRegion>
-      <BurgerText>&nbsp; Menú</BurgerText>
+      <BurgerText> &nbsp; Menú</BurgerText>
     </Container>
   );
 }
