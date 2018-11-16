@@ -9,7 +9,7 @@ import movie from '../assets/intro_animation.mp4';
 
 const Header = styled.h2`
   position: relative;
-  padding: 1em;
+  padding: 0.5em;
   margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;
@@ -32,7 +32,7 @@ const Link = styled(_Link)`
 
 const Quote = styled.div`
   position: relative;
-  padding: 1.5em 0;
+  padding: 0.7em 0;
   margin: 1em 2em;
   font-size: 1.3em;
   text-align: center;
@@ -44,7 +44,7 @@ const Quote = styled.div`
     left: 50%;
     transform: translateX(-50%);
     width: 30%;
-    height: 4px;
+    height: 2px;
     background: ${props => props.theme.main};
   }
 

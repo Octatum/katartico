@@ -159,7 +159,8 @@ const SocialMediaIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1em;
+  
 
   ${device.tablet} {
     width: 1em;

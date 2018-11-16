@@ -13,7 +13,7 @@ import torreLuzImg from '../assets/logos/torre-luz.svg';
 
 const Header = styled.h2`
   position: relative;
-  padding: 1em;
+  padding: 0.5em;
   margin-left: 1em;
   font-size: 1.5em;
   font-weight: bold;

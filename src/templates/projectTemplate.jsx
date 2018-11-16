@@ -25,7 +25,7 @@ const Container = styled.div`
 
 const BackButton = styled(_Link)`
   position: relative;
-  height: 6em;
+  height: 4em;
   align-self: flex-start;
   margin: 2em 0;
   text-decoration: none;
@@ -34,9 +34,9 @@ const BackButton = styled(_Link)`
   ::after {
     content: "Regresar";
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 5px;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 `
 

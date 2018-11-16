@@ -105,7 +105,7 @@ const About = props => {
       <Container>
         <Picture />
         <Introduction center fontSize="1.3">
-          ¿Qué piensan de nosotros? Que somos intensos.
+          ¿Qué piensan de nosotros? &nbsp; Que somos intensos.
           <br />
           <br />
           Decidimos plasmar esa intensidad en un proyecto tangible.
