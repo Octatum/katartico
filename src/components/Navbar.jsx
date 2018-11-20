@@ -120,6 +120,13 @@ const Svg = styled.svg`
   transform: rotate(180deg);
 `
 
+const Line = styled.line`
+  ${device.tablet} {
+    stroke-width: 4px;
+    stroke: ${props => props.theme.main};
+  }
+`
+
 const Rectangle = styled.rect`
   fill: transparent;
   stroke: ${props => props.theme.main};
@@ -127,6 +134,7 @@ const Rectangle = styled.rect`
   stroke-dasharray: 400%;
   stroke-dashoffset: 400%;
   transition: all 0.7s cubic-bezier(.22,.61,.36,1);
+  position: relative;
 
   ${Svg}:hover & {
     stroke-dashoffset: 0%;
@@ -230,14 +238,20 @@ class Navbar extends Component {
             onClick={this.toggleDropdown}
             smooth
           >
-            <Svg><Rectangle height="100%" width="100%" /></Svg>
+            <Svg>
+              <Rectangle height="100%" width="100%" />
+              <Line x1="0" x2="100%" y1="0%" y2="0%" />
+            </Svg>
             {item.name}
           </ScrollLink>
         );
       }
       return (
         <Link key={index} to={`${item.path}`} onClick={this.toggleDropdown}>
-          <Svg><Rectangle height="100%" width="100%" /></Svg>
+          <Svg>
+            <Rectangle height="100%" width="100%" />
+            <Line x1="0" x2="100%" y1="0%" y2="0%" />
+          </Svg>
           {item.name}
         </Link>
       );

@@ -21,6 +21,8 @@ const BurgerRegion = styled.div`
   height: 1em;
   width: 2rem;
   cursor: pointer;
+  
+
 `;
 
 const topBarOpen = keyframes`
