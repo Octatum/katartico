@@ -43,7 +43,7 @@ const FlexBox = styled.div`
 `;
 
 const Logo = styled.img`
-  height: ${({ mini }) => (mini ? '3em' : '4em')};
+  height: ${({ mini }) => (mini ? '3em' : '5.5em')};
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 `;
 

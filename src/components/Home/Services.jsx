@@ -8,8 +8,8 @@ import apostropheImg from '../assets/apostrophe.svg';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em;
-  margin-left: 1em;
+  padding: 0.8em 0.1em;
+  margin-left: 0.5em;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -21,6 +21,10 @@ const Header = styled.h2`
     right: 0;
     height: 1px;
     background: ${props => props.theme.white};
+  }
+
+  ${device.laptop} {
+    margin-left:0.5em;
   }
 `;
 
@@ -34,7 +38,7 @@ const Apostrophes = styled.div`
   flex-wrap: wrap;
   width: 75%;
   padding: 1em 0;
-  margin: 0 5%;
+  margin: 5% 5%;
   align-self: center;
 
   ${device.tablet} {
@@ -49,7 +53,7 @@ const Item = styled.div`
   padding: 1em;
 
   ${device.tablet} {
-    flex: 1 1 25%;
+    flex: 1;
   }
 `;
 
@@ -65,7 +69,7 @@ const Image = styled.img`
   }
 
   ${device.laptop} {
-    height: 190px;
+    height: 250px;
   }
 `;
 
@@ -74,7 +78,7 @@ const Text = styled.p`
   top: 8px;
   left: 7px;
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: regular;
 
   ${device.tablet} {
     font-size: 1.3em;
@@ -83,9 +87,9 @@ const Text = styled.p`
   }
 
   ${device.laptop} {
-    font-size: 1.4em;
-    top: 20px;
-    left: 12px;
+    font-size: 1.6em;
+    top: 30px;
+    left: 17px;
   }
 `;
 

@@ -7,8 +7,8 @@ import apostropheImg from '../assets/apostrophe.svg';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em;
-  margin-left: 1em;
+  padding: 0.8em 0.1em;
+  margin-left: 0.5em;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -21,13 +21,19 @@ const Header = styled.h2`
     height: 1px;
     background: ${props => props.theme.white};
   }
+
+  ${device.laptop} {
+    margin-left:0.5em;
+  }
 `;
 
 const FormContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex: 1;
   padding: 0 5%;
+
+  
 `
 
 const Form = styled.div`
@@ -37,6 +43,11 @@ const Form = styled.div`
   width: 100%;
   max-width: 600px;
   font-size: 1.2em;
+
+  ${device.laptop} {
+    margin-left: 4em;
+
+  }
 `;
 
 const Data = styled.div`
@@ -56,12 +67,13 @@ const Label = styled.p`
   min-width: 5em;
   padding-right: 0.5em;
   align-self: ${props => (props.top ? 'flex-start' : 'flex-end')};
+  top: ${({top}) => top && '10px'};
 `;
 
 const Input = styled.input`
   flex: 1;
   min-width: 0;
-  padding: 0.3em;
+  padding: 0.2em;
   border: 0;
   font-family: inherit;
   font-size: inherit;
@@ -79,9 +91,10 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  min-width: 25%;
+  min-width: 15%;
   padding: 0.5em;
   margin-left: auto;
+  margin-top: 01em;
   border: none;
   background: ${props => props.theme.main};
   color: inherit;

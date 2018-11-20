@@ -9,8 +9,8 @@ import movie from '../assets/intro_animation.mp4';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em;
-  margin-left: 1em;
+  padding: 0.8em 0.1em;
+  margin-left: 0.5em;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -22,6 +22,10 @@ const Header = styled.h2`
     right: 0;
     height: 1px;
     background: ${props => props.theme.white};
+  }
+
+  ${device.laptop} {
+    margin-left:0.5em;
   }
 `;
 

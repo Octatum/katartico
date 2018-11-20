@@ -13,8 +13,8 @@ import torreLuzImg from '../assets/logos/torre-luz.svg';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.5em;
-  margin-left: 1em;
+  padding: 0.8em 0.1em;
+  margin-left: 0.5em;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -27,6 +27,11 @@ const Header = styled.h2`
     height: 1px;
     background: ${props => props.theme.white};
   }
+
+  ${device.laptop} {
+    margin-left:0.5em;
+  }
+
 `;
 
 const Link = styled(_Link)`
@@ -88,16 +93,17 @@ const GridItem = styled.div`
 const Logo = styled.img`
   height: 100%;
   width: 100%;
-  max-width: 300px;
+  max-width: 150px;
   margin: 1em;
 
   ${device.tablet} {
     margin: 0;
+    max-width: 230px;
   }
 `;
 
 const BigPicture = styled.div`
-  height: 130px;
+  height: 100px;
   width: 90%;
   margin: 3em auto 1em;
   background: ${props => props.theme.main};
