@@ -13,42 +13,42 @@ const BurgerText = styled.span`
   display: block;
   transition: opacity 200ms ease-out,
     transform 200ms cubic-bezier(0.34, 0.55, 0.25, 0.83);
-  font-size: 1.5em;
+  font-size: 1.3em;
 `;
 
 const BurgerRegion = styled.div`
   position: relative;
-  height: 1em;
-  width: 2rem;
+  height: 0.8em;
+  width: 1.5rem;
   cursor: pointer;
-  
+
 
 `;
 
 const topBarOpen = keyframes`
   50% {
-    transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 0.4em, 0);
   }
   100% {
-    transform: translate3d(0, 8px, 0) rotate(55deg);
+    transform: translate3d(0, 0.4em, 0) rotate(55deg);
   }
 `;
 
 const bottomBarOpen = keyframes`
   50% {
-    transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -0.4em, 0);
   }
   100% {
-    transform: translate3d(0, -8px, 0) rotate(-55deg);
+    transform: translate3d(0, -0.4em, 0) rotate(-55deg);
   }
 `;
 
 const topBarClose = keyframes`
   0% {
-    transform: translate3d(0, 8px, 0) rotate(45deg);
+    transform: translate3d(0, 0.4em, 0) rotate(45deg);
   }
   50% {
-    transform: translate3d(0, 8px, 0) rotate(0deg);
+    transform: translate3d(0, 0.4em, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -57,10 +57,10 @@ const topBarClose = keyframes`
 
 const bottomBarClose = keyframes`
   0% {
-    transform: translate3d(0, -8px, 0) rotate(-45deg);
+    transform: translate3d(0, -0.4em, 0) rotate(-45deg);
   }
   50% {
-    transform: translate3d(0, -8px, 0) rotate(0deg);
+    transform: translate3d(0, -0.4em, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -86,7 +86,7 @@ const BurgerBar = styled.span`
   }
 
   &:nth-child(2) {
-    top: 8px;
+    top: 50%;
     opacity: 1;
     transition: transform var(--menu-animation-duration)
         var(--menu-animation-timing),
@@ -94,7 +94,7 @@ const BurgerBar = styled.span`
   }
 
   &:nth-child(3) {
-    top: 16px;
+    top: 100%;
     animation: ${bottomBarClose} var(--menu-animation-duration)
       var(--menu-animation-timing) forwards;
   }
