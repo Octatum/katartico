@@ -61,7 +61,7 @@ const LogoGrid = styled.div`
   }
 `;
 
-const GridItem = styled.div`
+const GridItem = styled('div')`
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -126,7 +126,9 @@ const Portafolio = () => (
     <LogoGrid>
       {content.map((item, index) => (
         <GridItem key={index}>
-          <Logo src={item} />
+          <Link to ="/portafolio">
+            <Logo src={item} /> 
+          </Link>
         </GridItem>
       ))}
     </LogoGrid>

@@ -57,7 +57,7 @@ const Item = styled.div`
   }
 `;
 
-const InnerItem = styled.div`
+const InnerItem = styled(Link)`
   position: relative;
 `;
 
@@ -103,14 +103,16 @@ const content = [
 const Services = () => (
   <Section>
     <Header>
-      <Link to="/services">Servicios</Link>
+      <Link to="/servicios">Servicios</Link>
     </Header>
     <Apostrophes>
       {content.map((item, index) => (
         <Item key={item}>
           <InnerItem>
+            <Link to="/servicios">
             <Image src={apostropheImg} />
             <Text>{item}</Text>
+            </Link>
           </InnerItem>
         </Item>
       ))}

@@ -196,7 +196,7 @@ const links = [
   },
   {
     path: '/',
-    hash: 'contact',
+    hash: 'contacto',
     name: <span>contacto</span>,
   },
 ];
