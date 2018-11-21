@@ -2,7 +2,7 @@ import BurgerMenu from './BurgerMenu';
 import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { Link as _ScrollLink } from 'react-scroll';
+import { Link as _ScrollLink, animateScroll as scroll } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
 import { breakpoints, device } from '../utilities/device';
@@ -234,7 +234,9 @@ class Navbar extends Component {
           <ScrollLink
             key={index}
             to={item.hash ? item.hash : 'top'}
+            containerId='mainContainer'
             duration={1000}
+            offset={item.hash ? 0 : -115}
             onClick={this.toggleDropdown}
             smooth
           >
@@ -247,7 +249,7 @@ class Navbar extends Component {
         );
       }
       return (
-        <Link key={index} to={`${item.path}`} onClick={this.toggleDropdown}>
+        <Link key={index} to={`${item.path}${item.hash ? `#${item.hash}` : ''}`} onClick={this.toggleDropdown}>
           <Svg>
             <Rectangle height="100%" width="100%" />
             <Line x1="0" x2="100%" y1="0%" y2="0%" />

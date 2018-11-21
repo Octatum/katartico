@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Navbar from './Navbar';
+import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
 
 const Viewport = styled.div`
@@ -50,10 +51,12 @@ class ChildViewport extends React.Component {
           path={this.props.path}
           minimize={this.state.shouldMinimizeNavbar}
         />
-        <ChildrenContainer>
-          <Waypoint onPositionChange={this.handleWaypointPositionChange} />
-          {this.props.children}
-          <Footer>Copyright © Todos los derechos reservados. Katartico 2018.</Footer>
+        <ChildrenContainer id='mainContainer'>
+          <Element name="top">
+            <Waypoint onPositionChange={this.handleWaypointPositionChange} />
+            {this.props.children}
+            <Footer>Copyright © Todos los derechos reservados. Katartico 2018.</Footer>
+          </Element>
         </ChildrenContainer>
       </Viewport>
     );

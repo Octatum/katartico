@@ -28,7 +28,7 @@ const IndexPage = props => (
       <About />
       <Services />
       <Portafolio />
-      <Element name="contact">
+      <Element name="contacto">
         <Contact />
       </Element>
     </Container>
