@@ -34,7 +34,7 @@ const Link = styled(_Link)`
   color: inherit;
 `;
 
-const Quote = styled(Link)`
+const Quote = styled.div`
   position: relative;
   padding: 0.7em 0;
   margin: 1em 2em;
@@ -62,9 +62,9 @@ const About = () => (
     <Header>
       <Link to="/nosotros">Nosotros</Link>
     </Header>
-    <Quote>
-      <Link to="/nosotros">Insert your inspirational quote right here...</Link>
-      </Quote>
+    <Link to="/nosotros">
+      <Quote>Insert your inspirational quote right here...</Quote>
+    </Link>
     <VideoPlayer movie={movie} />
   </Section>
 );

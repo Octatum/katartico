@@ -168,7 +168,7 @@ const SocialMediaIcon = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  
+
 
   ${device.tablet} {
     width: 1em;
@@ -258,8 +258,8 @@ class Navbar extends Component {
     });
 
     const socialMediaLinks = socialMedia.map((item, index) => (
-      <SocialMediaIcon>
-        <Anchor key={index} href={item.path}>
+      <SocialMediaIcon key={index}>
+        <Anchor href={item.path}>
           <i className={`fab ${item.faName}`} />
         </Anchor>
       </SocialMediaIcon>

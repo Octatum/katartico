@@ -29,6 +29,7 @@ const Header = styled.h2`
 `;
 
 const Link = styled(_Link)`
+  position: relative;
   text-decoration: none;
   color: inherit;
 `;
@@ -47,6 +48,7 @@ const Apostrophes = styled.div`
 `;
 
 const Item = styled.div`
+  position: relative;
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
@@ -55,10 +57,6 @@ const Item = styled.div`
   ${device.tablet} {
     flex: 1;
   }
-`;
-
-const InnerItem = styled(Link)`
-  position: relative;
 `;
 
 const Image = styled.img`
@@ -76,20 +74,20 @@ const Image = styled.img`
 const Text = styled.p`
   position: absolute;
   top: 8px;
-  left: 7px;
+  left: 6px;
   font-size: 1.1em;
   font-weight: regular;
 
   ${device.tablet} {
     font-size: 1.3em;
     top: 12px;
-    left: 10px;
+    left: 9px;
   }
 
   ${device.laptop} {
     font-size: 1.6em;
     top: 30px;
-    left: 17px;
+    left: 16px;
   }
 `;
 
@@ -108,12 +106,10 @@ const Services = () => (
     <Apostrophes>
       {content.map((item, index) => (
         <Item key={item}>
-          <InnerItem>
-            <Link to="/servicios">
+          <Link to="/servicios">
             <Image src={apostropheImg} />
             <Text>{item}</Text>
-            </Link>
-          </InnerItem>
+          </Link>
         </Item>
       ))}
     </Apostrophes>
