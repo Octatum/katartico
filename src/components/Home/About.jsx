@@ -57,6 +57,22 @@ const Quote = styled.div`
   }
 `;
 
+const VideoContainer = styled.div`
+  background: ${props => props.theme.main};
+
+  > div {
+    visibility: hidden;
+  }
+
+  ${device.tablet} {
+    background: none;
+
+    > div {
+      visibility: visible;
+    }
+  }
+`
+
 const About = () => (
   <Section>
     <Header>
@@ -65,7 +81,9 @@ const About = () => (
     <Link to="/nosotros">
       <Quote>Insert your inspirational quote right here...</Quote>
     </Link>
-    <VideoPlayer movie={movie} />
+    <VideoContainer>
+      <VideoPlayer movie={movie} />
+    </VideoContainer>
   </Section>
 );
 

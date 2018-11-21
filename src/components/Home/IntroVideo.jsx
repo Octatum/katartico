@@ -8,18 +8,10 @@ import { device } from '../../utilities/device';
 const Container = styled.div`
   height: 100vh;
   width: 100%;
-  background: ${props => props.theme.main};
-
-  > div {
-    display: none;
-  }
+  display: none;
 
   ${device.tablet} {
-    background: none;
-
-    > div {
-      display: block;
-    }
+    display: block;
   }
 `
 
