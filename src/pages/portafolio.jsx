@@ -42,7 +42,7 @@ const GridItem = styled.div`
   height: 100%;
   max-height: calc(230px + 4em);
   width: 100%;
-  max-width: 230px;
+  max-width: 300px;
 
   &::after {
     content: '';

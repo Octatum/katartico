@@ -2,6 +2,9 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import fotoKat from '../components/assets/fotoKatartico.jpg';
+import fotoRafa from '../components/assets/fotoRafa.jpg';
+import fotoMaria from '../components/assets/fotoMaria.jpg';
 import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
@@ -28,14 +31,14 @@ const Introduction = styled.p`
   }
 `;
 
-const Picture = styled.div`
-  height: 200px;
+const Picture = styled.img`
+  
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
 
   ${device.tablet} {
-    height: 300px;
+    height: auto;
   }
 `;
 
@@ -103,7 +106,7 @@ const About = props => {
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <Picture />
+        <Picture src = {fotoKat} />
         <Introduction center fontSize="1.3">
           ¿Qué piensan de nosotros? &nbsp; Que somos intensos.
           <br />
