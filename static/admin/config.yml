@@ -18,14 +18,8 @@ collections:
       - { name: "body", label: "Descripción", widget: "markdown" }
       - name: "images"
         label: "Imagenes"
-        widget: "object"
-        fields: 
-          - { label: "Imagen superior izquierda", name: "imageTopLeft", widget: "image" }
-          - { label: "Imagen superior media", name: "imageTopCenter", widget: "image" }
-          - { label: "Imagen superior derecha", name: "imageTopRight", widget: "image" }
-          - { label: "Imagen media izquierda", name: "imageMiddleLeft", widget: "image" }
-          - { label: "Imagen inferior izquierda", name: "imageBottomLeft", widget: "image" }
-          - { label: "Imagen superior derecha", name: "imageBottomRight", widget: "image" }
+        widget: "list"
+        field: { name: "image", label: "imagen", widget: "image" }
 
   - name: "About"
     label: "About Us"
