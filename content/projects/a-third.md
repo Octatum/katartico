@@ -1,6 +1,6 @@
 ---
 type: project
-title: And another
+title: 74 Aniversario
 banner: /assets/0-portada.jpg
 images:
   - height: '1'
