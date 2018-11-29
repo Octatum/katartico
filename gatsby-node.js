@@ -17,6 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               path
               type
+              title
             }
           }
         }
@@ -29,7 +30,7 @@ exports.createPages = ({ actions, graphql }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
-        path: node.frontmatter.path,
+        path: `/project/${node.frontmatter.title}`,
         component: projectTemplate,
       });
     });
