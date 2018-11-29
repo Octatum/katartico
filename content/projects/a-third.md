@@ -9,6 +9,18 @@ images:
   - height: '1'
     image: /assets/74aniversario -3.jpg
     width: '2'
+  - height: '2'
+    image: /assets/74aniversario -3.jpg
+    width: '2'
+  - height: '1'
+    image: /assets/74aniversario -1 foto principal.png
+    width: '1'
+  - height: '1'
+    image: /assets/74aniversario -1 foto principal.png
+    width: '1'
+  - height: '2'
+    image: /assets/74aniversario -3.jpg
+    width: '1'
 ---
 # 74 Aniversario
 

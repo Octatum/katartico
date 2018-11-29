@@ -58,13 +58,17 @@ const TextContainer = styled.div`
 const ReactMarkdown = styled(_ReactMarkdown)`
   margin-bottom: 3rem;
 
-  h2 {
+  h1 {
     font-size: 1.7em;
     font-weight: bold;
   }
 
-  h3 {
+  h2 {
     font-size: 1.4em;
+    font-style: italic;
+  }
+
+  em {
     font-style: italic;
   }
 
@@ -77,11 +81,11 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   }
 
   ${device.tablet} {
-    h2 {
+    h1 {
       font-size: 2em;
     }
 
-    h3 {
+    h2 {
       font-size: 1.7em;
     }
 
@@ -101,12 +105,12 @@ const PhotoGrid = styled.div`
   width: 100%;
   margin: 1em 0;
   grid-template-columns: 1fr;
-  grid-auto-rows: 10rem;
+  grid-auto-rows: 15rem;
   grid-auto-flow: row dense;
+  grid-gap: 1em;
 
   ${device.tablet} {
     grid-template-columns: 3.3fr 1fr 2fr 1.5fr 1fr;
-    grid-gap: 1em;
     position: relative;
     width: 84vw;
   }
@@ -118,26 +122,21 @@ const PhotoGrid = styled.div`
 `;
 
 const Picture = styled.div`
-  height: 16em;
-  width: calc(100% - 2em);
-  margin: 0.5em 1em;
-  background: ${props => props.theme.main};
+  background-color: ${props => props.theme.main};
+  background-image: url('${({ image }) => image}');
+  background-size: cover;
+  background-position: center;
 
   ${device.tablet} {
-    height: 100%;
-    width: ${props => (props.large ? '20em' : '100%')};
-    margin: 0;
-    grid-area: ${props => (props.large ? '' : props.area)};
+    grid-row: span ${({ height }) => height};
+    grid-column: span ${({ width }) => width};
   }
 `;
 
 export default function Template({ data }) {
-  const {
-    markdownRemark
-  } = data;
+  const { markdownRemark } = data;
 
   const { rawMarkdownBody, frontmatter } = markdownRemark;
-
 
   return (
     <Layout>
@@ -149,9 +148,15 @@ export default function Template({ data }) {
         <ContentLayout>
           <ReactMarkdown source={rawMarkdownBody} />
           <PhotoGrid>
-            {frontmatter.images && frontmatter.images.map(image => (
-              <Picture width={image.width} height={image.height} src={image.image} key={image.image} />
-            ))}
+            {frontmatter.images &&
+              frontmatter.images.map(image => (
+                <Picture
+                  width={image.width}
+                  height={image.height}
+                  image={image.image}
+                  key={image.image}
+                />
+              ))}
           </PhotoGrid>
         </ContentLayout>
         <BackButton to="/portafolio">
