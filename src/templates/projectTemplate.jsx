@@ -2,7 +2,6 @@ import React from 'react';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
-import MediaQuery from 'react-responsive';
 import Layout from '../components/Layout';
 import { breakpoints, device } from '../utilities/device';
 
@@ -20,6 +19,12 @@ const Container = styled.div`
 
   ${device.laptop} {
     margin: 2rem 2vw;
+  }
+`;
+
+const ContentLayout = styled('div')`
+  ${device.laptop} {
+    margin: 2rem 5rem;
   }
 `;
 
@@ -93,30 +98,21 @@ const ReactMarkdown = styled(_ReactMarkdown)`
 
 const PhotoGrid = styled.div`
   display: grid;
-  grid-template: 1fr / 1fr;
   width: 100%;
   margin: 1em 0;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 10rem;
+  grid-auto-flow: row dense;
 
   ${device.tablet} {
     grid-template-columns: 3.3fr 1fr 2fr 1.5fr 1fr;
-    grid-template-rows: 3fr 2.1fr 4fr;
-    grid-template-areas:
-      'a1 a2 a2 a4 a4'
-      'a3 a3 a3 a4 a4'
-      'a5 a5 a6 a6 a7';
     grid-gap: 1em;
     position: relative;
-    height: 84vw;
     width: 84vw;
   }
 
   ${device.laptop} {
     grid-template-columns: 1fr 1fr 0.7fr;
-    grid-template-rows: 1fr 1.5fr 1fr;
-    grid-template-areas:
-      'a1 a2 a3'
-      'a4 a4 a3'
-      'a5 a6 a6';
     grid-gap: 2em;
   }
 `;
@@ -137,8 +133,11 @@ const Picture = styled.div`
 
 export default function Template({ data }) {
   const {
-    markdownRemark: { rawMarkdownBody },
+    markdownRemark
   } = data;
+
+  const { rawMarkdownBody, frontmatter } = markdownRemark;
+
 
   return (
     <Layout>
@@ -147,33 +146,14 @@ export default function Template({ data }) {
           <Apostrophe src={apostropheImg} />
         </BackButton>
         {/* Mobile/Tablet view */}
-        <MediaQuery maxWidth={breakpoints.laptop - 1}>
+        <ContentLayout>
           <ReactMarkdown source={rawMarkdownBody} />
           <PhotoGrid>
-            <Picture area="a1" />
-            <Picture area="a2" />
-            <Picture area="a3" />
-            <Picture area="a4" />
-            <Picture area="a5" />
-            <Picture area="a6" />
-            <Picture area="a7" />
+            {frontmatter.images && frontmatter.images.map(image => (
+              <Picture width={image.width} height={image.height} src={image.image} key={image.image} />
+            ))}
           </PhotoGrid>
-        </MediaQuery>
-        {/* Desktop view */}
-        <MediaQuery minWidth={breakpoints.laptop}>
-          <TextContainer>
-            <ReactMarkdown source={rawMarkdownBody} />
-            <Picture large />
-          </TextContainer>
-          <PhotoGrid>
-            <Picture area="a1" />
-            <Picture area="a2" />
-            <Picture area="a3" />
-            <Picture area="a4" />
-            <Picture area="a5" />
-            <Picture area="a6" />
-          </PhotoGrid>
-        </MediaQuery>
+        </ContentLayout>
         <BackButton to="/portafolio">
           <Apostrophe src={apostropheImg} />
         </BackButton>
@@ -183,9 +163,18 @@ export default function Template({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query($title: String!) {
+    markdownRemark(
+      frontmatter: { type: { eq: "project" }, title: { eq: $title } }
+    ) {
       rawMarkdownBody
+      frontmatter {
+        images {
+          height
+          image
+          width
+        }
+      }
     }
   }
 `;

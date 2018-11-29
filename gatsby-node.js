@@ -29,9 +29,14 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const route = node.frontmatter.title.replace(' ', '_').toLowerCase().replace(/\W/g, '');
+
       createPage({
-        path: `/project/${node.frontmatter.title}`,
+        path: `/project/${route}`,
         component: projectTemplate,
+        context: {
+          title: node.frontmatter.title
+        }
       });
     });
   });

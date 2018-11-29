@@ -55,7 +55,9 @@ const GridItem = styled.div`
 
 const SquarePicture = styled.div`
   width: 100%;
-  background: ${props => props.theme.main};
+  background-color: ${({ theme }) => theme.main};
+  background-image: url('${({ backgroundImage }) => backgroundImage}');
+  background-size: cover;
 
   &::after {
     content: '';
@@ -75,23 +77,30 @@ const Portafolio = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const projects = edges || [];
+  const projects = edges.map(({ node }) => ({ ...node }));
 
   return (
     <Layout>
       <Helmet title="Portafolio" />
       <Container>
         <Grid>
-          {projects.map((item, index) => (
-            <GridItemContainer>
-              <GridItem key={index}>
-                <Link to={item.node.frontmatter.path}>
-                  <SquarePicture />
-                </Link>
-                <ItemTitle>{item.node.frontmatter.title}</ItemTitle>
-              </GridItem>
-            </GridItemContainer>
-          ))}
+          {projects.map((item, index) => {
+            const route = item.frontmatter.title
+              .replace(' ', '_')
+              .toLowerCase()
+              .replace(/\W/g, '');
+
+            return (
+              <GridItemContainer>
+                <GridItem key={index}>
+                  <Link to={`/project/${route}`}>
+                    <SquarePicture backgroundImage={item.frontmatter.banner} />
+                  </Link>
+                  <ItemTitle>{item.frontmatter.title}</ItemTitle>
+                </GridItem>
+              </GridItemContainer>
+            );
+          })}
         </Grid>
       </Container>
     </Layout>
@@ -104,13 +113,14 @@ export default props => (
       query {
         allMarkdownRemark(
           sort: { fields: frontmatter___index }
-          filter: { fileAbsolutePath: { regex: "/.+/projects/.+/" } }
+          filter: { frontmatter: { type: { eq: "project" } } }
         ) {
           edges {
             node {
               frontmatter {
                 title
                 path
+                banner
               }
             }
           }
