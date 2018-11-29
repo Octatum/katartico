@@ -1,8 +1,11 @@
 ---
-path: "/project/a-third"
-title: "And another"
-index: 3
-type: "project"
+type: project
+title: 74 Aniversario
+banner: /assets/0-portada.jpg
+images:
+  - height: '1'
+    image: /assets/0-portada.jpg
+    width: '1'
 ---
 ## Company X
 ### Project Y
