@@ -4,12 +4,18 @@ title: 74 Aniversario
 banner: /assets/0-portada.jpg
 images:
   - height: '1'
-    image: /assets/0-portada.jpg
+    image: /assets/74aniversario -1 foto principal.png
     width: '1'
+  - height: '1'
+    image: /assets/74aniversario -3.jpg
+    width: '2'
 ---
-## Company X
-### Project Y
+# 74 Aniversario
 
-Duis autem vel eum iriure dolor in hen-drerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+## Branding, redes sociales, medios impresos, diseño gráfico y video
 
-En colaboración con: *Cool people*.
+El Tecnológico de Monterrey celebra su aniversario cada año con un evento para toda la comunidad Tec. Lideramos el equipo de comunicación donde creamos y ejecutamos el concepto de imagen del 74 Aniversario.
+
+_A este evento acudieron más de 5,000 integrantes de la comunidad Tec._
+
+_En colaboración con: Karina Tobías, Paulina Zambrano, Rebeca Valencia, Lucas Salinas y Ana Victoria Chávez._
