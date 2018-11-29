@@ -19,7 +19,10 @@ collections:
       - name: "images"
         label: "Imagenes"
         widget: "list"
-        field: { name: "image", label: "imagen", widget: "image" }
+        fields: 
+          - { name: "image", label: "Imagen", widget: "image" }
+          - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"] }
+          - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"] }
 
   - name: "About"
     label: "About Us"
