@@ -3,7 +3,9 @@ type: project
 title: And another
 banner: /assets/0-portada.jpg
 images:
-  - image: /assets/0-portada.jpg
+  - height: '1'
+    image: /assets/0-portada.jpg
+    width: '1'
 ---
 ## Company X
 ### Project Y
