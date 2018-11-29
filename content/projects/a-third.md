@@ -1,8 +1,9 @@
 ---
-path: "/project/a-third"
-title: "And another"
-index: 3
-type: "project"
+type: project
+title: And another
+banner: /assets/0-portada.jpg
+images:
+  - image: /assets/0-portada.jpg
 ---
 ## Company X
 ### Project Y
