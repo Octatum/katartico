@@ -9,7 +9,6 @@ collections:
   - name: "projects"
     label: "Proyectos"
     folder: "content/projects"
-    create: true
     fields:
       - { name: "type", label: "Type", widget: "hidden", default: "project" }
       - { name: "title", label: "Titulo", type: "string" }
@@ -20,14 +19,46 @@ collections:
         widget: "list"
         fields: 
           - { name: "image", label: "Imagen", widget: "image" }
-          - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"] }
-          - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"] }
+          - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"], default: "1" }
+          - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"], default: "1" }
 
   - name: "About"
     label: "About Us"
     folder: "content/about"
+    create: false
     fields:
       - { name: "title", label: "Titulo" }
       - { name: "type", label: "Type", widget: "hidden", default: "team-member" }
       - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+      - { name: "photo", label: "Foto", widget: "image" }
       - { name: "body", label: "Contenido", widget: "markdown" }
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Página de inicio"
+        name: "homePage"
+        file: "content/pages/home.json"
+        fields:
+          - label: "Introducción"
+            name: "intro"
+            widget: object
+            fields:
+              - { label: "Video introductorio", name: video, widget: file }
+              - { label: "Imagen en móvil", name: image, widget: image }          
+          - { label: "Slogan", name: slogan, widget: markdown }
+          - label: Clientes
+            name: customers
+            widget: list
+            fields:
+              - { label: Name, name: name }
+              - { label: Logotipo, name: logo, widget: image }
+              - { label: Url, name: url }
+          - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+
+      - label: "About Page"
+        name: "about"
+        file: "content/pages/about.json"        
+        fields:
+          - { label: "Imagen de equipo", name: banner, widget: image }
+          - { label: Intro, name: intro, widget: markdown }
