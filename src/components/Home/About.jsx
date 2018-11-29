@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device'
+import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import VideoPlayer from './VideoPlayer';
@@ -25,7 +25,7 @@ const Header = styled.h2`
   }
 
   ${device.laptop} {
-    margin-left:0.5em;
+    margin-left: 0.5em;
   }
 `;
 
@@ -71,7 +71,7 @@ const VideoContainer = styled.div`
       visibility: visible;
     }
   }
-`
+`;
 
 const About = () => (
   <Section>

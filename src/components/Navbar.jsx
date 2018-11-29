@@ -13,9 +13,9 @@ const Container = styled.div`
   position: relative;
   top: 0;
   z-index: 1;
-  -webkit-box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8);
-  -moz-box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8);
-  box-shadow: 1px 4px 40px 0px rgba(156,36,32,0.8)
+  -webkit-box-shadow: 1px 4px 40px 0px rgba(156, 36, 32, 0.8);
+  -moz-box-shadow: 1px 4px 40px 0px rgba(156, 36, 32, 0.8);
+  box-shadow: 1px 4px 40px 0px rgba(156, 36, 32, 0.8);
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -118,14 +118,14 @@ const Svg = styled.svg`
   height: calc(100% + 16px);
   width: calc(100% + 16px);
   transform: rotate(180deg);
-`
+`;
 
 const Line = styled.line`
   ${device.tablet} {
     stroke-width: 4px;
     stroke: ${props => props.theme.main};
   }
-`
+`;
 
 const Rectangle = styled.rect`
   fill: transparent;
@@ -133,13 +133,13 @@ const Rectangle = styled.rect`
   stroke-width: 4px;
   stroke-dasharray: 400%;
   stroke-dashoffset: 400%;
-  transition: all 0.7s cubic-bezier(.22,.61,.36,1);
+  transition: all 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
   position: relative;
 
   ${Svg}:hover & {
     stroke-dashoffset: 0%;
   }
-`
+`;
 
 const Anchor = styled.a`
   margin: 1rem 0;
@@ -169,13 +169,12 @@ const SocialMediaIcon = styled.div`
   justify-content: center;
   font-size: 1em;
 
-
   ${device.tablet} {
     width: 1em;
     margin: 0 0.25em;
     font-size: 1.2em;
   }
-`
+`;
 
 const links = [
   {
@@ -234,7 +233,7 @@ class Navbar extends Component {
           <ScrollLink
             key={index}
             to={item.hash ? item.hash : 'top'}
-            containerId='mainContainer'
+            containerId="mainContainer"
             duration={1000}
             offset={item.hash ? 0 : -115}
             onClick={this.toggleDropdown}
@@ -249,7 +248,11 @@ class Navbar extends Component {
         );
       }
       return (
-        <Link key={index} to={`${item.path}${item.hash ? `#${item.hash}` : ''}`} onClick={this.toggleDropdown}>
+        <Link
+          key={index}
+          to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
+          onClick={this.toggleDropdown}
+        >
           <Svg>
             <Rectangle height="100%" width="100%" />
             <Line x1="0" x2="100%" y1="0%" y2="0%" />
@@ -283,7 +286,10 @@ class Navbar extends Component {
             />
           </MediaQuery>
           {/* Tablet view */}
-          <MediaQuery minWidth={breakpoints.tablet} maxWidth={breakpoints.laptop - 1}>
+          <MediaQuery
+            minWidth={breakpoints.tablet}
+            maxWidth={breakpoints.laptop - 1}
+          >
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
             </Menu>

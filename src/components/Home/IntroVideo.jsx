@@ -13,7 +13,7 @@ const Container = styled.div`
   ${device.tablet} {
     display: block;
   }
-`
+`;
 
 const IntroVideo = () => (
   <Container>

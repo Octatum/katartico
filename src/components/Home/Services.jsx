@@ -24,7 +24,7 @@ const Header = styled.h2`
   }
 
   ${device.laptop} {
-    margin-left:0.5em;
+    margin-left: 0.5em;
   }
 `;
 

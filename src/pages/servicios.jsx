@@ -27,8 +27,6 @@ const Layout = styled.div`
       grid-template: 500px / repeat(4, 1fr);
 
       grid-gap: 0.1rem;
-
-  
     }
   }
 `;

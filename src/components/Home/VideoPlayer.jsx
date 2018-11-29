@@ -12,12 +12,12 @@ const Wrapper = styled.div`
 `;
 
 const ReactPlayer = styled(_ReactPlayer)`
-  width: ${props => props.big ? '100vw' : '100%'};
+  width: ${props => (props.big ? '100vw' : '100%')};
   height: auto;
-  max-height: ${props => props.big ? 'none' : '360px'};
+  max-height: ${props => (props.big ? 'none' : '360px')};
 
   ${device.laptop} {
-    max-height: ${props => props.big ? 'none' : '540px'};
+    max-height: ${props => (props.big ? 'none' : '540px')};
   }
 `;
 
@@ -59,8 +59,8 @@ class VideoPlayer extends Component {
         playsinline
         muted
         onEnded={this.togglePlayback}
-        width='100%'
-        height='100%'
+        width="100%"
+        height="100%"
         big={this.props.big}
       />
       {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}

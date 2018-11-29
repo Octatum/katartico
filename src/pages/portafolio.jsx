@@ -35,7 +35,7 @@ const GridItemContainer = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
-`
+`;
 
 const GridItem = styled.div`
   position: relative;

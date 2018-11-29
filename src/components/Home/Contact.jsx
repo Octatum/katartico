@@ -23,7 +23,7 @@ const Header = styled.h2`
   }
 
   ${device.laptop} {
-    margin-left:0.5em;
+    margin-left: 0.5em;
   }
 `;
 
@@ -32,9 +32,7 @@ const FormContainer = styled.div`
   justify-content: right;
   flex: 1;
   padding: 0 5%;
-
-  
-`
+`;
 
 const Form = styled.div`
   display: flex;
@@ -46,7 +44,6 @@ const Form = styled.div`
 
   ${device.laptop} {
     margin-left: 4em;
-
   }
 `;
 
@@ -67,7 +64,7 @@ const Label = styled.p`
   min-width: 5em;
   padding-right: 0.5em;
   align-self: ${props => (props.top ? 'flex-start' : 'flex-end')};
-  top: ${({top}) => top && '10px'};
+  top: ${({ top }) => top && '10px'};
 `;
 
 const Input = styled.input`
@@ -114,12 +111,12 @@ const ApostropheDiv = styled.div`
     display: flex;
     align-items: flex-start;
   }
-`
+`;
 
 const Apostrophe = styled.img`
   width: 100%;
   opacity: 0.8;
-`
+`;
 
 class Contact extends Component {
   state = {

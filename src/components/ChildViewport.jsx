@@ -22,7 +22,7 @@ const Footer = styled.div`
   padding: 4em 0 1em;
   color: ${props => props.theme.white};
   text-align: center;
-`
+`;
 
 class ChildViewport extends React.Component {
   state = {
@@ -51,11 +51,13 @@ class ChildViewport extends React.Component {
           path={this.props.path}
           minimize={this.state.shouldMinimizeNavbar}
         />
-        <ChildrenContainer id='mainContainer'>
+        <ChildrenContainer id="mainContainer">
           <Element name="top">
             <Waypoint onPositionChange={this.handleWaypointPositionChange} />
             {this.props.children}
-            <Footer>Copyright © Todos los derechos reservados. Katartico 2018.</Footer>
+            <Footer>
+              Copyright © Todos los derechos reservados. Katartico 2018.
+            </Footer>
           </Element>
         </ChildrenContainer>
       </Viewport>

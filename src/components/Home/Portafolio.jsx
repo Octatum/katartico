@@ -29,9 +29,8 @@ const Header = styled.h2`
   }
 
   ${device.laptop} {
-    margin-left:0.5em;
+    margin-left: 0.5em;
   }
-
 `;
 
 const Link = styled(_Link)`
@@ -126,8 +125,8 @@ const Portafolio = () => (
     <LogoGrid>
       {content.map((item, index) => (
         <GridItem key={index}>
-          <Link to ="/portafolio">
-            <Logo src={item} /> 
+          <Link to="/portafolio">
+            <Logo src={item} />
           </Link>
         </GridItem>
       ))}

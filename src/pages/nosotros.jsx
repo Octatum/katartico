@@ -32,7 +32,6 @@ const Introduction = styled.p`
 `;
 
 const Picture = styled.img`
-  
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
@@ -51,7 +50,7 @@ const PeopleDiv = styled.div`
     flex-direction: row;
     justify-content: space-around;
   }
-`
+`;
 
 const Person = styled.div`
   font-size: 1em;
@@ -69,7 +68,7 @@ const PersonPicture = styled(Picture)`
   ${device.laptop} {
     height: 250px;
   }
-`
+`;
 
 const ReactMarkdown = styled(_ReactMarkdown)`
   h2 {
@@ -93,7 +92,7 @@ const ReactMarkdown = styled(_ReactMarkdown)`
       font-size: 2em;
     }
   }
-`
+`;
 
 const About = props => {
   const {
@@ -106,7 +105,7 @@ const About = props => {
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <Picture src = {fotoKat} />
+        <Picture src={fotoKat} />
         <Introduction center fontSize="1.3">
           ¿Qué piensan de nosotros? &nbsp; Que somos intensos.
           <br />

@@ -32,23 +32,23 @@ const BackButton = styled(_Link)`
   color: inherit;
 
   ::after {
-    content: "Regresar";
+    content: 'Regresar';
     position: absolute;
     top: 8px;
     left: 5px;
     font-size: 1rem;
   }
-`
+`;
 
 const Apostrophe = styled.img`
   height: 100%;
-`
+`;
 
 const TextContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 2em 5em 1em;
-`
+`;
 
 const ReactMarkdown = styled(_ReactMarkdown)`
   margin-bottom: 3rem;
@@ -129,9 +129,9 @@ const Picture = styled.div`
 
   ${device.tablet} {
     height: 100%;
-    width: ${props => props.large ? '20em' : '100%'};
+    width: ${props => (props.large ? '20em' : '100%')};
     margin: 0;
-    grid-area: ${props => props.large ? '' : props.area};
+    grid-area: ${props => (props.large ? '' : props.area)};
   }
 `;
 
