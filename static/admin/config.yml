@@ -14,7 +14,6 @@ collections:
       - { name: "type", label: "Type", widget: "hidden", default: "project" }
       - { name: "title", label: "Titulo", type: "string" }
       - { name: "banner", label: "Banner", widget: "image" }
-      - { name: "customer", label: "Cliente", type: "string" }
       - { name: "body", label: "Descripción", widget: "markdown" }
       - name: "images"
         label: "Imagenes"
