@@ -11,17 +11,27 @@ collections:
     folder: "content/projects"
     create: true
     fields:
-      - { name: "path", label: "Ruta" }
-      - { name: "title", label: "Titulo" }
-      - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
-      - { name: "type", label: "heheheheheh", widget: "hidden", default: "project" }
-      - { name: "body", label: "Contenido", widget: "markdown" }
+      - { name: "type", label: "Type", widget: "hidden", default: "project" }
+      - { name: "title", label: "Titulo", type: "string" }
+      - { name: "banner", label: "Banner", widget: "image" }
+      - { name: "customer", label: "Cliente", type: "string" }
+      - { name: "body", label: "Descripción", widget: "markdown" }
+      - name: "images"
+        label: "Imagenes"
+        widget: "object"
+        fields: 
+          - { label: "Imagen superior izquierda", name: "imageTopLeft", widget: "image" }
+          - { label: "Imagen superior media", name: "imageTopCenter", widget: "image" }
+          - { label: "Imagen superior derecha", name: "imageTopRight", widget: "image" }
+          - { label: "Imagen media izquierda", name: "imageMiddleLeft", widget: "image" }
+          - { label: "Imagen inferior izquierda", name: "imageBottomLeft", widget: "image" }
+          - { label: "Imagen superior derecha", name: "imageBottomRight", widget: "image" }
 
   - name: "About"
     label: "About Us"
     folder: "content/about"
     fields:
       - { name: "title", label: "Titulo" }
-      - { name: "type", label: "heheheheheh", widget: "hidden", default: "team-member" }
+      - { name: "type", label: "Type", widget: "hidden", default: "team-member" }
       - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
       - { name: "body", label: "Contenido", widget: "markdown" }

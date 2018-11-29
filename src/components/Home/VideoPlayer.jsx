@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import _ReactPlayer from 'react-player';
-import { device } from '../../utilities/device';
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,11 +13,7 @@ const Wrapper = styled.div`
 const ReactPlayer = styled(_ReactPlayer)`
   width: ${props => (props.big ? '100vw' : '100%')};
   height: auto;
-  max-height: ${props => (props.big ? 'none' : '360px')};
-
-  ${device.laptop} {
-    max-height: ${props => (props.big ? 'none' : '540px')};
-  }
+  max-height: none;
 `;
 
 const PlayButton = styled.div`
@@ -43,8 +38,6 @@ class VideoPlayer extends Component {
     playing: true,
   };
 
-  playerRef = React.createRef();
-
   togglePlayback = () => {
     this.setState(prevState => ({
       playing: !prevState.playing,
@@ -62,6 +55,7 @@ class VideoPlayer extends Component {
         width="100%"
         height="100%"
         big={this.props.big}
+        loop
       />
       {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
     </Wrapper>

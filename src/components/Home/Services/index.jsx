@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
+import { device } from '../../../utilities/device';
 
-import Section from '../Section';
-import apostropheImg from '../assets/apostrophe.svg';
+import Section from '../../Section';
+import ServiceApostrophe from './ServiceApostrophe';
 
 const Header = styled.h2`
   position: relative;
@@ -47,50 +47,6 @@ const Apostrophes = styled.div`
   }
 `;
 
-const Item = styled.div`
-  position: relative;
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-
-  ${device.tablet} {
-    flex: 1;
-  }
-`;
-
-const Image = styled.img`
-  height: 115px;
-
-  ${device.tablet} {
-    height: 150px;
-  }
-
-  ${device.laptop} {
-    height: 250px;
-  }
-`;
-
-const Text = styled.p`
-  position: absolute;
-  top: 8px;
-  left: 6px;
-  font-size: 1.1em;
-  font-weight: regular;
-
-  ${device.tablet} {
-    font-size: 1.3em;
-    top: 12px;
-    left: 9px;
-  }
-
-  ${device.laptop} {
-    font-size: 1.6em;
-    top: 30px;
-    left: 16px;
-  }
-`;
-
 const content = [
   'Construcción de Marca',
   'Campañas Publicitarias',
@@ -104,13 +60,8 @@ const Services = () => (
       <Link to="/servicios">Servicios</Link>
     </Header>
     <Apostrophes>
-      {content.map((item, index) => (
-        <Item key={item}>
-          <Link to="/servicios">
-            <Image src={apostropheImg} />
-            <Text>{item}</Text>
-          </Link>
-        </Item>
+      {content.map(item => (
+        <ServiceApostrophe key={item} item={item} />
       ))}
     </Apostrophes>
   </Section>
