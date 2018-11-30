@@ -119,7 +119,6 @@ export default props => (
             node {
               frontmatter {
                 title
-                path
                 banner
               }
             }
