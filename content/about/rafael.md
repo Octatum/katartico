@@ -1,7 +1,8 @@
 ---
-title: "Rafael Camacho Ruiz"
+title: Rafael Camacho Ruiz
+type: team-member
 index: 2
-type: "team-member"
+photo: /assets/fotorafa.jpg
 ---
 ## Rafael Camacho Ruiz
 
