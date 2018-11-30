@@ -49,12 +49,6 @@ const Apostrophe = styled.img`
   height: 100%;
 `;
 
-const TextContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 2em 5em 1em;
-`;
-
 const ReactMarkdown = styled(_ReactMarkdown)`
   margin-bottom: 3rem;
 

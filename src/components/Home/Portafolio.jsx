@@ -1,15 +1,9 @@
 import React from 'react';
-import { Link as _Link } from 'gatsby';
+import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { device } from '../../utilities/device';
 
 import Section from '../Section';
-import bissuImg from '../assets/logos/bissu.svg';
-import incubadoraImg from '../assets/logos/incubadora.svg';
-import jimjamsImg from '../assets/logos/jimjams.svg';
-import newMariasImg from '../assets/logos/new-marias.svg';
-import tecImg from '../assets/logos/tec-de-mty.svg';
-import torreLuzImg from '../assets/logos/torre-luz.svg';
 
 const Header = styled.h2`
   position: relative;
@@ -135,4 +129,10 @@ const Portafolio = () => (
   </Section>
 );
 
-export default Portafolio;
+export default props => (
+  <StaticQuery
+    query={graphql`
+    `}
+    render={data => <Portafolio data={data} {...props} />}
+  />
+);
