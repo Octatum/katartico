@@ -4,9 +4,9 @@ index: 1
 title: 74 Aniversario
 banner: /assets/0-portada.jpg
 images:
-  - height: '2'
+  - height: '1'
     image: /assets/74aniversario -1 foto principal.png
-    width: '1'
+    width: '2'
   - height: '2'
     image: /assets/74aniversario -2.JPG
     width: '2'
