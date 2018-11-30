@@ -1,7 +1,8 @@
 ---
-title: "María Elisa Ríos"
+title: María Elisa Ríos
+type: team-member
 index: 1
-type: "team-member"
+photo: /assets/fotomaria.jpg
 ---
 ## María Elisa Ríos
 
