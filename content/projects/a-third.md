@@ -18,7 +18,7 @@ images:
   - height: '2'
     image: /assets/74aniversario -5.JPG
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/74aniversario -6.JPG
     width: '2'
 ---
