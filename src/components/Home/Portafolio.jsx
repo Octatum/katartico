@@ -95,15 +95,13 @@ const Logo = styled.img`
   }
 `;
 
-const BigPicture = styled.div`
-  height: 100px;
+const BigPicture = styled('img')`
   width: 90%;
   margin: 3em auto 1em;
-  background: ${props => props.theme.main};
 `;
 
 const Portafolio = (props) => {
-  const { customers } = props.data.pagesJson;
+  const { customers, portfolioImage } = props.data.pagesJson;
 
   return (
     <Section>
@@ -119,7 +117,7 @@ const Portafolio = (props) => {
           </GridItem>
         ))}
       </LogoGrid>
-      <BigPicture />
+      <BigPicture src={portfolioImage} />
     </Section>
   );
 }
@@ -134,6 +132,7 @@ export default props => (
             logo
             url
           }
+          portfolioImage
         }
       }
     `}

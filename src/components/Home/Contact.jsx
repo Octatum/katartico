@@ -34,7 +34,7 @@ const FormContainer = styled.div`
   padding: 0 5%;
 `;
 
-const Form = styled.div`
+const Form = styled('form')`
   display: flex;
   flex-direction: column;
   align-self: center;
