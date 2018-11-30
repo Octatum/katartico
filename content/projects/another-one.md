@@ -30,6 +30,9 @@ images:
   - height: '3'
     image: /assets/biofase - 9.jpg
     width: '2'
+  - height: '3'
+    image: /assets/biofase - 11.jpg
+    width: '2'
 ---
 # Biofase
 
