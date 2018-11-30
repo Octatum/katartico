@@ -1,6 +1,6 @@
 ---
 type: project
-title: A test!
+title: Premio Luis Elizondo
 banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
 images:
   - height: '3'
