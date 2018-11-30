@@ -27,6 +27,9 @@ images:
   - height: '2'
     image: /assets/biofase - 8.jpg
     width: '3'
+  - height: '3'
+    image: /assets/biofase - 9.jpg
+    width: '2'
 ---
 # Biofase
 
