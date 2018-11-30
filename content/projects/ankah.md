@@ -12,6 +12,18 @@ images:
   - height: '2'
     image: /assets/ankah - 3.jpg
     width: '1'
+  - height: '3'
+    image: /assets/ankah - 4.jpg
+    width: '3'
+  - height: '2'
+    image: /assets/ankah - 5.jpg
+    width: '1'
+  - height: '1'
+    image: /assets/ankah - 6 Logitpo propuestas-25.png
+    width: '1'
+  - height: '1'
+    image: /assets/ankah - 7 Logitpo propuestas-26.png
+    width: '1'
 ---
 # ANKAH
 
