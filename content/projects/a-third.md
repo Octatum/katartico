@@ -1,8 +1,8 @@
 ---
 type: project
+index: 1
 title: 74 Aniversario
 banner: /assets/0-portada.jpg
-index: 1
 images:
   - height: '2'
     image: /assets/74aniversario -1 foto principal.png
@@ -29,6 +29,6 @@ images:
 
 El Tecnológico de Monterrey celebra su aniversario cada año con un evento para toda la comunidad Tec. Lideramos el equipo de comunicación donde creamos y ejecutamos el concepto de imagen del 74 Aniversario.
 
-_A este evento acudieron más de 5,000 integrantes de la comunidad Tec._
+A este evento acudieron más de 5,000 integrantes de la comunidad Tec.
 
 _En colaboración con: Karina Tobías, Paulina Zambrano, Rebeca Valencia, Lucas Salinas y Ana Victoria Chávez._
