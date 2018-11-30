@@ -41,6 +41,7 @@ collections:
         name: "homePage"
         file: "content/pages/home.json"
         fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
           - label: "Introducción"
             name: "intro"
             widget: object
@@ -61,5 +62,6 @@ collections:
         name: "about"
         file: "content/pages/about.json"        
         fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
           - { label: "Imagen de equipo", name: banner, widget: image }
           - { label: Intro, name: intro, widget: markdown }
