@@ -9,6 +9,12 @@ images:
   - height: '3'
     image: /assets/premioluiselizondo - 2.png
     width: '2'
+  - height: '3'
+    image: /assets/premioluiselizondo - 3.png
+    width: '2'
+  - height: '3'
+    image: /assets/premioluiselizondo - 4.png
+    width: '2'
 ---
 # Premio Luis Elizondo
 
