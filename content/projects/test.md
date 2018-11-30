@@ -5,19 +5,19 @@ banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
 images:
   - height: '3'
     image: /assets/premioluiselizondo - 1 foto principal.png
-    width: '2'
+    width: '3'
   - height: '3'
     image: /assets/premioluiselizondo - 2.png
-    width: '2'
+    width: '3'
   - height: '3'
     image: /assets/premioluiselizondo - 3.png
-    width: '2'
+    width: '3'
   - height: '3'
     image: /assets/premioluiselizondo - 4.png
-    width: '2'
+    width: '3'
   - height: '3'
     image: /assets/premioluiselizondo - 5.png
-    width: '2'
+    width: '3'
 ---
 # Premio Luis Elizondo
 
