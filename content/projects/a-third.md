@@ -9,10 +9,10 @@ images:
   - height: '2'
     image: /assets/74aniversario -2.JPG
     width: '2'
-  - height: '1'
+  - height: '2'
     image: /assets/74aniversario -3.jpg
     width: '2'
-  - height: '1'
+  - height: '2'
     image: /assets/74aniversario -4.jpg
     width: '2'
   - height: '2'
