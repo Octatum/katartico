@@ -14,7 +14,7 @@ images:
     width: '2'
   - height: '3'
     image: /assets/biofase - 4.jpg
-    width: '2'
+    width: '1'
   - height: '3'
     image: /assets/biofase - 5.jpg
     width: '2'
