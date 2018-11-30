@@ -9,6 +9,7 @@ collections:
   - name: "projects"
     label: "Proyectos"
     folder: "content/projects"
+    create: true
     fields:
       - { name: "type", label: "Type", widget: "hidden", default: "project" }
       - { name: "title", label: "Titulo", type: "string" }
