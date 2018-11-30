@@ -3,27 +3,36 @@ type: project
 title: Ankah
 banner: /assets/ankah - 0 portada ANKAH.jpg
 images:
-  - height: '1'
+  - height: '2'
     image: /assets/ankah - 1 foto principal.png
-    width: '1'
-  - height: '1'
+    width: '2'
+  - height: '2'
     image: /assets/ankah - 2.png
     width: '1'
   - height: '2'
     image: /assets/ankah - 3.jpg
-    width: '1'
+    width: '2'
   - height: '3'
     image: /assets/ankah - 4.jpg
     width: '3'
   - height: '2'
     image: /assets/ankah - 5.jpg
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/ankah - 6 Logitpo propuestas-25.png
-    width: '1'
-  - height: '1'
+    width: '2'
+  - height: '2'
     image: /assets/ankah - 7 Logitpo propuestas-26.png
     width: '1'
+  - height: '2'
+    image: /assets/ankah - 8 Logitpo propuestas-27.png
+    width: '1'
+  - height: '2'
+    image: /assets/ankah - 9 Logitpo propuestas-28.png
+    width: '2'
+  - height: '2'
+    image: /assets/ankah - 10 Logitpo propuestas-29.png
+    width: '2'
 ---
 # ANKAH
 
