@@ -1,12 +1,27 @@
 ---
-path: "/project/this-is-getting-old"
-title: "Aand here"
-index: 4
-type: "project"
+type: project
+title: Fundación El mundo escribe
+banner: /assets/elmundoescribe - 0 portada eme.jpg
+images:
+  - height: '3'
+    image: /assets/elmundoescribe - 1 foto principal.jpg
+    width: '3'
+  - height: '3'
+    image: /assets/elmundoescribe - 2.png
+    width: '2'
+  - height: '1'
+    image: /assets/elmundoescribe - 3.png
+    width: '1'
+  - height: '1'
+    image: /assets/elmundoescribe - 4.png
+    width: '1'
 ---
-## Company X
-### Project Y
+# Fundación El mundo escribe
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+## Página web
 
-En colaboración con: *XXXXXXXXXXXXXXXXXXXXXX*.
+La Fundación El mundo escribe promueve la escritura como actividad creativa desde la infancia y para siempre. 
+
+Con el fin de incrementar las donaciones hacia la fundación, conceptualizamos una propuesta integral de publicidad que consistió en diseño gráfico, toma de fotografías, grabación y edición de video, planeación de contenido en redes sociales, diseño y programación de página web, diseño de activaciones de marca, branding y diseño de prototipos promocionales. 
+
+##
