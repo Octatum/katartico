@@ -33,8 +33,9 @@ body {
 }
 
 @font-face {
-	font-family: 'Lato';
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
 	src: url("/fonts/Lato.ttf");
+	font-display: swap;
 }
 
 strong {
