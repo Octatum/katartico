@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import VideoPlayer from './VideoPlayer';
-import movie from '../assets/intro_animation.mp4';
 import { device } from '../../utilities/device';
+import { StaticQuery, graphql } from 'gatsby';
 
 const Container = styled.div`
   height: 100vh;
@@ -15,10 +15,30 @@ const Container = styled.div`
   }
 `;
 
-const IntroVideo = () => (
-  <Container>
-    <VideoPlayer movie={movie} big />
-  </Container>
+const IntroVideo = (props) => {
+  const { intro } = props.data.pagesJson;
+
+  return (
+    <Container>
+      <VideoPlayer movie={intro.video} big />
+    </Container>
+  );
+}
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        pagesJson(type: {eq: "page-home"}) {
+          slogan
+          intro {
+            video
+            image
+          }
+        }
+      }
+    `}
+    render={(data) => <IntroVideo data={data} {...props} />}
+  />
 );
 
-export default IntroVideo;

@@ -1,4 +1,5 @@
 {
+  "type": "page-about",
   "banner": "/assets/equipo_kat.jpg",
-  "intro": "¿Qué piensan de nosotros? \n\nQue somos intensos.\n\nDecidimos plasmar esa intensidad en un proyecto tangible.\n\n**Katartico es la combinación de nuestras habilidades y la pasión con la que hacemos las cosas.**"
+  "body": "¿Qué piensan de nosotros? Que somos intensos.\n\nDecidimos plasmar esa intensidad en un proyecto tangible.\n\n**Katartico es la combinación de nuestras habilidades y la pasión con la que hacemos las cosas.**"
 }

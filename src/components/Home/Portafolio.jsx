@@ -102,37 +102,41 @@ const BigPicture = styled.div`
   background: ${props => props.theme.main};
 `;
 
-const content = [
-  tecImg,
-  bissuImg,
-  incubadoraImg,
-  newMariasImg,
-  jimjamsImg,
-  torreLuzImg,
-];
+const Portafolio = (props) => {
+  const { customers } = props.data.pagesJson;
 
-const Portafolio = () => (
-  <Section>
-    <Header>
-      <Link to="/portafolio">Portafolio</Link>
-    </Header>
-    <LogoGrid>
-      {content.map((item, index) => (
-        <GridItem key={index}>
-          <Link to="/portafolio">
-            <Logo src={item} />
-          </Link>
-        </GridItem>
-      ))}
-    </LogoGrid>
-    <BigPicture />
-  </Section>
-);
+  return (
+    <Section>
+      <Header>
+        <Link to="/portafolio">Portafolio</Link>
+      </Header>
+      <LogoGrid>
+        {customers.map((item) => (
+          <GridItem key={item.logo}>
+            <Link to={item.url}>
+              <Logo src={item.logo} alt={item.name} />
+            </Link>
+          </GridItem>
+        ))}
+      </LogoGrid>
+      <BigPicture />
+    </Section>
+  );
+}
 
 export default props => (
   <StaticQuery
     query={graphql`
+      query {
+        pagesJson(type: {eq: "page-home"}) {
+          customers {
+            name
+            logo
+            url
+          }
+        }
+      }
     `}
-    render={data => <Portafolio data={data} {...props} />}
+    render={(data) => <Portafolio data={data} {...props} />}
   />
 );

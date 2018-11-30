@@ -2,9 +2,6 @@ import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-import fotoKat from '../components/assets/fotoKatartico.jpg';
-import fotoRafa from '../components/assets/fotoRafa.jpg';
-import fotoMaria from '../components/assets/fotoMaria.jpg';
 import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
@@ -18,17 +15,6 @@ const Container = styled.div`
   padding: 3em 6vw 1em;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
-`;
-
-const Introduction = styled.p`
-  line-height: 1.2;
-  font-size: 17px;
-  text-align: center;
-  margin: 2rem 0;
-
-  ${device.tablet} {
-    font-size: 1.3em;
-  }
 `;
 
 const Picture = styled.img`
@@ -71,6 +57,8 @@ const PersonPicture = styled(Picture)`
 `;
 
 const ReactMarkdown = styled(_ReactMarkdown)`
+  ${({center}) => center && 'text-align: center'};
+
   h2 {
     font-size: 1.5em;
     font-weight: bold;
@@ -94,10 +82,24 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   }
 `;
 
+const Introduction = styled(ReactMarkdown)`
+  line-height: 1.2;
+  font-size: 17px;
+  text-align: center;
+  margin: 2rem 0;
+
+  ${device.tablet} {
+    p {
+      font-size: 1.3em;
+    }
+  }
+`;
+
 const About = props => {
   const {
     data: {
       allMarkdownRemark: { edges: people },
+      pagesJson
     },
   } = props;
 
@@ -105,23 +107,12 @@ const About = props => {
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <Picture src={fotoKat} />
-        <Introduction center fontSize="1.3">
-          ¿Qué piensan de nosotros? &nbsp; Que somos intensos.
-          <br />
-          <br />
-          Decidimos plasmar esa intensidad en un proyecto tangible.
-          <br />
-          <br />
-          <strong>
-            Katartico es la combinación de nuestras habilidades y la pasión con
-            la que hacemos las cosas.
-          </strong>
-        </Introduction>
+        <Picture src={pagesJson.banner} />
+        <Introduction center source={pagesJson.body} />
         <PeopleDiv>
           {people.map((item, index) => (
             <Person key={index}>
-              <PersonPicture />
+              <PersonPicture src={item.node.frontmatter.photo} />
               <ReactMarkdown source={item.node.rawMarkdownBody} />
             </Person>
           ))}
@@ -142,8 +133,16 @@ export default props => (
           edges {
             node {
               rawMarkdownBody
+              frontmatter {
+                photo
+              }
             }
           }
+        }
+
+        pagesJson(type: {eq: "page-about"}) {
+          banner
+          body
         }
       }
     `}

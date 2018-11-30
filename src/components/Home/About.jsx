@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link as _Link } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
+import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import VideoPlayer from './VideoPlayer';
-import movie from '../assets/intro_animation.mp4';
 
 const Header = styled.h2`
   position: relative;
@@ -34,7 +34,7 @@ const Link = styled(_Link)`
   color: inherit;
 `;
 
-const Quote = styled.div`
+const Quote = styled(ReactMarkdown)`
   position: relative;
   padding: 0.7em 0;
   margin: 1em 2em;
@@ -73,18 +73,37 @@ const VideoContainer = styled.div`
   }
 `;
 
-const About = () => (
-  <Section>
-    <Header>
-      <Link to="/nosotros">Nosotros</Link>
-    </Header>
-    <Link to="/nosotros">
-      <Quote>Insert your inspirational quote right here...</Quote>
-    </Link>
-    <VideoContainer>
-      <VideoPlayer movie={movie} />
-    </VideoContainer>
-  </Section>
-);
+const About = (props) => {
+  const { slogan, intro } = props.data.pagesJson;
 
-export default About;
+  return (
+    <Section>
+      <Header>
+        <Link to="/nosotros">Nosotros</Link>
+      </Header>
+      <Link to="/nosotros">
+        <Quote source={slogan} />
+      </Link>
+      <VideoContainer>
+        <VideoPlayer movie={intro.video} />
+      </VideoContainer>
+    </Section>
+  );
+}
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        pagesJson(type: {eq: "page-home"}) {
+          slogan
+          intro {
+            video
+            image
+          }
+        }
+      }
+    `}
+    render={(data) => <About data={data} {...props} />}
+  />
+);
