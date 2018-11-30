@@ -12,7 +12,7 @@ images:
   - height: '1'
     image: /assets/elmundoescribe - 3.png
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/elmundoescribe - 4.png
     width: '1'
 ---
