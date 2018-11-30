@@ -5,7 +5,7 @@ banner: /assets/biofase - 0 portada BIOFASE.jpg
 images:
   - height: '3'
     image: /assets/biofase - 1 foto principal.jpg
-    width: '2'
+    width: '1'
   - height: '3'
     image: /assets/biofase - 2.png
     width: '2'
