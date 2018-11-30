@@ -6,15 +6,15 @@ images:
   - height: '3'
     image: /assets/premioluiselizondo - 1 foto principal.png
     width: '3'
-  - height: '3'
+  - height: '2'
     image: /assets/premioluiselizondo - 2.png
-    width: '3'
-  - height: '3'
+    width: '2'
+  - height: '1'
     image: /assets/premioluiselizondo - 3.png
-    width: '3'
-  - height: '3'
+    width: '1'
+  - height: '1'
     image: /assets/premioluiselizondo - 4.png
-    width: '3'
+    width: '1'
   - height: '3'
     image: /assets/premioluiselizondo - 5.png
     width: '3'
