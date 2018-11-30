@@ -2,6 +2,7 @@
 type: project
 title: ANKAH
 banner: /assets/ankah - 0 portada ANKAH.jpg
+index: 2
 images:
   - height: '2'
     image: /assets/ankah - 1 foto principal.png

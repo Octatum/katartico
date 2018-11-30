@@ -126,7 +126,9 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        pagesJson(type: {eq: "page-home"}) {
+        pagesJson(
+          type: {eq: "page-home"}
+        ) {
           customers {
             name
             logo

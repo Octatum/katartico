@@ -2,6 +2,7 @@
 type: project
 title: Fotografía creativa
 banner: /assets/fotocreativa - 0 portada.jpg
+index: 5
 images:
   - height: '2'
     image: /assets/fotocreativa - 1 foto principal.jpg

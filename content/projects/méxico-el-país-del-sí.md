@@ -2,6 +2,7 @@
 type: project
 title: 'México: el país del sí'
 banner: /assets/mexicosi - 0 portada mexico.jpg
+index: 7
 images:
   - height: '2'
     image: /assets/mexicosi - 1 foto principal.png

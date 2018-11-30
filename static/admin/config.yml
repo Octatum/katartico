@@ -12,6 +12,7 @@ collections:
     create: true
     fields:
       - { name: "type", label: "Type", widget: "hidden", default: "project" }
+      - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
       - { name: "title", label: "Titulo", type: "string" }
       - { name: "banner", label: "Banner", widget: "image" }
       - { name: "body", label: "Descripción", widget: "markdown" }
