@@ -1,12 +1,19 @@
 ---
-path: "/project/test"
-title: "A test!"
-index: 1
-type: "project"
+type: project
+title: A test!
+banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
+images:
+  - height: '3'
+    image: /assets/premioluiselizondo - 1 foto principal.png
+    width: '2'
+  - height: '3'
+    image: /assets/premioluiselizondo - 2.png
+    width: '2'
 ---
-## Company X
-### Project Y
+# Premio Luis Elizondo
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos-trud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hen-drerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+## **Diseño gráfico**
 
-En colaboración con: *XXXXXXXXXXXXXXXXXXXXXX*.
+Premios Institucionales es la división del Tecnológico de Monterrey encargada de reconocer a aquellas personas comprometidas con el desarrollo de su comunidad. Aquellos que generan programas sustentables y suman valor a su entorno. Cada año se lleva a cabo la entrega del Premio Luis Elizondo que reconoce a personas y asociaciones estudiantiles de todo el país que cumplen con estos requisitos. Premian las siguientes categorías: Científico-Tecnológico, Humanitario y Humanitario para Agrupaciones Estudiantiles.
+
+Llevamos a cabo la imagen de la convocatoria 2019, así como la escenografía del evento y publicaciones para redes sociales.
