@@ -2,7 +2,7 @@
 title: María Elisa Ríos
 type: team-member
 index: 1
-photo: /assets/fotomaria.jpg
+photo: /assets/marie-recorte.jpg
 ---
 ## María Elisa Ríos
 
