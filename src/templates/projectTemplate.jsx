@@ -77,6 +77,7 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   }
 
   ${device.tablet} {
+    flex: 3;
     h1 {
       font-size: 2em;
     }
@@ -88,10 +89,11 @@ const ReactMarkdown = styled(_ReactMarkdown)`
     p {
       font-size: 1.2em;
     }
+    margin-right: 2rem;
   }
 
   ${device.laptop} {
-    width: 60%;
+    flex: 3;
     margin: 0;
   }
 `;
@@ -129,6 +131,25 @@ const Picture = styled.div`
     grid-column: span ${({ width }) => width};
   }
 `;
+
+const HeaderContainer = styled('div')`
+  display: flex;
+
+  flex-direction: column;
+
+  ${device.tablet} {
+    flex-direction: row;
+  }
+`;
+
+const HighlightedImageContainer = styled('div')`
+  flex: 2;
+`;
+
+const HighlightedImage = styled('img')`
+  width: 100%;
+`;
+
 export default class Template extends Component {
   state = {
     photoIndex: 0,
@@ -158,7 +179,12 @@ export default class Template extends Component {
             <Apostrophe src={apostropheImg} />
           </BackButton>
           <ContentLayout>
-            <ReactMarkdown source={rawMarkdownBody} />
+            <HeaderContainer>
+              <ReactMarkdown source={rawMarkdownBody} />
+              <HighlightedImageContainer>
+                <HighlightedImage src={frontmatter.highlightedImage} />
+              </HighlightedImageContainer>
+            </HeaderContainer>
             <PhotoGrid>
               {frontmatter.images &&
                 frontmatter.images.map((image, index) => (
@@ -211,6 +237,7 @@ export const pageQuery = graphql`
           image
           width
         }
+        highlightedImage
       }
     }
   }
