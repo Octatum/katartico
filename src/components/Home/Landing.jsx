@@ -7,7 +7,7 @@ import { Title, Arrow } from './assets/SVGs';
 import { Apostrophe } from '../assets/ApostropheComp';
 
 const Container = styled.div`
-  display: ${({ show }) => (show === 'true' ? 'grid' : 'grid')};
+  display: ${({ show }) => (show === 'true' ? 'grid' : 'none')};
   box-sizing: border-box;
   min-height: 30vh;
   height: 100vh;

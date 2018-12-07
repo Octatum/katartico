@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Element } from 'react-scroll';
 import Helmet from 'react-helmet';
-import Layout from '../components/Layout';
+import { HomeLayout } from '../components/Layout';
 
 import IntroVideo from '../components/Home/IntroVideo';
 import About from '../components/Home/About';
@@ -22,10 +22,9 @@ const Container = styled.div`
 `;
 
 const IndexPage = props => (
-  <Layout path={props.location.pathname}>
+  <HomeLayout path={props.location.pathname}>
     <Helmet title="Inicio" />
     <Container>
-      <Landing />
       <IntroVideo />
       <About />
       <Services />
@@ -34,7 +33,7 @@ const IndexPage = props => (
         <Contact />
       </Element>
     </Container>
-  </Layout>
+  </HomeLayout>
 );
 
 export default IndexPage;

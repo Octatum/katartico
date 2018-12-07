@@ -167,51 +167,6 @@ const ListItem = styled.div`
   padding-bottom: 0.5em;
 `;
 
-const content = [
-  {
-    image: branding,
-    header: 'Construcción de marca',
-    body: (
-      <ElementBody>
-        <ListItem>Naming</ListItem>
-        <ListItem>Branding</ListItem>
-      </ElementBody>
-    ),
-  },
-  {
-    image: campania,
-    header: 'Campañas publicitarias',
-    body: (
-      <ElementBody>
-        <ListItem>ATL</ListItem>
-        <ListItem>BTL</ListItem>
-      </ElementBody>
-    ),
-  },
-  {
-    image: ejecuciones,
-    header: 'Ejecuciones creativas',
-    body: (
-      <ElementBody>
-        <ListItem>Diseño gráfico</ListItem>
-        <ListItem>Fotografía</ListItem>
-        <ListItem>Video</ListItem>
-      </ElementBody>
-    ),
-  },
-  {
-    image: presencia,
-    header: 'Presencia digital',
-    body: (
-      <ElementBody>
-        <ListItem>Desarrollo web</ListItem>
-        <ListItem>Community management</ListItem>
-        <ListItem>Marketing digital</ListItem>
-      </ElementBody>
-    ),
-  },
-];
-
 const Services = props => {
   const services = props.data.allMarkdownRemark.edges.map(({ node }) => ({
     ...node.frontmatter,

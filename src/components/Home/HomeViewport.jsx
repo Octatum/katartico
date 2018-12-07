@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navbar from './Navbar';
+import Navbar from '../Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
+import Landing from './Landing';
 
 const Viewport = styled.div``;
 
@@ -13,7 +14,7 @@ const Footer = styled.div`
   text-align: center;
 `;
 
-class ChildViewport extends React.Component {
+class HomeViewport extends React.Component {
   state = {
     shouldMinimizeNavbar: false,
     scrollableAncestor: null,
@@ -44,6 +45,7 @@ class ChildViewport extends React.Component {
   render() {
     return (
       <Viewport>
+        <Landing />
         <Navbar
           path={this.props.path}
           minimize={this.state.shouldMinimizeNavbar}
@@ -65,4 +67,4 @@ class ChildViewport extends React.Component {
   }
 }
 
-export default ChildViewport;
+export default HomeViewport;

@@ -10,7 +10,11 @@ import { breakpoints, device } from '../utilities/device';
 import miniLogoImg from './assets/iconoKatartico.svg';
 
 const Container = styled.div`
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   top: 0;
   z-index: 1;
   -webkit-box-shadow: 1px 4px 40px 0px rgba(156, 36, 32, 0.8);
@@ -19,7 +23,6 @@ const Container = styled.div`
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  flex: ${({ mini }) => (mini ? 0.7 : 1)};
 
   ::after {
     content: '';
@@ -39,6 +42,7 @@ const FlexBox = styled.div`
   justify-content: space-between;
   position: relative;
   height: 100%;
+  width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 `;
 
@@ -233,7 +237,6 @@ class Navbar extends Component {
           <ScrollLink
             key={index}
             to={item.hash ? item.hash : 'top'}
-            containerId="mainContainer"
             duration={1000}
             offset={item.hash ? 0 : -115}
             onClick={this.toggleDropdown}
@@ -271,7 +274,7 @@ class Navbar extends Component {
     ));
 
     return (
-      <Container mini={this.props.minimize}>
+      <Container>
         <FlexBox mini={this.props.minimize}>
           <Logo src={miniLogoImg} mini={this.props.minimize} />
           {/* Mobile view */}
