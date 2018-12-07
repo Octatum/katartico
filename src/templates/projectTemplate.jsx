@@ -95,6 +95,7 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   ${device.laptop} {
     flex: 3;
     margin: 0;
+    margin-right: 5vw;
   }
 `;
 
