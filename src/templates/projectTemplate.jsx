@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
-import Layout from '../components/Layout';
-import { breakpoints, device } from '../utilities/device';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
+import Layout from '../components/Layout';
+import { device } from '../utilities/device';
 import apostropheImg from '../components/assets/apostrophe.svg';
 
 const Container = styled.div`
@@ -120,45 +122,81 @@ const Picture = styled.div`
   background-image: url('${({ image }) => image}');
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 
   ${device.tablet} {
     grid-row: span ${({ height }) => height};
     grid-column: span ${({ width }) => width};
   }
 `;
+export default class Template extends Component {
+  state = {
+    photoIndex: 0,
+    isOpen: false,
+  };
 
-export default function Template({ data }) {
-  const { markdownRemark } = data;
+  handlePictureClick = index => {
+    return () => {
+      console.log(index);
+      this.setState(() => ({
+        photoIndex: index,
+        isOpen: true,
+      }));
+    };
+  };
 
-  const { rawMarkdownBody, frontmatter } = markdownRemark;
+  render() {
+    const { markdownRemark } = this.props.data;
+    const { rawMarkdownBody, frontmatter } = markdownRemark;
+    const images = frontmatter.images.map(imgData => imgData.image);
 
-  return (
-    <Layout>
-      <Container>
-        <BackButton to="/portafolio">
-          <Apostrophe src={apostropheImg} />
-        </BackButton>
-        {/* Mobile/Tablet view */}
-        <ContentLayout>
-          <ReactMarkdown source={rawMarkdownBody} />
-          <PhotoGrid>
-            {frontmatter.images &&
-              frontmatter.images.map(image => (
-                <Picture
-                  width={image.width}
-                  height={image.height}
-                  image={image.image}
-                  key={image.image}
-                />
-              ))}
-          </PhotoGrid>
-        </ContentLayout>
-        <BackButton to="/portafolio">
-          <Apostrophe src={apostropheImg} />
-        </BackButton>
-      </Container>
-    </Layout>
-  );
+    const { photoIndex, isOpen } = this.state;
+    return (
+      <Layout>
+        <Container>
+          <BackButton to="/portafolio">
+            <Apostrophe src={apostropheImg} />
+          </BackButton>
+          <ContentLayout>
+            <ReactMarkdown source={rawMarkdownBody} />
+            <PhotoGrid>
+              {frontmatter.images &&
+                frontmatter.images.map((image, index) => (
+                  <Picture
+                    onClick={this.handlePictureClick(index)}
+                    width={image.width}
+                    height={image.height}
+                    image={image.image}
+                    key={image.image}
+                  />
+                ))}
+            </PhotoGrid>
+          </ContentLayout>
+          <BackButton to="/portafolio">
+            <Apostrophe src={apostropheImg} />
+          </BackButton>
+        </Container>
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length,
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length,
+              })
+            }
+          />
+        )}
+      </Layout>
+    );
+  }
 }
 
 export const pageQuery = graphql`

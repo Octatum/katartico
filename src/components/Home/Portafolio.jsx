@@ -100,7 +100,7 @@ const BigPicture = styled('img')`
   margin: 3em auto 1em;
 `;
 
-const Portafolio = (props) => {
+const Portafolio = props => {
   const { customers, portfolioImage } = props.data.pagesJson;
 
   return (
@@ -109,7 +109,7 @@ const Portafolio = (props) => {
         <Link to="/portafolio">Portafolio</Link>
       </Header>
       <LogoGrid>
-        {customers.map((item) => (
+        {customers.map(item => (
           <GridItem key={item.logo}>
             <Link to={item.url}>
               <Logo src={item.logo} alt={item.name} />
@@ -120,15 +120,13 @@ const Portafolio = (props) => {
       <BigPicture src={portfolioImage} />
     </Section>
   );
-}
+};
 
 export default props => (
   <StaticQuery
     query={graphql`
       query {
-        pagesJson(
-          type: {eq: "page-home"}
-        ) {
+        pagesJson(type: { eq: "page-home" }) {
           customers {
             name
             logo
@@ -138,6 +136,6 @@ export default props => (
         }
       }
     `}
-    render={(data) => <Portafolio data={data} {...props} />}
+    render={data => <Portafolio data={data} {...props} />}
   />
 );

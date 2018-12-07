@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
-import { instanceOf } from 'prop-types';
 
 const Viewport = styled.div`
   max-height: 100vh;

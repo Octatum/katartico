@@ -213,13 +213,15 @@ const content = [
 ];
 
 const Services = props => {
-  const services = props.data.allMarkdownRemark.edges.map(({node}) => ({...node.frontmatter}));
+  const services = props.data.allMarkdownRemark.edges.map(({ node }) => ({
+    ...node.frontmatter,
+  }));
 
   return (
     <AppLayout>
       <Helmet title="Servicios" />
       <Layout>
-        {services.map((service) => (
+        {services.map(service => (
           <Item key={service.title} image={service.banner}>
             <ItemContent>
               <ElementHeader>{service.title}</ElementHeader>
@@ -234,15 +236,15 @@ const Services = props => {
       </Layout>
     </AppLayout>
   );
-}
+};
 
-export default (props) => (
-  <StaticQuery 
+export default props => (
+  <StaticQuery
     query={graphql`
       query {
         allMarkdownRemark(
-          filter: {frontmatter: {type: {eq: "service"}}}
-          sort: {fields: frontmatter___index}
+          filter: { frontmatter: { type: { eq: "service" } } }
+          sort: { fields: frontmatter___index }
         ) {
           edges {
             node {
@@ -256,8 +258,6 @@ export default (props) => (
         }
       }
     `}
-    render={(data) => (
-      <Services data={data} {...props} />
-    )}
+    render={data => <Services data={data} {...props} />}
   />
-)
+);

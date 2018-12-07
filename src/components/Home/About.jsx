@@ -68,8 +68,8 @@ const AnimationArea = styled('div')`
   }
 `;
 
-const About = (props) => {
-  const { slogan, intro } = props.data.pagesJson;
+const About = props => {
+  const { slogan } = props.data.pagesJson;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -85,27 +85,21 @@ const About = (props) => {
         <Quote source={slogan} />
       </Link>
       <AnimationArea>
-        <ReactLottie
-          options={defaultOptions}
-        />
+        <ReactLottie options={defaultOptions} />
       </AnimationArea>
     </Section>
   );
-}
+};
 
 export default props => (
   <StaticQuery
     query={graphql`
       query {
-        pagesJson(type: {eq: "page-home"}) {
+        pagesJson(type: { eq: "page-home" }) {
           slogan
-          intro {
-            video
-            image
-          }
         }
       }
     `}
-    render={(data) => <About data={data} {...props} />}
+    render={data => <About data={data} {...props} />}
   />
 );

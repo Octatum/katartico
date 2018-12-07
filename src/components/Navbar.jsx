@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const FlexBox = styled.div`
-  padding: ${({ mini }) => mini ? '0em 3em' : '1em 3em'};
+  padding: ${({ mini }) => (mini ? '0em 3em' : '1em 3em')};
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -35,9 +35,7 @@ const Layout = ({ children, path }) => (
         <ChildViewport path={path} children={children} />
       </React.Fragment>
     </ThemeProvider>
-
   </CookiesProvider>
-
 );
 
 Layout.propTypes = {

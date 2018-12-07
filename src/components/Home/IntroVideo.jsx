@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const IntroVideo = (props) => {
+const IntroVideo = props => {
   const { intro } = props.data.pagesJson;
 
   return (
@@ -23,13 +23,13 @@ const IntroVideo = (props) => {
       <VideoPlayer movie={intro.video} big />
     </Container>
   );
-}
+};
 
 export default props => (
   <StaticQuery
     query={graphql`
       query {
-        pagesJson(type: {eq: "page-home"}) {
+        pagesJson(type: { eq: "page-home" }) {
           slogan
           intro {
             video
@@ -38,7 +38,6 @@ export default props => (
         }
       }
     `}
-    render={(data) => <IntroVideo data={data} {...props} />}
+    render={data => <IntroVideo data={data} {...props} />}
   />
 );
-

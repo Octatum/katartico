@@ -54,12 +54,11 @@ const PersonPicture = styled(Picture)`
   ${device.laptop} {
     height: 250px;
     margin: 0.5em 0;
-
   }
 `;
 
 const ReactMarkdown = styled(_ReactMarkdown)`
-  ${({center}) => center && 'text-align: center'};
+  ${({ center }) => center && 'text-align: center'};
 
   h2 {
     font-size: 1.5em;
@@ -104,7 +103,7 @@ const About = props => {
   const {
     data: {
       allMarkdownRemark: { edges: people },
-      pagesJson
+      pagesJson,
     },
   } = props;
 
@@ -145,7 +144,7 @@ export default props => (
           }
         }
 
-        pagesJson(type: {eq: "page-about"}) {
+        pagesJson(type: { eq: "page-about" }) {
           banner
           body
         }
