@@ -1,9 +1,9 @@
 ---
 type: project
+index: 3
 title: Biofase
 banner: /assets/biofase - 0 portada BIOFASE.jpg
-highlightedImage: /assets/biofase - 0 portada BIOFASE.jpg
-index: 3
+highlightedImage: /assets/biofase - 6.jpg
 images:
   - height: '2'
     image: /assets/biofase - 1 foto principal.jpg
