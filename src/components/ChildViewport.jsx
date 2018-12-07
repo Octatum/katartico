@@ -20,7 +20,7 @@ class ChildViewport extends React.Component {
   };
 
   componentDidMount() {
-    if (typeof window === "undefined") return;
+    if (typeof window === 'undefined') return;
 
     this.setState(() => {
       return { scrollableAncestor: window };

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { withCookies } from 'react-cookie';
-import { device } from '../../utilities/device';
+import Swipe from 'react-easy-swipe';
 
+import { device } from '../../utilities/device';
 import { Title, Arrow } from './assets/SVGs';
 import { Apostrophe } from '../assets/ApostropheComp';
 
@@ -23,7 +24,8 @@ const Container = styled.div`
     'apostrofe'
     'conoce';
   transition: 0.5s ease-in-out all;
-  transform: ${({scrolled}) => scrolled ? 'translateY(-100%)' : 'translateY(0)'};
+  transform: ${({ scrolled }) =>
+    scrolled ? 'translateY(-100%)' : 'translateY(0)'};
 
   ${device.tablet} {
     grid-template: 4fr 1fr / 1fr 1fr;
@@ -116,21 +118,29 @@ class Landing extends Component {
         landingScrolled: true,
       };
     });
-  }
+  };
 
   render() {
     return (
-      <Container scrolled={this.state.landingScrolled} onWheel={this.handleScroll} show={this.state.show} {...this.props}>
-        <TitleContainer>
-          <Title />
-        </TitleContainer>
-        <ApostropheContainer>
-          <Apostrophe />
-        </ApostropheContainer>
-        <MeetUsContainer>
-          <Arrow />
-        </MeetUsContainer>
-      </Container>
+      <Swipe onSwipeUp={this.handleScroll}>
+        <Container
+          onClick={this.handleScroll}
+          scrolled={this.state.landingScrolled}
+          onWheel={this.handleScroll}
+          show={this.state.show}
+          {...this.props}
+        >
+          <TitleContainer>
+            <Title />
+          </TitleContainer>
+          <ApostropheContainer>
+            <Apostrophe />
+          </ApostropheContainer>
+          <MeetUsContainer>
+            <Arrow />
+          </MeetUsContainer>
+        </Container>
+      </Swipe>
     );
   }
 }
