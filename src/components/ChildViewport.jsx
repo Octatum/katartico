@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
-import { withCookies, Cookies } from 'react-cookie';
 import { instanceOf } from 'prop-types';
 
 const Viewport = styled.div`
@@ -30,10 +29,6 @@ class ChildViewport extends React.Component {
   state = {
     shouldMinimizeNavbar: false,
   };
-
-  static propTypes = {
-    cookies: instanceOf(Cookies).isRequired
-  }
 
   constructor(props) {
     super(props);
@@ -72,4 +67,4 @@ class ChildViewport extends React.Component {
   }
 }
 
-export default withCookies(ChildViewport);
+export default ChildViewport;

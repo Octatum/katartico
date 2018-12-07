@@ -24,6 +24,21 @@ collections:
           - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"], default: "1" }
           - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"], default: "1" }
 
+  - name: "services"
+    label: "Servicios"
+    folder: "content/services"
+    create: true
+    fields:
+      - { name: "type", label: "Type", widget: "hidden", default: "service" }
+      - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+      - { name: "title", label: "Titulo", type: "string" }
+      - { name: "banner", label: "Banner", widget: "image" }
+      - { name: "body", label: "Descripción", widget: "markdown" }
+      - name: "services"
+        label: "Servicios"
+        widget: "list"
+        field: { label: "Servicio", name: "service", widget: "string" }
+
   - name: "About"
     label: "About Us"
     folder: "content/about"
