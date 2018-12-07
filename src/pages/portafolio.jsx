@@ -58,6 +58,22 @@ const SquarePicture = styled.div`
   background-color: ${({ theme }) => theme.main};
   background-image: url('${({ backgroundImage }) => backgroundImage}');
   background-size: cover;
+  position: relative;
+
+  ::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(71, 11, 11, 0);
+    transition: 0.3s ease-in-out all;
+  }
+
+  &:hover::before {
+    background-color: rgba(71, 11, 11, 0.6);
+  }
 
   &::after {
     content: '';

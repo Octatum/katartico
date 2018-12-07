@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import AppLayout from '../components/Layout';
 import { device } from '../utilities/device';
 
-import branding from '../components/Services/assets/branding.png';
-import campania from '../components/Services/assets/campania.png';
-import ejecuciones from '../components/Services/assets/ejecuciones.png';
-import presencia from '../components/Services/assets/presencia.png';
 import { graphql, StaticQuery } from 'gatsby';
 
 const Layout = styled.div`
