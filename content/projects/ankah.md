@@ -1,16 +1,13 @@
 ---
 type: project
+index: 2
 title: ANKAH
 banner: /assets/ankah - 0 portada ANKAH.jpg
-highlightedImage: /assets/ankah - 0 portada ANKAH.jpg
-index: 2
+highlightedImage: /assets/ankah - 1 foto principal.png
 images:
   - height: '2'
-    image: /assets/ankah - 1 foto principal.png
-    width: '2'
-  - height: '2'
     image: /assets/ankah - 2.png
-    width: '1'
+    width: '2'
   - height: '2'
     image: /assets/ankah - 3.jpg
     width: '2'
