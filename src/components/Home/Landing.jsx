@@ -21,7 +21,7 @@ const Container = styled.div`
 
   ${device.tablet} {
     grid-template: 4fr 1fr / 1fr 1fr;
-    padding: 2rem;
+    padding: 3%;
     grid-template-areas:
       'creamos apostrofe'
       'conoce conoce';
@@ -49,7 +49,8 @@ const TitleContainer = styled(Cell)`
     display: initial;
     padding-top: 9vh;
     > svg {
-      height: 35vh;
+      max-width: initial;
+      width: 40vw;
     }
   }
 `;
