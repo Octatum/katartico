@@ -116,6 +116,7 @@ const PhotoGrid = styled.div`
   ${device.laptop} {
     grid-template-columns: 1fr 1fr 0.7fr;
     grid-gap: 2em;
+    width: 100%;
   }
 `;
 
