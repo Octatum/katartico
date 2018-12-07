@@ -14,7 +14,8 @@ collections:
       - { name: "type", label: "Type", widget: "hidden", default: "project" }
       - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
       - { name: "title", label: "Titulo", type: "string" }
-      - { name: "banner", label: "Banner", widget: "image" }
+      - { name: "banner", label: "Banner", widget: "image", hint: "Imagen en página de 'Portafolio' " }
+      - { name: "highlightedImage", label: "Imagen destacada", widget: "image" }
       - { name: "body", label: "Descripción", widget: "markdown" }
       - name: "images"
         label: "Imagenes"
