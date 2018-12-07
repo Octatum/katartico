@@ -2,7 +2,7 @@
 title: Rafael Camacho Ruiz
 type: team-member
 index: 2
-photo: /assets/fotorafa.jpg
+photo: /assets/rafa-recorte.jpg
 ---
 ## Rafael Camacho Ruiz
 

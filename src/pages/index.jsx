@@ -9,6 +9,7 @@ import About from '../components/Home/About';
 import Services from '../components/Home/Services';
 import Portafolio from '../components/Home/Portafolio';
 import Contact from '../components/Home/Contact';
+import Landing from '../components/Home/Landing';
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const IndexPage = props => (
   <Layout path={props.location.pathname}>
     <Helmet title="Inicio" />
     <Container>
+      <Landing />
       <IntroVideo />
       <About />
       <Services />
