@@ -23,6 +23,12 @@ module.exports = {
         path: `${__dirname}/content/pages/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/services/`,
+      },
+    },
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify-cms'
   ],

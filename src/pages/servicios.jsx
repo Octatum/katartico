@@ -8,6 +8,7 @@ import branding from '../components/Services/assets/branding.png';
 import campania from '../components/Services/assets/campania.png';
 import ejecuciones from '../components/Services/assets/ejecuciones.png';
 import presencia from '../components/Services/assets/presencia.png';
+import { graphql, StaticQuery } from 'gatsby';
 
 const Layout = styled.div`
   position: relative;
@@ -211,20 +212,52 @@ const content = [
   },
 ];
 
-const Services = props => (
-  <AppLayout>
-    <Helmet title="Servicios" />
-    <Layout>
-      {content.map((item, index) => (
-        <Item key={index} image={item.image}>
-          <ItemContent>
-            <ElementHeader>{item.header}</ElementHeader>
-            {item.body}
-          </ItemContent>
-        </Item>
-      ))}
-    </Layout>
-  </AppLayout>
-);
+const Services = props => {
+  const services = props.data.allMarkdownRemark.edges.map(({node}) => ({...node.frontmatter}));
 
-export default Services;
+  return (
+    <AppLayout>
+      <Helmet title="Servicios" />
+      <Layout>
+        {services.map((service) => (
+          <Item key={service.title} image={service.banner}>
+            <ItemContent>
+              <ElementHeader>{service.title}</ElementHeader>
+              <ElementBody>
+                {service.services.map(s => (
+                  <ListItem key={s}>{s}</ListItem>
+                ))}
+              </ElementBody>
+            </ItemContent>
+          </Item>
+        ))}
+      </Layout>
+    </AppLayout>
+  );
+}
+
+export default (props) => (
+  <StaticQuery 
+    query={graphql`
+      query {
+        allMarkdownRemark(
+          filter: {frontmatter: {type: {eq: "service"}}}
+          sort: {fields: frontmatter___index}
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
+                banner
+                services
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => (
+      <Services data={data} {...props} />
+    )}
+  />
+)
