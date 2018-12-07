@@ -5,12 +5,12 @@ title: ANKAH
 banner: /assets/ankah - 0 portada ANKAH.jpg
 highlightedImage: /assets/ankah - 1 foto principal.png
 images:
-  - height: '1'
+  - height: '2'
     image: /assets/ankah - 2.png
-    width: '1'
+    width: '2'
   - height: '2'
     image: /assets/ankah - 3.jpg
-    width: '2'
+    width: '1'
   - height: '3'
     image: /assets/ankah - 4.jpg
     width: '3'
