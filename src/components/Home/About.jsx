@@ -5,7 +5,8 @@ import styled from 'styled-components';
 import { device } from '../../utilities/device';
 
 import Section from '../Section';
-import VideoPlayer from './VideoPlayer';
+import ReactLottie from 'react-lottie';
+import animationData from './assets/anim_nosotros.json';
 
 const Header = styled.h2`
   position: relative;
@@ -57,24 +58,23 @@ const Quote = styled(ReactMarkdown)`
   }
 `;
 
-const VideoContainer = styled.div`
-  background: ${props => props.theme.main};
+const AnimationArea = styled('div')`
+  position: relative;
+  width: 100%;
+  min-height: 20vh;
 
-  > div {
-    visibility: hidden;
-  }
-
-  ${device.tablet} {
-    background: none;
-
-    > div {
-      visibility: visible;
-    }
+  ${device.laptop} {
+    min-height: 45vh;
   }
 `;
 
 const About = (props) => {
   const { slogan, intro } = props.data.pagesJson;
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+  };
 
   return (
     <Section>
@@ -84,9 +84,11 @@ const About = (props) => {
       <Link to="/nosotros">
         <Quote source={slogan} />
       </Link>
-      <VideoContainer>
-        <VideoPlayer movie={intro.video} />
-      </VideoContainer>
+      <AnimationArea>
+        <ReactLottie
+          options={defaultOptions}
+        />
+      </AnimationArea>
     </Section>
   );
 }
