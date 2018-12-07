@@ -2,6 +2,7 @@
 type: project
 title: Fotografía artística
 banner: /assets/fotoarte - 0 portada foto artistica.jpg
+highlightedImage: /assets/fotoarte - 0 portada foto artistica.jpg
 index: 4
 images:
   - height: '3'

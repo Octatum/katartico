@@ -2,6 +2,7 @@
 type: project
 title: Premio Luis Elizondo
 banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
+highlightedImage: /assets/premioluiselizondo - 0 portada PLE-19.jpg
 index: 9
 images:
   - height: '3'

@@ -2,6 +2,7 @@
 type: project
 title: Viernes Azul
 banner: /assets/viernesazul - 0 portada.jpg
+highlightedImage: /assets/viernesazul - 0 portada.jpg
 index: 11
 images:
   - height: '3'
