@@ -53,6 +53,8 @@ const Person = styled.div`
 const PersonPicture = styled(Picture)`
   ${device.laptop} {
     height: 250px;
+    margin: 0.5em 0;
+
   }
 `;
 
@@ -66,7 +68,7 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   }
 
   p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.2;
     margin: 1em 0;
   }
@@ -78,6 +80,9 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   ${device.tablet} {
     h2 {
       font-size: 2em;
+    }
+    p {
+      margin: 0.5em 0;
     }
   }
 `;
