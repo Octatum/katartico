@@ -1,9 +1,9 @@
 ---
 type: project
-title: Fundación El mundo escribe
+index: 10
+title: El mundo escribe
 banner: /assets/elmundoescribe - 0 portada eme.jpg
 highlightedImage: /assets/elmundoescribe - 0 portada eme.jpg
-index: 10
 images:
   - height: '3'
     image: /assets/elmundoescribe - 1 foto principal.jpg
@@ -18,7 +18,7 @@ images:
     image: /assets/elmundoescribe - 4.png
     width: '1'
 ---
-# Fundación El mundo escribe
+# El mundo escribe
 
 ## Página web
 
