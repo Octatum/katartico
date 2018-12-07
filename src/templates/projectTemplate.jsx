@@ -79,11 +79,11 @@ const ReactMarkdown = styled(_ReactMarkdown)`
   ${device.tablet} {
     flex: 3;
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
     h2 {
-      font-size: 1.7em;
+      font-size: 1.6em;
     }
 
     p {

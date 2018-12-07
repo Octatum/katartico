@@ -107,7 +107,7 @@ const Link = styled(_Link)`
   }
 
   ${device.laptop} {
-    font-size: 1em;
+    font-size: 0.8em;
     margin: 1.5rem;
   }
 `;
@@ -163,6 +163,14 @@ const SocialMedia = styled.div`
 
   ${device.laptop} {
     margin: 0 1rem;
+
+    > :first-child {
+      margin-left: 0;
+    }
+
+    > :last-child {
+      margin-right: 0;
+    }
   }
 `;
 
@@ -175,7 +183,7 @@ const SocialMediaIcon = styled.div`
 
   ${device.tablet} {
     width: 1em;
-    margin: 0 0.25em;
+    margin: 0 1rem;
     font-size: 1.2em;
   }
 `;

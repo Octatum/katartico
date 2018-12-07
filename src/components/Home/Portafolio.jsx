@@ -87,7 +87,8 @@ const Logo = styled.img`
   height: 100%;
   width: 100%;
   max-width: 150px;
-  margin: 1em;
+  padding: 1em;
+  box-sizing: border-box;
 
   ${device.tablet} {
     margin: 0;

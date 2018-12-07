@@ -8,9 +8,13 @@ import { Apostrophe } from '../assets/ApostropheComp';
 
 const Container = styled.div`
   display: ${({ show }) => (show === 'true' ? 'grid' : 'none')};
+  position: fixed;
   box-sizing: border-box;
   min-height: 30vh;
+  z-index: 1000;
   height: 100vh;
+  background: black;
+  width: 100%;
   padding: 15% 10%;
   grid-template: 2fr 2fr 1fr / 1fr;
   grid-row-gap: 10vh;
@@ -18,6 +22,8 @@ const Container = styled.div`
     'creamos'
     'apostrofe'
     'conoce';
+  transition: 0.5s ease-in-out all;
+  transform: ${({scrolled}) => scrolled ? 'translateY(-100%)' : 'translateY(0)'};
 
   ${device.tablet} {
     grid-template: 4fr 1fr / 1fr 1fr;
@@ -89,19 +95,32 @@ const MeetUsContainer = styled(Cell)`
 class Landing extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      show: this.props.cookies.get('showLanding') || 'true',
+      show: props.cookies.get('showLanding') || 'true',
     };
   }
+
+  state = {
+    landingScrolled: false,
+  };
 
   componentDidMount() {
     const { cookies } = this.props;
     cookies.set('showLanding', 'false', { path: '/' });
   }
 
+  handleScroll = () => {
+    this.setState(() => {
+      return {
+        landingScrolled: true,
+      };
+    });
+  }
+
   render() {
     return (
-      <Container show={this.state.show} {...this.props}>
+      <Container scrolled={this.state.landingScrolled} onWheel={this.handleScroll} show={this.state.show} {...this.props}>
         <TitleContainer>
           <Title />
         </TitleContainer>

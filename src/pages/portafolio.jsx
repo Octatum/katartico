@@ -72,7 +72,7 @@ const SquarePicture = styled.div`
   }
 
   &:hover::before {
-    background-color: rgba(71, 11, 11, 0.6);
+    background-color: rgba(107, 16, 16, 0.6);
   }
 
   &::after {
