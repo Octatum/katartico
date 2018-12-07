@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
+import { withCookies, Cookies } from 'react-cookie';
+import { instanceOf } from 'prop-types';
 
 const Viewport = styled.div`
   max-height: 100vh;
@@ -28,6 +30,11 @@ class ChildViewport extends React.Component {
   state = {
     shouldMinimizeNavbar: false,
   };
+
+  static propTypes = {
+    cookies: instanceOf(Cookies).isRequired
+  }
+
   constructor(props) {
     super(props);
 
@@ -56,7 +63,7 @@ class ChildViewport extends React.Component {
             <Waypoint onPositionChange={this.handleWaypointPositionChange} />
             {this.props.children}
             <Footer>
-              Copyright © Todos los derechos reservados. Katartico 2018.
+              Copyright &copy; Todos los derechos reservados. Katartico 2018.
             </Footer>
           </Element>
         </ChildrenContainer>
@@ -65,4 +72,4 @@ class ChildViewport extends React.Component {
   }
 }
 
-export default ChildViewport;
+export default withCookies(ChildViewport);

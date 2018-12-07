@@ -19,7 +19,7 @@ const Container = styled.div`
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  flex: ${({ mini }) => (mini ? 1 : 1.3)};
+  flex: ${({ mini }) => (mini ? 0.7 : 1)};
 
   ::after {
     content: '';
@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const FlexBox = styled.div`
-  padding: 1em 3em;
+  padding: ${({ mini }) => mini ? '0em 3em' : '1em 3em'};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,7 +272,7 @@ class Navbar extends Component {
 
     return (
       <Container mini={this.props.minimize}>
-        <FlexBox>
+        <FlexBox mini={this.props.minimize}>
           <Logo src={miniLogoImg} mini={this.props.minimize} />
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
