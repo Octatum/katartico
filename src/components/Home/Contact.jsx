@@ -4,6 +4,7 @@ import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import apostropheImg from '../assets/apostrophe.svg';
+import AnimatedApostrophe from './AnimatedApostrophe';
 
 const Header = styled.h2`
   position: relative;
@@ -192,7 +193,7 @@ class Contact extends Component {
           </Button>
         </Form>
         <ApostropheDiv>
-          <Apostrophe src={apostropheImg} />
+          <AnimatedApostrophe />
         </ApostropheDiv>
       </FormContainer>
     </Section>

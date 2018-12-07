@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../../utilities/device';
+import { device } from '../../utilities/device';
 
-import Section from '../../Section';
-import ServiceApostrophe from './ServiceApostrophe';
+import Section from '../Section';
+import AnimatedApostrophe from './AnimatedApostrophe';
+import GatsbyLink from 'gatsby-link';
 
 const Header = styled.h2`
   position: relative;
@@ -32,6 +33,7 @@ const Link = styled(_Link)`
   position: relative;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 `;
 
 const Apostrophes = styled.div`
@@ -54,6 +56,28 @@ const content = [
   'Ejecuciones Creativas',
 ];
 
+const Text = styled.p`
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 0.8rem;
+  font-weight: regular;
+
+  ${device.tablet} {
+    font-size: 1rem;
+    top: 12px;
+    right: 10%;
+    width: 4rem;
+  }
+
+  ${device.laptop} {
+    font-size: 1.6rem;
+    top: 15%;
+    right: 13%;
+    width: 10rem;
+  }
+`;
+
 const Services = () => (
   <Section>
     <Header>
@@ -61,7 +85,9 @@ const Services = () => (
     </Header>
     <Apostrophes>
       {content.map(item => (
-        <ServiceApostrophe key={item} item={item} />
+        <AnimatedApostrophe as={Link} to="/servicios" key={item}>
+          <Text>{item}</Text>
+        </AnimatedApostrophe>
       ))}
     </Apostrophes>
   </Section>

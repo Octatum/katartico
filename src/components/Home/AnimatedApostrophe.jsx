@@ -4,12 +4,8 @@ import { Link as _Link } from 'gatsby';
 import ReactLottie from 'react-lottie';
 
 import animationData from './assets/apostrophe-animation.json';
-import { device } from '../../../utilities/device';
+import { device } from '../../utilities/device';
 
-const Link = styled(_Link)`
-  text-decoration: none;
-  color: inherit;
-`;
 
 const Item = styled.div`
   flex: 1 1 50%;
@@ -22,27 +18,6 @@ const Item = styled.div`
   }
 `;
 
-const Text = styled.p`
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  font-size: 0.8rem;
-  font-weight: regular;
-
-  ${device.tablet} {
-    font-size: 1rem;
-    top: 12px;
-    right: 10%;
-    width: 4rem;
-  }
-
-  ${device.laptop} {
-    font-size: 1.6rem;
-    top: 15%;
-    right: 13%;
-    width: 10rem;
-  }
-`;
 
 const AnimationArea = styled('div')`
   position: relative;
@@ -59,7 +34,7 @@ const AnimationArea = styled('div')`
   }
 `;
 
-class ServiceApostrophe extends Component {
+class AnimatedApostrophe extends Component {
   state = {
     direction: 1,
   };
@@ -96,7 +71,7 @@ class ServiceApostrophe extends Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { children, ...rest } = this.props;
     const defaultOptions = {
       loop: false,
       autoplay: true,
@@ -104,9 +79,8 @@ class ServiceApostrophe extends Component {
     };
 
     return (
-      <Item key={item}>
-        <Link
-          to="/servicios"
+      <Item {...rest}>
+        <span
           onMouseEnter={this.mouseInHandler}
           onMouseLeave={this.mouseOutHandler}
         >
@@ -116,11 +90,11 @@ class ServiceApostrophe extends Component {
               options={defaultOptions}
               direction={this.state.direction}
             />
-            <Text>{item}</Text>
+            {children}
           </AnimationArea>
-        </Link>
+        </span>
       </Item>
     );
   }
 }
-export default ServiceApostrophe;
+export default AnimatedApostrophe;
