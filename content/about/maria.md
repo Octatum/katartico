@@ -12,4 +12,4 @@ Para mí, la mejor red social que existe es una mesa rodeada de las personas que
 
 La frase que define mi vida: “Hagan, digan, sientan. Pero hagan lo que dicen, digan lo que sienten y sientan lo que hacen”.
 
-*Past lives include: art history aficionado and wanabe painter, probably at the Salon des Refusés.*
+_Past lives include: art history aficionado and wannabe painter, probably at the Salon des Refusés._
