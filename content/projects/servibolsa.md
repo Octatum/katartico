@@ -2,7 +2,7 @@
 type: project
 index: 13
 title: SERVIBOLSA
-banner: /assets/servibolsa - Copia de LS_Loc2_6.jpg
+banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa - Copia de LS_Loc3_4.jpg
 images:
   - height: '2'
