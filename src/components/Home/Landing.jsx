@@ -23,7 +23,7 @@ const Container = styled.div`
     'creamos'
     'apostrofe'
     'conoce';
-  transition: 0.5s ease-in-out all;
+  transition: 1s ease-in-out all;
   transform: ${({ scrolled }) =>
     scrolled ? 'translateY(-100%)' : 'translateY(0)'};
 

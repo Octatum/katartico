@@ -23,16 +23,6 @@ const Container = styled.div`
   background: black;
   color: white;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-
-  ::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 1rem;
-    background: black;
-  }
 `;
 
 const FlexBox = styled.div`
@@ -47,7 +37,7 @@ const FlexBox = styled.div`
 `;
 
 const Logo = styled.img`
-  height: ${({ mini }) => (mini ? '3em' : '5.5em')};
+  height: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 `;
 

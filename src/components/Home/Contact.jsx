@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { device } from '../../utilities/device';
 
 import Section from '../Section';
-import apostropheImg from '../assets/apostrophe.svg';
 import AnimatedApostrophe from './AnimatedApostrophe';
 
 const Header = styled.h2`

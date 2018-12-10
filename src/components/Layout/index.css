@@ -24,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font: inherit;
-	font-family: "Lato", serif;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
 	line-height: normal;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 @font-face {
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-family: 'Lato';
 	src: url("/fonts/Lato.ttf");
 	font-display: swap;
 }
