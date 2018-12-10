@@ -1,13 +1,10 @@
 ---
 type: project
+index: 5
 title: Fotografía creativa
 banner: /assets/fotocreativa - 0 portada.jpg
-highlightedImage: /assets/fotocreativa - 0 portada.jpg
-index: 5
+highlightedImage: /assets/fotocreativa - 1 foto principal.jpg
 images:
-  - height: '2'
-    image: /assets/fotocreativa - 1 foto principal.jpg
-    width: '1'
   - height: '2'
     image: /assets/fotocreativa - 2.jpg
     width: '2'
@@ -17,6 +14,9 @@ images:
   - height: '2'
     image: /assets/fotocreativa - 4.jpg
     width: '2'
+  - height: '2'
+    image: /assets/fotocreativa - 1 foto principal.jpg
+    width: '1'
   - height: '2'
     image: /assets/fotocreativa - 5.jpg
     width: '1'

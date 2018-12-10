@@ -1,13 +1,10 @@
 ---
 type: project
+index: 12
 title: Dulce
 banner: /assets/dulce - 0 portada.jpg
-highlightedImage: /assets/dulce - 0 portada.jpg
-index: 12
+highlightedImage: /assets/dulce - 1 foto principal.JPG
 images:
-  - height: '3'
-    image: /assets/dulce - 1 foto principal.JPG
-    width: '3'
   - height: '2'
     image: /assets/dulce - 2.JPG
     width: '3'
@@ -17,6 +14,9 @@ images:
   - height: '2'
     image: /assets/dulce - 4.JPG
     width: '1'
+  - height: '3'
+    image: /assets/dulce - 1 foto principal.JPG
+    width: '3'
   - height: '2'
     image: /assets/dulce - 5.JPG
     width: '3'
