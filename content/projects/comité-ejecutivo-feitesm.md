@@ -6,12 +6,12 @@ banner: /assets/feitesm - 0 portada FEITESM.jpg
 highlightedImage: /assets/feitesm - 1 foto principal.jpg
 content:
   - height: '2'
-    type: image
-    image: /assets/feitesm - 1 foto principal.jpg
-    width: '3'
-  - height: '2'
     type: youtube-video
     videoId: kmX0ZGU_e4E
+    width: '3'
+  - height: '2'
+    image: /assets/feitesm - 1 foto principal.jpg
+    type: image
     width: '3'
 ---
 # Comité Ejecutivo FEITESM
