@@ -6,48 +6,63 @@ banner: /assets/biofase - 0 portada BIOFASE.jpg
 highlightedImage: /assets/biofase - 6.jpg
 images:
   - height: '2'
+    type: image
     image: /assets/biofase - 1 foto principal.jpg
     width: '1'
   - height: '2'
+    type: image
     image: /assets/biofase - 2.png
     width: '2'
   - height: '3'
+    type: image
     image: /assets/biofase - 3.png
     width: '1'
   - height: '3'
+    type: image
     image: /assets/biofase - 4.jpg
     width: '2'
   - height: '2'
+    type: image
     image: /assets/biofase - 5.jpg
     width: '3'
   - height: '3'
+    type: image
     image: /assets/biofase - 6.jpg
     width: '2'
   - height: '2'
+    type: image
     image: /assets/biofase - 7.png
     width: '2'
   - height: '2'
+    type: image
     image: /assets/biofase - 8.jpg
     width: '1'
   - height: '3'
+    type: image
     image: /assets/biofase - 9.jpg
     width: '2'
   - height: '3'
+    type: image
     image: /assets/biofase - 11.jpg
     width: '1'
   - height: '2'
+    type: image
     image: /assets/biofase - 13.png
     width: '2'
   - height: '2'
+    type: image
     image: /assets/biofase - 15.png
     width: '1'
   - height: '3'
+    type: image
     image: /assets/biofase - 16.png
     width: '2'
   - height: '2'
+    type: image
     image: /assets/biofase - 17.png
     width: '1'
   - height: '1'
+    type: image
     image: /assets/biofase - 18.png
     width: '1'
 ---

@@ -6,21 +6,27 @@ banner: /assets/fotoarte - 0 portada foto artistica.jpg
 highlightedImage: /assets/fotoarte - 1 foto principal.jpg
 images:
   - height: '2'
+    type: image
     image: /assets/fotoarte - 2.jpg
     width: '2'
   - height: '2'
+    type: image
     image: /assets/fotoarte - 3.jpg
     width: '2'
   - height: '3'
+    type: image
     image: /assets/fotoarte - 1 foto principal.jpg
     width: '3'
   - height: '2'
+    type: image
     image: /assets/fotoarte - 4.jpg
     width: '1'
   - height: '2'
+    type: image
     image: /assets/fotoarte - 5.jpg
     width: '1'
   - height: '2'
+    type: image
     image: /assets/fotoarte - 6.jpg
     width: '3'
 ---

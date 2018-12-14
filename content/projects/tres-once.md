@@ -6,21 +6,27 @@ banner: /assets/tresonce - 0 portada.jpg
 highlightedImage: /assets/tresonce - 1 foto principal.png
 images:
   - height: '1'
+    type: image
     image: /assets/tresonce - 2.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/tresonce - 3.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/tresonce - 4.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/tresonce - 5.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/tresonce - 6.jpg
     width: '3'
   - height: '2'
+    type: image
     image: /assets/tresonce - 1 foto principal.png
     width: '3'
 ---

@@ -6,15 +6,19 @@ banner: /assets/elmundoescribe - 0 portada eme.jpg
 highlightedImage: /assets/elmundoescribe - 1 foto principal.jpg
 images:
   - height: '3'
+    type: image
     image: /assets/elmundoescribe - 1 foto principal.jpg
     width: '3'
   - height: '3'
+    type: image
     image: /assets/elmundoescribe - 2.png
     width: '2'
   - height: '1'
+    type: image
     image: /assets/elmundoescribe - 3.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/elmundoescribe - 4.png
     width: '1'
 ---

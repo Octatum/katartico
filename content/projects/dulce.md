@@ -6,30 +6,39 @@ banner: /assets/dulce - 0 portada.jpg
 highlightedImage: /assets/dulce - 1 foto principal.JPG
 images:
   - height: '2'
+    type: image
     image: /assets/dulce - 2.JPG
     width: '3'
   - height: '2'
+    type: image
     image: /assets/dulce - 3.JPG
     width: '2'
   - height: '2'
+    type: image
     image: /assets/dulce - 4.JPG
     width: '1'
   - height: '3'
+    type: image
     image: /assets/dulce - 1 foto principal.JPG
     width: '3'
   - height: '2'
+    type: image
     image: /assets/dulce - 5.JPG
     width: '3'
   - height: '2'
+    type: image
     image: /assets/dulce - 6.JPG
     width: '1'
   - height: '2'
+    type: image
     image: /assets/dulce - 7.JPG
     width: '2'
   - height: '2'
+    type: image
     image: /assets/dulce - 8.JPG
     width: '3'
   - height: '3'
+    type: image
     image: /assets/dulce - 9.JPG
     width: '3'
 ---

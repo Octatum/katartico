@@ -6,11 +6,11 @@ banner: /assets/feitesm - 0 portada FEITESM.jpg
 highlightedImage: /assets/feitesm - 1 foto principal.jpg
 images:
   - height: '2'
-    image: /assets/feitesm - 1 foto principal.jpg
     type: image
+    image: /assets/feitesm - 1 foto principal.jpg
     width: '3'
   - height: '2'
-    type: video youtube
+    type: youtube-video
     videoId: kmX0ZGU_e4E
     width: '3'
 ---

@@ -6,24 +6,31 @@ banner: /assets/viernesazul - 0 portada.jpg
 highlightedImage: /assets/viernesazul - 1 foto principal.JPG
 images:
   - height: '2'
+    type: image
     image: /assets/viernesazul - 2.png
     width: '3'
   - height: '2'
+    type: image
     image: /assets/viernesazul - 3.png
     width: '1'
   - height: '2'
+    type: image
     image: /assets/viernesazul - 4.JPG
     width: '1'
   - height: '2'
+    type: image
     image: /assets/viernesazul - 5.JPG
     width: '2'
   - height: '3'
+    type: image
     image: /assets/viernesazul - 6.png
     width: '2'
   - height: '3'
+    type: image
     image: /assets/viernesazul - 7.jpg
     width: '1'
   - height: '3'
+    type: image
     image: /assets/viernesazul - 1 foto principal.JPG
     width: '3'
 ---

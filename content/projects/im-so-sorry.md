@@ -6,9 +6,11 @@ banner: /assets/bissu - 0 portada BISSU.jpg
 highlightedImage: /assets/bissu - 1 foto principal.png
 images:
   - height: '3'
+    type: image
     image: /assets/bissu - 1 foto principal.png
     width: '2'
   - height: '3'
+    type: image
     image: /assets/bissu - 2.png
     width: '1'
 ---

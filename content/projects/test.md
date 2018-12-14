@@ -6,18 +6,23 @@ banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
 highlightedImage: /assets/premioluiselizondo - 1 foto principal.png
 images:
   - height: '2'
+    type: image
     image: /assets/premioluiselizondo - 2.png
     width: '2'
   - height: '1'
+    type: image
     image: /assets/premioluiselizondo - 3.png
     width: '1'
   - height: '1'
+    type: image
     image: /assets/premioluiselizondo - 4.png
     width: '1'
   - height: '3'
+    type: image
     image: /assets/premioluiselizondo - 5.png
     width: '3'
   - height: '3'
+    type: image
     image: /assets/premioluiselizondo - 1 foto principal.png
     width: '3'
 ---

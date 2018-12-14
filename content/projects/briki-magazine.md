@@ -6,15 +6,19 @@ banner: /assets/briki - 0 portada.jpg
 highlightedImage: /assets/briki - 2.jpg
 images:
   - height: '2'
+    type: image
     image: /assets/briki - 1 foto grande.png
     width: '1'
   - height: '1'
+    type: image
     image: /assets/briki - 3.png
     width: '2'
   - height: '1'
+    type: image
     image: /assets/briki - 4.png
     width: '2'
   - height: '2'
+    type: image
     image: /assets/briki - 2.jpg
     width: '3'
 ---

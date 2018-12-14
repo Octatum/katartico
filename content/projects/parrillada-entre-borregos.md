@@ -6,15 +6,19 @@ banner: /assets/parrilladaborregos - 0 portada parrillada.jpg
 highlightedImage: /assets/parrilladaborregos - 1 foto principal.png
 images:
   - height: '1'
+    type: image
     image: /assets/parrilladaborregos - 4.JPG
     width: '1'
   - height: '1'
+    type: image
     image: /assets/parrilladaborregos - 5.JPG
     width: '1'
   - height: '1'
+    type: image
     image: /assets/parrilladaborregos - 6.JPG
     width: '1'
   - height: '2'
+    type: image
     image: /assets/parrilladaborregos - 2.png
     width: '3'
 ---
