@@ -5,7 +5,6 @@ import { device } from '../../utilities/device';
 
 import Section from '../Section';
 import AnimatedApostrophe from './AnimatedApostrophe';
-import GatsbyLink from 'gatsby-link';
 
 const Header = styled.h2`
   position: relative;

@@ -6,7 +6,6 @@ import ReactLottie from 'react-lottie';
 import animationData from './assets/apostrophe-animation.json';
 import { device } from '../../utilities/device';
 
-
 const Item = styled.div`
   flex: 1 1 50%;
   display: flex;
@@ -17,7 +16,6 @@ const Item = styled.div`
     flex: 1;
   }
 `;
-
 
 const AnimationArea = styled('div')`
   position: relative;

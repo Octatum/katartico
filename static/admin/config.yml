@@ -20,7 +20,9 @@ collections:
       - name: "images"
         label: "Imagenes"
         widget: "list"
-        fields: 
+        fields:
+          - { name: "type", label: "Typo", widget: "select", options: ["video youtube", "image"], default: "youtube" }
+          - { name: "videoId", label: "Id del video", widget: "string" }
           - { name: "image", label: "Imagen", widget: "image" }
           - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"], default: "1" }
           - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"], default: "1" }

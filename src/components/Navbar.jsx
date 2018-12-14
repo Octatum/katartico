@@ -2,14 +2,14 @@ import BurgerMenu from './BurgerMenu';
 import React, { Component } from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { Link as _ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
 import { breakpoints, device } from '../utilities/device';
 
 import miniLogoImg from './assets/iconoKatartico.svg';
 
-const Container = styled.div`
+const Container = styled.nav`
   position: -webkit-sticky;
   position: sticky;
   display: flex;
@@ -26,7 +26,7 @@ const Container = styled.div`
 `;
 
 const FlexBox = styled.div`
-  padding: ${({ mini }) => (mini ? '0em 3em' : '1em 3em')};
+  padding: ${props => (props.mini ? '0em 3em' : '1em 3em')};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,7 +274,7 @@ class Navbar extends Component {
     return (
       <Container>
         <FlexBox mini={this.props.minimize}>
-          <Logo src={miniLogoImg} mini={this.props.minimize} />
+          <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Menu open={this.state.open}>
