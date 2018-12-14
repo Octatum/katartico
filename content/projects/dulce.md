@@ -4,7 +4,7 @@ index: 12
 title: Dulce
 banner: /assets/dulce - 0 portada.jpg
 highlightedImage: /assets/dulce - 1 foto principal.JPG
-images:
+content:
   - height: '2'
     type: image
     image: /assets/dulce - 2.JPG

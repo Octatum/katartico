@@ -4,7 +4,7 @@ index: 6
 title: Bissú
 banner: /assets/bissu - 0 portada BISSU.jpg
 highlightedImage: /assets/bissu - 1 foto principal.png
-images:
+content:
   - height: '3'
     type: image
     image: /assets/bissu - 1 foto principal.png

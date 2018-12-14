@@ -17,7 +17,7 @@ collections:
       - { name: "banner", label: "Banner", widget: "image", hint: "Imagen en página de 'Portafolio' " }
       - { name: "highlightedImage", label: "Imagen destacada", widget: "image" }
       - { name: "body", label: "Descripción", widget: "markdown" }
-      - name: "images"
+      - name: "content"
         label: "Imagenes"
         widget: "list"
         fields:

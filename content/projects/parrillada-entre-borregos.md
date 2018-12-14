@@ -4,7 +4,7 @@ index: 8
 title: Parrillada entre Borregos
 banner: /assets/parrilladaborregos - 0 portada parrillada.jpg
 highlightedImage: /assets/parrilladaborregos - 1 foto principal.png
-images:
+content:
   - height: '1'
     type: image
     image: /assets/parrilladaborregos - 4.JPG

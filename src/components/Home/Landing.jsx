@@ -25,7 +25,7 @@ const Container = styled.div`
     'conoce';
   transition: 1s ease-in-out all;
   transform: ${({ scrolled }) =>
-    scrolled ? 'translateY(-100%)' : 'translateY(0)'};
+    scrolled ? 'translateY(-120%)' : 'translateY(0)'};
 
   ${device.tablet} {
     grid-template: 4fr 1fr / 1fr 1fr;

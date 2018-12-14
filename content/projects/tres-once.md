@@ -4,7 +4,7 @@ index: 12
 title: Tres Once
 banner: /assets/tresonce - 0 portada.jpg
 highlightedImage: /assets/tresonce - 1 foto principal.png
-images:
+content:
   - height: '1'
     type: image
     image: /assets/tresonce - 2.png

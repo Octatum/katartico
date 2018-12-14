@@ -66,7 +66,7 @@ const Text = styled.p`
     font-size: 1rem;
     top: 12px;
     right: 10%;
-    width: 4rem;
+    width: 6rem;
   }
 
   ${device.laptop} {

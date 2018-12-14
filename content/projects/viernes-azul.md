@@ -4,7 +4,7 @@ index: 11
 title: Viernes Azul
 banner: /assets/viernesazul - 0 portada.jpg
 highlightedImage: /assets/viernesazul - 1 foto principal.JPG
-images:
+content:
   - height: '2'
     type: image
     image: /assets/viernesazul - 2.png

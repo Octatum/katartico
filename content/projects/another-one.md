@@ -4,7 +4,7 @@ index: 3
 title: Biofase
 banner: /assets/biofase - 0 portada BIOFASE.jpg
 highlightedImage: /assets/biofase - 6.jpg
-images:
+content:
   - height: '2'
     type: image
     image: /assets/biofase - 1 foto principal.jpg

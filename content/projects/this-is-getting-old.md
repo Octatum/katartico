@@ -4,7 +4,7 @@ index: 10
 title: El mundo escribe
 banner: /assets/elmundoescribe - 0 portada eme.jpg
 highlightedImage: /assets/elmundoescribe - 1 foto principal.jpg
-images:
+content:
   - height: '3'
     type: image
     image: /assets/elmundoescribe - 1 foto principal.jpg

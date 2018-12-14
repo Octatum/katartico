@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactHelmet  from 'react-helmet';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
@@ -8,6 +9,7 @@ import 'react-image-lightbox/style.css';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
 import apostropheImg from '../components/assets/apostrophe.svg';
+import PortfolioItem from '../components/Portfolio/PortfolioItem';
 
 const Container = styled.div`
   display: flex;
@@ -121,19 +123,6 @@ const PhotoGrid = styled.div`
   }
 `;
 
-const Picture = styled.div`
-  background-color: ${props => props.theme.main};
-  background-image: url('${({ image }) => image}');
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-
-  ${device.tablet} {
-    grid-row: span ${({ height }) => height};
-    grid-column: span ${({ width }) => width};
-  }
-`;
-
 const HeaderContainer = styled('div')`
   display: flex;
 
@@ -160,7 +149,6 @@ export default class Template extends Component {
 
   handlePictureClick = index => {
     return () => {
-      console.log(index);
       this.setState(() => ({
         photoIndex: index,
         isOpen: true,
@@ -171,11 +159,14 @@ export default class Template extends Component {
   render() {
     const { markdownRemark } = this.props.data;
     const { rawMarkdownBody, frontmatter } = markdownRemark;
-    const images = frontmatter.images.map(imgData => imgData.image);
+    const images = frontmatter.content.filter(imgData => imgData.type === "image").map(imgData => imgData.content);
 
     const { photoIndex, isOpen } = this.state;
     return (
       <Layout>
+        <ReactHelmet>
+          <title>{frontmatter.title}</title>
+        </ReactHelmet>
         <Container>
           <BackButton to="/portafolio">
             <Apostrophe src={apostropheImg} />
@@ -188,14 +179,12 @@ export default class Template extends Component {
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>
-              {frontmatter.images &&
-                frontmatter.images.map((image, index) => (
-                  <Picture
-                    onClick={this.handlePictureClick(index)}
-                    width={image.width}
-                    height={image.height}
-                    image={image.image}
-                    key={image.image}
+              {frontmatter.content &&
+                frontmatter.content.map((item, index) => (
+                  <PortfolioItem
+                    onImageClick={this.handlePictureClick(index)}
+                    key={item.image || item.videoId}
+                    item={item}
                   />
                 ))}
             </PhotoGrid>
@@ -234,9 +223,12 @@ export const pageQuery = graphql`
     ) {
       rawMarkdownBody
       frontmatter {
-        images {
+        title
+        content {
           height
+          type
           image
+          videoId
           width
         }
         highlightedImage

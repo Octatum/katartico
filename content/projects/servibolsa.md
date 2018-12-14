@@ -4,7 +4,7 @@ index: 13
 title: SERVIBOLSA
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa - Copia de LS_Loc3_4.jpg
-images:
+content:
   - height: '2'
     type: image
     image: /assets/servibolsa - Copia de Cat_0001.jpg

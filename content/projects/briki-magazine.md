@@ -4,7 +4,7 @@ index: 15
 title: Briki Magazine
 banner: /assets/briki - 0 portada.jpg
 highlightedImage: /assets/briki - 2.jpg
-images:
+content:
   - height: '2'
     type: image
     image: /assets/briki - 1 foto grande.png

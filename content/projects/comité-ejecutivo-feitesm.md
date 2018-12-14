@@ -4,7 +4,7 @@ index: 14
 title: Comité Ejecutivo FEITESM
 banner: /assets/feitesm - 0 portada FEITESM.jpg
 highlightedImage: /assets/feitesm - 1 foto principal.jpg
-images:
+content:
   - height: '2'
     type: image
     image: /assets/feitesm - 1 foto principal.jpg

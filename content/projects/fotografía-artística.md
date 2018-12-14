@@ -4,7 +4,7 @@ index: 4
 title: Fotografía artística
 banner: /assets/fotoarte - 0 portada foto artistica.jpg
 highlightedImage: /assets/fotoarte - 1 foto principal.jpg
-images:
+content:
   - height: '2'
     type: image
     image: /assets/fotoarte - 2.jpg

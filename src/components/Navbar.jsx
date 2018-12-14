@@ -37,8 +37,13 @@ const FlexBox = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 100%;
+  max-height: ${({mini}) => mini ? '3rem' : '3.5rem'};
+  padding: ${({mini}) => mini ? '0.5rem' : 0} 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+  ${device.laptop} {
+    max-height: ${({mini}) => mini ? '3rem' : '3.75rem'};
+  }
 `;
 
 const Menu = styled.div`
@@ -77,6 +82,7 @@ const LinkList = styled.div`
 const Link = styled(_Link)`
   position: relative;
   margin: 1rem 0;
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   font-size: 1em;
   color: inherit;
   text-align: center;
@@ -137,6 +143,7 @@ const Rectangle = styled.rect`
 
 const Anchor = styled.a`
   margin: 1rem 0;
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   font-size: 1em;
   color: inherit;
   text-transform: uppercase;
@@ -169,6 +176,7 @@ const SocialMediaIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   font-size: 1em;
 
   ${device.tablet} {
