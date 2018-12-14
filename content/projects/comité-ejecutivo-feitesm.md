@@ -7,6 +7,11 @@ highlightedImage: /assets/feitesm - 1 foto principal.jpg
 images:
   - height: '2'
     image: /assets/feitesm - 1 foto principal.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    type: video youtube
+    videoId: kmX0ZGU_e4E
     width: '3'
 ---
 # Comité Ejecutivo FEITESM
