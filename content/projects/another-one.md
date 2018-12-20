@@ -2,68 +2,68 @@
 type: project
 index: 3
 title: Biofase
-banner: /assets/biofase - 0 portada BIOFASE.jpg
-highlightedImage: /assets/biofase - 6.jpg
+banner: /assets/biofase_-_0_portada_BIOFASE.jpg
+highlightedImage: /assets/biofase_-_6.jpg
 content:
   - height: '2'
     type: image
-    image: /assets/biofase - 1 foto principal.jpg
+    image: /assets/biofase_-_1_foto_principal.jpg
     width: '1'
   - height: '2'
     type: image
-    image: /assets/biofase - 2.png
+    image: /assets/biofase_-_2.png
     width: '2'
   - height: '3'
     type: image
-    image: /assets/biofase - 3.png
+    image: /assets/biofase_-_3.png
     width: '1'
   - height: '3'
     type: image
-    image: /assets/biofase - 4.jpg
+    image: /assets/biofase_-_4.jpg
     width: '2'
   - height: '2'
     type: image
-    image: /assets/biofase - 5.jpg
+    image: /assets/biofase_-_5.jpg
     width: '3'
   - height: '3'
     type: image
-    image: /assets/biofase - 6.jpg
+    image: /assets/biofase_-_6.jpg
     width: '2'
   - height: '2'
     type: image
-    image: /assets/biofase - 7.png
+    image: /assets/biofase_-_7.png
     width: '2'
   - height: '2'
     type: image
-    image: /assets/biofase - 8.jpg
+    image: /assets/biofase_-_8.jpg
     width: '1'
   - height: '3'
     type: image
-    image: /assets/biofase - 9.jpg
+    image: /assets/biofase_-_9.jpg
     width: '2'
   - height: '3'
     type: image
-    image: /assets/biofase - 11.jpg
+    image: /assets/biofase_-_11.jpg
     width: '1'
   - height: '2'
     type: image
-    image: /assets/biofase - 13.png
+    image: /assets/biofase_-_13.png
     width: '2'
   - height: '2'
     type: image
-    image: /assets/biofase - 15.png
+    image: /assets/biofase_-_15.png
     width: '1'
   - height: '3'
     type: image
-    image: /assets/biofase - 16.png
+    image: /assets/biofase_-_16.png
     width: '2'
   - height: '2'
     type: image
-    image: /assets/biofase - 17.png
+    image: /assets/biofase_-_17.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/biofase - 18.png
+    image: /assets/biofase_-_18.png
     width: '1'
 ---
 # Biofase

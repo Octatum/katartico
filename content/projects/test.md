@@ -2,28 +2,28 @@
 type: project
 index: 9
 title: Premio Luis Elizondo
-banner: /assets/premioluiselizondo - 0 portada PLE-19.jpg
-highlightedImage: /assets/premioluiselizondo - 1 foto principal.png
+banner: /assets/premioluiselizondo_-_0_portada_PLE-19.jpg
+highlightedImage: /assets/premioluiselizondo_-_1_foto_principal.png
 content:
   - height: '2'
     type: image
-    image: /assets/premioluiselizondo - 2.png
+    image: /assets/premioluiselizondo_-_2.png
     width: '2'
   - height: '1'
     type: image
-    image: /assets/premioluiselizondo - 3.png
+    image: /assets/premioluiselizondo_-_3.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/premioluiselizondo - 4.png
+    image: /assets/premioluiselizondo_-_4.png
     width: '1'
   - height: '3'
     type: image
-    image: /assets/premioluiselizondo - 5.png
+    image: /assets/premioluiselizondo_-_5.png
     width: '3'
   - height: '3'
     type: image
-    image: /assets/premioluiselizondo - 1 foto principal.png
+    image: /assets/premioluiselizondo_-_1_foto_principal.png
     width: '3'
 ---
 # Premio Luis Elizondo

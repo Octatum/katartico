@@ -2,16 +2,16 @@
 type: project
 index: 6
 title: Bissú
-banner: /assets/bissu - 0 portada BISSU.jpg
-highlightedImage: /assets/bissu - 1 foto principal.png
+banner: /assets/bissu_-_0_portada_BISSU.jpg
+highlightedImage: /assets/bissu_-_1_foto_principal.png
 content:
   - height: '3'
     type: image
-    image: /assets/bissu - 1 foto principal.png
+    image: /assets/bissu_-_1_foto_principal.png
     width: '2'
   - height: '3'
     type: image
-    image: /assets/bissu - 2.png
+    image: /assets/bissu_-_2.png
     width: '1'
 ---
 # Bissú

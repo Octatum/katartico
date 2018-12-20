@@ -2,36 +2,36 @@
 type: project
 index: 11
 title: Viernes Azul
-banner: /assets/viernesazul - 0 portada.jpg
-highlightedImage: /assets/viernesazul - 1 foto principal.JPG
+banner: /assets/viernesazul_-_0_portada.jpg
+highlightedImage: /assets/viernesazul_-_1_foto_principal.JPG
 content:
   - height: '2'
     type: image
-    image: /assets/viernesazul - 2.png
+    image: /assets/viernesazul_-_2.png
     width: '3'
   - height: '2'
     type: image
-    image: /assets/viernesazul - 3.png
+    image: /assets/viernesazul_-_3.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/viernesazul - 4.JPG
+    image: /assets/viernesazul_-_4.JPG
     width: '1'
   - height: '2'
     type: image
-    image: /assets/viernesazul - 5.JPG
+    image: /assets/viernesazul_-_5.JPG
     width: '2'
   - height: '3'
     type: image
-    image: /assets/viernesazul - 6.png
+    image: /assets/viernesazul_-_6.png
     width: '2'
   - height: '3'
     type: image
-    image: /assets/viernesazul - 7.jpg
+    image: /assets/viernesazul_-_7.jpg
     width: '1'
   - height: '3'
     type: image
-    image: /assets/viernesazul - 1 foto principal.JPG
+    image: /assets/viernesazul_-_1_foto_principal.JPG
     width: '3'
 ---
 # Viernes Azul

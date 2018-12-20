@@ -2,44 +2,44 @@
 type: project
 index: 12
 title: Dulce
-banner: /assets/dulce - 0 portada.jpg
-highlightedImage: /assets/dulce - 1 foto principal.JPG
+banner: /assets/dulce_-_0_portada.jpg
+highlightedImage: /assets/dulce_-_1_foto_principal.JPG
 content:
   - height: '2'
     type: image
-    image: /assets/dulce - 2.JPG
+    image: /assets/dulce_-_2.JPG
     width: '3'
   - height: '2'
     type: image
-    image: /assets/dulce - 3.JPG
+    image: /assets/dulce_-_3.JPG
     width: '2'
   - height: '2'
     type: image
-    image: /assets/dulce - 4.JPG
+    image: /assets/dulce_-_4.JPG
     width: '1'
   - height: '3'
     type: image
-    image: /assets/dulce - 1 foto principal.JPG
+    image: /assets/dulce_-_1_foto_principal.JPG
     width: '3'
   - height: '2'
     type: image
-    image: /assets/dulce - 5.JPG
+    image: /assets/dulce_-_5.JPG
     width: '3'
   - height: '2'
     type: image
-    image: /assets/dulce - 6.JPG
+    image: /assets/dulce_-_6.JPG
     width: '1'
   - height: '2'
     type: image
-    image: /assets/dulce - 7.JPG
+    image: /assets/dulce_-_7.JPG
     width: '2'
   - height: '2'
     type: image
-    image: /assets/dulce - 8.JPG
+    image: /assets/dulce_-_8.JPG
     width: '3'
   - height: '3'
     type: image
-    image: /assets/dulce - 9.JPG
+    image: /assets/dulce_-_9.JPG
     width: '3'
 ---
 # Dulce

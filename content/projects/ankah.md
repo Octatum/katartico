@@ -2,44 +2,44 @@
 type: project
 index: 2
 title: ANKAH
-banner: /assets/ankah - 0 portada ANKAH.jpg
-highlightedImage: /assets/ankah - 1 foto principal.png
+banner: /assets/ankah_-_0_portada_ANKAH.jpg
+highlightedImage: /assets/ankah_-_1_foto_principal.png
 content:
   - height: '2'
     type: image
-    image: /assets/ankah - 2.png
+    image: /assets/ankah_-_2.png
     width: '2'
   - height: '2'
     type: image
-    image: /assets/ankah - 3.jpg
+    image: /assets/ankah_-_3.jpg
     width: '1'
   - height: '3'
     type: image
-    image: /assets/ankah - 4.jpg
+    image: /assets/ankah_-_4.jpg
     width: '3'
   - height: '2'
     type: image
-    image: /assets/ankah - 5.jpg
+    image: /assets/ankah_-_5.jpg
     width: '1'
   - height: '1'
     type: image
-    image: /assets/ankah - 6 Logitpo propuestas-25.png
+    image: /assets/ankah_-_6_Logitpo_propuestas-25.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/ankah - 7 Logitpo propuestas-26.png
+    image: /assets/ankah_-_7_Logitpo_propuestas-26.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/ankah - 8 Logitpo propuestas-27.png
+    image: /assets/ankah_-_8_Logitpo_propuestas-27.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/ankah - 9 Logitpo propuestas-28.png
+    image: /assets/ankah_-_9_Logitpo_propuestas-28.png
     width: '1'
   - height: '1'
     type: image
-    image: /assets/ankah - 10 Logitpo propuestas-29.png
+    image: /assets/ankah_-_10_Logitpo_propuestas-29.png
     width: '1'
 ---
 # ANKAH

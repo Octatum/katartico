@@ -2,20 +2,20 @@
 type: project
 index: 7
 title: 'México: El país del sí'
-banner: /assets/mexicosi - 0 portada mexico.jpg
-highlightedImage: /assets/mexicosi - 1 foto principal.png
+banner: /assets/mexicosi_-_0_portada_mexico.jpg
+highlightedImage: /assets/mexicosi_-_1_foto_principal.png
 content:
   - height: '2'
     type: image
-    image: /assets/mexicosi - 1 foto principal.png
+    image: /assets/mexicosi_-_1_foto_principal.png
     width: '3'
   - height: '2'
     type: image
-    image: /assets/mexicosi - 1 foto principal.png
+    image: /assets/mexicosi_-_1_foto_principal.png
     width: '2'
   - height: '2'
     type: image
-    image: /assets/mexicosi - 3.jpg
+    image: /assets/mexicosi_-_3.jpg
     width: '1'
 ---
 # México: El país del sí

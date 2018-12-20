@@ -2,24 +2,24 @@
 type: project
 index: 10
 title: El mundo escribe
-banner: /assets/elmundoescribe - 0 portada eme.jpg
-highlightedImage: /assets/elmundoescribe - 1 foto principal.jpg
+banner: /assets/elmundoescribe_-_0_portada_eme.jpg
+highlightedImage: /assets/elmundoescribe_-_1_foto_principal.jpg
 content:
   - height: '3'
     type: image
-    image: /assets/elmundoescribe - 1 foto principal.jpg
+    image: /assets/elmundoescribe_-_1_foto_principal.jpg
     width: '3'
   - height: '3'
     type: image
-    image: /assets/elmundoescribe - 2.png
+    image: /assets/elmundoescribe_-_2.png
     width: '2'
   - height: '1'
     type: image
-    image: /assets/elmundoescribe - 3.png
+    image: /assets/elmundoescribe_-_3.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/elmundoescribe - 4.png
+    image: /assets/elmundoescribe_-_4.png
     width: '1'
 ---
 # El mundo escribe

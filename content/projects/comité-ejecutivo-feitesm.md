@@ -2,15 +2,15 @@
 type: project
 index: 14
 title: Comité Ejecutivo FEITESM
-banner: /assets/feitesm - 0 portada FEITESM.jpg
-highlightedImage: /assets/feitesm - 1 foto principal.jpg
+banner: /assets/feitesm_-_0_portada_FEITESM.jpg
+highlightedImage: /assets/feitesm_-_1_foto_principal.jpg
 content:
   - height: '2'
     type: youtube-video
     videoId: kmX0ZGU_e4E
     width: '3'
   - height: '2'
-    image: /assets/feitesm - 1 foto principal.jpg
+    image: /assets/feitesm_-_1_foto_principal.jpg
     type: image
     width: '3'
 ---

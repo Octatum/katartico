@@ -2,7 +2,7 @@
   "type": "page-home",
   "intro": {
     "video": "/assets/intro_animation.mp4",
-    "image": "/assets/74aniversario -0 portada.jpg"
+    "image": "/assets/74aniversario_-0_portada.jpg"
   },
   "slogan": "Insert your inspirational quote right here.",
   "customers": [
@@ -33,5 +33,5 @@
       "logo": "/assets/torre-luz.svg"
     }
   ],
-  "portfolioImage": "/assets/74aniversario -2.JPG"
+  "portfolioImage": "/assets/74aniversario_-2.JPG"
 }

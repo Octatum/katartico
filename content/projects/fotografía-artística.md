@@ -2,32 +2,32 @@
 type: project
 index: 4
 title: Fotografía artística
-banner: /assets/fotoarte - 0 portada foto artistica.jpg
-highlightedImage: /assets/fotoarte - 1 foto principal.jpg
+banner: /assets/fotoarte_-_0_portada_foto_artistica.jpg
+highlightedImage: /assets/fotoarte_-_1_foto_principal.jpg
 content:
   - height: '2'
     type: image
-    image: /assets/fotoarte - 2.jpg
+    image: /assets/fotoarte_-_2.jpg
     width: '2'
   - height: '2'
     type: image
-    image: /assets/fotoarte - 3.jpg
+    image: /assets/fotoarte_-_3.jpg
     width: '2'
   - height: '3'
     type: image
-    image: /assets/fotoarte - 1 foto principal.jpg
+    image: /assets/fotoarte_-_1_foto_principal.jpg
     width: '3'
   - height: '2'
     type: image
-    image: /assets/fotoarte - 4.jpg
+    image: /assets/fotoarte_-_4.jpg
     width: '1'
   - height: '2'
     type: image
-    image: /assets/fotoarte - 5.jpg
+    image: /assets/fotoarte_-_5.jpg
     width: '1'
   - height: '2'
     type: image
-    image: /assets/fotoarte - 6.jpg
+    image: /assets/fotoarte_-_6.jpg
     width: '3'
 ---
 # Fotografía artística

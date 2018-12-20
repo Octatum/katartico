@@ -3,31 +3,31 @@ type: project
 index: 1
 title: 74 Aniversario
 banner: /assets/0-portada.jpg
-highlightedImage: /assets/74aniversario -1 foto principal.png
+highlightedImage: /assets/74aniversario_-1_foto_principal.png
 content:
   - height: '2'
     type: image
-    image: /assets/74aniversario -1 foto principal.png
+    image: /assets/74aniversario_-1_foto_principal.png
     width: '2'
   - height: '1'
     type: image
-    image: /assets/74aniversario -2.JPG
+    image: /assets/74aniversario_-2.JPG
     width: '2'
   - height: '3'
     type: image
-    image: /assets/74aniversario -3.jpg
+    image: /assets/74aniversario_-3.jpg
     width: '2'
   - height: '2'
     type: image
-    image: /assets/74aniversario -4.jpg
+    image: /assets/74aniversario_-4.jpg
     width: '3'
   - height: '3'
     type: image
-    image: /assets/74aniversario -5.JPG
+    image: /assets/74aniversario_-5.JPG
     width: '1'
   - height: '3'
     type: image
-    image: /assets/74aniversario -6.JPG
+    image: /assets/74aniversario_-6.JPG
     width: '3'
 ---
 # 74 Aniversario

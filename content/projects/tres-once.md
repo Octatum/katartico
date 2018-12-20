@@ -2,32 +2,32 @@
 type: project
 index: 12
 title: Tres Once
-banner: /assets/tresonce - 0 portada.jpg
-highlightedImage: /assets/tresonce - 1 foto principal.png
+banner: /assets/tresonce_-_0_portada.jpg
+highlightedImage: /assets/tresonce_-_1_foto_principal.png
 content:
   - height: '1'
     type: image
-    image: /assets/tresonce - 2.png
+    image: /assets/tresonce_-_2.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/tresonce - 3.png
+    image: /assets/tresonce_-_3.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/tresonce - 4.png
+    image: /assets/tresonce_-_4.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/tresonce - 5.png
+    image: /assets/tresonce_-_5.png
     width: '1'
   - height: '2'
     type: image
-    image: /assets/tresonce - 6.jpg
+    image: /assets/tresonce_-_6.jpg
     width: '3'
   - height: '2'
     type: image
-    image: /assets/tresonce - 1 foto principal.png
+    image: /assets/tresonce_-_1_foto_principal.png
     width: '3'
 ---
 # Tres Once
