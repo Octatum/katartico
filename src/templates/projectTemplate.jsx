@@ -148,7 +148,21 @@ export default class Template extends Component {
     isOpen: false,
   };
 
+  constructor(props) {
+    super(props);
+
+    const images = this.props.data.markdownRemark.frontmatter.content.filter(item => item.type === "image").map((imageData, imageIndex) => {
+      imageData.imageIndex = imageIndex;
+      imageData.src = imageData.image.childImageSharp.fluid.src;
+
+      return imageData;
+    });
+
+    this.images = images;
+  }
+
   handlePictureClick = index => {
+    console.log(index);
     return () => {
       this.setState(() => ({
         photoIndex: index,
@@ -160,8 +174,6 @@ export default class Template extends Component {
   render() {
     const { markdownRemark } = this.props.data;
     const { rawMarkdownBody, frontmatter } = markdownRemark;
-    const images = frontmatter.content.filter(imgData => imgData.type === "image").map(imgData => imgData.content);
-
     const { photoIndex, isOpen } = this.state;
     return (
       <Layout>
@@ -180,14 +192,13 @@ export default class Template extends Component {
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>
-              {frontmatter.content &&
-                frontmatter.content.map((item, index) => (
-                  <PortfolioItem
-                    onImageClick={this.handlePictureClick(index)}
-                    key={item.image.id || item.videoId}
-                    item={item}
-                  />
-                ))}
+              {frontmatter.content.map((item) => (
+                <PortfolioItem
+                  onImageClick={this.handlePictureClick(item.imageIndex)}
+                  key={(item.image && item.image.id ) || item.videoId}
+                  item={item}
+                />
+              ))}
             </PhotoGrid>
           </ContentLayout>
           <BackButton to="/portafolio">
@@ -196,18 +207,18 @@ export default class Template extends Component {
         </Container>
         {isOpen && (
           <Lightbox
-            mainSrc={images[photoIndex]}
-            nextSrc={images[(photoIndex + 1) % images.length]}
-            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            mainSrc={this.images[photoIndex].src}
+            nextSrc={this.images[(photoIndex + 1) % this.images.length].src}
+            prevSrc={this.images[(photoIndex + this.images.length - 1) % this.images.length].src}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + images.length - 1) % images.length,
+                photoIndex: (photoIndex + this.images.length - 1) % this.images.length,
               })
             }
             onMoveNextRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + 1) % images.length,
+                photoIndex: (photoIndex + 1) % this.images.length,
               })
             }
           />
