@@ -3,7 +3,6 @@ import { Link, graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
-import { device } from '../utilities/device';
 import GatsbyImg from 'gatsby-image';
 
 const Container = styled.div`
@@ -18,19 +17,19 @@ const Container = styled.div`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 19rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 1fr;
   grid-gap: 5%;
   grid-row-gap: 3vmax;
   max-width: 100%;
   width: 100%;
 
-  ${device.tablet} {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  ${device.laptop} {
-    grid-template-columns: repeat(4, 1fr);
+  .grid::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
   }
 `;
 
@@ -42,7 +41,6 @@ const GridItemContainer = styled.div`
 
 const GridItem = styled.div`
   position: relative;
-  max-width: 300px;
   width: 100%;
 
   &::after {
@@ -55,39 +53,32 @@ const GridItem = styled.div`
 `;
 
 const SquarePicture = styled(GatsbyImg)`
-  width: 100%;
-  height: 100%;
-
-  background-color: ${({ theme }) => theme.main};
-  background-size: cover;
-  position: relative;
-
-  ::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(71, 11, 11, 0);
-    transition: 0.3s ease-in-out all;
-  }
-
-  &:hover::before {
-    background-color: rgba(107, 16, 16, 0.6);
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-  }
+  width: 100%;  
 `;
 
 const ItemTitle = styled.p`
   font-size: 1.2em;
   width: 100%;
   margin: 4px 0;
+`;
+
+const SquareLink = styled(Link)`
+  position: relative;
+  display: block;
+`;
+
+const Overlay = styled('div')`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(71, 11, 11, 0);
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    background-color: rgba(107, 16, 16, 0.6);
+  }
 `;
 
 const Portafolio = ({
@@ -111,9 +102,10 @@ const Portafolio = ({
             return (
               <GridItemContainer>
                 <GridItem key={index}>
-                  <Link to={`/project/${route}`}>
+                  <SquareLink to={`/project/${route}`}>
                     <SquarePicture fluid={item.frontmatter.banner.childImageSharp.fluid} />
-                  </Link>
+                    <Overlay />
+                  </SquareLink>
                   <ItemTitle>{item.frontmatter.title}</ItemTitle>
                 </GridItem>
               </GridItemContainer>
