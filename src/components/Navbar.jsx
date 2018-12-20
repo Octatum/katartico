@@ -81,7 +81,7 @@ const LinkList = styled.div`
     flex-direction: row;
     box-sizing: border-box;
     justify-content: space-between;
-    padding-left: 15%;
+    padding-left: 25%;
     flex: 8;
   }
 `;
