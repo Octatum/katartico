@@ -10,6 +10,7 @@ import Layout from '../components/Layout';
 import { device } from '../utilities/device';
 import apostropheImg from '../components/assets/apostrophe.svg';
 import PortfolioItem from '../components/Portfolio/PortfolioItem';
+import GatsbyImage from 'gatsby-image';
 
 const Container = styled.div`
   display: flex;
@@ -137,7 +138,7 @@ const HighlightedImageContainer = styled('div')`
   flex: 2;
 `;
 
-const HighlightedImage = styled('img')`
+const HighlightedImage = styled(GatsbyImage)`
   width: 100%;
 `;
 
@@ -175,7 +176,7 @@ export default class Template extends Component {
             <HeaderContainer>
               <ReactMarkdown source={rawMarkdownBody} />
               <HighlightedImageContainer>
-                <HighlightedImage src={frontmatter.highlightedImage} />
+                <HighlightedImage fluid={frontmatter.highlightedImage.childImageSharp.fluid} />
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>
@@ -183,7 +184,7 @@ export default class Template extends Component {
                 frontmatter.content.map((item, index) => (
                   <PortfolioItem
                     onImageClick={this.handlePictureClick(index)}
-                    key={item.image || item.videoId}
+                    key={item.image.id || item.videoId}
                     item={item}
                   />
                 ))}
@@ -228,6 +229,7 @@ export const pageQuery = graphql`
           height
           type
           image {
+            id
             childImageSharp {
               fluid(maxWidth: 2048) {
                 ...GatsbyImageSharpFluid

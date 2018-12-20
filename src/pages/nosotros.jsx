@@ -18,7 +18,7 @@ const Container = styled.div`
   color: ${props => props.theme.white};
 `;
 
-const Picture = styled(GatsbyImage)`
+const Picture = styled('img')`
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
@@ -117,7 +117,7 @@ const About = props => {
         <PeopleDiv>
           {people.map((item, index) => (
             <Person key={index}>
-              <PersonPicture fixed={item.node.frontmatter.photo.childImageSharp.fluid} />
+              <PersonPicture as={GatsbyImage} fluid={item.node.frontmatter.photo.childImageSharp.fluid} />
               <ReactMarkdown source={item.node.rawMarkdownBody} />
             </Person>
           ))}

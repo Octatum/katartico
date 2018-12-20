@@ -34,6 +34,10 @@ const FlexBox = styled.div`
   height: 100%;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+
+  ${device.laptop} {
+    font-size: ${({mini}) => mini ? '0.8em' : '1em'};
+  }
 `;
 
 const Logo = styled.img`
@@ -75,7 +79,10 @@ const LinkList = styled.div`
 
   ${device.laptop} {
     flex-direction: row;
-    margin-left: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 15%;
+    flex: 8;
   }
 `;
 
@@ -104,11 +111,9 @@ const Link = styled(_Link)`
 
   ${device.laptop} {
     font-size: 0.8em;
-    margin: 1.5rem;
   }
 `;
 
-// Es posible cambiar el estilo de un componente a otro, usando styled components
 const ScrollLink = Link.withComponent(_ScrollLink);
 
 const Svg = styled.svg`
@@ -159,15 +164,10 @@ const SocialMedia = styled.div`
   }
 
   ${device.laptop} {
-    margin: 0 1rem;
-
-    > :first-child {
-      margin-left: 0;
-    }
-
-    > :last-child {
-      margin-right: 0;
-    }
+    flex: 2;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0.5rem;
   }
 `;
 
@@ -224,6 +224,13 @@ const socialMedia = [
     faName: 'fa-linkedin-in',
   },
 ];
+
+const FlexLogoSection = styled('div')`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 class Navbar extends Component {
   state = {
@@ -282,9 +289,9 @@ class Navbar extends Component {
     return (
       <Container>
         <FlexBox mini={this.props.minimize}>
-          <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
+            <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
               <SocialMedia>{socialMediaLinks}</SocialMedia>
@@ -299,6 +306,7 @@ class Navbar extends Component {
             minWidth={breakpoints.tablet}
             maxWidth={breakpoints.laptop - 1}
           >
+            <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
             </Menu>
@@ -310,6 +318,9 @@ class Navbar extends Component {
           </MediaQuery>
           {/* Desktop view */}
           <MediaQuery minWidth={breakpoints.laptop}>
+            <FlexLogoSection>
+              <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
+            </FlexLogoSection>
             <LinkList>{navbarLinks}</LinkList>
             <SocialMedia>{socialMediaLinks}</SocialMedia>
           </MediaQuery>

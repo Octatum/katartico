@@ -100,8 +100,8 @@ const Portafolio = ({
               .replace(/\W/g, '');
 
             return (
-              <GridItemContainer>
-                <GridItem key={index}>
+              <GridItemContainer key={route}>
+                <GridItem>
                   <SquareLink to={`/project/${route}`}>
                     <SquarePicture fluid={item.frontmatter.banner.childImageSharp.fluid} />
                     <Overlay />
