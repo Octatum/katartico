@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import GatsbyImage from 'gatsby-image';
 import AppLayout from '../components/Layout';
 import { device } from '../utilities/device';
 
@@ -33,33 +34,13 @@ const Item = styled.div`
   max-height: 230px;
   max-width: 230px;
   margin: 0 auto;
-  background-image: url('${({ image }) => image}');
-  background-size: cover;
-  background-position: center;
   position: relative;
   transition: 0.3s linear all;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(71, 11, 11, 0.5);
-    transition: inherit;
-  }
 
   &::after {
     content: "";
     display: block;
     padding-bottom: 100%;
-  }
-
-  &:hover {
-    ::before {
-      background-color: rgba(71, 11, 11, 0.8);
-    }
   }
 
   color: white;
@@ -97,11 +78,30 @@ const ItemContent = styled.div`
   ${device.tablet} {
     font-size: 1.2rem;
   }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(71, 11, 11, 0.5);
+    transition: 0.3s linear all;
+  }
+
+  &:hover {
+    ::before {
+      background-color: rgba(71, 11, 11, 0.8);
+    }
+  }
 `;
 
 const ElementHeader = styled.div`
   text-transform: uppercase;
   max-width: 95%;
+  position: absolute;
 
   ${Item}:hover & {
     position: absolute;
@@ -163,6 +163,13 @@ const ListItem = styled.div`
   padding-bottom: 0.5em;
 `;
 
+const BackgroundImage = styled(GatsbyImage)`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+`;
+
 const Services = props => {
   const services = props.data.allMarkdownRemark.edges.map(({ node }) => ({
     ...node.frontmatter,
@@ -173,7 +180,8 @@ const Services = props => {
       <Helmet title="Servicios" />
       <Layout>
         {services.map(service => (
-          <Item key={service.title} image={service.banner}>
+          <Item key={service.title}>
+            <BackgroundImage aria-hidden fluid={service.banner.childImageSharp.fluid} />
             <ItemContent>
               <ElementHeader>{service.title}</ElementHeader>
               <ElementBody>
