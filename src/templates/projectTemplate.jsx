@@ -162,7 +162,6 @@ export default class Template extends Component {
   }
 
   handlePictureClick = index => {
-    console.log(index);
     return () => {
       this.setState(() => ({
         photoIndex: index,
