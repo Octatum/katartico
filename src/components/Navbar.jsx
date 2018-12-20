@@ -81,7 +81,7 @@ const LinkList = styled.div`
     flex-direction: row;
     box-sizing: border-box;
     justify-content: space-between;
-    padding-left: 25%;
+    padding-left: 37.5%;
     flex: 8;
   }
 `;
@@ -167,6 +167,8 @@ const SocialMedia = styled.div`
     flex: 2;
     justify-content: space-between;
     box-sizing: border-box;
+    margin: 0;
+    margin-left: 0.5rem;
     padding: 0 0.5rem;
   }
 `;
