@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
+import GatsbyImg from 'gatsby-image';
 
 const Container = styled.div`
   display: flex;
@@ -18,8 +19,10 @@ const Container = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 19rem;
   grid-gap: 5%;
   grid-row-gap: 3vmax;
+  max-width: 100%;
   width: 100%;
 
   ${device.tablet} {
@@ -39,10 +42,8 @@ const GridItemContainer = styled.div`
 
 const GridItem = styled.div`
   position: relative;
-  height: 100%;
-  max-height: calc(230px + 4em);
-  width: 100%;
   max-width: 300px;
+  width: 100%;
 
   &::after {
     content: '';
@@ -53,10 +54,11 @@ const GridItem = styled.div`
   }
 `;
 
-const SquarePicture = styled.div`
+const SquarePicture = styled(GatsbyImg)`
   width: 100%;
+  height: 100%;
+
   background-color: ${({ theme }) => theme.main};
-  background-image: url('${({ backgroundImage }) => backgroundImage}');
   background-size: cover;
   position: relative;
 
@@ -110,7 +112,7 @@ const Portafolio = ({
               <GridItemContainer>
                 <GridItem key={index}>
                   <Link to={`/project/${route}`}>
-                    <SquarePicture backgroundImage={item.frontmatter.banner} />
+                    <SquarePicture fluid={item.frontmatter.banner.childImageSharp.fluid} />
                   </Link>
                   <ItemTitle>{item.frontmatter.title}</ItemTitle>
                 </GridItem>
@@ -135,7 +137,13 @@ export default props => (
             node {
               frontmatter {
                 title
-                banner
+                banner {
+                  childImageSharp {
+                    fluid(maxWidth: 400, maxHeight: 400) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
+import GatsbyImage from "gatsby-image"
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +18,7 @@ const Container = styled.div`
   color: ${props => props.theme.white};
 `;
 
-const Picture = styled.img`
+const Picture = styled(GatsbyImage)`
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
@@ -116,7 +117,7 @@ const About = props => {
         <PeopleDiv>
           {people.map((item, index) => (
             <Person key={index}>
-              <PersonPicture src={item.node.frontmatter.photo} />
+              <PersonPicture fixed={item.node.frontmatter.photo.childImageSharp.fluid} />
               <ReactMarkdown source={item.node.rawMarkdownBody} />
             </Person>
           ))}
@@ -138,7 +139,13 @@ export default props => (
             node {
               rawMarkdownBody
               frontmatter {
-                photo
+                photo {
+                  childImageSharp {
+                    fluid(maxWidth: 800) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }

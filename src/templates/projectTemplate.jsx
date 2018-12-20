@@ -227,11 +227,23 @@ export const pageQuery = graphql`
         content {
           height
           type
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           videoId
           width
         }
-        highlightedImage
+        highlightedImage {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

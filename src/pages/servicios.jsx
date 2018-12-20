@@ -201,7 +201,13 @@ export default props => (
             node {
               frontmatter {
                 title
-                banner
+                banner {
+                  childImageSharp {
+                    fluid(maxWidth: 500) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 services
               }
             }
