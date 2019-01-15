@@ -9,6 +9,7 @@ const Footer = styled.footer`
   padding: 4em 0 1em;
   color: ${props => props.theme.white};
   text-align: center;
+  font-size: 0.9em;
 `;
 
 class ChildViewport extends React.Component {
@@ -58,7 +59,7 @@ class ChildViewport extends React.Component {
               {this.props.children}
             </main>
             <Footer>
-              Copyright &copy; Todos los derechos reservados. Katartico 2018.
+                Copyright &copy; Todos los derechos reservados. Katartico 2019.
             </Footer>
           </Element>
         </div>
