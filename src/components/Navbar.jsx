@@ -36,7 +36,7 @@ const FlexBox = styled.div`
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ${device.laptop} {
-    font-size: ${({mini}) => mini ? '0.8em' : '1em'};
+    font-size: ${({mini}) => mini ? '0.9em' : '1em'};
   }
 `;
 
