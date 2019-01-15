@@ -26,7 +26,7 @@ const Container = styled.nav`
 `;
 
 const FlexBox = styled.div`
-  padding: ${props => (props.mini ? '0em 3em' : '1em 3em')};
+  padding: ${props => (props.mini ? '1em 3em' : '1.5em 3em')};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,19 +34,20 @@ const FlexBox = styled.div`
   height: 100%;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  
 
   ${device.laptop} {
-    font-size: ${({mini}) => mini ? '0.8em' : '1em'};
+    font-size: ${({mini}) => mini ? '1em' : '1.1em'};
   }
 `;
 
 const Logo = styled.img`
-  max-height: ${({mini}) => mini ? '3rem' : '3.5rem'};
+  max-height: ${({mini}) => mini ? '3.3rem' : '3.5rem'};
   padding: ${({mini}) => mini ? '0.5rem' : 0} 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ${device.laptop} {
-    max-height: ${({mini}) => mini ? '3rem' : '3.75rem'};
+    max-height: ${({mini}) => mini ? '3.6rem' : '3.7rem'};
   }
 `;
 
@@ -67,8 +68,10 @@ const Menu = styled.div`
   ${props =>
     props.open &&
     `
+    
     max-height: 70vh;
-    box-shadow: 0px 0 20px 10px ${hexToRgba(props.theme.main, 60)};
+    box-shadow: -10px 8px 15px ${hexToRgba(props.theme.main, 60)},
+              10px 8px 15px ${hexToRgba(props.theme.main, 60)} ;
   `};
 `;
 
