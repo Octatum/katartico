@@ -38,9 +38,9 @@ const Link = styled(_Link)`
 const Apostrophes = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
+  width: 90%;
   padding: 1em 0;
-  margin: 5% 5%;
+  margin: 5% 0;
   align-self: center;
 
   ${device.tablet} {

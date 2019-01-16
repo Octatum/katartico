@@ -10,7 +10,7 @@ const Item = styled.div`
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 0;
 
   ${device.tablet} {
     flex: 1;
