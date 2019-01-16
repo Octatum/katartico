@@ -237,6 +237,16 @@ const FlexLogoSection = styled('div')`
   justify-content: center;
 `;
 
+
+const Overlay = styled('div')`
+  width: 100vw;
+  height: 100vh;
+  display: ${({display}) => display};
+  position: fixed;
+  top: 0;
+  left: 0;
+`;
+
 class Navbar extends Component {
   state = {
     open: false,
@@ -247,6 +257,12 @@ class Navbar extends Component {
       open: !prevState.open,
     }));
   };
+
+  closeNavbar = () => {
+    this.setState({
+      open: false
+    });
+  }
 
   render = () => {
     const navbarLinks = links.map((item, index) => {
@@ -297,6 +313,7 @@ class Navbar extends Component {
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
+            <Overlay display={this.state.open ? 'block' : 'none'} onClick={this.closeNavbar} />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
               <SocialMedia>{socialMediaLinks}</SocialMedia>
@@ -312,6 +329,7 @@ class Navbar extends Component {
             maxWidth={breakpoints.laptop - 1}
           >
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
+            <Overlay display={this.state.open ? 'block' : 'none'} onClick={this.closeNavbar} />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
             </Menu>
