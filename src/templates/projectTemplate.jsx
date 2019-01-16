@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactHelmet  from 'react-helmet';
+import ReactHelmet from 'react-helmet';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
@@ -151,12 +151,14 @@ export default class Template extends Component {
   constructor(props) {
     super(props);
 
-    const images = this.props.data.markdownRemark.frontmatter.content.filter(item => item.type === "image").map((imageData, imageIndex) => {
-      imageData.imageIndex = imageIndex;
-      imageData.src = imageData.image.childImageSharp.fluid.src;
+    const images = this.props.data.markdownRemark.frontmatter.content
+      .filter(item => item.type === 'image')
+      .map((imageData, imageIndex) => {
+        imageData.imageIndex = imageIndex;
+        imageData.src = imageData.image.childImageSharp.fluid.src;
 
-      return imageData;
-    });
+        return imageData;
+      });
 
     this.images = images;
   }
@@ -187,14 +189,16 @@ export default class Template extends Component {
             <HeaderContainer>
               <ReactMarkdown source={rawMarkdownBody} />
               <HighlightedImageContainer>
-                <HighlightedImage fluid={frontmatter.highlightedImage.childImageSharp.fluid} />
+                <HighlightedImage
+                  fluid={frontmatter.highlightedImage.childImageSharp.fluid}
+                />
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>
-              {frontmatter.content.map((item) => (
+              {frontmatter.content.map(item => (
                 <PortfolioItem
                   onImageClick={this.handlePictureClick(item.imageIndex)}
-                  key={(item.image && item.image.id ) || item.videoId}
+                  key={(item.image && item.image.id) || item.videoId}
                   item={item}
                 />
               ))}
@@ -208,11 +212,16 @@ export default class Template extends Component {
           <Lightbox
             mainSrc={this.images[photoIndex].src}
             nextSrc={this.images[(photoIndex + 1) % this.images.length].src}
-            prevSrc={this.images[(photoIndex + this.images.length - 1) % this.images.length].src}
+            prevSrc={
+              this.images[
+                (photoIndex + this.images.length - 1) % this.images.length
+              ].src
+            }
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + this.images.length - 1) % this.images.length,
+                photoIndex:
+                  (photoIndex + this.images.length - 1) % this.images.length,
               })
             }
             onMoveNextRequest={() =>

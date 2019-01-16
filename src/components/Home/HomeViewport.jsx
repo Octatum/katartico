@@ -8,7 +8,8 @@ import Landing from './Landing';
 const Viewport = styled.div``;
 
 const Footer = styled.div`
-  width: 100%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 4em 0 1em;
   color: ${props => props.theme.white};
   text-align: center;

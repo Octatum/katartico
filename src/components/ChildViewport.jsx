@@ -5,7 +5,8 @@ import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
 
 const Footer = styled.footer`
-  width: 100%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 4em 0 1em;
   color: ${props => props.theme.white};
   text-align: center;
@@ -55,11 +56,9 @@ class ChildViewport extends React.Component {
               scrollableAncestor={this.state.scrollableAncestor}
               onPositionChange={this.handleWaypointPositionChange}
             />
-            <main>
-              {this.props.children}
-            </main>
+            <main>{this.props.children}</main>
             <Footer>
-                Copyright &copy; Todos los derechos reservados. Katartico 2019.
+              Copyright &copy; Todos los derechos reservados. Katartico 2019.
             </Footer>
           </Element>
         </div>

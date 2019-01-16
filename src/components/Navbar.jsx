@@ -34,20 +34,19 @@ const FlexBox = styled.div`
   height: 100%;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  
 
   ${device.laptop} {
-    font-size: ${({mini}) => mini ? '1em' : '1.1em'};
+    font-size: ${({ mini }) => (mini ? '1em' : '1.1em')};
   }
 `;
 
 const Logo = styled.img`
-  max-height: ${({mini}) => mini ? '3.3rem' : '3.5rem'};
-  padding: ${({mini}) => mini ? '0.5rem' : 0} 0;
+  max-height: ${({ mini }) => (mini ? '3.3rem' : '3.5rem')};
+  padding: ${({ mini }) => (mini ? '0.5rem' : 0)} 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ${device.laptop} {
-    max-height: ${({mini}) => mini ? '3.6rem' : '3.7rem'};
+    max-height: ${({ mini }) => (mini ? '3.6rem' : '3.7rem')};
   }
 `;
 
@@ -237,11 +236,10 @@ const FlexLogoSection = styled('div')`
   justify-content: center;
 `;
 
-
 const Overlay = styled('div')`
   width: 100vw;
   height: 100vh;
-  display: ${({display}) => display};
+  display: ${({ display }) => display};
   position: fixed;
   top: 0;
   left: 0;
@@ -260,9 +258,9 @@ class Navbar extends Component {
 
   closeNavbar = () => {
     this.setState({
-      open: false
+      open: false,
     });
-  }
+  };
 
   render = () => {
     const navbarLinks = links.map((item, index) => {
@@ -313,7 +311,10 @@ class Navbar extends Component {
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
-            <Overlay display={this.state.open ? 'block' : 'none'} onClick={this.closeNavbar} />
+            <Overlay
+              display={this.state.open ? 'block' : 'none'}
+              onClick={this.closeNavbar}
+            />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
               <SocialMedia>{socialMediaLinks}</SocialMedia>
@@ -329,7 +330,10 @@ class Navbar extends Component {
             maxWidth={breakpoints.laptop - 1}
           >
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
-            <Overlay display={this.state.open ? 'block' : 'none'} onClick={this.closeNavbar} />
+            <Overlay
+              display={this.state.open ? 'block' : 'none'}
+              onClick={this.closeNavbar}
+            />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
             </Menu>
