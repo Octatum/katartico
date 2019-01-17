@@ -77,7 +77,7 @@ const ElementHeader = styled.div`
   max-width: 95%;
   position: absolute;
 
-  ${Item}:hover & {
+  ${Item}.open & {
     position: absolute;
     bottom: 60%;
   }

@@ -42,11 +42,11 @@ const FlexBox = styled.div`
 
 const Logo = styled.img`
   max-height: ${({ mini }) => (mini ? '3.3rem' : '3.5rem')};
-  padding: ${({ mini }) => (mini ? '0.5rem' : 0)} 0;
+  padding: ${({ mini }) => (mini ? '0.3rem' : 0)} 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ${device.laptop} {
-    max-height: ${({ mini }) => (mini ? '3.6rem' : '3.7rem')};
+    max-height: ${({ mini }) => (mini ? '3.7rem' : '3.7rem')};
   }
 `;
 
@@ -181,7 +181,7 @@ const SocialMediaIcon = styled.div`
   align-items: center;
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  font-size: 1em;
+  font-size: 1.3em;
 
   ${device.tablet} {
     width: 1em;

@@ -35,18 +35,18 @@ const ContentLayout = styled('div')`
 
 const BackButton = styled(_Link)`
   position: relative;
-  height: 4em;
+  height: 5em;
   align-self: flex-start;
-  margin: 2em 0;
+  margin: 1.5em 0;
   text-decoration: none;
   color: inherit;
 
   ::after {
     content: 'Regresar';
     position: absolute;
-    top: 8px;
+    top: 12px;
     left: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 

@@ -39,7 +39,7 @@ const Form = styled('form')`
   flex-direction: column;
   align-self: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 100px;
   font-size: 1.2em;
 
   ${device.laptop} {
@@ -75,6 +75,7 @@ const Input = styled.input`
   font-family: inherit;
   font-size: inherit;
   border: 0;
+  border-radius: 0;
 `;
 
 const TextArea = styled.textarea`
@@ -85,6 +86,7 @@ const TextArea = styled.textarea`
   font-family: inherit;
   font-size: inherit;
   resize: none;
+  border-radius: 0;
 `;
 
 const Button = styled.button`

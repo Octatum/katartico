@@ -59,8 +59,9 @@ const Text = styled.p`
   position: absolute;
   top: 10%;
   right: 10%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: regular;
+  width: 4.9rem;
 
   ${device.tablet} {
     font-size: 1rem;
