@@ -6,7 +6,7 @@ import { cold } from 'react-hot-loader';
 
 const Item = styled.div`
   width: 100%;
-  max-height: 230px;
+  max-height: 170px;
   max-width: 230px;
   margin: 0 auto;
   position: relative;
@@ -118,7 +118,7 @@ const ElementBody = styled.div`
   transform: scaleY(0);
   font-size: 0.9em;
 
-  ${Item}:hover &, 
+  /*${Item}:hover &,*/ 
   ${Item}.open &{
     position: absolute;
     top: 40%;
@@ -129,9 +129,20 @@ const ElementBody = styled.div`
 
   ${device.laptop} {
     width: 80%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    transform: scaleY(0);
+    font-size: 0.9em;
 
     ${Item}:hover &,
     ${Item}.open & {
+      position: absolute;
+      bottom: 0;
+      height: auto;
+      transform: scaleY(1);
       top: 50%;
     }
   }
