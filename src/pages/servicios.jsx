@@ -7,8 +7,9 @@ import { device } from '../utilities/device';
 import { graphql, StaticQuery } from 'gatsby';
 import Service from '../components/Services/Service';
 
-const Layout = styled.div`
+const Layout = styled('div')`
   position: relative;
+  display: flex;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
   padding: 5rem 5vw;

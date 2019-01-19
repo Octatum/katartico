@@ -156,6 +156,16 @@ const BackgroundImage = styled(GatsbyImage)`
   position: absolute;
   width: 100%;
   height: 100%;
+  & > div {
+    padding-bottom: 0 !important;
+    height: 100%;
+  }
+
+  & > img {
+    object-fit: cover !important; 
+    object-position: 0% 0% !important;
+    font-family: 'object-fit: cover !important; object-position: 0% 0% !important;'
+  }
 `;
 
 function Service(props) {
@@ -163,13 +173,13 @@ function Service(props) {
   const [open, setOpen] = useState(false);
   const className = open && "open";
   const debugSetOpen = (state) => {
-    console.log(state);
     setOpen(!state);
   }
 
   return (
     <Item onClick={() => debugSetOpen(open)} className={className} >
       <BackgroundImage
+        style={{position: 'abslute'}}
         aria-hidden
         fluid={service.banner.childImageSharp.fluid}
       />

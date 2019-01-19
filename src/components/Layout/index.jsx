@@ -10,7 +10,7 @@ import HomeViewport from '../Home/HomeViewport';
 
 const theme = {
   white: '#fff',
-  main: '#9c2420',
+  main: '#950900',
   black: '#000',
 };
 

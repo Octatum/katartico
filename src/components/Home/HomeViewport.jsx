@@ -4,6 +4,7 @@ import Navbar from '../Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
 import Landing from './Landing';
+import { device } from '../../utilities/device';
 
 const Viewport = styled.div``;
 
@@ -14,6 +15,13 @@ const Footer = styled.div`
   color: ${props => props.theme.white};
   text-align: center;
   font-size: 0.9em;
+`;
+const DisplayDiv = styled('div')`
+  display: block;
+
+  ${device.tablet} {
+    display: inline;
+  }
 `;
 
 class HomeViewport extends React.Component {
@@ -62,7 +70,7 @@ class HomeViewport extends React.Component {
             />
             {this.props.children}
             <Footer>
-              Copyright &copy; Todos los derechos reservados. Katartico 2019.
+              Copyright &copy; Todos los derechos reservados. <DisplayDiv>Katartico 2019.</DisplayDiv>
             </Footer>
           </Element>
         </div>

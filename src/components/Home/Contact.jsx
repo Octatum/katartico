@@ -7,8 +7,7 @@ import AnimatedApostrophe from './AnimatedApostrophe';
 
 const Header = styled.h2`
   position: relative;
-  padding: 0.8em 0.1em;
-  margin-left: 0.5em;
+  padding: 0.8em 0;
   font-size: 1.5em;
   font-weight: bold;
 
@@ -16,7 +15,8 @@ const Header = styled.h2`
     content: '';
     position: absolute;
     top: 0;
-    left: -1em;
+    left: 1em;
+    opacity: 0.5;
     right: 0;
     height: 1px;
     background: ${props => props.theme.white};
@@ -30,8 +30,13 @@ const Header = styled.h2`
 const FormContainer = styled.div`
   display: flex;
   justify-content: right;
+  padding-left: 1em;
+  padding-right: 0.5em;
   flex: 1;
-  padding: 0 5%;
+  
+  ${device.laptop} {
+    padding: 0 5%;
+  }
 `;
 
 const Form = styled('form')`
@@ -39,7 +44,6 @@ const Form = styled('form')`
   flex-direction: column;
   align-self: center;
   width: 100%;
-  max-width: 100px;
   font-size: 1.2em;
 
   ${device.laptop} {
@@ -55,7 +59,7 @@ const Data = styled.div`
 const Field = styled.div`
   display: flex;
   align-items: center;
-  padding: 1em 0;
+  padding: 0.5rem 0;
 `;
 
 const Label = styled.p`
@@ -65,6 +69,7 @@ const Label = styled.p`
   padding-right: 0.5em;
   align-self: ${props => (props.top ? 'flex-start' : 'flex-end')};
   top: ${({ top }) => top && '10px'};
+  font-size: 0.9rem;
 `;
 
 const Input = styled.input`
@@ -73,7 +78,7 @@ const Input = styled.input`
   padding: 0.2em;
   border: 0;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.8em;
   border: 0;
   border-radius: 0;
 `;
@@ -84,28 +89,27 @@ const TextArea = styled.textarea`
   min-height: 100px;
   padding: 0.3em;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.8em;
   resize: none;
   border-radius: 0;
 `;
 
 const Button = styled.button`
   min-width: 15%;
-  padding: 0.5em;
+  padding: 0.5em 1.5em;
   margin-left: auto;
-  margin-top: 01em;
+  margin-top: 1em;
   border: none;
   background: ${props => props.theme.main};
   color: inherit;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.7em;
   text-align: center;
   cursor: pointer;
 `;
 
 const ApostropheDiv = styled.div`
   display: none;
-  width: 10em;
   padding-top: 1em;
   margin-left: 6em;
 
@@ -113,11 +117,6 @@ const ApostropheDiv = styled.div`
     display: flex;
     align-items: flex-start;
   }
-`;
-
-const Apostrophe = styled.img`
-  width: 100%;
-  opacity: 0.8;
 `;
 
 class Contact extends Component {
@@ -149,7 +148,7 @@ class Contact extends Component {
   };
 
   render = () => (
-    <Section>
+    <Section style={{margin: '1em'}}>
       <Header>Contacto</Header>
       <FormContainer>
         <Form>
