@@ -18,18 +18,22 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   min-height: 100vh;
-  margin: 2rem 8vw;
+  padding: 2rem 8vw;
+  box-sizing: border-box;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 
   ${device.laptop} {
-    margin: 2rem 2vw;
+    padding: 2rem 2vw;
+    width: 100%;
   }
 `;
 
 const ContentLayout = styled('div')`
+  width: 100%;
+  box-sizing: border-box;
   ${device.laptop} {
-    margin: 2rem 5rem;
+    padding: 2rem 5rem;
   }
 `;
 
