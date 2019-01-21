@@ -45,6 +45,7 @@ const Form = styled('form')`
   align-self: center;
   width: 100%;
   font-size: 1.2em;
+  max-width: 37.5rem;
 
   ${device.laptop} {
     margin-left: 4em;
