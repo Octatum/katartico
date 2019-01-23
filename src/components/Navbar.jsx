@@ -26,7 +26,7 @@ const Container = styled.nav`
 `;
 
 const FlexBox = styled.div`
-  padding: ${props => (props.mini ? '1em 3em' : '1.5em 3em')};
+  padding: ${props => (props.mini ? '1em 1.5em' : '1.5em 1.5em')};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,8 +69,8 @@ const Menu = styled.div`
     `
     
     max-height: 70vh;
-    box-shadow: -10px 8px 15px ${hexToRgba(props.theme.main, 60)},
-              10px 8px 15px ${hexToRgba(props.theme.main, 60)} ;
+    box-shadow: -10px 10px 15px ${hexToRgba(props.theme.main, 60)},
+              10px 10px 15px ${hexToRgba(props.theme.main, 60)} ;
   `};
 `;
 

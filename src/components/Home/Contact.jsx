@@ -15,8 +15,7 @@ const Header = styled.h2`
     content: '';
     position: absolute;
     top: 0;
-    left: 1em;
-    opacity: 0.5;
+    left: -1em;
     right: 0;
     height: 1px;
     background: ${props => props.theme.white};
@@ -149,7 +148,7 @@ class Contact extends Component {
   };
 
   render = () => (
-    <Section style={{margin: '1em'}}>
+    <Section>
       <Header>Contacto</Header>
       <FormContainer>
         <Form>
