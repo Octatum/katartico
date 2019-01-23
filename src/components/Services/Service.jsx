@@ -81,10 +81,8 @@ const ElementHeader = styled.div`
     position: absolute;
     bottom: 60%;
   }
-
-  ${Item}:hover &::after,
-  ${Item}.open &::after {
-    content: '';
+  
+  ${Item} &::after {
     display: block;
     background-image: radial-gradient(
       at center center,
@@ -98,8 +96,16 @@ const ElementHeader = styled.div`
     transition: inherit;
   }
 
+  ${Item}.open &::after {
+    content: "";
+  }
+
   ${device.laptop} {
     max-width: 85%;
+
+    ${Item}:hover &::after {
+      content: "";
+    }
 
     ${Item}:hover &,
     ${Item}.open &{
