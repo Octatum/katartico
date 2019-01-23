@@ -34,10 +34,6 @@ const FlexBox = styled.div`
   height: 100%;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-
-  ${device.laptop} {
-    font-size: ${({ mini }) => (mini ? '1em' : '1.1em')};
-  }
 `;
 
 const Logo = styled.img`
@@ -85,6 +81,8 @@ const LinkList = styled.div`
     justify-content: space-between;
     padding-left: 37.5%;
     flex: 8;
+
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
   }
 `;
 
@@ -172,6 +170,7 @@ const SocialMedia = styled.div`
     margin: 0;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
   }
 `;
 
@@ -234,6 +233,10 @@ const FlexLogoSection = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${device.laptop} {
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+  }
 `;
 
 const Overlay = styled('div')`
@@ -345,11 +348,11 @@ class Navbar extends Component {
           </MediaQuery>
           {/* Desktop view */}
           <MediaQuery minWidth={breakpoints.laptop}>
-            <FlexLogoSection>
+            <FlexLogoSection mini={this.props.minimize}>
               <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             </FlexLogoSection>
-            <LinkList>{navbarLinks}</LinkList>
-            <SocialMedia>{socialMediaLinks}</SocialMedia>
+            <LinkList mini={this.props.minimize}>{navbarLinks}</LinkList>
+            <SocialMedia mini={this.props.minimize}>{socialMediaLinks}</SocialMedia>
           </MediaQuery>
         </FlexBox>
       </Container>
