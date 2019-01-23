@@ -310,7 +310,7 @@ class Navbar extends Component {
 
     return (
       <Container>
-        <FlexBox mini={this.props.minimize}>
+        <FlexBox>
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
