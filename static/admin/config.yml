@@ -80,5 +80,6 @@ collections:
         file: "content/pages/about.json"        
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
-          - { label: "Imagen de equipo", name: banner, widget: image }
+          - { label: "Banner en escritorio", name: banner, widget: image }
+          - { label: "Banner en móvil", name: bannerMobile, widget: image }
           - { label: Intro, name: intro, widget: markdown }

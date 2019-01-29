@@ -22,10 +22,22 @@ const Picture = styled('img')`
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
+`;
 
-  ${device.tablet} {
-    height: auto;
+const PicturePortrait = styled(Picture)`
+  display: none;
+
+  ${device.portrait} {
+    display: initial;
   }
+`;
+
+const PictureLandscape = styled(Picture)`
+  ${device.portrait} {
+    display: none;
+  }
+
+  display: initial;
 `;
 
 const PeopleDiv = styled.div`
@@ -112,7 +124,8 @@ const About = props => {
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <Picture src={pagesJson.banner} />
+        <PicturePortrait src={pagesJson.bannerMobile} />
+        <PictureLandscape src={pagesJson.banner} />      
         <Introduction center source={pagesJson.body} />
         <PeopleDiv>
           {people.map((item, index) => (
@@ -156,6 +169,7 @@ export default props => (
 
         pagesJson(type: { eq: "page-about" }) {
           banner
+          bannerMobile
           body
         }
       }
