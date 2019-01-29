@@ -111,7 +111,7 @@ const PhotoGrid = styled.div`
   width: 100%;
   margin: 1em 0;
   grid-template-columns: 1fr;
-  grid-auto-rows: 15rem;
+  grid-auto-rows: 25rem;
   grid-auto-flow: row dense;
   grid-gap: 1em;
 
@@ -122,7 +122,7 @@ const PhotoGrid = styled.div`
   }
 
   ${device.laptop} {
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     width: 100%;
   }
