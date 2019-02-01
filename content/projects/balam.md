@@ -7,11 +7,14 @@ highlightedImage: /assets/balam-1.jpg
 content:
   - height: '1'
     type: image
+    image: /assets/balam_-_1_foto_grande.jpg
     width: '1'
 ---
-# **BALAM**
+# **BALAM
+**
 
-## Grabación y edición de video__
+## Grabación y edición de video_
+_
 
 BALAM es el punto de encuentro de la Red de Emprendimiento Latinoamericano, donde las mejores plataformas de emprendimiento comparten sus prácticas y herramientas.
 

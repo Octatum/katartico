@@ -7,6 +7,7 @@ highlightedImage: /assets/delex-1-foto-principal.png
 content:
   - height: '1'
     type: image
+    image: /assets/delex_-_1_foto_principal.png
     width: '1'
 ---
 # DELEX

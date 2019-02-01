@@ -3,7 +3,7 @@ type: project
 index: 14
 title: FEITESM
 banner: /assets/feitesm-portada.jpg
-highlightedImage: /assets/74aniversario_-1_foto_principal.jpg
+highlightedImage: /assets/feitesm-principal.jpg
 content:
   - height: '2'
     type: youtube-video
