@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
-import ChildViewport from '../ChildViewport';
 import { CookiesProvider } from 'react-cookie';
 
+import ChildViewport from '../ChildViewport';
 import './index.css';
-import HomeViewport from '../Home/HomeViewport';
+import HomeViewport from '../../page-components/home/HomeViewport';
 
 const theme = {
   white: '#fff',

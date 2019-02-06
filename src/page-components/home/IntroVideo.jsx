@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import VideoPlayer from './VideoPlayer';
 import { device } from '../../utilities/device';
-import { StaticQuery, graphql } from 'gatsby';
 
 const Container = styled.div`
   height: 100vh;
@@ -16,7 +15,7 @@ const Container = styled.div`
 `;
 
 const IntroVideo = props => {
-  const { intro } = props.data.pagesJson;
+  const intro = props.data;
 
   return (
     <Container>
@@ -24,20 +23,4 @@ const IntroVideo = props => {
     </Container>
   );
 };
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        pagesJson(type: { eq: "page-home" }) {
-          slogan
-          intro {
-            video
-            image
-          }
-        }
-      }
-    `}
-    render={data => <IntroVideo data={data} {...props} />}
-  />
-);
+export default IntroVideo;

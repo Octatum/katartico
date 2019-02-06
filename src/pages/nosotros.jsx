@@ -3,9 +3,10 @@ import { graphql, StaticQuery } from 'gatsby';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
+import GatsbyImage from 'gatsby-image';
+
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
-import GatsbyImage from 'gatsby-image';
 
 const Container = styled.div`
   display: flex;
@@ -147,7 +148,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(
+        allMarkdownRemark (
           sort: { fields: frontmatter___index }
           filter: { fileAbsolutePath: { regex: "/.+/about/.+/" } }
         ) {

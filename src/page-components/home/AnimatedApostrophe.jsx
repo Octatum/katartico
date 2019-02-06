@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Link as _Link } from 'gatsby';
 import ReactLottie from 'react-lottie';
 
 import animationData from './assets/apostrophe-animation.json';

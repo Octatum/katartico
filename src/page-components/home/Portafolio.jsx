@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
 
-import Section from '../Section';
+import { device } from '../../utilities/device';
+import Section from '../../components/Section';
 
 const Header = styled.h2`
   position: relative;
@@ -102,7 +102,7 @@ const BigPicture = styled('img')`
 `;
 
 const Portafolio = props => {
-  const { customers, portfolioImage } = props.data.pagesJson;
+  const { customers, portfolioImage } = props.data;
 
   return (
     <Section>
@@ -123,20 +123,4 @@ const Portafolio = props => {
   );
 };
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        pagesJson(type: { eq: "page-home" }) {
-          customers {
-            name
-            logo
-            url
-          }
-          portfolioImage
-        }
-      }
-    `}
-    render={data => <Portafolio data={data} {...props} />}
-  />
-);
+export default Portafolio;

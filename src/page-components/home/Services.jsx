@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
 
-import Section from '../Section';
+import { device } from '../../utilities/device';
+import Section from '../../components/Section';
 import AnimatedApostrophe from './AnimatedApostrophe';
 
 const Header = styled.h2`
