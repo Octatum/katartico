@@ -93,7 +93,7 @@ const Portafolio = ({
       <Helmet title="Portafolio" />
       <Container>
         <Grid>
-          {projects.map((item, index) => {
+          {projects.map((item) => {
             const route = item.frontmatter.title
               .replace(' ', '_')
               .toLowerCase()

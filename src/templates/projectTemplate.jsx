@@ -260,7 +260,6 @@ export const pageQuery = graphql`
               }
             }
           }
-          videoId
           width
         }
         highlightedImage {
