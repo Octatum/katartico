@@ -6,28 +6,28 @@ banner: /assets/0-portada.jpg
 highlightedImage: /assets/74aniversario_-1_foto_principal.png
 content:
   - height: '2'
-    type: image
     image: /assets/74aniversario_-1_foto_principal.png
+    type: image
     width: '2'
   - height: '1'
-    type: image
     image: /assets/74aniversario_-2.JPG
-    width: '2'
-  - height: '3'
     type: image
-    image: /assets/74aniversario_-3.jpg
     width: '2'
   - height: '2'
+    image: /assets/74aniversario_-3.jpg
     type: image
+    width: '3'
+  - height: '2'
     image: /assets/74aniversario_-4.jpg
+    type: image
     width: '3'
   - height: '3'
+    image: /assets/pendón.jpg
     type: image
-    image: /assets/74aniversario_-5.JPG
     width: '1'
-  - height: '3'
-    type: image
+  - height: '2'
     image: /assets/74aniversario_-6.JPG
+    type: image
     width: '3'
 ---
 # 74 Aniversario
