@@ -14,7 +14,7 @@ content:
     type: image
     width: '2'
   - height: '2'
-    image: /assets/74aniversario_-3.jpg
+    image: /assets/domo.jpg
     type: image
     width: '3'
   - height: '2'
@@ -26,7 +26,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/74aniversario_-6.JPG
+    image: /assets/centrales.jpg
     type: image
     width: '3'
 ---
