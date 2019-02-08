@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
 
-import Section from '../Section';
+import { device } from '../../utilities/device';
+import Section from '../../components/Section';
+import GatsbyImage from 'gatsby-image';
 
 const Header = styled.h2`
   position: relative;
@@ -96,13 +97,13 @@ const Logo = styled.img`
   }
 `;
 
-const BigPicture = styled('img')`
+const BigPicture = styled(GatsbyImage)`
   width: 90%;
   margin: 3em auto 1em;
 `;
 
 const Portafolio = props => {
-  const { customers, portfolioImage } = props.data.pagesJson;
+  const { customers, portfolioImage } = props.data;
 
   return (
     <Section>
@@ -111,32 +112,22 @@ const Portafolio = props => {
       </Header>
       <LogoGrid>
         {customers.map(item => (
-          <GridItem key={item.logo}>
-            <Link to={item.url}>
-              <Logo src={item.logo} alt={item.name} />
-            </Link>
+          <GridItem key={item.logo.publicURL}>
+            {item.url ? (
+              <Link to={item.url}>
+                <Logo src={item.logo.publicURL} alt={item.name} />
+              </Link>
+            ) : (
+              <span>
+                <Logo src={item.logo.publicURL} alt={item.name} />
+              </span>
+            )}
           </GridItem>
         ))}
       </LogoGrid>
-      <BigPicture src={portfolioImage} />
+      <BigPicture fluid={portfolioImage.childImageSharp.fluid} />
     </Section>
   );
 };
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        pagesJson(type: { eq: "page-home" }) {
-          customers {
-            name
-            logo
-            url
-          }
-          portfolioImage
-        }
-      }
-    `}
-    render={data => <Portafolio data={data} {...props} />}
-  />
-);
+export default Portafolio;
