@@ -29,10 +29,6 @@ content:
     image: /assets/centrales.jpg
     type: image
     width: '3'
-  - height: '1'
-    image: /assets/test-oct-feb-11.png
-    type: image
-    width: '1'
 ---
 # 74 Aniversario
 
