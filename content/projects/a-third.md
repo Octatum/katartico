@@ -8,26 +8,32 @@ content:
   - height: '2'
     image: /assets/74aniversario_-1_foto_principal.png
     type: image
+    videoId: '0'
     width: '2'
   - height: '1'
-    image: /assets/74aniversario_-2.JPG
+    image: /assets/74aniversario.jpg
     type: image
+    videoId: '0'
     width: '2'
   - height: '2'
     image: /assets/domo.jpg
     type: image
+    videoId: '0'
     width: '3'
   - height: '2'
     image: /assets/74aniversario_-4.jpg
     type: image
+    videoId: '0'
     width: '3'
   - height: '3'
-    image: /assets/pendón.jpg
+    image: /assets/5-3-.jpg
     type: image
+    videoId: '0'
     width: '1'
   - height: '2'
     image: /assets/centrales.jpg
     type: image
+    videoId: '0'
     width: '3'
 ---
 # 74 Aniversario
