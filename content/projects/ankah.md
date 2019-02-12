@@ -6,40 +6,49 @@ banner: /assets/ankah_-_0_portada_ANKAH.jpg
 highlightedImage: /assets/ankah_-_1_foto_principal.png
 content:
   - height: '2'
+    image: /assets/ankahlogo.jpg
     type: image
-    image: /assets/ankah_-_2.png
+    videoId: '0'
     width: '2'
   - height: '2'
+    image: /assets/logomockup.jpg
     type: image
-    image: /assets/ankah_-_3.jpg
+    videoId: '0'
     width: '1'
   - height: '3'
+    image: /assets/papelería2.jpg
     type: image
-    image: /assets/ankah_-_4.jpg
+    videoId: '0'
     width: '3'
   - height: '2'
+    image: /assets/ankahiphone.jpg
     type: image
-    image: /assets/ankah_-_5.jpg
+    videoId: '0'
     width: '1'
   - height: '1'
+    image: /assets/6-logitpo-propuestas-25.jpg
     type: image
-    image: /assets/ankah_-_6_Logitpo_propuestas-25.png
+    videoId: '0'
     width: '1'
   - height: '1'
+    image: /assets/7-logitpo-propuestas-26.jpg
     type: image
-    image: /assets/ankah_-_7_Logitpo_propuestas-26.png
+    videoId: '0'
     width: '1'
   - height: '1'
+    image: /assets/8-logitpo-propuestas-27.jpg
     type: image
-    image: /assets/ankah_-_8_Logitpo_propuestas-27.png
+    videoId: '0'
     width: '1'
   - height: '1'
+    image: /assets/10-logitpo-propuestas-29.jpg
     type: image
-    image: /assets/ankah_-_9_Logitpo_propuestas-28.png
+    videoId: '0'
     width: '1'
   - height: '1'
+    image: /assets/9-logitpo-propuestas-28.jpg
     type: image
-    image: /assets/ankah_-_10_Logitpo_propuestas-29.png
+    videoId: '0'
     width: '1'
 ---
 # ANKAH
