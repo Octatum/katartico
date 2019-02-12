@@ -8,6 +8,6 @@ const Container = styled.div`
   margin: 1em 2em;
 `;
 
-const Section = ({ children, id }) => <Container id={id}>{children}</Container>;
+const Section = ({ children, id, ...rest }) => <Container id={id} {...rest}>{children}</Container>;
 
 export default Section;

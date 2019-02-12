@@ -26,7 +26,7 @@ const Container = styled.nav`
 `;
 
 const FlexBox = styled.div`
-  padding: ${props => (props.mini ? '0em 3em' : '1em 3em')};
+  padding: ${props => (props.mini ? '1em 1.5em' : '1.5em 1.5em')};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,19 +34,15 @@ const FlexBox = styled.div`
   height: 100%;
   width: 100%;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-
-  ${device.laptop} {
-    font-size: ${({mini}) => mini ? '0.8em' : '1em'};
-  }
 `;
 
 const Logo = styled.img`
-  max-height: ${({mini}) => mini ? '3rem' : '3.5rem'};
-  padding: ${({mini}) => mini ? '0.5rem' : 0} 0;
+  max-height: ${({ mini }) => (mini ? '3.3rem' : '3.5rem')};
+  padding: ${({ mini }) => (mini ? '0.3rem' : 0)} 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
   ${device.laptop} {
-    max-height: ${({mini}) => mini ? '3rem' : '3.75rem'};
+    max-height: ${({ mini }) => (mini ? '3.7rem' : '3.7rem')};
   }
 `;
 
@@ -67,8 +63,10 @@ const Menu = styled.div`
   ${props =>
     props.open &&
     `
+    
     max-height: 70vh;
-    box-shadow: 0px 0 20px 10px ${hexToRgba(props.theme.main, 60)};
+    box-shadow: -10px 10px 15px ${hexToRgba(props.theme.main, 60)},
+              10px 10px 15px ${hexToRgba(props.theme.main, 60)} ;
   `};
 `;
 
@@ -83,6 +81,8 @@ const LinkList = styled.div`
     justify-content: space-between;
     padding-left: 37.5%;
     flex: 8;
+
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
   }
 `;
 
@@ -170,6 +170,7 @@ const SocialMedia = styled.div`
     margin: 0;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
   }
 `;
 
@@ -179,7 +180,7 @@ const SocialMediaIcon = styled.div`
   align-items: center;
   justify-content: center;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
-  font-size: 1em;
+  font-size: 1.3em;
 
   ${device.tablet} {
     width: 1em;
@@ -232,6 +233,19 @@ const FlexLogoSection = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${device.laptop} {
+    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+  }
+`;
+
+const Overlay = styled('div')`
+  width: 100vw;
+  height: 100vh;
+  display: ${({ display }) => display};
+  position: fixed;
+  top: 0;
+  left: 0;
 `;
 
 class Navbar extends Component {
@@ -243,6 +257,12 @@ class Navbar extends Component {
     this.setState(prevState => ({
       open: !prevState.open,
     }));
+  };
+
+  closeNavbar = () => {
+    this.setState({
+      open: false,
+    });
   };
 
   render = () => {
@@ -290,10 +310,14 @@ class Navbar extends Component {
 
     return (
       <Container>
-        <FlexBox mini={this.props.minimize}>
+        <FlexBox>
           {/* Mobile view */}
           <MediaQuery maxWidth={breakpoints.tablet - 1}>
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
+            <Overlay
+              display={this.state.open ? 'block' : 'none'}
+              onClick={this.closeNavbar}
+            />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
               <SocialMedia>{socialMediaLinks}</SocialMedia>
@@ -309,6 +333,10 @@ class Navbar extends Component {
             maxWidth={breakpoints.laptop - 1}
           >
             <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
+            <Overlay
+              display={this.state.open ? 'block' : 'none'}
+              onClick={this.closeNavbar}
+            />
             <Menu open={this.state.open}>
               <LinkList>{navbarLinks}</LinkList>
             </Menu>
@@ -320,11 +348,11 @@ class Navbar extends Component {
           </MediaQuery>
           {/* Desktop view */}
           <MediaQuery minWidth={breakpoints.laptop}>
-            <FlexLogoSection>
+            <FlexLogoSection mini={this.props.minimize}>
               <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             </FlexLogoSection>
-            <LinkList>{navbarLinks}</LinkList>
-            <SocialMedia>{socialMediaLinks}</SocialMedia>
+            <LinkList mini={this.props.minimize}>{navbarLinks}</LinkList>
+            <SocialMedia mini={this.props.minimize}>{socialMediaLinks}</SocialMedia>
           </MediaQuery>
         </FlexBox>
       </Container>

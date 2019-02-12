@@ -9,10 +9,6 @@ content:
     type: youtube-video
     videoId: kmX0ZGU_e4E
     width: '3'
-  - height: '2'
-    image: /assets/feitesm-principal.jpg
-    type: image
-    width: '3'
 ---
 # Comité Ejecutivo FEITESM
 

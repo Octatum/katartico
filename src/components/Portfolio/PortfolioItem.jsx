@@ -22,15 +22,22 @@ const Image = styled(GatsbyImage)`
   height: 100%;
 `;
 
-const PortfolioItem = (props) => {
+const PortfolioItem = props => {
   const { item, onImageClick } = props;
 
-  return item.type === "image" ? 
+  return item.type === 'image' ? (
     <CellItem onClick={onImageClick} {...item}>
       <Image fluid={item.image.childImageSharp.fluid} />
-    </CellItem>:
-    <Video as="iframe" src={`//www.youtube.com/embed/${item.videoId}`} frameborder="0" allowfullscreen {...item} />;
-
-}
+    </CellItem>
+  ) : (
+    <Video
+      as="iframe"
+      src={`//www.youtube.com/embed/${item.videoId}`}
+      frameborder="0"
+      allowfullscreen
+      {...item}
+    />
+  );
+};
 
 export default PortfolioItem;

@@ -10,7 +10,7 @@ const Item = styled.div`
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 0;
 
   ${device.tablet} {
     flex: 1;
@@ -19,7 +19,7 @@ const Item = styled.div`
 
 const AnimationArea = styled('div')`
   position: relative;
-  --size: 6rem;
+  --size: 7.5rem;
   height: var(--size);
   width: var(--size);
 

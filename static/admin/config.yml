@@ -22,8 +22,8 @@ collections:
         widget: "list"
         fields:
           - { name: "type", label: "Type", widget: "select", options: ["image", "youtube-video"], default: "image" }
-          - { name: "videoId", label: "Id del video", widget: "string" }
-          - { name: "image", label: "Imagen", widget: "image" }
+          - { name: "videoId", label: "Id del video", widget: "string", required: false }
+          - { name: "image", label: "Imagen", widget: "image", required: false }
           - { name: "width", label: "Anchura", widget: "select", options: ["1", "2", "3"], default: "1" }
           - { name: "height", label: "Altura", widget: "select", options: ["1", "2", "3"], default: "1" }
 
@@ -80,5 +80,6 @@ collections:
         file: "content/pages/about.json"        
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
-          - { label: "Imagen de equipo", name: banner, widget: image }
+          - { label: "Banner en escritorio", name: banner, widget: image }
+          - { label: "Banner en móvil", name: bannerMobile, widget: image }
           - { label: Intro, name: intro, widget: markdown }

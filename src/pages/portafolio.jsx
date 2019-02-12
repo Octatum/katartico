@@ -53,7 +53,7 @@ const GridItem = styled.div`
 `;
 
 const SquarePicture = styled(GatsbyImg)`
-  width: 100%;  
+  width: 100%;
 `;
 
 const ItemTitle = styled.p`
@@ -103,7 +103,9 @@ const Portafolio = ({
               <GridItemContainer key={route}>
                 <GridItem>
                   <SquareLink to={`/project/${route}`}>
-                    <SquarePicture fluid={item.frontmatter.banner.childImageSharp.fluid} />
+                    <SquarePicture
+                      fluid={item.frontmatter.banner.childImageSharp.fluid}
+                    />
                     <Overlay />
                   </SquareLink>
                   <ItemTitle>{item.frontmatter.title}</ItemTitle>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactHelmet  from 'react-helmet';
+import ReactHelmet from 'react-helmet';
 import { Link as _Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
@@ -18,35 +18,39 @@ const Container = styled.div`
   align-items: center;
   position: relative;
   min-height: 100vh;
-  margin: 2rem 8vw;
+  padding: 2rem 8vw;
+  box-sizing: border-box;
   background-color: ${props => props.theme.black};
   color: ${props => props.theme.white};
 
   ${device.laptop} {
-    margin: 2rem 2vw;
+    padding: 2rem 2vw;
+    width: 100%;
   }
 `;
 
 const ContentLayout = styled('div')`
+  width: 100%;
+  box-sizing: border-box;
   ${device.laptop} {
-    margin: 2rem 5rem;
+    padding: 2rem 5rem;
   }
 `;
 
 const BackButton = styled(_Link)`
   position: relative;
-  height: 4em;
+  height: 5em;
   align-self: flex-start;
-  margin: 2em 0;
+  margin: 1.5em 0;
   text-decoration: none;
   color: inherit;
 
   ::after {
     content: 'Regresar';
     position: absolute;
-    top: 8px;
+    top: 12px;
     left: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -107,7 +111,7 @@ const PhotoGrid = styled.div`
   width: 100%;
   margin: 1em 0;
   grid-template-columns: 1fr;
-  grid-auto-rows: 15rem;
+  grid-auto-rows: 25rem;
   grid-auto-flow: row dense;
   grid-gap: 1em;
 
@@ -118,7 +122,7 @@ const PhotoGrid = styled.div`
   }
 
   ${device.laptop} {
-    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
     width: 100%;
   }
@@ -151,12 +155,14 @@ export default class Template extends Component {
   constructor(props) {
     super(props);
 
-    const images = this.props.data.markdownRemark.frontmatter.content.filter(item => item.type === "image").map((imageData, imageIndex) => {
-      imageData.imageIndex = imageIndex;
-      imageData.src = imageData.image.childImageSharp.fluid.src;
+    const images = this.props.data.markdownRemark.frontmatter.content
+      .filter(item => item.type === 'image')
+      .map((imageData, imageIndex) => {
+        imageData.imageIndex = imageIndex;
+        imageData.src = imageData.image.childImageSharp.fluid.src;
 
-      return imageData;
-    });
+        return imageData;
+      });
 
     this.images = images;
   }
@@ -174,6 +180,7 @@ export default class Template extends Component {
     const { markdownRemark } = this.props.data;
     const { rawMarkdownBody, frontmatter } = markdownRemark;
     const { photoIndex, isOpen } = this.state;
+    console.log(frontmatter);
     return (
       <Layout>
         <ReactHelmet>
@@ -187,14 +194,16 @@ export default class Template extends Component {
             <HeaderContainer>
               <ReactMarkdown source={rawMarkdownBody} />
               <HighlightedImageContainer>
-                <HighlightedImage fluid={frontmatter.highlightedImage.childImageSharp.fluid} />
+                {frontmatter.highlightedImage && <HighlightedImage
+                  fluid={frontmatter.highlightedImage.childImageSharp.fluid}
+                />}
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>
-              {frontmatter.content.map((item) => (
+              {frontmatter.content.map(item => (
                 <PortfolioItem
                   onImageClick={this.handlePictureClick(item.imageIndex)}
-                  key={(item.image && item.image.id ) || item.videoId}
+                  key={(item.image && item.image.id) || item.videoId}
                   item={item}
                 />
               ))}
@@ -208,11 +217,16 @@ export default class Template extends Component {
           <Lightbox
             mainSrc={this.images[photoIndex].src}
             nextSrc={this.images[(photoIndex + 1) % this.images.length].src}
-            prevSrc={this.images[(photoIndex + this.images.length - 1) % this.images.length].src}
+            prevSrc={
+              this.images[
+                (photoIndex + this.images.length - 1) % this.images.length
+              ].src
+            }
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
-                photoIndex: (photoIndex + this.images.length - 1) % this.images.length,
+                photoIndex:
+                  (photoIndex + this.images.length - 1) % this.images.length,
               })
             }
             onMoveNextRequest={() =>

@@ -11,5 +11,7 @@ export const device = Object.keys(breakpoints).reduce((accumulator, label) => {
   // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
   const emSize = breakpoints[label] / 16;
   accumulator[label] = `@media (min-width: ${emSize}em)`;
+  accumulator.landspace = '@media (orientation: landspace)';
+  accumulator.portrait = '@media (orientation: portrait)';
   return accumulator;
 }, {});
