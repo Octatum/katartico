@@ -6,7 +6,7 @@ import ChildViewport from '../ChildViewport';
 import { CookiesProvider } from 'react-cookie';
 
 import './index.css';
-import HomeViewport from '../Home/HomeViewport';
+import HomeViewport from '../../page-components/home/HomeViewport';
 
 const theme = {
   white: '#fff',
