@@ -267,6 +267,16 @@ class Navbar extends Component {
 
   render = () => {
     const navbarLinks = links.map((item, index) => {
+      const LinkContent = (
+        <React.Fragment>
+          <Svg>
+            <Rectangle height="100%" width="100%" />
+            <Line x1="0" x2="100%" y1="0%" y2="0%" />
+          </Svg>
+          {item.name}
+        </React.Fragment>
+      )
+
       if (item.path === this.props.path) {
         return (
           <ScrollLink
@@ -277,11 +287,7 @@ class Navbar extends Component {
             onClick={this.toggleDropdown}
             smooth
           >
-            <Svg>
-              <Rectangle height="100%" width="100%" />
-              <Line x1="0" x2="100%" y1="0%" y2="0%" />
-            </Svg>
-            {item.name}
+            <LinkContent />
           </ScrollLink>
         );
       }
@@ -291,11 +297,7 @@ class Navbar extends Component {
           to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
           onClick={this.toggleDropdown}
         >
-          <Svg>
-            <Rectangle height="100%" width="100%" />
-            <Line x1="0" x2="100%" y1="0%" y2="0%" />
-          </Svg>
-          {item.name}
+          <LinkContent />
         </Link>
       );
     });
