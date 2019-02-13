@@ -1,7 +1,8 @@
 ---
-home: Inicio
-about: Nosotros
-services: Servicios
-portfolio: Portafolio
-contact: Contacto
+navbarURLs:
+  home: Inicio
+  about: Nosotros
+  services: Servicios
+  portfolio: Portafolio
+  contact: Contacto
 ---

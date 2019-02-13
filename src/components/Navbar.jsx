@@ -267,7 +267,7 @@ class Navbar extends Component {
 
   render = () => {
     const navbarLinks = links.map((item, index) => {
-      const LinkContent = (
+      const linkContent = (
         <React.Fragment>
           <Svg>
             <Rectangle height="100%" width="100%" />
@@ -287,7 +287,7 @@ class Navbar extends Component {
             onClick={this.toggleDropdown}
             smooth
           >
-            <LinkContent />
+            {linkContent}
           </ScrollLink>
         );
       }
@@ -297,7 +297,7 @@ class Navbar extends Component {
           to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
           onClick={this.toggleDropdown}
         >
-          <LinkContent />
+          {linkContent}
         </Link>
       );
     });

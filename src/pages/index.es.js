@@ -11,11 +11,13 @@ export default props => (
     query={graphql`
       query {
         markdownRemark(
-          frontmatter: { type: { eq: "page-home" }, lang: { eq: "en" } }
+          frontmatter: { type: { eq: "page-home" }, lang: { eq: "es" } }
         ) {
           frontmatter {
             intro {
-              video
+              video {
+                publicURL
+              }
             }
             aboutUs {
               title
@@ -30,10 +32,14 @@ export default props => (
             }
             portfolio {
               title
-              image
+              image {
+                publicURL
+              }
               customers {
                 name
-                logo
+                logo {
+                  publicURL
+                }
                 url
               }
             }
