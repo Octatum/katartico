@@ -82,7 +82,7 @@ const LinkList = styled.div`
     padding-left: 37.5%;
     flex: 8;
 
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
@@ -170,7 +170,7 @@ const SocialMedia = styled.div`
     margin: 0;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
@@ -235,7 +235,7 @@ const FlexLogoSection = styled('div')`
   justify-content: center;
 
   ${device.laptop} {
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
@@ -352,7 +352,9 @@ class Navbar extends Component {
               <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             </FlexLogoSection>
             <LinkList mini={this.props.minimize}>{navbarLinks}</LinkList>
-            <SocialMedia mini={this.props.minimize}>{socialMediaLinks}</SocialMedia>
+            <SocialMedia mini={this.props.minimize}>
+              {socialMediaLinks}
+            </SocialMedia>
           </MediaQuery>
         </FlexBox>
       </Container>

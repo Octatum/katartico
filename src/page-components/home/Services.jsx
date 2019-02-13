@@ -78,19 +78,23 @@ const Text = styled.p`
   }
 `;
 
-const Services = () => (
-  <Section>
-    <Header>
-      <Link to="/servicios">Servicios</Link>
-    </Header>
-    <Apostrophes>
-      {content.map(item => (
-        <AnimatedApostrophe as={Link} to="/servicios" key={item}>
-          <Text>{item}</Text>
-        </AnimatedApostrophe>
-      ))}
-    </Apostrophes>
-  </Section>
-);
+const Services = props => {
+  const { title, list } = props.data;
+
+  return (
+    <Section>
+      <Header>
+        <Link to="/servicios">{title}</Link>
+      </Header>
+      <Apostrophes>
+        {list.map(item => (
+          <AnimatedApostrophe as={Link} to="/servicios" key={item.name}>
+            <Text>{item.name}</Text>
+          </AnimatedApostrophe>
+        ))}
+      </Apostrophes>
+    </Section>
+  );
+};
 
 export default Services;

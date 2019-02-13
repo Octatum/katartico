@@ -69,7 +69,7 @@ const AnimationArea = styled('div')`
 `;
 
 const About = props => {
-  const { slogan } = props.data;
+  const { title, slogan, animation } = props.data;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -79,7 +79,7 @@ const About = props => {
   return (
     <Section>
       <Header>
-        <Link to="/nosotros">Nosotros</Link>
+        <Link to="/nosotros">{title}</Link>
       </Header>
       <Link to="/nosotros">
         <Quote source={slogan} />

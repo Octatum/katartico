@@ -147,57 +147,61 @@ class Contact extends Component {
     });
   };
 
-  render = () => (
-    <Section>
-      <Header>Contacto</Header>
-      <FormContainer>
-        <Form>
-          <Data>
-            <Field>
-              <Label>Nombre</Label>
-              <Input
-                disabled={this.state.messageSent}
-                type="text"
-                name="name"
-                autoComplete="name"
-                value={this.state.name}
-                onChange={this.handleChange}
-                required
-              />
-            </Field>
-            <Field>
-              <Label>Correo</Label>
-              <Input
-                disabled={this.state.messageSent}
-                type="text"
-                name="email"
-                autoComplete="email"
-                value={this.state.email}
-                onChange={this.handleChange}
-                required
-              />
-            </Field>
-            <Field>
-              <Label top>Mensaje</Label>
-              <TextArea
-                disabled={this.state.messageSent}
-                name="message"
-                value={this.state.message}
-                onChange={this.handleChange}
-                required
-              />
-            </Field>
-          </Data>
-          <Button disabled={this.state.messageSent} onClick={this.dummyAlert}>
-            Enviar
-          </Button>
-        </Form>
-        <ApostropheDiv>
-          <AnimatedApostrophe />
-        </ApostropheDiv>
-      </FormContainer>
-    </Section>
-  );
+  render() {
+    const { labels, title } = this.props.data;
+
+    return (
+      <Section>
+        <Header>{title}</Header>
+        <FormContainer>
+          <Form>
+            <Data>
+              <Field>
+                <Label>{labels.name}</Label>
+                <Input
+                  disabled={this.state.messageSent}
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  value={this.state.name}
+                  onChange={this.handleChange}
+                  required
+                />
+              </Field>
+              <Field>
+                <Label>{labels.email}</Label>
+                <Input
+                  disabled={this.state.messageSent}
+                  type="text"
+                  name="email"
+                  autoComplete="email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  required
+                />
+              </Field>
+              <Field>
+                <Label top>{labels.message}</Label>
+                <TextArea
+                  disabled={this.state.messageSent}
+                  name="message"
+                  value={this.state.message}
+                  onChange={this.handleChange}
+                  required
+                />
+              </Field>
+            </Data>
+            <Button disabled={this.state.messageSent} onClick={this.dummyAlert}>
+              {labels.sendButton}
+            </Button>
+          </Form>
+          <ApostropheDiv>
+            <AnimatedApostrophe />
+          </ApostropheDiv>
+        </FormContainer>
+      </Section>
+    );
+  }
 }
 
 export default Contact;

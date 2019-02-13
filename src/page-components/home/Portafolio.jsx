@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as _Link, StaticQuery, graphql } from 'gatsby';
+import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
@@ -97,35 +97,35 @@ const Logo = styled.img`
   }
 `;
 
-const BigPicture = styled(GatsbyImage)`
+const BigPicture = styled('img')`
   width: 90%;
   margin: 3em auto 1em;
 `;
 
 const Portafolio = props => {
-  const { customers, portfolioImage } = props.data;
+  const { customers, image, title } = props.data;
 
   return (
     <Section>
       <Header>
-        <Link to="/portafolio">Portafolio</Link>
+        <Link to="/portafolio">{title}</Link>
       </Header>
       <LogoGrid>
         {customers.map(item => (
-          <GridItem key={item.logo.publicURL}>
+          <GridItem key={item.logo}>
             {item.url ? (
               <Link to={item.url}>
-                <Logo src={item.logo.publicURL} alt={item.name} />
+                <Logo src={item.logo} alt={item.name} />
               </Link>
             ) : (
               <span>
-                <Logo src={item.logo.publicURL} alt={item.name} />
+                <Logo src={item.logo} alt={item.name} />
               </span>
             )}
           </GridItem>
         ))}
       </LogoGrid>
-      <BigPicture fluid={portfolioImage.childImageSharp.fluid} />
+      <BigPicture src={image} />
     </Section>
   );
 };

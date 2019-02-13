@@ -70,7 +70,8 @@ class HomeViewport extends React.Component {
             />
             {this.props.children}
             <Footer>
-              Copyright &copy; Todos los derechos reservados. <DisplayDiv>Katartico 2019.</DisplayDiv>
+              Copyright &copy; Todos los derechos reservados.{' '}
+              <DisplayDiv>Katartico 2019.</DisplayDiv>
             </Footer>
           </Element>
         </div>

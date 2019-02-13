@@ -125,7 +125,7 @@ const About = props => {
       <Helmet title="Nosotros" />
       <Container>
         <PicturePortrait src={pagesJson.bannerMobile} />
-        <PictureLandscape src={pagesJson.banner} />      
+        <PictureLandscape src={pagesJson.banner} />
         <Introduction center source={pagesJson.body} />
         <PeopleDiv>
           {people.map((item, index) => (

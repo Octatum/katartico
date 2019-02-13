@@ -32,7 +32,7 @@ const FormContainer = styled.div`
   padding-left: 1em;
   padding-right: 0.5em;
   flex: 1;
-  
+
   ${device.laptop} {
     padding: 0 5%;
   }

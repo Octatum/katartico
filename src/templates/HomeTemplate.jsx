@@ -23,9 +23,10 @@ const Presentation = props => {
   const { location } = props;
   const {
     intro,
-    slogan,
-    customers,
-    portfolioImage,
+    aboutUs,
+    homeServices,
+    portfolio,
+    contact,
   } = props.data.markdownRemark.frontmatter;
 
   return (
@@ -33,11 +34,11 @@ const Presentation = props => {
       <Helmet title="Inicio" />
       <Container>
         <IntroVideo data={intro} />
-        <About data={slogan} />
-        <Services />
-        <Portafolio data={{ customers, portfolioImage }} />
+        <About data={aboutUs} />
+        <Services data={homeServices} />
+        <Portafolio data={portfolio} />
         <Element name="contacto">
-          <Contact />
+          <Contact data={contact} />
         </Element>
       </Container>
     </HomeLayout>

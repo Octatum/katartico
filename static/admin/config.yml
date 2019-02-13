@@ -54,26 +54,85 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Página de inicio"
+      - label: "Página de inicio (inglés)"
         name: "homePage"
-        file: "content/pages/home.json"
+        file: "content/pages/index.en.json"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
+          - { name: "lang", label: "Languaje", widget: "hidden", default: "en" }
           - label: "Introducción"
             name: "intro"
             widget: object
             fields:
               - { label: "Video introductorio", name: video, widget: file }
-              - { label: "Imagen en móvil", name: image, widget: image }          
-          - { label: "Slogan", name: slogan, widget: markdown }
-          - label: Clientes
-            name: customers
-            widget: list
+              - { label: "Imagen en móvil", name: image, widget: image }
+          - label: "Nosotros"
+            name: "aboutUs"
+            widget: object
             fields:
-              - { label: Name, name: name }
-              - { label: Logotipo, name: logo, widget: image }
-              - { label: Url, name: url }
-          - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Eslogan", name: "slogan", widget: "text" }
+              - { label: "Animación en formato json", name: animation, widget: file }
+          - label: "Servicios"
+            name: "services"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Lista de servicios",  name: list, widget: "list" }
+          - label: "Portafolio"
+            name: "portfolio"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Imagen de portafolio", name: image, widget: image }
+              - label: Clientes
+                name: customers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { label: Logotipo, name: logo, widget: image }
+                  - { label: Url, name: url }
+                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+      - label: "Página de inicio (español)"
+        name: "homePage"
+        file: "content/pages/index.es.json"
+        fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
+          - { name: "lang", label: "Languaje", widget: "hidden", default: "es" }
+          - label: "Introducción"
+            name: "intro"
+            widget: object
+            fields:
+              - { label: "Video introductorio", name: video, widget: file }
+              - { label: "Imagen en móvil", name: image, widget: image }
+          - label: "Nosotros"
+            name: "aboutUs"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Eslogan", name: "slogan", widget: "text" }
+              - { label: "Animación en formato json", name: animation, widget: file }
+          - label: "Servicios"
+            name: "services"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Lista de servicios",  name: list, widget: "list" }
+          - label: "Portafolio"
+            name: "portfolio"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Imagen de portafolio", name: image, widget: image }
+              - label: Clientes
+                name: customers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { label: Logotipo, name: logo, widget: image }
+                  - { label: Url, name: url }
+                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+                
 
       - label: "About Page"
         name: "about"

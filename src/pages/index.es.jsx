@@ -10,33 +10,40 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        markdownRemark(frontmatter: { type: { eq: "page-home" } }) {
+        markdownRemark(
+          frontmatter: { type: { eq: "page-home" }, lang: { eq: "es" } }
+        ) {
           frontmatter {
-            slogan
             intro {
-              video {
-                publicURL
-              }
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 2048) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+              video
+            }
+            aboutUs {
+              title
+              slogan
+              animation
+            }
+            homeServices {
+              title
+              list {
+                name
               }
             }
-            customers {
-              name
-              logo {
-                publicURL
+            portfolio {
+              title
+              image
+              customers {
+                name
+                logo
+                url
               }
-              url
             }
-            portfolioImage {
-              childImageSharp {
-                fluid(maxWidth: 2048) {
-                  ...GatsbyImageSharpFluid
-                }
+            contact {
+              title
+              labels {
+                name
+                email
+                message
+                sendButton
               }
             }
           }
