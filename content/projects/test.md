@@ -5,25 +5,25 @@ title: Premio Luis Elizondo
 banner: /assets/premioluiselizondo_-_0_portada_PLE-19.jpg
 highlightedImage: /assets/premioluiselizondo_-_1_foto_principal.png
 content:
-  - height: '2'
-    type: image
-    image: /assets/premioluiselizondo_-_2.png
-    width: '2'
   - height: '1'
-    type: image
     image: /assets/premioluiselizondo_-_3.png
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/premioluiselizondo_-_4.png
-    width: '1'
-  - height: '3'
     type: image
+    width: '1'
+  - height: '1'
     image: /assets/premioluiselizondo_-_5.png
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/premioluiselizondo_-_2.png
+    type: image
     width: '3'
   - height: '3'
-    type: image
     image: /assets/premioluiselizondo_-_1_foto_principal.png
+    type: image
     width: '3'
 ---
 # Premio Luis Elizondo
