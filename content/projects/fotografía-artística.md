@@ -13,7 +13,7 @@ content:
     image: /assets/fotoarte_-_3.jpg
     type: image
     width: '3'
-  - height: '3'
+  - height: '2'
     image: /assets/1-foto-principal-4-.jpg
     type: image
     width: '3'
