@@ -5,14 +5,14 @@ title: Bissú
 banner: /assets/bissu_-_0_portada_BISSU.jpg
 highlightedImage: /assets/bissu_-_1_foto_principal.png
 content:
-  - height: '3'
-    type: image
+  - height: '2'
     image: /assets/bissu_-_1_foto_principal.png
-    width: '2'
-  - height: '3'
     type: image
+    width: '3'
+  - height: '2'
     image: /assets/bissu_-_2.png
-    width: '1'
+    type: image
+    width: '3'
 ---
 # Bissú
 
