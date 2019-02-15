@@ -18,11 +18,11 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/premioluiselizondo_-_2.png
+    image: /assets/2-3-.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: /assets/premioluiselizondo_-_1_foto_principal.png
+  - height: '2'
+    image: /assets/1-foto-principal-3-.jpg
     type: image
     width: '3'
 ---
