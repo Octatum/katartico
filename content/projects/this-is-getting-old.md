@@ -5,22 +5,22 @@ title: El mundo escribe
 banner: /assets/elmundoescribe_-_0_portada_eme.jpg
 highlightedImage: /assets/elmundoescribe_-_1_foto_principal.jpg
 content:
-  - height: '3'
+  - height: '2'
+    image: /assets/2-2-.jpg
     type: image
-    image: /assets/elmundoescribe_-_1_foto_principal.jpg
+    width: '3'
+  - height: '2'
+    image: /assets/1-foto-principal-6-.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/elmundoescribe_-_3.png
+    type: image
     width: '3'
   - height: '3'
-    type: image
-    image: /assets/elmundoescribe_-_2.png
-    width: '2'
-  - height: '1'
-    type: image
-    image: /assets/elmundoescribe_-_3.png
-    width: '1'
-  - height: '2'
-    type: image
     image: /assets/elmundoescribe_-_4.png
-    width: '1'
+    type: image
+    width: '3'
 ---
 # El mundo escribe
 
