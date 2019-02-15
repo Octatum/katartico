@@ -5,21 +5,21 @@ title: Parrillada entre Borregos
 banner: /assets/parrilladaborregos_-_0_portada_parrillada.jpg
 highlightedImage: /assets/parrilladaborregos_-_1_foto_principal.png
 content:
-  - height: '1'
-    type: image
-    image: /assets/parrilladaborregos_-_4.JPG
-    width: '1'
-  - height: '1'
-    type: image
-    image: /assets/parrilladaborregos_-_5.JPG
-    width: '1'
-  - height: '1'
-    type: image
-    image: /assets/parrilladaborregos_-_6.JPG
-    width: '1'
   - height: '2'
+    image: /assets/parrilladaborregos_-_4.JPG
     type: image
+    width: '3'
+  - height: '2'
+    image: /assets/parrilladaborregos_-_5.JPG
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/parrilladaborregos_-_6.JPG
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/parrilladaborregos_-_2.png
+    type: image
     width: '3'
 ---
 # Parrillada entre Borregos
