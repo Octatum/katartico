@@ -112,20 +112,20 @@ const Portafolio = props => {
       </Header>
       <LogoGrid>
         {customers.map(item => (
-          <GridItem key={item.logo}>
+          <GridItem key={item.logo.publicURL}>
             {item.url ? (
               <Link to={item.url}>
-                <Logo src={item.logo} alt={item.name} />
+                <Logo src={item.logo.publicURL} alt={item.name} />
               </Link>
             ) : (
               <span>
-                <Logo src={item.logo} alt={item.name} />
+                <Logo src={item.logo.publicURL} alt={item.name} />
               </span>
             )}
           </GridItem>
         ))}
       </LogoGrid>
-      <BigPicture src={image} />
+      <BigPicture src={image.publicURL} />
     </Section>
   );
 };

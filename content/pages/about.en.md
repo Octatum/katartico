@@ -5,13 +5,12 @@ pageBody:
   banner: "/assets/equipo_kat.jpg"
   bannerMobile: "/assets/marie-rafa-movil.jpg"
   description: >-
-    ¿Qué piensan de nosotros? Que somos intensos.
+    ## Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
     
-
-    Decidimos plasmar esa intensidad en un proyecto tangible.
+    Similique cum consectetur obcaecati et eveniet suscipit rerum, inventore facilis ullam placeat sed voluptate, veniam vitae eaque quidem beatae nostrum, ipsum ut eos quas. 
     
     
-    **Katartico es la combinación de nuestras habilidades y la pasión con la que hacemos las cosas.**
+    **Laudantium quis, expedita ea illum nesciunt natus perspiciatis.**
   teamMembers:
     - name: María Elisa Ríos
       index: 1
