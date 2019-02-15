@@ -5,33 +5,33 @@ title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
 highlightedImage: /assets/viernesazul_-_1_foto_principal.JPG
 content:
-  - height: '2'
+  - height: '1'
+    image: /assets/1.2-4-.jpg
     type: image
-    image: /assets/viernesazul_-_2.png
     width: '3'
   - height: '2'
+    image: /assets/1.4-6-.jpg
     type: image
-    image: /assets/viernesazul_-_3.png
+    width: '3'
+  - height: '2'
+    image: /assets/5-6-.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/6.jpg
+    type: image
+    width: '3'
+  - height: '3'
+    image: /assets/7.jpg
+    type: image
     width: '1'
   - height: '2'
+    image: /assets/1-foto-principal-7-.jpg
     type: image
-    image: /assets/viernesazul_-_4.JPG
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/viernesazul_-_5.JPG
     width: '2'
-  - height: '3'
+  - height: '1'
+    image: /assets/1.3-1-.jpg
     type: image
-    image: /assets/viernesazul_-_6.png
-    width: '2'
-  - height: '3'
-    type: image
-    image: /assets/viernesazul_-_7.jpg
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/viernesazul_-_1_foto_principal.JPG
     width: '3'
 ---
 # Viernes Azul
