@@ -6,40 +6,40 @@ banner: /assets/dulce_-_0_portada.jpg
 highlightedImage: /assets/dulce_-_1_foto_principal.JPG
 content:
   - height: '2'
-    type: image
-    image: /assets/dulce_-_2.JPG
-    width: '3'
-  - height: '2'
-    type: image
-    image: /assets/dulce_-_3.JPG
-    width: '2'
-  - height: '2'
-    type: image
-    image: /assets/dulce_-_4.JPG
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/dulce_-_1_foto_principal.JPG
-    width: '3'
-  - height: '2'
-    type: image
-    image: /assets/dulce_-_5.JPG
-    width: '3'
-  - height: '2'
-    type: image
-    image: /assets/dulce_-_6.JPG
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/dulce_-_7.JPG
-    width: '2'
-  - height: '2'
-    type: image
     image: /assets/dulce_-_8.JPG
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/2-5-.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/6-2-.jpg
+    type: image
+    width: '1'
+  - height: '3'
+    image: /assets/1-foto-principal-8-.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/dulce_-_4.JPG
+    type: image
+    width: '1'
+  - height: '3'
+    image: /assets/dulce_-_1_foto_principal.JPG
+    type: image
     width: '3'
   - height: '3'
+    image: /assets/dulce_-_5.JPG
     type: image
+    width: '2'
+  - height: '2'
+    image: /assets/dulce_-_7.JPG
+    type: image
+    width: '2'
+  - height: '3'
     image: /assets/dulce_-_9.JPG
+    type: image
     width: '3'
 ---
 # Dulce
