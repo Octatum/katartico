@@ -22,9 +22,9 @@ content:
     type: image
     width: '2'
   - height: '3'
-    image: /assets/fotoarte_-_5.jpg
+    image: /assets/1.5-2-.jpg
     type: image
-    width: '2'
+    width: '1'
   - height: '2'
     image: /assets/fotoarte_-_6.jpg
     type: image
