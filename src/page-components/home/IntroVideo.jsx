@@ -19,7 +19,7 @@ const IntroVideo = props => {
 
   return (
     <Container>
-      <VideoPlayer movie={intro.video} big />
+      <VideoPlayer movie={intro.video.publicURL} big />
     </Container>
   );
 };
