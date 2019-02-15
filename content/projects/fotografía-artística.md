@@ -14,17 +14,17 @@ content:
     type: image
     width: '3'
   - height: '3'
-    image: /assets/1-foto-principal-3-.jpg
+    image: /assets/1-foto-principal-4-.jpg
     type: image
     width: '3'
-  - height: '2'
+  - height: '3'
     image: /assets/fotoarte_-_4.jpg
     type: image
-    width: '1'
-  - height: '2'
+    width: '2'
+  - height: '3'
     image: /assets/fotoarte_-_5.jpg
     type: image
-    width: '1'
+    width: '2'
   - height: '2'
     image: /assets/fotoarte_-_6.jpg
     type: image
