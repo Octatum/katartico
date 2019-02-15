@@ -5,18 +5,18 @@ title: 'México: El país del sí'
 banner: /assets/mexicosi_-_0_portada_mexico.jpg
 highlightedImage: /assets/mexicosi_-_1_foto_principal.png
 content:
-  - height: '2'
+  - height: '1'
+    image: /assets/2-4-.jpg
     type: image
-    image: /assets/mexicosi_-_1_foto_principal.png
     width: '3'
   - height: '2'
-    type: image
     image: /assets/mexicosi_-_1_foto_principal.png
-    width: '2'
-  - height: '2'
     type: image
-    image: /assets/mexicosi_-_3.jpg
-    width: '1'
+    width: '3'
+  - height: '1'
+    image: /assets/3-4-.jpg
+    type: image
+    width: '3'
 ---
 # México: El país del sí
 
