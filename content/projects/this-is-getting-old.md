@@ -10,15 +10,15 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/1-foto-principal-6-.jpg
+    image: /assets/3-2-.jpg
     type: image
     width: '3'
   - height: '2'
-    image: /assets/elmundoescribe_-_3.png
+    image: /assets/4.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: /assets/elmundoescribe_-_4.png
+  - height: '2'
+    image: /assets/1-foto-principal-6-.jpg
     type: image
     width: '3'
 ---
