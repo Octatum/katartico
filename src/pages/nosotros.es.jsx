@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
 import Layout from '../components/Layout';
 import { device } from '../utilities/device';
-import GatsbyImage from 'gatsby-image';
 
 const Container = styled.div`
   display: flex;
@@ -114,27 +113,30 @@ const Introduction = styled(ReactMarkdown)`
 
 const About = props => {
   const {
-    data: {
-      allMarkdownRemark: { edges: people },
-      pagesJson,
-    },
-  } = props;
+    banner,
+    bannerMobile,
+    description,
+    teamMembers
+  } = props.data.markdownRemark.frontmatter.pageBody;
+  console.table(teamMembers);
+
+  const sortedTeamMembers = teamMembers.sort((a, b) => a.index - b.index);
 
   return (
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <PicturePortrait src={pagesJson.bannerMobile} />
-        <PictureLandscape src={pagesJson.banner} />
-        <Introduction center source={pagesJson.body} />
+        <PicturePortrait src={bannerMobile} />
+        <PictureLandscape src={banner} />
+        <Introduction center source={description} />
         <PeopleDiv>
-          {people.map((item, index) => (
-            <Person key={index}>
+          {sortedTeamMembers.map((item) => (
+            <Person key={item.name}>
               <PersonPicture
-                as={GatsbyImage}
-                fluid={item.node.frontmatter.photo.childImageSharp.fluid}
+                as={'img'}
+                src={item.photo}
               />
-              <ReactMarkdown source={item.node.rawMarkdownBody} />
+              <ReactMarkdown source={item.body} />
             </Person>
           ))}
         </PeopleDiv>
@@ -147,30 +149,25 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        allMarkdownRemark(
-          sort: { fields: frontmatter___index }
-          filter: { fileAbsolutePath: { regex: "/.+/about/.+/" } }
+        markdownRemark(
+          frontmatter: { 
+            type: { eq: "page-about" }
+            lang: { eq: "es" }
+          }
         ) {
-          edges {
-            node {
-              rawMarkdownBody
-              frontmatter {
-                photo {
-                  childImageSharp {
-                    fluid(maxWidth: 800) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+          frontmatter {
+            pageBody {
+              banner
+              bannerMobile
+              description
+              teamMembers {
+                name
+                index
+                photo
+                body
               }
             }
           }
-        }
-
-        pagesJson(type: { eq: "page-about" }) {
-          banner
-          bannerMobile
-          body
         }
       }
     `}

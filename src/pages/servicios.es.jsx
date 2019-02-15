@@ -31,7 +31,6 @@ const Layout = styled('div')`
 `;
 
 const Services = props => {
-  console.log(props.data);
   const services = props.data.markdownRemark.frontmatter.pageBody.serviceList.sort((a, b) => a.index - b.index);
 
   return (
