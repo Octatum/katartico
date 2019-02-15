@@ -16,7 +16,7 @@ content:
     videoId: '0'
     width: '1'
   - height: '3'
-    image: /assets/papelería2.jpg
+    image: /assets/papelería3.jpg
     type: image
     videoId: '0'
     width: '3'
