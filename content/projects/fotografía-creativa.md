@@ -16,7 +16,7 @@ content:
   - height: '2'
     image: /assets/fotocreativa_-_4.jpg
     type: image
-    width: '2'
+    width: '3'
   - height: '2'
     image: /assets/1-foto-principal-5-.jpg
     type: image
@@ -24,7 +24,7 @@ content:
   - height: '2'
     image: /assets/5-4-.jpg
     type: image
-    width: '1'
+    width: '3'
   - height: '2'
     image: /assets/fotocreativa_-_6.jpg
     type: image
