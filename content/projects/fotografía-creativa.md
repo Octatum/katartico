@@ -24,7 +24,7 @@ content:
   - height: '2'
     image: /assets/5-4-.jpg
     type: image
-    width: '2'
+    width: '1'
   - height: '2'
     image: /assets/fotocreativa_-_6.jpg
     type: image
