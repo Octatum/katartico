@@ -105,7 +105,6 @@ const Button = styled.button`
   font-family: inherit;
   font-size: 0.7em;
   text-align: center;
-  cursor: pointer;
 `;
 
 const ApostropheDiv = styled.div`

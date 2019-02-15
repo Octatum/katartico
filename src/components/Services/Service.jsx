@@ -159,7 +159,7 @@ const ListItem = styled.div`
   padding-bottom: 0.5em;
 `;
 
-const BackgroundImage = styled('img')`
+const BackgroundImage = styled(GatsbyImage)`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -187,7 +187,7 @@ function Service(props) {
   return (
     <Item onClick={() => debugSetOpen(open)} className={className}>
       <BackgroundImage
-        src={service.banner}
+        fluid={service.banner.childImageSharp.fluid}
         aria-hidden
       />
       <ItemContent className={className}>

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
 import Section from '../../components/Section';
 import AnimatedApostrophe from './AnimatedApostrophe';
+import LocalizedLink from '../../components/LocalizedLink';
 
 const Header = styled.h2`
   position: relative;
@@ -28,7 +28,7 @@ const Header = styled.h2`
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   position: relative;
   text-decoration: none;
   color: inherit;

@@ -1,6 +1,5 @@
 import BurgerMenu from './BurgerMenu';
 import React, { Component } from 'react';
-import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
@@ -8,6 +7,7 @@ import hexToRgba from 'hex-rgba';
 import { breakpoints, device } from '../utilities/device';
 
 import miniLogoImg from './assets/iconoKatartico.svg';
+import LocalizedLink from './LocalizedLink';
 
 const Container = styled.nav`
   position: -webkit-sticky;
@@ -86,7 +86,7 @@ const LinkList = styled.div`
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   position: relative;
   margin: 1rem 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -275,7 +275,7 @@ class Navbar extends Component {
           </Svg>
           {item.name}
         </React.Fragment>
-      )
+      );
 
       if (item.path === this.props.path) {
         return (

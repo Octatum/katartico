@@ -18,7 +18,7 @@ const Container = styled.div`
   color: ${props => props.theme.white};
 `;
 
-const Picture = styled('img')`
+const Picture = styled(GatsbyImage)`
   width: 100%;
   margin: 1em 0;
   background: ${props => props.theme.main};
@@ -117,9 +117,8 @@ const About = props => {
     banner,
     bannerMobile,
     description,
-    teamMembers
+    teamMembers,
   } = props.data.markdownRemark.frontmatter.pageBody;
-  console.table(teamMembers);
 
   const sortedTeamMembers = teamMembers.sort((a, b) => a.index - b.index);
 
@@ -127,15 +126,15 @@ const About = props => {
     <Layout path={props.location.pathname}>
       <Helmet title="Nosotros" />
       <Container>
-        <PicturePortrait src={bannerMobile} />
-        <PictureLandscape src={banner} />
+        <PicturePortrait fluid={bannerMobile.childImageSharp.fluid} />
+        <PictureLandscape fluid={banner.childImageSharp.fluid} />
         <Introduction center source={description} />
         <PeopleDiv>
-          {sortedTeamMembers.map((item) => (
+          {sortedTeamMembers.map(item => (
             <Person key={item.name}>
               <PersonPicture
                 as={'img'}
-                src={item.photo}
+                fluid={item.photo.childImageSharp.fluid}
               />
               <ReactMarkdown source={item.body} />
             </Person>
@@ -151,20 +150,35 @@ export default props => (
     query={graphql`
       query {
         markdownRemark(
-          frontmatter: { 
-            type: { eq: "page-about" }
-            lang: { eq: "en" }
-          }
+          frontmatter: { type: { eq: "page-about" }, lang: { eq: "en" } }
         ) {
           frontmatter {
             pageBody {
-              banner
-              bannerMobile
+              banner {
+                childImageSharp {
+                  fluid(maxWidth: 1600) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              bannerMobile {
+                childImageSharp {
+                  fluid(maxHeight: 500) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               description
               teamMembers {
                 name
                 index
-                photo
+                photo {
+                  childImageSharp {
+                    fluid(maxWidth: 600, maxHeight: 600) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 body
               }
             }

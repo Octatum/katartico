@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import ReactLottie from 'react-lottie';
 
 import { device } from '../../utilities/device';
 import Section from '../../components/Section';
 import animationData from './assets/anim_nosotros.json';
+import LocalizedLink from '../../components/LocalizedLink';
 
 const Header = styled.h2`
   position: relative;
@@ -30,7 +30,7 @@ const Header = styled.h2`
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   text-decoration: none;
   color: inherit;
 `;

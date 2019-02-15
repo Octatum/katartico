@@ -31,7 +31,9 @@ const Layout = styled('div')`
 `;
 
 const Services = props => {
-  const services = props.data.markdownRemark.frontmatter.pageBody.serviceList.sort((a, b) => a.index - b.index);
+  const services = props.data.markdownRemark.frontmatter.pageBody.serviceList.sort(
+    (a, b) => a.index - b.index
+  );
 
   return (
     <AppLayout>
@@ -50,17 +52,20 @@ export default props => (
     query={graphql`
       query {
         markdownRemark(
-          frontmatter: { 
-            type: { eq: "page-services" }
-            lang: { eq: "en" }
-          }
+          frontmatter: { type: { eq: "page-services" }, lang: { eq: "en" } }
         ) {
           frontmatter {
             pageBody {
               serviceList {
                 title
                 index
-                banner
+                banner {
+                  childImageSharp {
+                    fluid(maxWidth: 600, maxHeight: 600) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 services
               }
             }
