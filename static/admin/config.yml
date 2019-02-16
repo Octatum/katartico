@@ -54,32 +54,127 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Página de inicio"
+      - label: "Página de inicio (inglés)"
         name: "homePage"
-        file: "content/pages/home.json"
+        file: "content/pages/index.en.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
+          - { name: "lang", label: "Languaje", widget: "hidden", default: "en" }
           - label: "Introducción"
             name: "intro"
             widget: object
             fields:
               - { label: "Video introductorio", name: video, widget: file }
-              - { label: "Imagen en móvil", name: image, widget: image }          
-          - { label: "Slogan", name: slogan, widget: markdown }
-          - label: Clientes
-            name: customers
-            widget: list
+              - { label: "Imagen en móvil", name: image, widget: image }
+          - label: "Nosotros"
+            name: "aboutUs"
+            widget: object
             fields:
-              - { label: Name, name: name }
-              - { label: Logotipo, name: logo, widget: image }
-              - { label: Url, name: url }
-          - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Eslogan", name: "slogan", widget: "text" }
+              - { label: "Animación en formato json", name: animation, widget: file }
+          - label: "Servicios"
+            name: "services"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Lista de servicios",  name: list, widget: "list" }
+          - label: "Portafolio"
+            name: "portfolio"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Imagen de portafolio", name: image, widget: image }
+              - label: Clientes
+                name: customers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { label: Logotipo, name: logo, widget: image }
+                  - { label: Url, name: url }
+                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+      - label: "Página de inicio (español)"
+        name: "homePage"
+        file: "content/pages/index.es.md"
+        fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
+          - { name: "lang", label: "Languaje", widget: "hidden", default: "es" }
+          - label: "Introducción"
+            name: "intro"
+            widget: object
+            fields:
+              - { label: "Video introductorio", name: video, widget: file }
+              - { label: "Imagen en móvil", name: image, widget: image }
+          - label: "Nosotros"
+            name: "aboutUs"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Eslogan", name: "slogan", widget: "text" }
+              - { label: "Animación en formato json", name: animation, widget: file }
+          - label: "Servicios"
+            name: "services"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Lista de servicios",  name: list, widget: "list" }
+          - label: "Portafolio"
+            name: "portfolio"
+            widget: object
+            fields:
+              - { label: "Título de sección", name: "title", widget: "string" }
+              - { label: "Imagen de portafolio", name: image, widget: image }
+              - label: Clientes
+                name: customers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { label: Logotipo, name: logo, widget: image }
+                  - { label: Url, name: url }
+                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
+                
 
-      - label: "About Page"
+      - label: "Página de Nosotros (Español)"
         name: "about"
-        file: "content/pages/about.json"        
+        file: "content/pages/about.es.md"        
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
-          - { label: "Banner en escritorio", name: banner, widget: image }
-          - { label: "Banner en móvil", name: bannerMobile, widget: image }
-          - { label: Intro, name: intro, widget: markdown }
+          - { name: "lang", label: "Lenguaje", widget: "hidden", default: "es" }
+          - label: "Contenido de la página"
+            name: "pageBody"
+            widget: object
+            fields:
+              - { label: "Banner horizontal", name: banner, widget: image }
+              - { label: "Banner vertical (movil)", name: bannerMobile, widget: image }
+              - { label: "Contenido de sección superior", name: "description", widget: "text" }
+              - label: "Miembros de equipo"
+                name: teamMembers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+                  - { label: Fotografía, name: photo, widget: image }
+                  - { label: "Descripción de persona", name: "body", widget: "markdown" }
+
+        - label: "Página de Nosotros (Inglés)"
+        name: "about"
+        file: "content/pages/about.en.md"
+        fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
+          - { name: "lang", label: "Lenguaje", widget: "hidden", default: "en" }
+          - label: "Contenido de la página"
+            name: "pageBody"
+            widget: object
+            fields:
+              - { label: "Banner horizontal", name: banner, widget: image }
+              - { label: "Banner vertical (movil)", name: bannerMobile, widget: image }
+              - { label: "Contenido de sección superior", name: "description", widget: "text" }
+              - label: "Miembros de equipo"
+                name: teamMembers
+                widget: list
+                fields:
+                  - { label: Name, name: name }
+                  - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+                  - { label: Fotografía, name: photo, widget: image }
+                  - { label: "Descripción de persona", name: "body", widget: "markdown" }
+        

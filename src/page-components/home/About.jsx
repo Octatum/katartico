@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Link as _Link, StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { device } from '../../utilities/device';
-
-import Section from '../Section';
 import ReactLottie from 'react-lottie';
+
+import { device } from '../../utilities/device';
+import Section from '../../components/Section';
 import animationData from './assets/anim_nosotros.json';
+import LocalizedLink from '../../components/LocalizedLink';
 
 const Header = styled.h2`
   position: relative;
@@ -30,7 +30,7 @@ const Header = styled.h2`
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   text-decoration: none;
   color: inherit;
 `;
@@ -69,7 +69,7 @@ const AnimationArea = styled('div')`
 `;
 
 const About = props => {
-  const { slogan } = props.data.pagesJson;
+  const { title, slogan, animation } = props.data;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -79,7 +79,7 @@ const About = props => {
   return (
     <Section>
       <Header>
-        <Link to="/nosotros">Nosotros</Link>
+        <Link to="/nosotros">{title}</Link>
       </Header>
       <Link to="/nosotros">
         <Quote source={slogan} />
@@ -91,15 +91,4 @@ const About = props => {
   );
 };
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        pagesJson(type: { eq: "page-home" }) {
-          slogan
-        }
-      }
-    `}
-    render={data => <About data={data} {...props} />}
-  />
-);
+export default About;

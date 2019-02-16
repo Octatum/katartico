@@ -1,6 +1,5 @@
 import BurgerMenu from './BurgerMenu';
 import React, { Component } from 'react';
-import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
@@ -8,6 +7,7 @@ import hexToRgba from 'hex-rgba';
 import { breakpoints, device } from '../utilities/device';
 
 import miniLogoImg from './assets/iconoKatartico.svg';
+import LocalizedLink from './LocalizedLink';
 
 const Container = styled.nav`
   position: -webkit-sticky;
@@ -82,11 +82,11 @@ const LinkList = styled.div`
     padding-left: 37.5%;
     flex: 8;
 
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   position: relative;
   margin: 1rem 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
@@ -170,7 +170,7 @@ const SocialMedia = styled.div`
     margin: 0;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
@@ -235,7 +235,7 @@ const FlexLogoSection = styled('div')`
   justify-content: center;
 
   ${device.laptop} {
-    font-size: ${({mini}) => mini ? 1 : 1.1}em;
+    font-size: ${({ mini }) => (mini ? 1 : 1.1)}em;
   }
 `;
 
@@ -267,6 +267,16 @@ class Navbar extends Component {
 
   render = () => {
     const navbarLinks = links.map((item, index) => {
+      const linkContent = (
+        <React.Fragment>
+          <Svg>
+            <Rectangle height="100%" width="100%" />
+            <Line x1="0" x2="100%" y1="0%" y2="0%" />
+          </Svg>
+          {item.name}
+        </React.Fragment>
+      );
+
       if (item.path === this.props.path) {
         return (
           <ScrollLink
@@ -277,11 +287,7 @@ class Navbar extends Component {
             onClick={this.toggleDropdown}
             smooth
           >
-            <Svg>
-              <Rectangle height="100%" width="100%" />
-              <Line x1="0" x2="100%" y1="0%" y2="0%" />
-            </Svg>
-            {item.name}
+            {linkContent}
           </ScrollLink>
         );
       }
@@ -291,11 +297,7 @@ class Navbar extends Component {
           to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
           onClick={this.toggleDropdown}
         >
-          <Svg>
-            <Rectangle height="100%" width="100%" />
-            <Line x1="0" x2="100%" y1="0%" y2="0%" />
-          </Svg>
-          {item.name}
+          {linkContent}
         </Link>
       );
     });
@@ -352,7 +354,9 @@ class Navbar extends Component {
               <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
             </FlexLogoSection>
             <LinkList mini={this.props.minimize}>{navbarLinks}</LinkList>
-            <SocialMedia mini={this.props.minimize}>{socialMediaLinks}</SocialMedia>
+            <SocialMedia mini={this.props.minimize}>
+              {socialMediaLinks}
+            </SocialMedia>
           </MediaQuery>
         </FlexBox>
       </Container>

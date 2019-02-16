@@ -5,7 +5,7 @@ import Swipe from 'react-easy-swipe';
 
 import { device } from '../../utilities/device';
 import { Title, Arrow } from './assets/SVGs';
-import { Apostrophe } from '../assets/ApostropheComp';
+import { Apostrophe } from '../../components/assets/ApostropheComp';
 
 const Container = styled.div`
   display: ${({ show }) => (show === 'true' ? 'grid' : 'none')};

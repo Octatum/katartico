@@ -180,7 +180,6 @@ export default class Template extends Component {
     const { markdownRemark } = this.props.data;
     const { rawMarkdownBody, frontmatter } = markdownRemark;
     const { photoIndex, isOpen } = this.state;
-    console.log(frontmatter);
     return (
       <Layout>
         <ReactHelmet>
@@ -194,9 +193,11 @@ export default class Template extends Component {
             <HeaderContainer>
               <ReactMarkdown source={rawMarkdownBody} />
               <HighlightedImageContainer>
-                {frontmatter.highlightedImage && <HighlightedImage
-                  fluid={frontmatter.highlightedImage.childImageSharp.fluid}
-                />}
+                {frontmatter.highlightedImage && (
+                  <HighlightedImage
+                    fluid={frontmatter.highlightedImage.childImageSharp.fluid}
+                  />
+                )}
               </HighlightedImageContainer>
             </HeaderContainer>
             <PhotoGrid>

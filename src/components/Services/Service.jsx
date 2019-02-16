@@ -65,7 +65,8 @@ const ItemContent = styled.div`
     transition: 0.3s linear all;
   }
 
-  &:hover, &.open {
+  &:hover,
+  &.open {
     ::before {
       background-color: rgba(71, 11, 11, 0.8);
     }
@@ -162,32 +163,32 @@ const BackgroundImage = styled(GatsbyImage)`
   position: absolute;
   width: 100%;
   height: 100%;
+  left: 0;
   & > div {
     padding-bottom: 0 !important;
     height: 100%;
   }
 
   & > img {
-    object-fit: cover !important; 
+    object-fit: cover !important;
     object-position: 0% 0% !important;
-    font-family: 'object-fit: cover !important; object-position: 0% 0% !important;'
+    font-family: 'object-fit: cover !important; object-position: 0% 0% !important;';
   }
 `;
 
 function Service(props) {
   const { service } = props;
   const [open, setOpen] = useState(false);
-  const className = open && "open";
-  const debugSetOpen = (state) => {
+  const className = open && 'open';
+  const debugSetOpen = state => {
     setOpen(!state);
-  }
+  };
 
   return (
-    <Item onClick={() => debugSetOpen(open)} className={className} >
+    <Item onClick={() => debugSetOpen(open)} className={className}>
       <BackgroundImage
-        style={{position: 'abslute'}}
-        aria-hidden
         fluid={service.banner.childImageSharp.fluid}
+        aria-hidden
       />
       <ItemContent className={className}>
         <ElementHeader>{service.title}</ElementHeader>
