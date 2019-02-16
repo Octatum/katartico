@@ -1,13 +1,13 @@
-import BurgerMenu from './BurgerMenu';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
-import { breakpoints, device } from '../utilities/device';
 
-import miniLogoImg from './assets/iconoKatartico.svg';
-import LocalizedLink from './LocalizedLink';
+import BurgerMenu from './BurgerMenu';
+import { breakpoints, device } from '../../utilities/device';
+import miniLogoImg from '../assets/iconoKatartico.svg';
+import LocalizedLink from '../LocalizedLink';
 
 const Container = styled.nav`
   position: -webkit-sticky;
@@ -189,30 +189,6 @@ const SocialMediaIcon = styled.div`
   }
 `;
 
-const links = [
-  {
-    path: '/',
-    name: <span>inicio</span>,
-  },
-  {
-    path: '/nosotros',
-    name: <span>nosotros</span>,
-  },
-  {
-    path: '/servicios',
-    name: <span>servicios</span>,
-  },
-  {
-    path: '/portafolio',
-    name: <span>portafolio</span>,
-  },
-  {
-    path: '/',
-    hash: 'contacto',
-    name: <span>contacto</span>,
-  },
-];
-
 const socialMedia = [
   {
     path: '/',
@@ -248,120 +224,113 @@ const Overlay = styled('div')`
   left: 0;
 `;
 
-class Navbar extends Component {
-  state = {
-    open: false,
-  };
+function Presentation(props) {
+  const { links } = props;
+  const [open, setOpen] = useState(false);
+  const closeNavbar = () => {
+    setOpen(false);
+  }
 
-  toggleDropdown = () => {
-    this.setState(prevState => ({
-      open: !prevState.open,
-    }));
-  };
+  const toggleDropdown = (state) => {
+    setOpen(!state);
+  }
 
-  closeNavbar = () => {
-    this.setState({
-      open: false,
-    });
-  };
+  const navbarLinks = links.map((item, index) => {
+    const linkContent = (
+      <React.Fragment>
+        <Svg>
+          <Rectangle height="100%" width="100%" />
+          <Line x1="0" x2="100%" y1="0%" y2="0%" />
+        </Svg>
+        {item.name}
+      </React.Fragment>
+    );
 
-  render = () => {
-    const navbarLinks = links.map((item, index) => {
-      const linkContent = (
-        <React.Fragment>
-          <Svg>
-            <Rectangle height="100%" width="100%" />
-            <Line x1="0" x2="100%" y1="0%" y2="0%" />
-          </Svg>
-          {item.name}
-        </React.Fragment>
-      );
-
-      if (item.path === this.props.path) {
-        return (
-          <ScrollLink
-            key={index}
-            to={item.hash ? item.hash : 'top'}
-            duration={1000}
-            offset={item.hash ? 0 : -115}
-            onClick={this.toggleDropdown}
-            smooth
-          >
-            {linkContent}
-          </ScrollLink>
-        );
-      }
+    if (item.path === props.path) {
       return (
-        <Link
+        <ScrollLink
           key={index}
-          to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
-          onClick={this.toggleDropdown}
+          to={item.hash ? item.hash : 'top'}
+          duration={1000}
+          offset={item.hash ? 0 : -115}
+          onClick={() => toggleDropdown(open)}
+          smooth
         >
           {linkContent}
-        </Link>
+        </ScrollLink>
       );
-    });
-
-    const socialMediaLinks = socialMedia.map((item, index) => (
-      <SocialMediaIcon key={index}>
-        <Anchor href={item.path}>
-          <i className={`fab ${item.faName}`} />
-        </Anchor>
-      </SocialMediaIcon>
-    ));
-
+    }
     return (
-      <Container>
-        <FlexBox>
-          {/* Mobile view */}
-          <MediaQuery maxWidth={breakpoints.tablet - 1}>
-            <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
-            <Overlay
-              display={this.state.open ? 'block' : 'none'}
-              onClick={this.closeNavbar}
-            />
-            <Menu open={this.state.open}>
-              <LinkList>{navbarLinks}</LinkList>
-              <SocialMedia>{socialMediaLinks}</SocialMedia>
-            </Menu>
-            <BurgerMenu
-              open={this.state.open}
-              toggleDropdown={this.toggleDropdown}
-            />
-          </MediaQuery>
-          {/* Tablet view */}
-          <MediaQuery
-            minWidth={breakpoints.tablet}
-            maxWidth={breakpoints.laptop - 1}
-          >
-            <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
-            <Overlay
-              display={this.state.open ? 'block' : 'none'}
-              onClick={this.closeNavbar}
-            />
-            <Menu open={this.state.open}>
-              <LinkList>{navbarLinks}</LinkList>
-            </Menu>
-            <SocialMedia>{socialMediaLinks}</SocialMedia>
-            <BurgerMenu
-              open={this.state.open}
-              toggleDropdown={this.toggleDropdown}
-            />
-          </MediaQuery>
-          {/* Desktop view */}
-          <MediaQuery minWidth={breakpoints.laptop}>
-            <FlexLogoSection mini={this.props.minimize}>
-              <Logo src={miniLogoImg} mini={this.props.minimize} aria-hidden />
-            </FlexLogoSection>
-            <LinkList mini={this.props.minimize}>{navbarLinks}</LinkList>
-            <SocialMedia mini={this.props.minimize}>
-              {socialMediaLinks}
-            </SocialMedia>
-          </MediaQuery>
-        </FlexBox>
-      </Container>
+      <Link
+        key={index}
+        to={`${item.path}${item.hash ? `#${item.hash}` : ''}`}
+        onClick={() => toggleDropdown(open)}
+      >
+        {linkContent}
+      </Link>
     );
-  };
+  });
+
+  const socialMediaLinks = socialMedia.map((item, index) => (
+    <SocialMediaIcon key={index}>
+      <Anchor href={item.path}>
+        <i className={`fab ${item.faName}`} />
+      </Anchor>
+    </SocialMediaIcon>
+  ));
+
+
+  return (
+    <Container>
+      <FlexBox>
+        {/* Mobile view */}
+        <MediaQuery maxWidth={breakpoints.tablet - 1}>
+          <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
+          <Overlay
+            display={open ? 'block' : 'none'}
+            onClick={closeNavbar}
+          />
+          <Menu open={open}>
+            <LinkList>{navbarLinks}</LinkList>
+            <SocialMedia>{socialMediaLinks}</SocialMedia>
+          </Menu>
+          <BurgerMenu
+            open={open}
+            toggleDropdown={() => toggleDropdown(open)}
+          />
+        </MediaQuery>
+        {/* Tablet view */}
+        <MediaQuery
+          minWidth={breakpoints.tablet}
+          maxWidth={breakpoints.laptop - 1}
+        >
+          <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
+          <Overlay
+            display={open ? 'block' : 'none'}
+            onClick={closeNavbar}
+          />
+          <Menu open={open}>
+            <LinkList>{navbarLinks}</LinkList>
+          </Menu>
+          <SocialMedia>{socialMediaLinks}</SocialMedia>
+          <BurgerMenu
+            open={open}
+            toggleDropdown={() => toggleDropdown(open)}
+          />
+        </MediaQuery>
+        {/* Desktop view */}
+        <MediaQuery minWidth={breakpoints.laptop}>
+          <FlexLogoSection mini={props.minimize}>
+            <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
+          </FlexLogoSection>
+          <LinkList mini={props.minimize}>{navbarLinks}</LinkList>
+          <SocialMedia mini={props.minimize}>
+            {socialMediaLinks}
+          </SocialMedia>
+        </MediaQuery>
+      </FlexBox>
+    </Container>
+  );
 }
 
-export default Navbar;
+export default Presentation;
