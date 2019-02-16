@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+* {
+	box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +24,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font: inherit;
-	font-family: "Nunito", serif;
+	font-family: "Lato", "Helvetica", "Arial", sans-serif;
 	line-height: normal;
 }
 
@@ -29,44 +33,31 @@ body {
 }
 
 @font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Regular.ttf");
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Lato';
+	src: url("/fonts/Lato.ttf");
 	font-display: swap;
-}
-
-@font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Italic.ttf");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Bold.ttf");
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: "Nunito";
-	src: url("/fonts/Nunito-Light.ttf");
-	font-weight: lighter;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'COCOGOOSE';
-    src: url("../../../static/fonts/Cocogoose Pro Semilight-trial.ttf");
-}
-
-@font-face {
-    font-family: 'Berthold';
-    src: url("../../../static/fonts/Berthold Akzidenz Grotesk BE Regular.otf");
 }
 
 strong {
   font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
 }
