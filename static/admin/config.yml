@@ -109,8 +109,6 @@ collections:
                   - { label: Logotipo, name: logo, widget: image }
                   - { label: Url, name: url }
                   - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
-                
-
       - label: "Página de Nosotros (Español)"
         name: "about"
         file: "content/pages/about.es.md"        
@@ -132,8 +130,7 @@ collections:
                   - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
                   - { label: Fotografía, name: photo, widget: image }
                   - { label: "Descripción de persona", name: "body", widget: "markdown" }
-
-        - label: "Página de Nosotros (Inglés)"
+      - label: "Página de Nosotros (Inglés)"
         name: "about"
         file: "content/pages/about.en.md"
         fields:
