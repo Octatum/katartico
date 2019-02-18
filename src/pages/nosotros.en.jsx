@@ -132,10 +132,7 @@ const About = props => {
         <PeopleDiv>
           {sortedTeamMembers.map(item => (
             <Person key={item.name}>
-              <PersonPicture
-                as={'img'}
-                fluid={item.photo.childImageSharp.fluid}
-              />
+              <PersonPicture fixed={item.photo.childImageSharp.fixed} />
               <ReactMarkdown source={item.body} />
             </Person>
           ))}
@@ -174,8 +171,8 @@ export default props => (
                 index
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 600, maxHeight: 600) {
-                      ...GatsbyImageSharpFluid
+                    fixed(width: 400) {
+                      ...GatsbyImageSharpFixed
                     }
                   }
                 }

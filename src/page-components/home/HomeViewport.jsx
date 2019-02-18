@@ -7,8 +7,6 @@ import Navbar from '../../components/Navbar';
 import Landing from './Landing';
 import { device } from '../../utilities/device';
 
-const Viewport = styled.div``;
-
 const Footer = styled.div`
   margin: 0 auto;
   max-width: 90%;
@@ -57,7 +55,7 @@ class HomeViewport extends React.Component {
 
   render() {
     return (
-      <Viewport>
+      <div>
         <Landing />
         <Navbar
           path={this.props.path}
@@ -76,7 +74,7 @@ class HomeViewport extends React.Component {
             </Footer>
           </Element>
         </div>
-      </Viewport>
+      </div>
     );
   }
 }
