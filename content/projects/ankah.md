@@ -10,11 +10,11 @@ content:
     type: image
     videoId: '0'
     width: '2'
-  - height: '2'
-    image: /assets/logomockup.jpg
+  - height: '3'
+    image: /assets/mockup.jpg
     type: image
     videoId: '0'
-    width: '1'
+    width: '3'
   - height: '2'
     image: /assets/papelería3.jpg
     type: image
@@ -26,7 +26,7 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/6-logitpo-propuestas-25.jpg
+    image: /assets/ankah-verde.jpg
     type: image
     videoId: '0'
     width: '1'
