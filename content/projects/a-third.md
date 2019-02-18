@@ -11,7 +11,7 @@ content:
     videoId: '0'
     width: '2'
   - height: '1'
-    image: /assets/2-3-.jpg
+    image: /assets/74aniversario.jpg
     type: image
     videoId: '0'
     width: '2'
