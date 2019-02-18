@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
-import 'string.prototype.startswith';
-
-function hasLanguagePrefix(string) {
-  return string.startsWith('/en/') || string === "/en";
-}
+import { hasLanguagePrefix } from '../utilities/functions';
 
 function stripPrefix(string) {
-  return string.startsWith('/en') ? string.substr(0, 3) : string;
+  return !!string && string.startsWith('/en') ? string.substr(0, 3) : string;
 }
 
 function LocalizedLink(props) {

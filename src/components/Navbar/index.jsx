@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-use';
 import Presentation from './Presentation';
 import 'string.prototype.startswith';
+import { hasLanguagePrefix } from '../../utilities/functions';
 
 const links = {
   default: [
@@ -50,17 +51,12 @@ const links = {
   },]
 };
 
-function hasLanguagePrefix(string) {
-  return string.startsWith('/en/') || string === "/en";
-}
-
 function NavbarContainer(props) {
   const location = useLocation();
   const { pathname } = location;
   const language = hasLanguagePrefix(pathname) ? "en" : "es";
   
   const localizedLinks = language === 'en' ? links.en : links.default;
-  console.table(localizedLinks);
 
   return <Presentation links={localizedLinks} {...props} />;
 }
