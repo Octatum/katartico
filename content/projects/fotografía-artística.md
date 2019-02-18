@@ -17,12 +17,12 @@ content:
     image: /assets/1-foto-principal-4-.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: /assets/fotoarte_-_4.jpg
+  - height: '2'
+    image: /assets/guitarra.jpg
     type: image
-    width: '2'
+    width: '3'
   - height: '3'
-    image: /assets/1.5-2-.jpg
+    image: ''
     type: image
     width: '1'
   - height: '2'
