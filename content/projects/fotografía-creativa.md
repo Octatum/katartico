@@ -5,10 +5,10 @@ title: Fotografía creativa
 banner: /assets/fotocreativa_-_0_portada.jpg
 highlightedImage: /assets/fotocreativa_-_1_foto_principal.jpg
 content:
-  - height: '2'
+  - height: '3'
     image: /assets/fotocreativa_-_2.jpg
     type: image
-    width: '2'
+    width: '3'
   - height: '3'
     image: /assets/benda.jpg
     type: image
