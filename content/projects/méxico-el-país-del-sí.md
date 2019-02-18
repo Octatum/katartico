@@ -6,7 +6,7 @@ banner: /assets/mexicosi_-_0_portada_mexico.jpg
 highlightedImage: /assets/mexicosi_-_1_foto_principal.png
 content:
   - height: '2'
-    image: /assets/2-4-.jpg
+    image: ''
     type: image
     width: '3'
   - height: '2'
