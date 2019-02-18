@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-use';
 import Presentation from './Presentation';
+import 'string.prototype.startswith';
 
 const links = {
   default: [

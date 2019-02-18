@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
+import 'string.prototype.startswith';
 
 function hasLanguagePrefix(string) {
   return string.startsWith('/en/') || string === "/en";

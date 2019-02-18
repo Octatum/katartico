@@ -37,6 +37,7 @@
     "react-swipe": "^6.0.3",
     "react-use": "^5.3.0",
     "react-waypoint": "^8.0.3",
+    "string.prototype.startswith": "^0.2.0",
     "styled-components": "^4.0.3",
     "swipe-js-iso": "^2.1.4"
   },
