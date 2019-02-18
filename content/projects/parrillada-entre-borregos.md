@@ -6,19 +6,19 @@ banner: /assets/parrilladaborregos_-_0_portada_parrillada.jpg
 highlightedImage: /assets/parrilladaborregos_-_1_foto_principal.png
 content:
   - height: '2'
-    image: /assets/parrilladaborregos_-_4.JPG
+    image: /assets/parrilladaborregos_-_2.png
     type: image
     width: '3'
+  - height: '1'
+    image: /assets/parrillada1.jpg
+    type: image
+    width: '2'
   - height: '2'
     image: /assets/parrilladaborregos_-_5.JPG
     type: image
     width: '3'
   - height: '2'
     image: /assets/parrilladaborregos_-_6.JPG
-    type: image
-    width: '3'
-  - height: '2'
-    image: /assets/parrilladaborregos_-_2.png
     type: image
     width: '3'
 ---
