@@ -281,7 +281,7 @@ function Presentation(props) {
 
   return (
     <Container>
-      <FlexBox>
+      <FlexBox mini={props.minimize}>
         {/* Mobile view */}
         <MediaQuery maxWidth={breakpoints.tablet - 1}>
           <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
