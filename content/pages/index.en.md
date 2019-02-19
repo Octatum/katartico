@@ -2,7 +2,7 @@
 type: page-home
 lang: en
 intro:
-  video: "/assets/intro_animation.mp4"
+  video: "/assets/katarticonew.mp4"
 aboutUs:
   title: About us
   slogan: "Your slogan goes here."
@@ -16,7 +16,7 @@ homeServices:
     - name: "Ipsum donor"
 portfolio: 
   title: Portfolio
-  image: "/assets/empty.png"
+  image: "/assets/empty.en.png"
   customers:
     - name: "Bissu"
       logo: "/assets/bissu.svg"

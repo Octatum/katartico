@@ -151,4 +151,40 @@ collections:
                   - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
                   - { label: Fotografía, name: photo, widget: image }
                   - { label: "Descripción de persona", name: "body", widget: "markdown" }
-        
+      
+      - label: "Página de Servicios (Inglés)"
+        name: "services"
+        file: "content/pages/services.en.md"
+        fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-services" }
+          - { name: "lang", label: "Lenguaje", widget: "hidden", default: "en" }
+          - label: "Contenido de la página"
+            name: "pageBody"
+            widget: object
+            fields:
+              - label: "Miembros de equipo"
+                name: serviceList
+                widget: list
+                fields:
+                  - { label: Título, name: title }
+                  - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+                  - { label: Banner, name: banner, widget: image }
+                  - { label: "Servicios (separados por coma)", name: "services", widget: "services" }
+      - label: "Página de Servicios (Español)"
+        name: "services"
+        file: "content/pages/services.es.md"
+        fields:
+          - { name: "type", label: "Type", widget: "hidden", default: "page-services" }
+          - { name: "lang", label: "Lenguaje", widget: "hidden", default: "es" }
+          - label: "Contenido de la página"
+            name: "pageBody"
+            widget: object
+            fields:
+              - label: "Miembros de equipo"
+                name: serviceList
+                widget: list
+                fields:
+                  - { label: Título, name: title }
+                  - { name: "index", label: "Indice", widget: "number", valueType: "int", min: 1 }
+                  - { label: Banner, name: banner, widget: image }
+                  - { label: "Servicios (separados por coma)", name: "services", widget: "services" }

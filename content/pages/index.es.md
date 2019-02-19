@@ -2,7 +2,7 @@
 type: page-home
 lang: es
 intro:
-  video: "/assets/intro_animation.mp4"
+  video: "/assets/katarticonew.es.mp4"
 aboutUs:
   title: Nosotros
   slogan: "El eslogan va aquí."
