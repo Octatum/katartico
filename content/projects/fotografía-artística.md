@@ -21,10 +21,6 @@ content:
     image: /assets/guitarra.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: ''
-    type: image
-    width: '1'
   - height: '2'
     image: /assets/fotoarte_-_6.jpg
     type: image
