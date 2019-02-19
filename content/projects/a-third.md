@@ -2,8 +2,23 @@
 type: project
 index: 1
 title: 74 Aniversario
-banner: /assets/0-portada.jpg
+banner: /assets/portada-74-aniversario-min.jpg
 highlightedImage: /assets/74aniversario_-1_foto_principal.png
+bodyEnglish: >-
+  # 74th Aniversary
+
+
+  ## Graphic design + video.
+
+
+  This is an english filler text.
+
+
+  A este evento acudieron más de 5,000 integrantes de la comunidad Tec.
+
+
+  _En colaboración con: Karina Tobías, Paulina Zambrano, Rebeca Valencia, Lucas
+  Salinas y Ana Victoria Chávez._
 content:
   - height: '2'
     image: /assets/74aniversario_-1_foto_principal.png

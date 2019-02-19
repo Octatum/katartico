@@ -2,7 +2,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
-    'gatsby-transformer-json',
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
     {
@@ -39,6 +38,7 @@ module.exports = {
         path: `${__dirname}/content/services/`,
       },
     },
+    
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -62,6 +62,13 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'es',
+        prefixDefault: false,
+      }
     },
     'gatsby-plugin-netlify-cms'
   ],
