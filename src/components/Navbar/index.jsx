@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { useLocation } from 'react-use';
 import Presentation from './Presentation';
 import 'string.prototype.startswith';
@@ -28,37 +28,39 @@ const links = {
       name: <span>contacto</span>,
     },
   ],
-  en: [{
-    path: '/',
-    name: <span>home</span>,
-  },
-  {
-    path: '/nosotros',
-    name: <span>about</span>,
-  },
-  {
-    path: '/servicios',
-    name: <span>services</span>,
-  },
-  {
-    path: '/portafolio',
-    name: <span>portfolio</span>,
-  },
-  {
-    path: '/',
-    hash: 'contacto',
-    name: <span>contact</span>,
-  },]
+  en: [
+    {
+      path: '/',
+      name: <span>home</span>,
+    },
+    {
+      path: '/nosotros',
+      name: <span>about</span>,
+    },
+    {
+      path: '/servicios',
+      name: <span>services</span>,
+    },
+    {
+      path: '/portafolio',
+      name: <span>portfolio</span>,
+    },
+    {
+      path: '/',
+      hash: 'contacto',
+      name: <span>contact</span>,
+    },
+  ],
 };
 
 function NavbarContainer(props) {
   const location = useLocation();
   const { pathname } = location;
-  const language = hasLanguagePrefix(pathname) ? "en" : "es";
-  
+  const language = hasLanguagePrefix(pathname) ? 'en' : 'es';
+
   const localizedLinks = language === 'en' ? links.en : links.default;
 
   return <Presentation links={localizedLinks} {...props} />;
 }
 
-export default NavbarContainer
+export default NavbarContainer;

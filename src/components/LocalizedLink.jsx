@@ -12,7 +12,7 @@ function LocalizedLink(props) {
   const { pathname } = location;
 
   const nextLocation = stripPrefix(to);
-  const routePrefix = hasLanguagePrefix(pathname) ? "/en" : "";
+  const routePrefix = hasLanguagePrefix(pathname) ? '/en' : '';
 
   return (
     <Link to={routePrefix + nextLocation} {...rest}>
@@ -23,8 +23,6 @@ function LocalizedLink(props) {
 
 export default props => (
   <Location>
-    {({location}) => (
-      <LocalizedLink location={location} {...props} />
-    )}
+    {({ location }) => <LocalizedLink location={location} {...props} />}
   </Location>
 );

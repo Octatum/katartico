@@ -229,11 +229,11 @@ function Presentation(props) {
   const [open, setOpen] = useState(false);
   const closeNavbar = () => {
     setOpen(false);
-  }
+  };
 
-  const toggleDropdown = (state) => {
+  const toggleDropdown = state => {
     setOpen(!state);
-  }
+  };
 
   const navbarLinks = links.map((item, index) => {
     const linkContent = (
@@ -279,25 +279,18 @@ function Presentation(props) {
     </SocialMediaIcon>
   ));
 
-
   return (
     <Container>
       <FlexBox>
         {/* Mobile view */}
         <MediaQuery maxWidth={breakpoints.tablet - 1}>
           <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
-          <Overlay
-            display={open ? 'block' : 'none'}
-            onClick={closeNavbar}
-          />
+          <Overlay display={open ? 'block' : 'none'} onClick={closeNavbar} />
           <Menu open={open}>
             <LinkList>{navbarLinks}</LinkList>
             <SocialMedia>{socialMediaLinks}</SocialMedia>
           </Menu>
-          <BurgerMenu
-            open={open}
-            toggleDropdown={() => toggleDropdown(open)}
-          />
+          <BurgerMenu open={open} toggleDropdown={() => toggleDropdown(open)} />
         </MediaQuery>
         {/* Tablet view */}
         <MediaQuery
@@ -305,18 +298,12 @@ function Presentation(props) {
           maxWidth={breakpoints.laptop - 1}
         >
           <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
-          <Overlay
-            display={open ? 'block' : 'none'}
-            onClick={closeNavbar}
-          />
+          <Overlay display={open ? 'block' : 'none'} onClick={closeNavbar} />
           <Menu open={open}>
             <LinkList>{navbarLinks}</LinkList>
           </Menu>
           <SocialMedia>{socialMediaLinks}</SocialMedia>
-          <BurgerMenu
-            open={open}
-            toggleDropdown={() => toggleDropdown(open)}
-          />
+          <BurgerMenu open={open} toggleDropdown={() => toggleDropdown(open)} />
         </MediaQuery>
         {/* Desktop view */}
         <MediaQuery minWidth={breakpoints.laptop}>
@@ -324,9 +311,7 @@ function Presentation(props) {
             <Logo src={miniLogoImg} mini={props.minimize} aria-hidden />
           </FlexLogoSection>
           <LinkList mini={props.minimize}>{navbarLinks}</LinkList>
-          <SocialMedia mini={props.minimize}>
-            {socialMediaLinks}
-          </SocialMedia>
+          <SocialMedia mini={props.minimize}>{socialMediaLinks}</SocialMedia>
         </MediaQuery>
       </FlexBox>
     </Container>

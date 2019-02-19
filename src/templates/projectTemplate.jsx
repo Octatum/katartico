@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import ReactHelmet from 'react-helmet';
-import { Link as _Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import _ReactMarkdown from 'react-markdown';
 import Lightbox from 'react-image-lightbox';
@@ -11,6 +11,8 @@ import { device } from '../utilities/device';
 import apostropheImg from '../components/assets/apostrophe.svg';
 import PortfolioItem from '../components/Portfolio/PortfolioItem';
 import GatsbyImage from 'gatsby-image';
+import LocalizedLink from '../components/LocalizedLink';
+import { getLanguage } from '../utilities/functions';
 
 const Container = styled.div`
   display: flex;
@@ -37,7 +39,7 @@ const ContentLayout = styled('div')`
   }
 `;
 
-const BackButton = styled(_Link)`
+const BackButton = styled(LocalizedLink)`
   position: relative;
   height: 5em;
   align-self: flex-start;
@@ -46,7 +48,7 @@ const BackButton = styled(_Link)`
   color: inherit;
 
   ::after {
-    content: 'Regresar';
+    content: '${({content}) => content}';
     position: absolute;
     top: 12px;
     left: 5px;
@@ -146,101 +148,85 @@ const HighlightedImage = styled(GatsbyImage)`
   width: 100%;
 `;
 
-export default class Template extends Component {
-  state = {
-    photoIndex: 0,
-    isOpen: false,
+function ProjectTemplate(props)  {
+  const { rawMarkdownBody, frontmatter } = props.data.markdownRemark;
+  const { bodyEnglish } = frontmatter;
+  const pageIsInEnglish = getLanguage() === "en";
+
+  const [open, setOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+
+  const images = frontmatter.content
+    .filter(item => item.type === 'image')
+    .map((imageData, imageIndex) => {
+      imageData.imageIndex = imageIndex;
+      imageData.src = imageData.image.childImageSharp.fluid.src;
+
+      return imageData;
+    });
+
+  const handlePictureClick = index => {
+    setPhotoIndex(index);
+    setOpen(true);
   };
-
-  constructor(props) {
-    super(props);
-
-    const images = this.props.data.markdownRemark.frontmatter.content
-      .filter(item => item.type === 'image')
-      .map((imageData, imageIndex) => {
-        imageData.imageIndex = imageIndex;
-        imageData.src = imageData.image.childImageSharp.fluid.src;
-
-        return imageData;
-      });
-
-    this.images = images;
-  }
-
-  handlePictureClick = index => {
-    return () => {
-      this.setState(() => ({
-        photoIndex: index,
-        isOpen: true,
-      }));
-    };
-  };
-
-  render() {
-    const { markdownRemark } = this.props.data;
-    const { rawMarkdownBody, frontmatter } = markdownRemark;
-    const { photoIndex, isOpen } = this.state;
-    return (
-      <Layout>
-        <ReactHelmet>
-          <title>{frontmatter.title}</title>
-        </ReactHelmet>
-        <Container>
-          <BackButton to="/portafolio">
-            <Apostrophe src={apostropheImg} />
-          </BackButton>
-          <ContentLayout>
-            <HeaderContainer>
-              <ReactMarkdown source={rawMarkdownBody} />
-              <HighlightedImageContainer>
-                {frontmatter.highlightedImage && (
-                  <HighlightedImage
-                    fluid={frontmatter.highlightedImage.childImageSharp.fluid}
-                  />
-                )}
-              </HighlightedImageContainer>
-            </HeaderContainer>
-            <PhotoGrid>
-              {frontmatter.content.map(item => (
-                <PortfolioItem
-                  onImageClick={this.handlePictureClick(item.imageIndex)}
-                  key={(item.image && item.image.id) || item.videoId}
-                  item={item}
+  
+  return (
+    <Layout>
+      <ReactHelmet>
+        <title>{frontmatter.title}</title>
+      </ReactHelmet>
+      <Container>
+        <BackButton to="/portafolio" content={pageIsInEnglish ? 'Back' : 'Regresar'}>
+          <Apostrophe src={apostropheImg} />
+        </BackButton>
+        <ContentLayout>
+          <HeaderContainer>
+            <ReactMarkdown source={(pageIsInEnglish && bodyEnglish) ? bodyEnglish : rawMarkdownBody} />
+            <HighlightedImageContainer>
+              {frontmatter.highlightedImage && (
+                <HighlightedImage
+                  fluid={frontmatter.highlightedImage.childImageSharp.fluid}
                 />
-              ))}
-            </PhotoGrid>
-          </ContentLayout>
-          <BackButton to="/portafolio">
-            <Apostrophe src={apostropheImg} />
-          </BackButton>
-        </Container>
-        {isOpen && (
-          <Lightbox
-            mainSrc={this.images[photoIndex].src}
-            nextSrc={this.images[(photoIndex + 1) % this.images.length].src}
-            prevSrc={
-              this.images[
-                (photoIndex + this.images.length - 1) % this.images.length
-              ].src
-            }
-            onCloseRequest={() => this.setState({ isOpen: false })}
-            onMovePrevRequest={() =>
-              this.setState({
-                photoIndex:
-                  (photoIndex + this.images.length - 1) % this.images.length,
-              })
-            }
-            onMoveNextRequest={() =>
-              this.setState({
-                photoIndex: (photoIndex + 1) % this.images.length,
-              })
-            }
-          />
-        )}
-      </Layout>
-    );
-  }
+              )}
+            </HighlightedImageContainer>
+          </HeaderContainer>
+          <PhotoGrid>
+            {frontmatter.content.map(item => (
+              <PortfolioItem
+                onImageClick={() => handlePictureClick(item.imageIndex)}
+                key={(item.image && item.image.id) || item.videoId}
+                item={item}
+              />
+            ))}
+          </PhotoGrid>
+        </ContentLayout>
+        <BackButton to="/portafolio">
+          <Apostrophe src={apostropheImg} />
+        </BackButton>
+      </Container>
+      {open && (
+        <Lightbox
+          mainSrc={images[photoIndex].src}
+          nextSrc={images[(photoIndex + 1) % images.length].src}
+          prevSrc={
+            images[
+              (photoIndex + images.length - 1) % images.length
+            ].src
+          }
+          onCloseRequest={() => setOpen(false)}
+          onMovePrevRequest={() =>setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMoveNextRequest={() =>
+            setPhotoIndex(
+              (photoIndex + 1) % images.length
+            )
+          }
+        />
+      )}
+    </Layout>
+  ); 
 }
+
+export default ProjectTemplate;
 
 export const pageQuery = graphql`
   query($title: String!) {
@@ -250,6 +236,7 @@ export const pageQuery = graphql`
       rawMarkdownBody
       frontmatter {
         title
+        bodyEnglish
         content {
           height
           type
