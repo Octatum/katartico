@@ -5,6 +5,7 @@
   "author": "Octatum <contacto@octatum.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
+    "formik": "^1.5.1",
     "gatsby": "^2.1.8",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-i18n": "^1.0.1",
@@ -39,7 +40,8 @@
     "react-waypoint": "^8.0.3",
     "string.prototype.startswith": "^0.2.0",
     "styled-components": "^4.0.3",
-    "swipe-js-iso": "^2.1.4"
+    "swipe-js-iso": "^2.1.4",
+    "yup": "^0.26.10"
   },
   "keywords": [
     "gatsby"

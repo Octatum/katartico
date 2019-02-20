@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100%;
+  height: calc(90vh - 110px);
   width: 100%;
 `;
 
