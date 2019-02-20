@@ -207,7 +207,7 @@ function Contact(props) {
                   {labels.sendButton}
                 </Button>
               </Form>
-            )
+            );
           }}
         />
         <ApostropheDiv>

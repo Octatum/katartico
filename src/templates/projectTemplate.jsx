@@ -115,18 +115,14 @@ const PhotoGrid = styled.div`
   grid-template-columns: 1fr;
   grid-auto-rows: 25rem;
   grid-auto-flow: row dense;
-  grid-gap: 1em;
+  grid-gap: 1rem;
 
   ${device.tablet} {
-    grid-template-columns: 3.3fr 1fr 2fr 1.5fr 1fr;
-    position: relative;
-    width: 84vw;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   ${device.laptop} {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    width: 100%;
+    grid-gap: 2rem;
   }
 `;
 
@@ -172,9 +168,6 @@ function ProjectTemplate(props) {
 
   return (
     <Layout>
-      <ReactHelmet>
-        <title>{frontmatter.title}</title>
-      </ReactHelmet>
       <Container>
         <BackButton
           to="/portafolio"
@@ -229,7 +222,14 @@ function ProjectTemplate(props) {
   );
 }
 
-export default ProjectTemplate;
+export default props => (
+  <React.Fragment>
+    <ReactHelmet>
+      <title>{props.data.markdownRemark.frontmatter.title}</title>
+    </ReactHelmet>
+    <ProjectTemplate {...props} />
+  </React.Fragment>
+);
 
 export const pageQuery = graphql`
   query($title: String!) {
