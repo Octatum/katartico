@@ -48,7 +48,7 @@ const BackButton = styled(LocalizedLink)`
   color: inherit;
 
   ::after {
-    content: '${({content}) => content}';
+    content: '${({ content }) => content}';
     position: absolute;
     top: 12px;
     left: 5px;
@@ -148,10 +148,10 @@ const HighlightedImage = styled(GatsbyImage)`
   width: 100%;
 `;
 
-function ProjectTemplate(props)  {
+function ProjectTemplate(props) {
   const { rawMarkdownBody, frontmatter } = props.data.markdownRemark;
   const { bodyEnglish } = frontmatter;
-  const pageIsInEnglish = getLanguage() === "en";
+  const pageIsInEnglish = getLanguage() === 'en';
 
   const [open, setOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -169,19 +169,26 @@ function ProjectTemplate(props)  {
     setPhotoIndex(index);
     setOpen(true);
   };
-  
+
   return (
     <Layout>
       <ReactHelmet>
         <title>{frontmatter.title}</title>
       </ReactHelmet>
       <Container>
-        <BackButton to="/portafolio" content={pageIsInEnglish ? 'Back' : 'Regresar'}>
+        <BackButton
+          to="/portafolio"
+          content={pageIsInEnglish ? 'Back' : 'Regresar'}
+        >
           <Apostrophe src={apostropheImg} />
         </BackButton>
         <ContentLayout>
           <HeaderContainer>
-            <ReactMarkdown source={(pageIsInEnglish && bodyEnglish) ? bodyEnglish : rawMarkdownBody} />
+            <ReactMarkdown
+              source={
+                pageIsInEnglish && bodyEnglish ? bodyEnglish : rawMarkdownBody
+              }
+            />
             <HighlightedImageContainer>
               {frontmatter.highlightedImage && (
                 <HighlightedImage
@@ -208,22 +215,18 @@ function ProjectTemplate(props)  {
         <Lightbox
           mainSrc={images[photoIndex].src}
           nextSrc={images[(photoIndex + 1) % images.length].src}
-          prevSrc={
-            images[
-              (photoIndex + images.length - 1) % images.length
-            ].src
-          }
+          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
           onCloseRequest={() => setOpen(false)}
-          onMovePrevRequest={() =>setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
           onMoveNextRequest={() =>
-            setPhotoIndex(
-              (photoIndex + 1) % images.length
-            )
+            setPhotoIndex((photoIndex + 1) % images.length)
           }
         />
       )}
     </Layout>
-  ); 
+  );
 }
 
 export default ProjectTemplate;

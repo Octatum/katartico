@@ -19,12 +19,7 @@ const ReactPlayer = styled('video')`
 function VideoPlayer(props) {
   return (
     <Wrapper>
-      <ReactPlayer
-        playsinline
-        muted
-        loop
-        autoPlay
-      >
+      <ReactPlayer playsinline muted loop autoPlay>
         <source src={props.movie} />
       </ReactPlayer>
     </Wrapper>
