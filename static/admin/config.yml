@@ -61,7 +61,7 @@ collections:
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
-              - { label: "Imagen de portafolio", name: image, widget: image }
+              - { label: "Imagen de portafolio", name: image, widget: image, required: false }
               - label: Clientes
                 name: customers
                 widget: list
@@ -100,7 +100,7 @@ collections:
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
-              - { label: "Imagen de portafolio", name: image, widget: image }
+              - { label: "Imagen de portafolio", name: image, widget: image, required: false }
               - label: Clientes
                 name: customers
                 widget: list
