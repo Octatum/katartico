@@ -37,6 +37,8 @@ const ContentLayout = styled('div')`
   ${device.laptop} {
     padding: 2rem 5rem;
   }
+
+  max-width: 1984px;
 `;
 
 const BackButton = styled(LocalizedLink)`
@@ -113,7 +115,7 @@ const PhotoGrid = styled.div`
   width: 100%;
   margin: 1em 0;
   grid-template-columns: 1fr;
-  grid-auto-rows: 25rem;
+  grid-auto-rows: minmax(20rem, max-content);
   grid-auto-flow: row dense;
   grid-gap: 1rem;
 
