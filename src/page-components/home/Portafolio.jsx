@@ -124,7 +124,7 @@ const Portafolio = props => {
           </GridItem>
         ))}
       </LogoGrid>
-      <BigPicture src={image.publicURL} />
+      {image.length && image.publicURL && <BigPicture src={image.publicURL} />}
     </Section>
   );
 };
