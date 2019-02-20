@@ -202,7 +202,7 @@ function ProjectTemplate(props) {
             ))}
           </PhotoGrid>
         </ContentLayout>
-        <BackButton to="/portafolio">
+        <BackButton to="/portafolio" content={pageIsInEnglish ? 'Back' : 'Regresar'}>
           <Apostrophe src={apostropheImg} />
         </BackButton>
       </Container>
