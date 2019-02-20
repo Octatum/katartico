@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { withCookies } from 'react-cookie';
-import Swipe from 'react-easy-swipe';
 
 import { device } from '../../utilities/device';
 import { Title, Arrow } from './assets/SVGs';
 import { Apostrophe } from '../../components/assets/ApostropheComp';
+import { useSessionStorage } from 'react-use';
 
 const Container = styled.div`
-  display: ${({ show }) => (show === 'true' ? 'grid' : 'none')};
+  display: ${({ show }) => (show ? 'grid' : 'none')};
   position: fixed;
   box-sizing: border-box;
   min-height: 30vh;
@@ -24,8 +23,10 @@ const Container = styled.div`
     'apostrofe'
     'conoce';
   transition: 1s ease-in-out all;
-  transform: ${({ scrolled }) =>
-    scrolled ? 'translateY(-120%)' : 'translateY(0)'};
+  transform: ${({ animate }) =>
+    animate ? 'translateY(-120%)' : 'translateY(0)'};
+
+  overflow: hidden;
 
   ${device.tablet} {
     grid-template: 4fr 1fr / 1fr 1fr;
@@ -94,55 +95,53 @@ const MeetUsContainer = styled(Cell)`
   }
 `;
 
-class Landing extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      show: props.cookies.get('showLanding') || 'true',
-    };
-  }
-
-  state = {
-    landingScrolled: false,
-  };
-
-  componentDidMount() {
-    const { cookies } = this.props;
-    cookies.set('showLanding', 'false', { path: '/' });
-  }
-
-  handleScroll = () => {
-    this.setState(() => {
-      return {
-        landingScrolled: true,
-      };
-    });
-  };
-
-  render() {
-    return (
-      <Swipe onSwipeUp={this.handleScroll}>
-        <Container
-          onClick={this.handleScroll}
-          scrolled={this.state.landingScrolled}
-          onWheel={this.handleScroll}
-          show={this.state.show}
-          {...this.props}
-        >
-          <TitleContainer>
-            <Title />
-          </TitleContainer>
-          <ApostropheContainer>
-            <Apostrophe />
-          </ApostropheContainer>
-          <MeetUsContainer>
-            <Arrow />
-          </MeetUsContainer>
-        </Container>
-      </Swipe>
-    );
-  }
+function noscroll() {
+  window.scrollTo(0, 0);
 }
 
-export default withCookies(Landing);
+function Landing(props) {
+  const [hideLanding, setHideLanding] = useSessionStorage(
+    'hideLanding',
+    'false'
+  );
+  const [animate, setAnimate] = useState(false);
+
+  const handleLandingClick = () => {
+    setAnimate(true);
+    setTimeout(() => {
+      setHideLanding('true');
+    }, 1000);
+  };
+
+  useEffect(() => {
+    if (typeof window === undefined) return;
+
+    if (hideLanding === 'false') {
+      window.addEventListener('scroll', noscroll);
+    } else {
+      window.removeEventListener('scroll', noscroll);
+    }
+  }, [hideLanding]);
+
+  return (
+    <Container
+      onClick={handleLandingClick}
+      show={hideLanding === 'false'}
+      animate={animate}
+      onScroll={noscroll}
+      {...props}
+    >
+      <TitleContainer>
+        <Title />
+      </TitleContainer>
+      <ApostropheContainer>
+        <Apostrophe />
+      </ApostropheContainer>
+      <MeetUsContainer>
+        <Arrow />
+      </MeetUsContainer>
+    </Container>
+  );
+}
+
+export default Landing;
