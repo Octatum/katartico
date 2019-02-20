@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
 import Section from '../../components/Section';
-import GatsbyImage from 'gatsby-image';
 
 const Header = styled.h2`
   position: relative;

@@ -48,13 +48,6 @@ const Apostrophes = styled.div`
   }
 `;
 
-const content = [
-  'Construcción de Marca',
-  'Campañas Publicitarias',
-  'Presencia Digital',
-  'Ejecuciones Creativas',
-];
-
 const Text = styled.p`
   position: absolute;
   top: 10%;

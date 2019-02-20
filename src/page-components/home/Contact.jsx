@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
@@ -158,53 +158,57 @@ function Contact(props) {
               actions.setSubmitting(false);
             }
           }}
-          render={({ isSubmitting, handleSubmit }) => (
-            <Form
-              onSubmit={handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              name={formName}
-            >
-              <Data>
-                <p hidden>
-                  <label>
-                    Don’t fill this out: <Field name="bot-field" />
-                  </label>
-                </p>
-                <LabelInput>
-                  <Label>{labels.name}</Label>
-                  <Input
-                    disabled={isSubmitting || messageSent}
-                    name="name"
-                    autoComplete="name"
-                    required
-                  />
-                </LabelInput>
-                <LabelInput>
-                  <Label>{labels.email}</Label>
-                  <Input
-                    disabled={isSubmitting || messageSent}
-                    type="email"
-                    name="email"
-                    autoComplete="email"
-                    required
-                  />
-                </LabelInput>
-                <LabelInput>
-                  <Label top>{labels.message}</Label>
-                  <TextArea
-                    disabled={isSubmitting || messageSent}
-                    name="message"
-                    component="textarea"
-                    required
-                  />
-                </LabelInput>
-              </Data>
-              <Button disabled={isSubmitting || messageSent} type="submit">
-                {labels.sendButton}
-              </Button>
-            </Form>
-          )}
+          render={({ isSubmitting, handleSubmit }) => {
+            const disabled = isSubmitting || messageSent;
+
+            return (
+              <Form
+                onSubmit={handleSubmit}
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                name={formName}
+              >
+                <Data>
+                  <p hidden>
+                    <label>
+                      Don’t fill this out: <Field name="bot-field" />
+                    </label>
+                  </p>
+                  <LabelInput>
+                    <Label>{labels.name}</Label>
+                    <Input
+                      disabled={disabled}
+                      name="name"
+                      autoComplete="name"
+                      required
+                    />
+                  </LabelInput>
+                  <LabelInput>
+                    <Label>{labels.email}</Label>
+                    <Input
+                      disabled={disabled}
+                      type="email"
+                      name="email"
+                      autoComplete="email"
+                      required
+                    />
+                  </LabelInput>
+                  <LabelInput>
+                    <Label top>{labels.message}</Label>
+                    <TextArea
+                      disabled={disabled}
+                      name="message"
+                      component="textarea"
+                      required
+                    />
+                  </LabelInput>
+                </Data>
+                <Button disabled={disabled} type="submit">
+                  {labels.sendButton}
+                </Button>
+              </Form>
+            )
+          }}
         />
         <ApostropheDiv>
           <AnimatedApostrophe />
