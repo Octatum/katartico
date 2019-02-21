@@ -3,7 +3,11 @@ type: project
 index: 9
 title: Premio Luis Elizondo
 banner: /assets/premioluiselizondo_-_0_portada_PLE-19.jpg
-highlightedImage: /assets/premioluiselizondo_-_1_foto_principal.png
+highlightedImage: /assets/fotoprincipal.jpg
+bodyEnglish: |-
+  # Premio Luis Elizondo
+
+  ## Graphic Design
 content:
   - height: '1'
     image: /assets/premioluiselizondo_-_3.png
