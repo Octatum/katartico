@@ -5,17 +5,20 @@ title: Fotografía creativa
 banner: /assets/fotocreativa_-_0_portada.jpg
 highlightedImage: /assets/fotocreativa_-_1_foto_principal.jpg
 bodyEnglish: >-
-  # Creative Photography 
+  # Creative photography
 
 
-  ## Photography and photo edition 
+  ## Photography and post production of images
 
 
-  Capture of photographies, where were created original and specific concepts
-  for every session. 
+  Set of photos, where original and specific concepts were created of every
+  photoshoot.
 
 
-  In colaboration with Sergio Vélez, Rebeca Cebello y Silvia Ortíz.
+  _Collaboration: Sergio Vélez, Rebeca Cabello,and Silvia Ortíz._
+
+
+  # __
 content:
   - height: '2'
     image: /assets/fotocreativa_-_2.jpg
@@ -42,7 +45,7 @@ content:
     type: image
     width: '3'
 ---
-# Fotografía creativa
+Fotografía creativa
 
 ## Fotografía y edición de imágenes
 
