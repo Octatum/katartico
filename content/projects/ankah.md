@@ -4,6 +4,17 @@ index: 2
 title: ANKAH
 banner: /assets/ankah_-_0_portada_ANKAH.jpg
 highlightedImage: /assets/ankah_-_1_foto_principal.png
+bodyEnglish: >-
+  # ANKAH
+
+
+  ## Branding
+
+
+  ANKAH is a company that seeks to unify construction services through an online
+  platform. We worked with them on the construction of a visual brand identity
+  that showcases to their users the company’s values: synergy, modernity,
+  security and hard work.
 content:
   - height: '2'
     image: /assets/ankahlogo.jpg
