@@ -4,6 +4,10 @@ index: 11
 title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
 highlightedImage: /assets/principal.jpg
+bodyEnglish: |-
+  # Viernes Azul
+
+  ## Branding, Social media, Graphic design, Photography and video
 content:
   - height: '1'
     image: /assets/1.2-4-.jpg
@@ -21,8 +25,8 @@ content:
     image: /assets/6.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: /assets/7.jpg
+  - height: '2'
+    image: /assets/banner.jpg
     type: image
     width: '1'
   - height: '2'
