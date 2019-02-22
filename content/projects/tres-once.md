@@ -4,31 +4,35 @@ index: 12
 title: Tres Once
 banner: /assets/to-portada.jpg
 highlightedImage: /assets/to-1.png
+bodyEnglish: |-
+  # Tres Once
+
+  ## Photography, graphic design and video
 content:
+  - height: '2'
+    image: /assets/tresonce1.jpg
+    type: image
+    width: '3'
   - height: '1'
+    image: /assets/tresonce3.jpg
     type: image
-    image: /assets/to-2.png
     width: '1'
-  - height: '2'
+  - height: '1'
+    image: /assets/tresonce2.jpg
     type: image
-    image: /assets/to-3.png
     width: '1'
-  - height: '2'
+  - height: '1'
+    image: /assets/tresonce4.jpg
     type: image
-    image: /assets/to-4.png
     width: '1'
-  - height: '2'
+  - height: '1'
+    image: /assets/tresonce5.jpg
     type: image
-    image: /assets/to-5.png
     width: '1'
-  - height: '2'
+  - height: '1'
+    image: /assets/tresonce6.jpg
     type: image
-    image: /assets/to-6.jpg
-    width: '3'
-  - height: '2'
-    type: image
-    image: /assets/to-1.png
-    width: '3'
+    width: '2'
 ---
 # Tres Once
 
