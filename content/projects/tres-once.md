@@ -9,7 +9,7 @@ bodyEnglish: |-
 
   ## Photography, graphic design and video
 content:
-  - height: '2'
+  - height: '1'
     image: /assets/tresonce1.jpg
     type: image
     width: '3'
@@ -25,14 +25,10 @@ content:
     image: /assets/tresonce4.jpg
     type: image
     width: '1'
-  - height: '1'
+  - height: '3'
     image: /assets/tresonce5.jpg
     type: image
-    width: '1'
-  - height: '1'
-    image: /assets/tresonce6.jpg
-    type: image
-    width: '2'
+    width: '3'
 ---
 # Tres Once
 
