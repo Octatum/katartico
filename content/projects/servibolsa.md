@@ -70,10 +70,10 @@ content:
     image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
     type: image
     width: '1'
-  - height: '2'
+  - height: '1'
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
     type: image
-    width: '3'
+    width: '1'
 ---
 # SERVIBOLSA
 
