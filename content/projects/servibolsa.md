@@ -4,58 +4,75 @@ index: 13
 title: SERVIBOLSA
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
+bodyEnglish: >-
+  # SERVIBOLSA
+
+
+  ## Catalog and Lifestyle photography
+
+
+  Servibolsa is a national leader in garbage and food bags in the market of
+  self-service in Mexico since 1981. They are present in Mexico, the United
+  States, Colombia, Jamaica, Panama, Costa Rica and more countries.
+
+
+  In order to market your products through Amazon, we made a session of catalog
+  and lifestyle photographs. These photographs are currently on the website:
+
+
+  ##
 content:
   - height: '2'
+    image: /assets/servibolsa1.jpg
     type: image
-    image: /assets/servibolsa_-_Copia_de_Cat_0001.jpg
     width: '3'
   - height: '2'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0003.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0004.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0005.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0006.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0007.jpg
+    type: image
     width: '1'
   - height: '2'
+    image: /assets/bolrol2.jpg
     type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc1_3.jpg
-    width: '3'
-  - height: '3'
+    width: '2'
+  - height: '2'
+    image: /assets/bolrol3.jpg
     type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc1_5.jpg
     width: '2'
   - height: '1'
-    type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_3.jpg
-    width: '1'
-  - height: '1'
-    type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_6.jpg
-    width: '1'
-  - height: '1'
-    type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
-    width: '1'
-  - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_1.jpg
-    width: '3'
-  - height: '2'
     type: image
+    width: '3'
+  - height: '1'
+    image: /assets/servibolsa_-_Copia_de_LS_Loc2_3.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/servibolsa_-_Copia_de_LS_Loc2_6.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
+    type: image
+    width: '1'
+  - height: '2'
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
+    type: image
     width: '3'
 ---
 # SERVIBOLSA
