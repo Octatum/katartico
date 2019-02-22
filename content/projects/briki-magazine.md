@@ -4,22 +4,37 @@ index: 15
 title: Briki Magazine
 banner: /assets/briki_-_0_portada.jpg
 highlightedImage: /assets/briki_-_2.jpg
+bodyEnglish: >-
+  # Briki Magazine
+
+
+  ## Graphic design, social media networks, and video
+
+
+  Briki Magazine is a Latin American digital magazine for Latin Americans. It
+  seeks to give voice to people from all over Latin America who contribute
+  something valuable to their community and with a focus on positive journalism.
+
+
+  We worked on the graphic design of their First Edition cover as well as the
+  magazine’s launching campaign, with video content for their social media
+  networks.
 content:
   - height: '2'
+    image: /assets/briki1.jpg
     type: image
-    image: /assets/briki_-_1_foto_grande.png
     width: '1'
   - height: '1'
-    type: image
     image: /assets/briki_-_3.png
+    type: image
     width: '2'
   - height: '1'
-    type: image
     image: /assets/briki_-_4.png
+    type: image
     width: '2'
   - height: '2'
-    type: image
     image: /assets/briki_-_2.jpg
+    type: image
     width: '3'
 ---
 # Briki Magazine
