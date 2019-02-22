@@ -9,11 +9,11 @@ bodyEnglish: |-
 
   ## Social Media
 content:
-  - height: '3'
+  - height: '2'
     image: /assets/pgs-post1.jpg
     type: image
     videoId: '0'
-    width: '2'
+    width: '3'
   - height: '2'
     image: /assets/pgs-post2.jpg
     type: image
