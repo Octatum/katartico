@@ -17,6 +17,10 @@ content:
     image: /assets/3-4-.jpg
     type: image
     width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: 'https://youtu.be/wY8AZYxXMzg'
+    width: '3'
 ---
 # México: El país del sí
 
