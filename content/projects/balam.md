@@ -18,10 +18,10 @@ bodyEnglish: >-
   We carried out the recording and editing of the videos for the introduction of
   the event and the speakers.
 content:
-  - height: '1'
-    image: /assets/balam_-_1_foto_grande.jpg
-    type: image
-    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: Ez7KvAVDgy8
+    width: '3'
 ---
 # BALAM
 
