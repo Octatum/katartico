@@ -1,19 +1,20 @@
 ---
 type: project
 index: 3
-title: SERVIBOLSA
+title: Bol Rol
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
 bodyEnglish: >-
-  # SERVIBOLSA
+  # Bol Rol
 
 
   ## Catalog and lifestyle photography
 
 
-  Servibolsa is a national leader in garbage and food bags in the market of
-  self-service in Mexico since 1981. They are present in Mexico, the United
-  States, Colombia, Jamaica, Panama, Costa Rica and more countries.
+  Bol Rol is a brand, part of  a national leader in garbage and food bags in the
+  market of self-service in Mexico called SERVIBOLSA. They are present in
+  Mexico, the United States, Colombia, Jamaica, Panama, Costa Rica and more
+  countries.
 
 
   In order to market your products through Amazon, we made a session of catalog
@@ -22,6 +23,11 @@ bodyEnglish: >-
 
   ##
 content:
+  - height: '2'
+    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-17.05.55.png
+    type: image
+    videoId: '0'
+    width: '3'
   - height: '1'
     image: /assets/servibolsa1.jpg
     type: image
@@ -85,10 +91,10 @@ content:
     videoId: '0'
     width: '1'
 ---
-# SERVIBOLSA
+# Bol Rol
 
 ## Fotografía de catálogo y lifestyle
 
-Servibolsa es una empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México desde 1981. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
+Bol Rol es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
 
 Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle. Estas fotografías se encuentran actualmente en el sitio web:
