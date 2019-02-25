@@ -79,6 +79,11 @@ content:
     type: image
     videoId: '0'
     width: '1'
+  - height: '3'
+    image: /assets/iphonebolrol2.jpg
+    type: image
+    videoId: '0'
+    width: '1'
 ---
 # SERVIBOLSA
 
