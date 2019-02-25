@@ -19,10 +19,10 @@ bodyEnglish: >-
   A video was developed in order to increase the number of donors and support
   for the cause.
 content:
-  - height: '1'
-    image: /assets/provay_-_1_foto_principal.png
-    type: image
-    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: jkTerrSpJlw
+    width: '3'
 ---
 # PROVAY
 
