@@ -87,7 +87,6 @@ const PortfolioView = ({
   },
 }) => {
   const projects = edges.map(({ node }) => ({ ...node }));
-  console.log(projects);
 
   return (
     <Layout>

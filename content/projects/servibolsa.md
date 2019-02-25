@@ -67,10 +67,6 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: ''
-    type: image
-    width: '1'
-  - height: '1'
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
     type: image
     width: '1'

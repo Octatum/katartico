@@ -8,7 +8,6 @@ function LocalizedLink(props) {
   const { pathname } = location;
 
   const nextLocation = stripPrefix(to);
-  console.log(nextLocation);
   const routePrefix = hasLanguagePrefix(pathname) ? '/en' : '';
 
   return (
