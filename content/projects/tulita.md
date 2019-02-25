@@ -1,6 +1,6 @@
 ---
 type: project
-index: 20
+index: 9
 title: Tulita
 banner: /assets/tulita-logo-byn.jpg
 highlightedImage: /assets/tulita-logo.jpg
