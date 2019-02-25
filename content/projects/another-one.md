@@ -80,8 +80,12 @@ content:
 
 ## Diseño gráfico y redes sociales
 
-Biofase produce bioplástico a base de la semilla del aguacate.
+Biofase cuenta con tecnología única en el mundo para producir bioplástico a base de la semilla del aguacate. Desarrollan desde resina y materia prima, hasta productos desechables como popotes, cubiertos y envases biodegradables.
 
-Desarrollamos contenido realizando conceptualización, diseño gráfico y administración de sus redes sociales.
+Desarrollamos contenido visual realizando conceptualización y diseño gráfico para sus redes sociales, así como la administración de las mismas.
+
+
+
+
 
 ##
