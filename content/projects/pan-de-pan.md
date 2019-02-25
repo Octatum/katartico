@@ -35,12 +35,12 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/pdp-pantone-7.jpg
+    image: /assets/pdpa-pantone-3.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/pdpa-pantone-3.jpg
+    image: /assets/pdp-pantone-7.jpg
     type: image
     videoId: '0'
     width: '1'
