@@ -11,7 +11,7 @@ bodyEnglish: >-
   ## Photography and post production of images
 
 
-  Set of photos, where original and specific concepts were created of every
+  Set of photos, where original and specific concepts were created for every
   photoshoot.
 
 
