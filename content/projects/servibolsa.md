@@ -1,6 +1,6 @@
 ---
 type: project
-index: 13
+index: 3
 title: SERVIBOLSA
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
