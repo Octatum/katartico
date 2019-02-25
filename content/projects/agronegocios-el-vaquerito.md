@@ -40,7 +40,7 @@ content:
     videoId: '0'
     width: '2'
   - height: '2'
-    image: /assets/vaquerito-7.jpg
+    image: /assets/vaquerito-7.1.jpg
     type: image
     videoId: '0'
     width: '3'

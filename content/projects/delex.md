@@ -12,10 +12,10 @@ bodyEnglish: >-
 
 
   Delex was a project created for student purposes by a young entrepreneur. The
-  project helps small businesses on the optimization of their web pages with
-  various tools and services. This video was used in the pitch to win a
-  scholarship and we wanted to represent the company in a very simple and funny
-  way, so that everyone could identify and understand more about the project.
+  project´s objective aims to help small businesses optimize their websites with
+  various tools and services. The video created by Katartico was used in the
+  pitch to win a scholarship, we sought to represent the company in a simple and
+  funny way that was understandable for anyone that came across it.
 content:
   - height: '2'
     type: youtube-video

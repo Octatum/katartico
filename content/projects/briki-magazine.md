@@ -13,7 +13,8 @@ bodyEnglish: >-
 
   Briki Magazine is a Latin American digital magazine for Latin Americans. It
   seeks to give voice to people from all over Latin America who contribute
-  something valuable to their community and with a focus on positive journalism.
+  something valuable to their community with the objective of promoting positive
+  journalism.
 
 
   We worked on the graphic design of their First Edition cover as well as the
