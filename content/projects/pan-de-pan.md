@@ -1,13 +1,13 @@
 ---
 type: project
-index: 24
+index: 2
 title: 'Pan de Pan '
 banner: /assets/pdp-blusas-11.jpg
 highlightedImage: /assets/pdp-blusas-11.jpg
 bodyEnglish: |-
   # Pan de Pan
 
-  ## Graphic Design
+  ## Branding and graphic design
 content:
   - height: '1'
     image: /assets/pdp-versiones-1.jpg
@@ -77,4 +77,4 @@ content:
 ---
 # Pan de Pan
 
-## Diseño Gráfico
+## Branding y diseño gráfico
