@@ -5,6 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import ChildViewport from '../ChildViewport';
 import { CookiesProvider } from 'react-cookie';
 
+import '../assets/font-awesome-all.css';
+
 import './index.css';
 import HomeViewport from '../../page-components/home/HomeViewport';
 
@@ -26,12 +28,6 @@ const Layout = ({ children, path }) => (
           ]}
         >
           <html lang="en" />
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossOrigin="anonymous"
-          />
         </Helmet>
         <ChildViewport path={path} children={children} />
       </React.Fragment>
@@ -58,12 +54,6 @@ export const HomeLayout = ({ children, path }) => (
           ]}
         >
           <html lang="en" />
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-            crossOrigin="anonymous"
-          />
         </Helmet>
         <HomeViewport path={path} children={children} />
       </React.Fragment>

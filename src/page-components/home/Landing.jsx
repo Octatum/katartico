@@ -22,7 +22,7 @@ const Container = styled.div`
     'creamos'
     'apostrofe'
     'conoce';
-  transition: 1s cubic-bezier(.5,-0.26,.5,1.26) all;
+  transition: 1s cubic-bezier(0.5, -0.26, 0.5, 1.26) all;
   transform: ${({ animate }) =>
     animate ? 'translateY(-120%)' : 'translateY(0)'};
 

@@ -5,7 +5,7 @@ intro:
   video: "/assets/katarticonew.mp4"
 aboutUs:
   title: About us
-  slogan: "Your slogan goes here."
+  slogan: "How do we create katarticos moments?"
   animation: ""
 homeServices:
   title: Services

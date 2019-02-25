@@ -5,7 +5,7 @@ intro:
   video: "/assets/katarticonew.es.mp4"
 aboutUs:
   title: Nosotros
-  slogan: "El eslogan va aquí."
+  slogan: "¿Cómo creamos momentos katarticos?."
   animation: ""
 homeServices:
   title: Servicios

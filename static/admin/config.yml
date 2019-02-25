@@ -49,7 +49,7 @@ collections:
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
               - { label: "Eslogan", name: "slogan", widget: "text" }
-              - { label: "Animación en formato json", name: animation, widget: file }
+              - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
             name: "services"
             widget: object
@@ -88,7 +88,7 @@ collections:
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
               - { label: "Eslogan", name: "slogan", widget: "text" }
-              - { label: "Animación en formato json", name: animation, widget: file }
+              - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
             name: "services"
             widget: object

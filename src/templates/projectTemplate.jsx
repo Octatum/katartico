@@ -12,7 +12,7 @@ import apostropheImg from '../components/assets/apostrophe.svg';
 import PortfolioItem from '../components/Portfolio/PortfolioItem';
 import GatsbyImage from 'gatsby-image';
 import LocalizedLink from '../components/LocalizedLink';
-import { getLanguage } from '../utilities/functions';
+import { getCurrentLanguage } from '../utilities/functions';
 
 const Container = styled.div`
   display: flex;
@@ -149,7 +149,7 @@ const HighlightedImage = styled(GatsbyImage)`
 function ProjectTemplate(props) {
   const { rawMarkdownBody, frontmatter } = props.data.markdownRemark;
   const { bodyEnglish } = frontmatter;
-  const pageIsInEnglish = getLanguage() === 'en';
+  const pageIsInEnglish = getCurrentLanguage() === 'en';
 
   const [open, setOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -202,7 +202,10 @@ function ProjectTemplate(props) {
             ))}
           </PhotoGrid>
         </ContentLayout>
-        <BackButton to="/portafolio" content={pageIsInEnglish ? 'Back' : 'Regresar'}>
+        <BackButton
+          to="/portafolio"
+          content={pageIsInEnglish ? 'Back' : 'Regresar'}
+        >
           <Apostrophe src={apostropheImg} />
         </BackButton>
       </Container>

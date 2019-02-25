@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
+import { Link as GatsbyLink } from 'gatsby';
 
 import BurgerMenu from './BurgerMenu';
 import { breakpoints, device } from '../../utilities/device';
 import miniLogoImg from '../assets/iconoKatartico.svg';
 import LocalizedLink from '../LocalizedLink';
+import {
+  changeLanguageForCurrentLocation,
+  getCurrentLanguage,
+} from '../../utilities/functions';
 
 const Container = styled.nav`
   position: -webkit-sticky;
@@ -227,6 +232,9 @@ const Overlay = styled('div')`
 function Presentation(props) {
   const { links } = props;
   const [open, setOpen] = useState(false);
+  const newLocation = changeLanguageForCurrentLocation();
+  const currentLanguage = getCurrentLanguage();
+
   const closeNavbar = () => {
     setOpen(false);
   };
@@ -312,6 +320,9 @@ function Presentation(props) {
           </FlexLogoSection>
           <LinkList mini={props.minimize}>{navbarLinks}</LinkList>
           <SocialMedia mini={props.minimize}>{socialMediaLinks}</SocialMedia>
+          <Link to={newLocation} as={GatsbyLink}>
+            {currentLanguage === '' ? 'EN' : 'ES'}
+          </Link>
         </MediaQuery>
       </FlexBox>
     </Container>
