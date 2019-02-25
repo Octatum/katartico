@@ -74,6 +74,11 @@ content:
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
     type: image
     width: '1'
+  - height: '3'
+    image: /assets/iphonebolrol.jpg
+    type: image
+    videoId: '0'
+    width: '1'
 ---
 # SERVIBOLSA
 
