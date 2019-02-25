@@ -9,9 +9,18 @@ bodyEnglish: |-
 
   ## Video
 content:
-  - height: '1'
+  - height: '2'
+    image: /assets/prg1.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/prg2.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/prg3.jpg
+    type: image
+    width: '2'
 ---
 # Premio Rómulo Garza
 
