@@ -60,6 +60,10 @@ content:
     videoId: '0'
     width: '1'
 ---
-# Agronegocios El Vaquerito 
+# Agronegocios El Vaquerito
 
 ## Redes Sociales
+
+Agronegocios El Vaquerito es un sitio web encargado de conectar productores con comercializadores del sector agropecuario. Facilitan las transacciones de compra-venta en línea de productos, servicios, maquinaria, terrenos, entre otros bienes agropecuarios, en la zona del noroeste del país.
+
+Como lanzamiento de la plataforma, generamos una campaña para redes sociales para comenzar a posicionar la marca en la mente de los consumidores meta.
