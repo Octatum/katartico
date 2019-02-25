@@ -11,14 +11,11 @@ bodyEnglish: >-
   ## Photography and post production of images
 
 
-  Set of photos, where original and specific concepts were created of every
+  Set of photos, where original and specific concepts were created for every
   photoshoot.
 
 
-  _Collaboration: Sergio Vélez, Rebeca Cabello,and Silvia Ortíz._
-
-
-  # __
+  _Collaboration: Sergio Vélez, Rebeca Cabello, and Silvia Ortíz._
 content:
   - height: '2'
     image: /assets/fotocreativa_-_2.jpg

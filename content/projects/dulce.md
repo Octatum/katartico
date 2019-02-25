@@ -1,13 +1,19 @@
 ---
 type: project
-index: 12
+index: 22
 title: Dulce
 banner: /assets/dulce_-_0_portada.jpg
 highlightedImage: /assets/dulce_-_1_foto_principal.JPG
-bodyEnglish: |-
+bodyEnglish: >-
   # Dulce
 
+
   ## Photography and post production of images
+
+
+  Dulce is a local bakery shop that makes a mexican pastry called _tortugón_ on
+  Christmas season. We made a photoshoot with their products for their 2017
+  Christmas Catalog.
 content:
   - height: '2'
     image: /assets/dulce_-_8.JPG

@@ -1,13 +1,30 @@
 ---
 type: project
-index: 11
+index: 17
 title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
 highlightedImage: /assets/principal.jpg
-bodyEnglish: |-
+bodyEnglish: >-
   # Viernes Azul
 
-  ## Branding, Social media, Graphic design, Photography and video
+
+  ## Branding, social media, graphic design, photography, and video
+
+
+  Viernes Azul is a Tecnológico de Monterrey’s event that aims to promote a
+  sense of belonging among the students of the Monterrey Campus, encouraging
+  them to own the university’s blue color.
+
+
+  We created the brand from scratch, designed the logo, created the brand
+  culture, positioned the brand through social media networks and events on
+  campus, made graphic design and content for social media networks, promotional
+  videos and media coverage for events. 
+
+
+  Collaboration: Paulina Zambrano, Rebeca Valencia, Laura Barbosa, Ana Sofía
+  González, Ingrid Rivera, Diana Lagunes, Lucas Salinas, and Ana Victoria
+  Chávez.
 content:
   - height: '1'
     image: /assets/1.2-4-.jpg

@@ -1,6 +1,6 @@
 ---
 type: project
-index: 13
+index: 3
 title: SERVIBOLSA
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
@@ -8,7 +8,7 @@ bodyEnglish: >-
   # SERVIBOLSA
 
 
-  ## Catalog and Lifestyle photography
+  ## Catalog and lifestyle photography
 
 
   Servibolsa is a national leader in garbage and food bags in the market of
@@ -22,10 +22,10 @@ bodyEnglish: >-
 
   ##
 content:
-  - height: '2'
+  - height: '1'
     image: /assets/servibolsa1.jpg
     type: image
-    width: '3'
+    width: '2'
   - height: '2'
     image: /assets/servibolsa_-_Copia_de_Cat_0003.jpg
     type: image
@@ -67,7 +67,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
+    image: ''
     type: image
     width: '1'
   - height: '1'

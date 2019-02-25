@@ -1,6 +1,6 @@
 ---
 type: project
-index: 20
+index: 9
 title: Tulita
 banner: /assets/tulita-logo-byn.jpg
 highlightedImage: /assets/tulita-logo.jpg
@@ -71,4 +71,6 @@ content:
 
 ## Branding
 
-Tulita es una empresa de mujeres mexicanas y emprendedoras que hace aderezos orgánicos con causa. Desarrollamos su imagen buscando transmitir la importancia de ayudar a los demás, las mujeres trabajadoras y el sentimiento de pertenencia a México y su cultura.
+Tulita es una empresa de mujeres mexicanas que se dedican a la elaboración y comercialización de aderezos orgánicos con causa. 
+
+Desarrollamos su imagen corporativa buscando transmitir los conceptos de hecho por mujeres mexicanas, la importancia de ayudar a los demás y el sentimiento de pertenencia a México y su cultura.

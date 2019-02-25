@@ -1,14 +1,26 @@
 ---
 type: project
-index: 18
+index: 12
 title: DELEX
 banner: /assets/delex-0.jpg
 highlightedImage: /assets/delex-1-foto-principal.png
+bodyEnglish: >-
+  # DELEX
+
+
+  ## Video
+
+
+  Delex was a project created for student purposes by a young entrepreneur. The
+  project helps small businesses on the optimization of their web pages with
+  various tools and services. This video was used in the pitch to win a
+  scholarship and we wanted to represent the company in a very simple and funny
+  way, so that everyone could identify and understand more about the project.
 content:
-  - height: '1'
-    type: image
-    image: /assets/delex_-_1_foto_principal.png
-    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: uswcE3WOUfc
+    width: '3'
 ---
 # DELEX
 

@@ -1,13 +1,13 @@
 ---
 type: project
-index: 24
+index: 2
 title: 'Pan de Pan '
 banner: /assets/pdp-blusas-11.jpg
 highlightedImage: /assets/pdp-blusas-11.jpg
 bodyEnglish: |-
   # Pan de Pan
 
-  ## Graphic Design
+  ## Branding and graphic design
 content:
   - height: '1'
     image: /assets/pdp-versiones-1.jpg
@@ -31,6 +31,11 @@ content:
     width: '1'
   - height: '1'
     image: /assets/pdp-pantone-6.jpg
+    type: image
+    videoId: '0'
+    width: '1'
+  - height: '1'
+    image: /assets/pdpa-pantone-3.jpg
     type: image
     videoId: '0'
     width: '1'
@@ -72,4 +77,8 @@ content:
 ---
 # Pan de Pan
 
-## Diseño Gráfico
+## Branding y diseño gráfico
+
+Pan de pan es un taller dedicado a la elaboración de pan artesanal para venta al mayoreo en restaurantes y establecimientos de giro gastronómico.
+
+Desarrollamos la identidad visual de la marca, con su línea de diseño y propuestas de artículos promocionales, con el fin de unificar su imagen y posicionarla en la Zona Metropolitana de Monterrey. Además llevamos a cabo una sesión fotográfica de sus productos estrella y elaboramos un catálogo de productos para sumarlo a sus esfuerzos de venta.

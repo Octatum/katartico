@@ -1,14 +1,28 @@
 ---
 type: project
-index: 19
+index: 24
 title: PROVAY
 banner: /assets/0-portada-provay.jpg
 highlightedImage: /assets/provay-1-foto-principal.png
+bodyEnglish: >-
+  # PROVAY
+
+
+  ## Recording and post production of video
+
+
+  The Comité de Promoción Social del Valle del Yaqui A.C. is an association that
+  aims to promote educational, scientific and artistic activities that pretends
+  to raise the quality of life of Sonora’s citizens.
+
+
+  A video was developed in order to increase the number of donors and support
+  for the cause.
 content:
-  - height: '1'
-    type: image
-    image: /assets/provay_-_1_foto_principal.png
-    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: jkTerrSpJlw
+    width: '3'
 ---
 # PROVAY
 
