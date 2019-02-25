@@ -1,9 +1,22 @@
 ---
 type: project
-index: 10
+index: 16
 title: El mundo escribe
 banner: /assets/elmundoescribe_-_0_portada_eme.jpg
 highlightedImage: /assets/elmundoescribe_-_1_foto_principal.jpg
+bodyEnglish: >-
+  # Fundación El mundo escribe
+
+
+  ## Webpage
+
+
+  _Fundación El mundo escribe_ promotes writing as a creative activity from
+  childhood and forever.
+
+
+  We are currently developing their website to attract donors and for people to
+  get to know the Foundation’s activities.
 content:
   - height: '2'
     image: /assets/2-2-.jpg
@@ -22,7 +35,7 @@ content:
     type: image
     width: '3'
 ---
-# El mundo escribe
+# Fundación El mundo escribe
 
 ## Página web
 
