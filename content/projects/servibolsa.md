@@ -97,4 +97,4 @@ content:
 
 Bol Rol es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
 
-Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle. Estas fotografías se encuentran actualmente en el sitio web:
+Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle.
