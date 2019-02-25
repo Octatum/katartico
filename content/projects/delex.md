@@ -17,10 +17,10 @@ bodyEnglish: >-
   scholarship and we wanted to represent the company in a very simple and funny
   way, so that everyone could identify and understand more about the project.
 content:
-  - height: '1'
-    image: /assets/delex_-_1_foto_principal.png
-    type: image
-    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: uswcE3WOUfc
+    width: '3'
 ---
 # DELEX
 
