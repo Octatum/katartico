@@ -22,10 +22,10 @@ bodyEnglish: >-
 
   ##
 content:
-  - height: '2'
+  - height: '1'
     image: /assets/servibolsa1.jpg
     type: image
-    width: '3'
+    width: '2'
   - height: '2'
     image: /assets/servibolsa_-_Copia_de_Cat_0003.jpg
     type: image
