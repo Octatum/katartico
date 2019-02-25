@@ -8,7 +8,7 @@ bodyEnglish: >-
   # SERVIBOLSA
 
 
-  ## Catalog and Lifestyle photography
+  ## Catalog and lifestyle photography
 
 
   Servibolsa is a national leader in garbage and food bags in the market of
@@ -67,7 +67,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
+    image: ''
     type: image
     width: '1'
   - height: '1'
