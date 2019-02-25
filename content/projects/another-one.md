@@ -12,8 +12,10 @@ bodyEnglish: >-
 
 
   Biofase is a company that markets bioplastic products from the avocado seed.
-  We developed content, photography, and graphic design for social media
-  networks.
+  They manufacture resin and raw materials, also they fabricate straws,
+  bioplastic ware and biodegradable packaging.  Katartico developed content,
+  photography, and graphic design for social media networks. Additionally we
+  managed their social media networks.
 content:
   - height: '3'
     image: /assets/biofase1.jpg
