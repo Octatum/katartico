@@ -15,8 +15,8 @@ bodyEnglish: >-
   childhood and forever.
 
 
-  We are currently developing their website to attract donors and for people to
-  get to know the Foundation’s activities.
+  We are currently developing their website to attract donors and give further
+  exposure to the Foundation’s activities.
 content:
   - height: '2'
     image: /assets/2-2-.jpg
