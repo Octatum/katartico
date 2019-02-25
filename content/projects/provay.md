@@ -12,8 +12,8 @@ bodyEnglish: >-
 
 
   The Comité de Promoción Social del Valle del Yaqui A.C. is an association that
-  aims to promote educational, scientific and artistic activities that pretends
-  to raise the quality of life of Sonora’s citizens.
+  aims to promote educational, scientific and artistic activities with the
+  objetive of raising the quality of life of Sonora’s citizens.
 
 
   A video was developed in order to increase the number of donors and support
