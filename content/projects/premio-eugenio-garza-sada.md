@@ -1,6 +1,6 @@
 ---
 type: project
-index: 22
+index: 10
 title: Premio Eugenio Garza Sada
 banner: /assets/pgs-banner.jpg
 highlightedImage: /assets/pgs-imagen.jpg
