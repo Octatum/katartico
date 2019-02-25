@@ -11,7 +11,7 @@ bodyEnglish: >-
   ## Recording and video post production
 
 
-  BALAM is the meeting point of the Latin American Entrepreneurship Network,
+  BALAM is the meeting point for the Latin American Entrepreneurship Network,
   where the best entrepreneurship platforms share their practices and tools.
 
 
