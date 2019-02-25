@@ -34,6 +34,6 @@ content:
 
 ## **Diseño gráfico**
 
-Premios Institucionales es la división del Tecnológico de Monterrey encargada de reconocer a aquellas personas comprometidas con el desarrollo de su comunidad. Aquellos que generan programas sustentables y suman valor a su entorno. Cada año se lleva a cabo la entrega del Premio Luis Elizondo que reconoce a personas y asociaciones estudiantiles de todo el país que cumplen con estos requisitos. Premian las siguientes categorías: Científico-Tecnológico, Humanitario y Humanitario para Agrupaciones Estudiantiles.
+El Premio Luis Elizondo del Tecnológico de Monterrey reconoce a personas, estudiantes, asociaciones e instituciones con programas sociales enfocados en apoyar a un grupo vulnerable de nuestra sociedad mexicana. Su labor humanitaria, filantrópica y generosa merece ser premiada.
 
-Llevamos a cabo la imagen de la convocatoria 2019, así como la escenografía del evento y publicaciones para redes sociales.
+Desarrollamos la imagen de la convocatoria para la edición 2019, así como todos los gráficos necesarios para difundir la información en diferentes medios. Además desarrollamos una estrategia digital para sus redes sociales y administramos las publicaciones para incentivar a las personas a inscribirse y postularse como candidato(s).
