@@ -1,6 +1,6 @@
 ---
 type: project
-index: 6
+index: 14
 title: Bissú
 banner: /assets/bissu_-_0_portada_BISSU.jpg
 highlightedImage: /assets/1-foto-principal-1-.jpg
