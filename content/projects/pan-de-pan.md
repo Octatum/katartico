@@ -2,8 +2,8 @@
 type: project
 index: 2
 title: 'Pan de Pan '
-banner: /assets/pdp-blusas-11.jpg
-highlightedImage: /assets/pdp-blusas-11.jpg
+banner: /assets/pdp-banner.jpg
+highlightedImage: /assets/pdp-imagen.jpg
 bodyEnglish: |-
   # Pan de Pan
 
@@ -74,6 +74,10 @@ content:
     type: image
     videoId: '0'
     width: '1'
+  - height: '2'
+    image: /assets/pdp-catalogo.jpg
+    type: image
+    width: '3'
 ---
 # Pan de Pan
 
