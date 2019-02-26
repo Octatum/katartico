@@ -1,6 +1,6 @@
 ---
 type: project
-index: 16
+index: 20
 title: El mundo escribe
 banner: /assets/elmundoescribe_-_0_portada_eme.jpg
 highlightedImage: /assets/elmundoescribe_-_1_foto_principal.jpg
