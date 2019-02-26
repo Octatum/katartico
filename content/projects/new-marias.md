@@ -1,6 +1,6 @@
 ---
 type: project
-index: 12
+index: 6
 title: New Marias
 banner: /assets/nm-coverbyn.jpg
 highlightedImage: /assets/nm-cover.jpg
