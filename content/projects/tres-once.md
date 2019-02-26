@@ -16,8 +16,8 @@ bodyEnglish: >-
   social media profiles. The campaign included a photoshoot, graphic design,
   graphic animations, and content for their social media networks.
 content:
-  - height: '1'
-    image: /assets/tresonce1.jpg
+  - height: '3'
+    image: /assets/tresonce5.jpg
     type: image
     width: '3'
   - height: '1'
@@ -32,9 +32,13 @@ content:
     image: /assets/tresonce4.jpg
     type: image
     width: '1'
-  - height: '3'
-    image: /assets/tresonce5.jpg
-    type: image
+  - height: '2'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/EAaj24qXLl0" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
     width: '3'
 ---
 # Tres Once
