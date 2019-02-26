@@ -1,6 +1,6 @@
 ---
 type: project
-index: 25
+index: 3
 title: Premio Rómulo Garza
 banner: /assets/prg-02.jpg
 highlightedImage: /assets/prg-02.png
@@ -23,19 +23,19 @@ content:
     width: '2'
   - height: '2'
     type: youtube-video
-    videoId: '7BXDV4CabGM'
+    videoId: 7BXDV4CabGM
     width: '3'
   - height: '1'
     type: youtube-video
-    videoId: 'N01JgTFkBic'
+    videoId: N01JgTFkBic
     width: '1'
   - height: '1'
     type: youtube-video
-    videoId: 'Ulcnp9JknyM'
+    videoId: Ulcnp9JknyM
     width: '1'
   - height: '1'
     type: youtube-video
-    videoId: 'OoazwxUHSkM'
+    videoId: OoazwxUHSkM
     width: '1'
 ---
 # Premio Rómulo Garza
