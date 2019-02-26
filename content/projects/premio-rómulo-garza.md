@@ -21,6 +21,22 @@ content:
     image: /assets/prg3.jpg
     type: image
     width: '2'
+  - height: '2'
+    type: youtube-video
+    videoId: 'https://youtu.be/7BXDV4CabGM'
+    width: '3'
+  - height: '1'
+    type: youtube-video
+    videoId: 'https://youtu.be/N01JgTFkBic'
+    width: '1'
+  - height: '1'
+    type: youtube-video
+    videoId: 'https://youtu.be/Ulcnp9JknyM'
+    width: '1'
+  - height: '1'
+    type: youtube-video
+    videoId: 'https://youtu.be/OoazwxUHSkM'
+    width: '1'
 ---
 # Premio Rómulo Garza
 
