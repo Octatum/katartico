@@ -22,6 +22,7 @@ bodyEnglish: >-
 content:
   - height: '1'
     type: image
+    image: '/assets/ecoa_-_1.jpg'
     width: '1'
 ---
 # ECOA

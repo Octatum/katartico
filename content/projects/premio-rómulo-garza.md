@@ -23,19 +23,19 @@ content:
     width: '2'
   - height: '2'
     type: youtube-video
-    videoId: 'https://youtu.be/7BXDV4CabGM'
+    videoId: '7BXDV4CabGM'
     width: '3'
   - height: '1'
     type: youtube-video
-    videoId: 'https://youtu.be/N01JgTFkBic'
+    videoId: 'N01JgTFkBic'
     width: '1'
   - height: '1'
     type: youtube-video
-    videoId: 'https://youtu.be/Ulcnp9JknyM'
+    videoId: 'Ulcnp9JknyM'
     width: '1'
   - height: '1'
     type: youtube-video
-    videoId: 'https://youtu.be/OoazwxUHSkM'
+    videoId: 'OoazwxUHSkM'
     width: '1'
 ---
 # Premio Rómulo Garza
