@@ -26,6 +26,10 @@ content:
     videoId: '0'
     width: '1'
   - height: '2'
+    image: /assets/costalitos8.jpg
+    type: image
+    width: '2'
+  - height: '2'
     image: /assets/iphonecostalitos2.jpg
     type: image
     videoId: '0'
@@ -35,6 +39,30 @@ content:
     type: image
     videoId: '0'
     width: '3'
+  - height: '2'
+    image: /assets/costalitos1.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/costalitos2.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/costalitos3.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/costalitos4.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/costalitos5.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/costalitos7.jpg
+    type: image
+    width: '1'
 ---
 # Costalitos
 
