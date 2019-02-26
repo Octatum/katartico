@@ -32,7 +32,7 @@ collections:
     name: "pages"
     files:
       - label: "Página de inicio (inglés)"
-        name: "homePage"
+        name: "homePageEn"
         file: "content/pages/index.en.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
@@ -71,7 +71,7 @@ collections:
                   - { label: Url, name: url }
                   - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
       - label: "Página de inicio (español)"
-        name: "homePage"
+        name: "homePageEs"
         file: "content/pages/index.es.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
@@ -110,7 +110,7 @@ collections:
                   - { label: Url, name: url }
                   - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
       - label: "Página de Nosotros (Español)"
-        name: "about"
+        name: "aboutEs"
         file: "content/pages/about.es.md"        
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
@@ -131,7 +131,7 @@ collections:
                   - { label: Fotografía, name: photo, widget: image }
                   - { label: "Descripción de persona", name: "body", widget: "markdown" }
       - label: "Página de Nosotros (Inglés)"
-        name: "about"
+        name: "aboutEn"
         file: "content/pages/about.en.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-about" }
@@ -153,7 +153,7 @@ collections:
                   - { label: "Descripción de persona", name: "body", widget: "markdown" }
       
       - label: "Página de Servicios (Inglés)"
-        name: "services"
+        name: "servicesEn"
         file: "content/pages/services.en.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-services" }
@@ -171,7 +171,7 @@ collections:
                   - { label: Banner, name: banner, widget: image }
                   - { label: "Servicios (separados por coma)", name: "services", widget: "services" }
       - label: "Página de Servicios (Español)"
-        name: "services"
+        name: "servicesEs"
         file: "content/pages/services.es.md"
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-services" }
