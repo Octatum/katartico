@@ -4,10 +4,7 @@ index: 1
 title: 74 Aniversario
 banner: /assets/portada-74-aniversario-min.jpg
 highlightedImage: /assets/74aniversario_-1_foto_principal.png
-bodyEnglish: |-
-  # 74th Aniversary
-
-  ## Graphic design and video.
+bodyEnglish: "# 74th Aniversary\n\n## Graphic design and video.\n\nTec de Monterrey celebrates its anniversary every year with a magnificent event for all of Tec’s community. We had the opportunity to lead the Communications team of the event, in which we created the visual brand identity for the 2017 Anniversary. There were a total of 5,000 attendants of the Tec community at the event.\r\n\nIn collaboration with: Karina Tobías, Paulina Zambrano, Rebeca Valencia, Lucas Salinas, and Ana Victoria Chávez."
 content:
   - height: '2'
     image: /assets/74aniversario_-1_foto_principal.png
