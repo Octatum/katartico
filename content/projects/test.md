@@ -3,7 +3,7 @@ type: project
 index: 7
 title: Premio Luis Elizondo
 banner: /assets/premioluiselizondo_-_0_portada_PLE-19.jpg
-highlightedImage: /assets/fotoprincipal.jpg
+highlightedImage: /assets/biofase10.jpg
 bodyEnglish: |-
   # Premio Luis Elizondo
 
@@ -22,13 +22,21 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/2-3-.jpg
+    image: /assets/ple4.jpg
     type: image
-    width: '3'
+    width: '2'
   - height: '2'
-    image: /assets/1-foto-principal-3-.jpg
+    image: /assets/mockup1.jpg
     type: image
-    width: '3'
+    width: '1'
+  - height: '1'
+    image: /assets/ple5.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/ple1.jpg
+    type: image
+    width: '2'
 ---
 # Premio Luis Elizondo
 

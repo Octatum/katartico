@@ -13,8 +13,8 @@ bodyEnglish: >-
 
   One of the events in the ITESM's 74th Anniversary was _Parrillada entre
   Borregos_, an event that reunited students, professors, former students,
-  employees, and executives for a grill competition. We had the opportunity to
-  lead the Communications team that created and executed the visual identity
+  employees, and executives for a barbaque competition. We had the opportunity
+  to lead the Communications team that created and executed the visual identity
   concept.
 
 

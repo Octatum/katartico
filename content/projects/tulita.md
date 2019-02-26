@@ -52,7 +52,7 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-patron.jpg
+    image: /assets/tulita-patron2.jpg
     type: image
     videoId: '0'
     width: '1'
