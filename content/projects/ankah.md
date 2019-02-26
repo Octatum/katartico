@@ -21,7 +21,7 @@ content:
     type: image
     videoId: '0'
     width: '2'
-  - height: '3'
+  - height: '2'
     image: /assets/mockup.jpg
     type: image
     videoId: '0'
