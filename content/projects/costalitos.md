@@ -8,17 +8,17 @@ bodyEnglish: >-
   # Costalitos
 
 
-  ## Fotografía de catálogo y lifestyle
+  ## Catalog and lifestyle photography
 
 
-  Costalitos es una marca de la empresa líder a nivel nacional en bolsas para
-  basura y alimentos en el mercado de autoservicios en México, SERVIBOLSA. Están
-  presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y
-  más países.
+  Costalitosl is a brand, part of  a national leader in garbage and food bags in
+  the market of self-service in Mexico called SERVIBOLSA. They are present in
+  Mexico, the United States, Colombia, Jamaica, Panama, Costa Rica and more
+  countries.
 
 
-  Con el fin de comercializar sus productos a través de Amazon, realizamos una
-  sesión de fotografías de catálogo y lifestyle.
+  In order to market your products through Amazon, we made a session of catalog
+  and lifestyle photographs.
 content:
   - height: '2'
     image: /assets/captura-de-pantalla-2019-02-25-a-la-s-18.09.22.png
@@ -64,6 +64,6 @@ content:
 
 ## Fotografía de catálogo y lifestyle
 
-Costalitos es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
+Costalitos es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, llamada SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
 
 Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle.
