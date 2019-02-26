@@ -1,6 +1,6 @@
 ---
 type: project
-index: 15
+index: 22
 title: Fotografía artística
 banner: /assets/fotoarte_-_0_portada_foto_artistica.jpg
 highlightedImage: /assets/fotoarte_-_1_foto_principal.jpg
