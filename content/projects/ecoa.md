@@ -1,6 +1,6 @@
 ---
 type: project
-index: 26
+index: 19
 title: ECOA
 banner: /assets/00-portada.jpg
 highlightedImage: /assets/11-foto-principal.png
