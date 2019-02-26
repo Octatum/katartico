@@ -37,22 +37,18 @@ content:
     image: /assets/blattsalad.jpg
     type: image
     width: '3'
-  - height: '3'
-    image: /assets/biofase-19.jpg
-    type: image
-    width: '2'
   - height: '1'
     image: /assets/biofase8.jpg
     type: image
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/biofase9.jpg
     type: image
-    width: '1'
-  - height: '1'
-    image: /assets/biofase15.jpg
+    width: '2'
+  - height: '2'
+    image: /assets/mockupbiofase2.jpg
     type: image
-    width: '1'
+    width: '3'
 ---
 # Biofase
 
