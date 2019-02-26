@@ -48,7 +48,7 @@ content:
   - height: '2'
     image: /assets/biofase9.jpg
     type: image
-    width: '2'
+    width: '1'
   - height: '2'
     image: /assets/mockupbiofase2.jpg
     type: image
