@@ -38,7 +38,7 @@ content:
     type: image
     width: '3'
   - height: '3'
-    image: /assets/biofase_-_6.jpg
+    image: /assets/biofase11.jpg
     type: image
     width: '2'
   - height: '1'
@@ -47,6 +47,10 @@ content:
     width: '1'
   - height: '1'
     image: /assets/biofase9.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/biofase12.jpg
     type: image
     width: '1'
 ---
