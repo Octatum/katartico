@@ -22,7 +22,7 @@ bodyEnglish: >-
   networks.
 content:
   - height: '2'
-    image: /assets/briki1.jpg
+    image: /assets/brikimag1.jpg
     type: image
     width: '1'
   - height: '1'
