@@ -2,7 +2,7 @@
 type: project
 index: 11
 title: ANKAH
-banner: /assets/ankah_-_0_portada_ANKAH.jpg
+banner: /assets/banner-ankah-02.jpg
 highlightedImage: /assets/ankah_-_1_foto_principal.png
 bodyEnglish: >-
   # ANKAH
@@ -32,7 +32,7 @@ content:
     videoId: '0'
     width: '3'
   - height: '2'
-    image: /assets/a-mockup.jpg
+    image: /assets/ankah-iphone_mesa-de-trabajo-1.jpg
     type: image
     videoId: '0'
     width: '1'
