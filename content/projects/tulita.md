@@ -3,7 +3,7 @@ type: project
 index: 16
 title: Tulita
 banner: /assets/tulita-logo-byn.jpg
-highlightedImage: /assets/tulita-logo.jpg
+highlightedImage: /assets/archivos-portaflolio_tulita-logo.jpg
 bodyEnglish: >-
   # Tulita
 
@@ -17,52 +17,52 @@ bodyEnglish: >-
   Mexico and its culture.
 content:
   - height: '1'
-    image: /assets/t-versiones.jpg
+    image: /assets/archivos-portaflolio_tulita-versiones.jpg
     type: image
     videoId: '0'
     width: '3'
   - height: '2'
-    image: /assets/t-papeleria.jpg
+    image: /assets/archivos-portaflolio_tulita-papeleria.jpg
     type: image
     videoId: '0'
     width: '3'
   - height: '1'
-    image: /assets/t-pantone1.jpg
+    image: /assets/archivos-portaflolio_tulita-pantone-1.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-pantone2.jpg
+    image: /assets/archivos-portaflolio_tulita-pantone-2.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-pantone3.jpg
+    image: /assets/archivos-portaflolio_tulita-pantone-3.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '2'
-    image: /assets/t-simbolos.jpg
+    image: /assets/archivos-portaflolio_tulita-simbolos.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-bolsa.jpg
+    image: /assets/archivos-portaflolio_tulita-bolsa.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-patron.jpg
+    image: /assets/archivos-portaflolio_tulita-patron.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-isotipo.jpg
+    image: /assets/archivos-portaflolio-27.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/t-mandil.jpg
+    image: /assets/archivos-portaflolio_tulita-mandil.jpg
     type: image
     videoId: '0'
     width: '1'
