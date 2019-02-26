@@ -21,7 +21,7 @@ content:
     type: image
     videoId: '0'
     width: '2'
-  - height: '3'
+  - height: '2'
     image: /assets/mockup.jpg
     type: image
     videoId: '0'
@@ -32,7 +32,7 @@ content:
     videoId: '0'
     width: '3'
   - height: '2'
-    image: /assets/ankahiphone.jpg
+    image: /assets/a-mockup.jpg
     type: image
     videoId: '0'
     width: '1'
@@ -52,12 +52,12 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/10-logitpo-propuestas-29.jpg
+    image: /assets/9-logitpo-propuestas-28.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/9-logitpo-propuestas-28.jpg
+    image: /assets/10-logitpo-propuestas-29.jpg
     type: image
     videoId: '0'
     width: '1'

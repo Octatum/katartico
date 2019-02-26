@@ -41,6 +41,10 @@ content:
     image: /assets/biofase8.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/biofase_-_16.png
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/biofase9.jpg
     type: image

@@ -18,7 +18,7 @@ bodyEnglish: >-
 
 
   In order to market your products through Amazon, we made a session of catalog
-  and lifestyle photographs. These photographs are currently on the website:
+  and lifestyle photography. 
 
 
   ##
@@ -91,6 +91,6 @@ content:
 
 ## Fotografía de catálogo y lifestyle
 
-Bol Rol es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
+Bol Rol es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, llamada SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
 
 Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle.
