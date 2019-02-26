@@ -30,6 +30,11 @@ content:
     type: image
     videoId: '0'
     width: '1'
+  - height: '2'
+    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-18.09.22.png
+    type: image
+    videoId: '0'
+    width: '3'
 ---
 # Costalitos
 
