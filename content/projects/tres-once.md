@@ -1,6 +1,6 @@
 ---
 type: project
-index: 23
+index: 17
 title: Tres Once
 banner: /assets/to-portada.jpg
 highlightedImage: /assets/to-1.png
