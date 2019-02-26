@@ -21,6 +21,11 @@ bodyEnglish: >-
   sesión de fotografías de catálogo y lifestyle.
 content:
   - height: '2'
+    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-18.09.22.png
+    type: image
+    videoId: '0'
+    width: '3'
+  - height: '2'
     image: /assets/iphonecostalitos.jpg
     type: image
     videoId: '0'
@@ -34,11 +39,6 @@ content:
     type: image
     videoId: '0'
     width: '1'
-  - height: '2'
-    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-18.09.22.png
-    type: image
-    videoId: '0'
-    width: '3'
   - height: '2'
     image: /assets/costalitos1.jpg
     type: image
@@ -55,10 +55,6 @@ content:
     image: /assets/costalitos4.jpg
     type: image
     width: '1'
-  - height: '2'
-    image: /assets/costalitos5.jpg
-    type: image
-    width: '2'
   - height: '2'
     image: /assets/costalitos7.jpg
     type: image
