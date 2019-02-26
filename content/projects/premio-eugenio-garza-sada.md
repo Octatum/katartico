@@ -4,10 +4,7 @@ index: 10
 title: Premio Eugenio Garza Sada
 banner: /assets/pgs-banner.jpg
 highlightedImage: /assets/pgs-imagen.jpg
-bodyEnglish: |-
-  # Premio Eugenio Garza Sada
-
-  ## Social Media
+bodyEnglish: "# Premio Eugenio Garza Sada\n\n## Graphic design and social media networks \n\nThe Premio Eugenio Garza Sada of Tecnológico de Monterrey in collaboration with FEMSA, has as an objective to acknowledge people and institutions that are focused on bettering the lives of mexicans with their social projects. There are three main categories: People, Students and Social Entrepreneurship. \r\n\nFor this project, we developed the image for the announcement of the 2019 edition, moreover Katartico developed the necessary content to broadcast in different media networks. Additionally we developed a digital strategy for social media and managed their social media networks with the objective of increasing the registration of candidates ."
 content:
   - height: '2'
     image: /assets/pgs-post1.jpg
