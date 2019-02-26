@@ -4,10 +4,19 @@ index: 11
 title: Agronegocios El Vaquerito
 banner: /assets/vaquerito-banner.jpg
 highlightedImage: /assets/vaquerito-foto.jpg
-bodyEnglish: |-
-  # Agronegocios El Vaquerito 
+bodyEnglish: >-
+  # Agronegocios El Vaquerito
 
-  ## Redes Sociales
+
+  ## Social media networks
+
+
+  Agronegocios El Vaquerito is a website whose main objective is to contact
+  producers with retailers from to the agricultural sector. The site makes the
+  process of trading online more efficient, by creating a network in the
+  Northeastern side of the country and presenting the different products they
+  offer like machinery, land, products, etc. During the website launch, we
+  created a campaign focused on presenting the brand to its target market.
 content:
   - height: '2'
     image: /assets/vaquerito-1.jpg
