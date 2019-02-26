@@ -115,7 +115,7 @@ const PhotoGrid = styled.div`
   width: 100%;
   margin: 1em 0;
   grid-template-columns: 1fr;
-  grid-auto-rows: minmax(20rem, max-content);
+  grid-auto-rows: minmax(5rem, max-content);
   grid-auto-flow: row dense;
   grid-gap: 1rem;
 
