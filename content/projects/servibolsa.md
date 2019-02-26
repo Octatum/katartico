@@ -24,7 +24,7 @@ bodyEnglish: >-
   ##
 content:
   - height: '2'
-    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-17.05.55.png
+    image: /assets/captura-de-pantalla-2019-02-26-a-la-s-11.37.57.png
     type: image
     videoId: '0'
     width: '3'
@@ -60,10 +60,10 @@ content:
     image: /assets/bolrol3.jpg
     type: image
     width: '2'
-  - height: '1'
+  - height: '2'
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_1.jpg
     type: image
-    width: '3'
+    width: '2'
   - height: '1'
     image: /assets/servibolsa_-_Copia_de_LS_Loc2_3.jpg
     type: image
