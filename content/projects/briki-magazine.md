@@ -2,8 +2,8 @@
 type: project
 index: 19
 title: Briki Magazine
-banner: /assets/briki_-_0_portada.jpg
-highlightedImage: /assets/briki_-_2.jpg
+banner: /assets/banner-bn.jpg
+highlightedImage: /assets/1111banner.jpg
 bodyEnglish: >-
   # Briki Magazine
 
@@ -22,9 +22,10 @@ bodyEnglish: >-
   networks.
 content:
   - height: '2'
-    image: /assets/briki.jpg
+    image: /assets/portada-para-página-web.jpg
     type: image
-    width: '1'
+    videoId: '0'
+    width: '3'
   - height: '1'
     image: /assets/briki_-_3.png
     type: image
@@ -33,10 +34,6 @@ content:
     image: /assets/briki_-_4.png
     type: image
     width: '2'
-  - height: '2'
-    image: /assets/briki_-_2.jpg
-    type: image
-    width: '3'
 ---
 # Briki Magazine
 
