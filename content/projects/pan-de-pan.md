@@ -4,10 +4,7 @@ index: 2
 title: 'Pan de Pan '
 banner: /assets/pdp-banner.jpg
 highlightedImage: /assets/pdp-imagen.jpg
-bodyEnglish: |-
-  # Pan de Pan
-
-  ## Branding and graphic design
+bodyEnglish: "# Pan de Pan\n\n## Branding and graphic design\n\nBranding and Graphic Design \r\n\nPan de Pan is an artisan bread bakery whose main target are restaurants and gastronomic shops. \r\n\nWe developed the brand's visual identity, its line of design and merchandising, our objective was unifying its image and position it in the metropolitan area of Monterrey. We further conducted a photographic sesion of their most demanded products and elaborated a catalog with these."
 content:
   - height: '1'
     image: /assets/pdp-versiones-1.jpg
