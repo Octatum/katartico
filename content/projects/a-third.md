@@ -21,6 +21,22 @@ content:
     type: image
     videoId: '0'
     width: '3'
+  - height: '1'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/feU_8CC2qhw" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+    width: '1'
+  - height: '1'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/McETpQmREwI" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+    width: '2'
   - height: '2'
     image: /assets/74aniversario_-4.jpg
     type: image
