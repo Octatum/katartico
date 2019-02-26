@@ -52,12 +52,12 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/10-logitpo-propuestas-29.jpg
+    image: /assets/9-logitpo-propuestas-28.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/9-logitpo-propuestas-28.jpg
+    image: /assets/10-logitpo-propuestas-29.jpg
     type: image
     videoId: '0'
     width: '1'
