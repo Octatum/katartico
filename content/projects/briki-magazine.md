@@ -1,6 +1,6 @@
 ---
 type: project
-index: 19
+index: 24
 title: Briki Magazine
 banner: /assets/banner-bn.jpg
 highlightedImage: /assets/1111banner.jpg
