@@ -32,7 +32,7 @@ content:
     videoId: '0'
     width: '3'
   - height: '2'
-    image: /assets/ankahiphone.jpg
+    image: /assets/a-mockup.jpg
     type: image
     videoId: '0'
     width: '1'
