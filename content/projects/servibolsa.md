@@ -18,7 +18,7 @@ bodyEnglish: >-
 
 
   In order to market your products through Amazon, we made a session of catalog
-  and lifestyle photographs. These photographs are currently on the website:
+  and lifestyle photographs. 
 
 
   ##
