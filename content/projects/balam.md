@@ -24,11 +24,11 @@ content:
     width: '3'
   - height: '2'
     type: youtube-video
-    videoId: 'https://youtu.be/RGOzF8m1e3A'
+    videoId: RGOzF8m1e3A
     width: '3'
   - height: '2'
     type: youtube-video
-    videoId: 'https://youtu.be/_JlEUlLz2pY'
+    videoId: _JlEUlLz2pY
     width: '3'
 ---
 # BALAM
