@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import ChildViewport from '../ChildViewport';
-import { CookiesProvider } from 'react-cookie';
 
 import '../assets/font-awesome-all.css';
 
 import './index.css';
-import HomeViewport from '../../page-components/home/HomeViewport';
 
 const theme = {
   white: '#fff',
@@ -16,24 +14,30 @@ const theme = {
   black: '#000',
 };
 
-const Layout = ({ children, path }) => (
-  <CookiesProvider>
-    <ThemeProvider theme={theme}>
-      <React.Fragment>
-        <Helmet
-          titleTemplate={'Katartico Agencia de Publicidad - %s'}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <ChildViewport path={path} children={children} />
-      </React.Fragment>
-    </ThemeProvider>
-  </CookiesProvider>
+const GeneralLayout = ({ children }) => (
+  <ThemeProvider theme={theme}>
+    <React.Fragment>
+      <Helmet
+        titleTemplate={'Katartico Agencia de Publicidad - %s'}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' },
+        ]}
+      >
+        <html lang="en" />
+      </Helmet>
+      {children}
+    </React.Fragment>
+  </ThemeProvider>
 );
+
+function Layout(props) {
+  return (
+    <GeneralLayout>
+      <ChildViewport {...props} />
+    </GeneralLayout>
+  );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
@@ -42,21 +46,8 @@ Layout.propTypes = {
 
 export default Layout;
 
-export const HomeLayout = ({ children, path }) => (
-  <CookiesProvider>
-    <ThemeProvider theme={theme}>
-      <React.Fragment>
-        <Helmet
-          titleTemplate={'Katartico Agencia de Publicidad - %s'}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <HomeViewport path={path} children={children} />
-      </React.Fragment>
-    </ThemeProvider>
-  </CookiesProvider>
+export const HomeLayout = props => (
+  <GeneralLayout>
+    <ChildViewport includeLanding={true} {...props} />
+  </GeneralLayout>
 );

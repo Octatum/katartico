@@ -20,7 +20,8 @@ export function stripPrefix(string) {
 
 export function changeLanguageForCurrentLocation() {
   const { pathname } = useLocation();
-  const cleanLink = pathname && pathname.startsWith('/en') ? pathname.substr(3) : pathname;
+  const cleanLink =
+    pathname && pathname.startsWith('/en') ? pathname.substr(3) : pathname;
   const routePrefix = hasLanguagePrefix(pathname) ? '' : '/en';
   const newLocation = routePrefix + cleanLink;
 
