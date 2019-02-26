@@ -27,21 +27,29 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/premioluiselizondo1.jpg
+    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-20.36.42.jpg
     type: image
-    width: '1'
+    width: '3'
   - height: '2'
-    image: /assets/ple1.jpg
-    type: image
-    width: '2'
-  - height: '2'
-    image: /assets/premioluis.jpg
+    image: /assets/captura-de-pantalla-2019-02-25-a-la-s-20.05.02.jpg
     type: image
     width: '3'
   - height: '2'
     image: /assets/pagepromotion.jpg
     type: image
     width: '3'
+  - height: '1'
+    image: /assets/categorías-estudiantil01.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/categorías-humanitario01-1-.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/categorías-estudiantil02.jpg
+    type: image
+    width: '1'
 ---
 # Premio Luis Elizondo
 
