@@ -18,7 +18,7 @@ bodyEnglish: >-
 
 
   In order to market your products through Amazon, we made a session of catalog
-  and lifestyle photographs.
+  and lifestyle photography.
 content:
   - height: '2'
     image: /assets/captura-de-pantalla-2019-02-25-a-la-s-18.09.22.png
