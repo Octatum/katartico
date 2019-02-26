@@ -38,7 +38,7 @@ content:
     type: image
     width: '3'
   - height: '3'
-    image: /assets/biofase18.jpg
+    image: /assets/biofase-19.jpg
     type: image
     width: '2'
   - height: '1'
