@@ -17,52 +17,52 @@ bodyEnglish: >-
   Mexico and its culture.
 content:
   - height: '1'
-    image: /assets/tulita-versiones.jpg
+    image: /assets/t-versiones.jpg
     type: image
     videoId: '0'
     width: '3'
   - height: '2'
-    image: /assets/tulita-papeleria.jpg
+    image: /assets/t-papeleria.jpg
     type: image
     videoId: '0'
     width: '3'
   - height: '1'
-    image: /assets/tulita-pantone1.jpg
+    image: /assets/t-pantone1.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-pantone2.jpg
+    image: /assets/t-pantone2.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-pantone3.jpg
+    image: /assets/t-pantone3.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '2'
-    image: /assets/tulita-simbolos.jpg
+    image: /assets/t-simbolos.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-bolsa.jpg
+    image: /assets/t-bolsa.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-patron2.jpg
+    image: /assets/t-patron.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-isotipo.jpg
+    image: /assets/t-isotipo.jpg
     type: image
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/tulita-bolsa.jpg
+    image: /assets/t-mandil.jpg
     type: image
     videoId: '0'
     width: '1'
