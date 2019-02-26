@@ -18,17 +18,17 @@ bodyEnglish: >-
   We carried out the recording and editing of the videos for the introduction of
   the event and the speakers.
 content:
-  - height: '2'
-    type: youtube-video
-    videoId: Ez7KvAVDgy8
-    width: '3'
-  - height: '2'
+  - height: '3'
     type: youtube-video
     videoId: RGOzF8m1e3A
     width: '3'
-  - height: '2'
+  - height: '3'
     type: youtube-video
     videoId: _JlEUlLz2pY
+    width: '3'
+  - height: '3'
+    type: youtube-video
+    videoId: Ez7KvAVDgy8
     width: '3'
 ---
 # BALAM
