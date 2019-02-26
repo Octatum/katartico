@@ -50,10 +50,30 @@ content:
     image: /assets/1-foto-principal-7-.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/1.3-1-.jpg
-    type: image
+  - height: '2'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/9PSTEKKsPOg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+    width: '2'
+  - height: '2'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/d1Y42X2_xHg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
     width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/vUtoHxWK8gk" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+    width: '1'
 ---
 # Viernes Azul
 
