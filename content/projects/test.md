@@ -2,7 +2,7 @@
 type: project
 index: 8
 title: Premio Luis Elizondo
-banner: /assets/premioluiselizondo_-_0_portada_PLE-19.jpg
+banner: /assets/categoriahumanitario1-03.png
 highlightedImage: /assets/principalpel.jpg
 bodyEnglish: "# Premio Luis Elizondo\n\n## Graphic Design\n\nGraphic design \r\n\nThe Premio Eugenio Garza Sada of Tecnológico de Monterrey recognizes students, people and institutions that developed social programs focused on bettering the lives of vulnerable communities in México. Thanks to their humanitarian, philanthropic and generous actions this event was created in order to give recognition to them. \r\n\nFor this project we developed the image for the announcement of the 2019 edition, furthermore, Katartico developed the necessary content to broadcast in different media networks. Additionally, we developed a digital strategy for social media and managed their social media networks with the objective of increasing the registration of candidates ."
 content:
