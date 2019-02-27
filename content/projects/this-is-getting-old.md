@@ -41,6 +41,6 @@ content:
 
 La Fundación El mundo escribe promueve la escritura como actividad creativa desde la infancia y para siempre. 
 
-Con el fin de incrementar las donaciones hacia la fundación, conceptualizamos una propuesta integral de publicidad que consistió en diseño gráfico, toma de fotografías, grabación y edición de video, planeación de contenido en redes sociales, diseño y programación de página web, diseño de activaciones de marca, branding y diseño de prototipos promocionales. 
+Con el fin de incrementar las donaciones hacia la fundación y el posicionamiento de la marca con su mercado meta, trabajamos diseñando y desarrollando su página web.
 
 ##
