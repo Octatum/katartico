@@ -152,6 +152,7 @@ function Contact(props) {
               });
               setMessageSent(true);
               alert('Your message has been sent');
+              actions.resetForm();
             } catch (exception) {
               setFormError(true);
             } finally {

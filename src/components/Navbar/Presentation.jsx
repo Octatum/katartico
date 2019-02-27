@@ -320,9 +320,11 @@ function Presentation(props) {
           </FlexLogoSection>
           <LinkList mini={props.minimize}>{navbarLinks}</LinkList>
           <SocialMedia mini={props.minimize}>{socialMediaLinks}</SocialMedia>
+          {/* 
           <Link to={newLocation} as={GatsbyLink}>
             {currentLanguage === '' ? 'EN' : 'ES'}
           </Link>
+          */}
         </MediaQuery>
       </FlexBox>
     </Container>

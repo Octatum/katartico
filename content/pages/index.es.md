@@ -10,10 +10,10 @@ aboutUs:
 homeServices:
   title: Servicios
   list:
-    - name: "Construcción de marca"
-    - name: "Campañas publicitarias"
-    - name: "Presencia digital"
-    - name: "Ejecuciones creativas"
+    - Construcción de marca
+    - Campañas publicitarias
+    - Presencia digital
+    - Ejecuciones creativa
 portfolio: 
   title: Portafolio
   image: "/assets/empty.png"

@@ -10,10 +10,10 @@ aboutUs:
 homeServices:
   title: Services
   list:
-    - name: "Lorem ipsum dolor"
-    - name: "Lorem donor"
-    - name: "Lorem ipsum"
-    - name: "Ipsum donor"
+    - "Lorem ipsum dolor"
+    - "Lorem donor"
+    - "Lorem ipsum"
+    - "Ipsum donor"
 portfolio: 
   title: Portfolio
   image: "/assets/empty.en.png"

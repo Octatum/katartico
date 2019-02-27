@@ -26,9 +26,7 @@ export default props => (
             }
             homeServices {
               title
-              list {
-                name
-              }
+              list
             }
             portfolio {
               title
