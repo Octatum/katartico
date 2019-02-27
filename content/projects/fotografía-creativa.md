@@ -42,7 +42,7 @@ content:
     type: image
     width: '3'
 ---
-Fotografía creativa
+# Fotografía creativa
 
 ## Fotografía y edición de imágenes
 
