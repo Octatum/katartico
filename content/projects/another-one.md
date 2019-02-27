@@ -46,7 +46,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/16-2-.png
+    image: /assets/16.png
     type: image
     width: '1'
   - height: '2'
