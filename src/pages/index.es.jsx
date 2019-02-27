@@ -40,15 +40,6 @@ export default props => (
                 }
               }
             }
-            contact {
-              title
-              labels {
-                name
-                email
-                message
-                sendButton
-              }
-            }
           }
         }
       }
