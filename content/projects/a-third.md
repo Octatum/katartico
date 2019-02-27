@@ -16,29 +16,28 @@ content:
     type: image
     videoId: '0'
     width: '2'
+  - height: '3'
+    image: /assets/pendón.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/domo.jpg
     type: image
     videoId: '0'
     width: '3'
-  - height: '1'
-    type: youtube-video
-    videoId: feU_8CC2qhw
-    width: '1'
-  - height: '1'
+  - height: '2'
     type: youtube-video
     videoId: McETpQmREwI
+    width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: feU_8CC2qhw
     width: '2'
   - height: '2'
     image: /assets/74aniversario_-4.jpg
     type: image
     videoId: '0'
     width: '3'
-  - height: '3'
-    image: /assets/74aniversario_-5.JPG
-    type: image
-    videoId: '0'
-    width: '1'
   - height: '2'
     image: /assets/centrales.jpg
     type: image
