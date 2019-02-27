@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link as _Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
 import Section from '../../components/Section';
+import LocalizedLink from '../../components/LocalizedLink';
 
 const Header = styled.h2`
   position: relative;
@@ -27,7 +27,7 @@ const Header = styled.h2`
   }
 `;
 
-const Link = styled(_Link)`
+const Link = styled(LocalizedLink)`
   text-decoration: none;
   color: inherit;
 `;
@@ -112,15 +112,9 @@ const Portafolio = props => {
       <LogoGrid>
         {customers.map(item => (
           <GridItem key={item.logo.publicURL}>
-            {item.url ? (
-              <Link to={item.url}>
-                <Logo src={item.logo.publicURL} alt={item.name} />
-              </Link>
-            ) : (
-              <span>
-                <Logo src={item.logo.publicURL} alt={item.name} />
-              </span>
-            )}
+            <Link to="/portafolio">
+              <Logo src={item.logo.publicURL} alt={item.name} />
+            </Link>
           </GridItem>
         ))}
       </LogoGrid>

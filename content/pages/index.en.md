@@ -14,7 +14,7 @@ homeServices:
     - Lorem ipsum
     - Ipsum donor
   title: Services
-portfolio:
+portfolio: 
   customers:
     - logo: /assets/bissu.svg
       name: Bissu

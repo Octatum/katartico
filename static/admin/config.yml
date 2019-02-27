@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: staging
+  branch: dev
 
 media_folder: static/assets
 public_folder: assets
@@ -42,7 +42,7 @@ collections:
             widget: object
             fields:
               - { label: "Video introductorio", name: video, widget: file }
-              - { label: "Imagen en móvil", name: image, widget: image }
+              - { label: "Imagen en móvil", name: image, widget: image, required: false }
           - label: "Nosotros"
             name: "aboutUs"
             widget: object
@@ -51,7 +51,7 @@ collections:
               - { label: "Eslogan", name: "slogan", widget: "text" }
               - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
-            name: "services"
+            name: "homeServices"
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
@@ -68,8 +68,6 @@ collections:
                 fields:
                   - { label: Name, name: name }
                   - { label: Logotipo, name: logo, widget: image }
-                  - { label: Url, name: url }
-                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
       - label: "Página de inicio (español)"
         name: "homePageEs"
         file: "content/pages/index.es.md"
@@ -81,7 +79,7 @@ collections:
             widget: object
             fields:
               - { label: "Video introductorio", name: video, widget: file }
-              - { label: "Imagen en móvil", name: image, widget: image }
+              - { label: "Imagen en móvil", name: image, widget: image, required: false }
           - label: "Nosotros"
             name: "aboutUs"
             widget: object
@@ -90,7 +88,7 @@ collections:
               - { label: "Eslogan", name: "slogan", widget: "text" }
               - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
-            name: "services"
+            name: "homeServices"
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
@@ -107,8 +105,6 @@ collections:
                 fields:
                   - { label: Name, name: name }
                   - { label: Logotipo, name: logo, widget: image }
-                  - { label: Url, name: url }
-                  - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
       - label: "Página de Nosotros (Español)"
         name: "aboutEs"
         file: "content/pages/about.es.md"        

@@ -81,8 +81,8 @@ const Services = props => {
       </Header>
       <Apostrophes>
         {list.map(item => (
-          <AnimatedApostrophe as={Link} to="/servicios" key={item.name}>
-            <Text>{item.name}</Text>
+          <AnimatedApostrophe as={Link} to="/servicios" key={item}>
+            <Text>{item}</Text>
           </AnimatedApostrophe>
         ))}
       </Apostrophes>

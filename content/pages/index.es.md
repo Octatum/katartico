@@ -14,7 +14,6 @@ homeServices:
     - Presencia digital
     - Ejecuciones creativa
   title: Servicios
-portfolio:
   customers:
     - logo: /assets/bissu.svg
       name: Bissu
