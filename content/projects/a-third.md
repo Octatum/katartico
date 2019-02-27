@@ -30,13 +30,13 @@ content:
     videoId: McETpQmREwI
     width: '3'
   - height: '2'
-    type: youtube-video
-    videoId: feU_8CC2qhw
-    width: '2'
-  - height: '2'
     image: /assets/74aniversario_-4.jpg
     type: image
     videoId: '0'
+    width: '3'
+  - height: '3'
+    type: youtube-video
+    videoId: feU_8CC2qhw
     width: '3'
   - height: '2'
     image: /assets/centrales.jpg
