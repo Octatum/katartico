@@ -5,7 +5,7 @@ intro:
   video: /assets/katarticonew.es.mp4
 aboutUs:
   animation: ''
-  slogan: ¿Cómo creamos momentos katarticos?.
+  slogan: ¿Cómo creamos momentos katarticos?
   title: Nosotros
 homeServices:
   list:
