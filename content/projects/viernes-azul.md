@@ -52,27 +52,15 @@ content:
     width: '2'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/9PSTEKKsPOg" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: 9PSTEKKsPOg
     width: '2'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/d1Y42X2_xHg" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: d1Y42X2_xHg
     width: '3'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/vUtoHxWK8gk" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: vUtoHxWK8gk
     width: '1'
 ---
 # Viernes Azul
