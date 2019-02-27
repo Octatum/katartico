@@ -51,7 +51,7 @@ collections:
               - { label: "Eslogan", name: "slogan", widget: "text" }
               - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
-            name: "services"
+            name: "homeServices"
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
@@ -90,7 +90,7 @@ collections:
               - { label: "Eslogan", name: "slogan", widget: "text" }
               - { label: "Animación en formato json", name: animation, widget: file, required: false }
           - label: "Servicios"
-            name: "services"
+            name: "homeServices"
             widget: object
             fields:
               - { label: "Título de sección", name: "title", widget: "string" }
