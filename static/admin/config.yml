@@ -68,7 +68,6 @@ collections:
                 fields:
                   - { label: Name, name: name }
                   - { label: Logotipo, name: logo, widget: image }
-                  - { label: Url, name: url }
                   - { label: "Imagen de portafolio", name: portfolioImage, widget: image }
       - label: "Página de inicio (español)"
         name: "homePageEs"
