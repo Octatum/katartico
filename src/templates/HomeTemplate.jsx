@@ -21,13 +21,12 @@ const Container = styled.div`
 `;
 
 const Presentation = props => {
-  const { location } = props;
+  const { location, contact } = props;
   const {
     intro,
     aboutUs,
     homeServices,
     portfolio,
-    contact,
   } = props.data.markdownRemark.frontmatter;
 
   return (
