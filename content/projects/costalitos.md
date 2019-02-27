@@ -35,14 +35,14 @@ content:
     type: image
     width: '2'
   - height: '2'
+    image: /assets/costalitos1.jpg
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/costalitos11.jpg
     type: image
     videoId: '0'
     width: '1'
-  - height: '2'
-    image: /assets/costalitos1.jpg
-    type: image
-    width: '3'
   - height: '2'
     image: /assets/costalitos2.jpg
     type: image
