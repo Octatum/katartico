@@ -42,13 +42,13 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/biofase_-_16.png
+    image: /assets/biofase21.jpg
     type: image
     width: '1'
-  - height: '2'
-    image: /assets/biofase9.jpg
+  - height: '3'
+    image: /assets/biofase22.jpg
     type: image
-    width: '1'
+    width: '2'
   - height: '2'
     image: /assets/mockupbiofase2.jpg
     type: image
