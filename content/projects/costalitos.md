@@ -35,7 +35,7 @@ content:
     type: image
     width: '2'
   - height: '2'
-    image: /assets/iphonecostalitos2.jpg
+    image: ''
     type: image
     videoId: '0'
     width: '1'
