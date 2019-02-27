@@ -80,6 +80,6 @@ content:
 
 ## Branding y diseño gráfico
 
-Pan de pan es un taller dedicado a la elaboración de pan artesanal para venta al mayoreo en restaurantes y establecimientos de giro gastronómico.
+Pan de Pan es un taller dedicado a la elaboración de pan artesanal para venta al mayoreo en restaurantes y establecimientos de giro gastronómico.
 
 Desarrollamos la identidad visual de la marca, con su línea de diseño y propuestas de artículos promocionales, con el fin de unificar su imagen y posicionarla en la Zona Metropolitana de Monterrey. Además llevamos a cabo una sesión fotográfica de sus productos estrella y elaboramos un catálogo de productos para sumarlo a sus esfuerzos de venta.
