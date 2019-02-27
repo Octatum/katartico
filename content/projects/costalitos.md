@@ -35,7 +35,7 @@ content:
     type: image
     width: '2'
   - height: '2'
-    image: /assets/costalitos9.jpg
+    image: /assets/costalitos10.jpg
     type: image
     videoId: '0'
     width: '1'
