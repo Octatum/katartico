@@ -38,7 +38,6 @@ export default props => (
                 logo {
                   publicURL
                 }
-                url
               }
             }
             contact {
