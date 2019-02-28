@@ -1,5 +1,10 @@
 module.exports = {
+  // In your gatsby-config.js
+  siteMetadata: {
+    siteUrl: `https://katartico.mx`,
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     `gatsby-plugin-sharp`,
