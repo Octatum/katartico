@@ -1,33 +1,40 @@
 ---
 type: project
-index: 12
+index: 17
 title: Tres Once
 banner: /assets/to-portada.jpg
 highlightedImage: /assets/to-1.png
+bodyEnglish: >-
+  # Tres Once
+
+
+  ## Photography, graphic design and video
+
+
+  This Dancing Studio has it´s base in Sonora, México. We developed an
+  advertising campaign for their summer classes and activities that ran in their
+  social media profiles. The campaign included a photoshoot, graphic design,
+  graphic animations, and content for their social media networks.
 content:
-  - height: '1'
+  - height: '3'
+    image: /assets/tresonce5.jpg
     type: image
-    image: /assets/to-2.png
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/to-3.png
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/to-4.png
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/to-5.png
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/to-6.jpg
     width: '3'
-  - height: '2'
+  - height: '1'
+    image: /assets/tresonce3.jpg
     type: image
-    image: /assets/to-1.png
+    width: '1'
+  - height: '1'
+    image: /assets/tresonce2.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/tresonce4.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    type: youtube-video
+    videoId: EAaj24qXLl0
     width: '3'
 ---
 # Tres Once

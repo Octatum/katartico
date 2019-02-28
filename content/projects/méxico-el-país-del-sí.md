@@ -1,22 +1,34 @@
 ---
 type: project
-index: 7
+index: 23
 title: 'México: El país del sí'
 banner: /assets/mexicosi_-_0_portada_mexico.jpg
 highlightedImage: /assets/mexicosi_-_1_foto_principal.png
+bodyEnglish: >-
+  # México: El país del sí
+
+
+  ## Video
+
+
+  México: el país del sí was a forum led by the Instituto del Liderazgo del
+  Tecnológico de Monterrey that sought to present and promote discussion about
+  the topic of the development of leadership in México. We took part in this
+  project in the production of four animated videos that contained information
+  of the event; these videos were displayed in the lobby of the event.
 content:
   - height: '2'
-    type: image
     image: /assets/mexicosi_-_1_foto_principal.png
+    type: image
     width: '3'
   - height: '2'
+    image: /assets/3-4-.jpg
     type: image
-    image: /assets/mexicosi_-_1_foto_principal.png
-    width: '2'
+    width: '3'
   - height: '2'
-    type: image
-    image: /assets/mexicosi_-_3.jpg
-    width: '1'
+    type: youtube-video
+    videoId: wY8AZYxXMzg
+    width: '3'
 ---
 # México: El país del sí
 

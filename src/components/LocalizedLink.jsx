@@ -1,21 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Location } from '@reach/router';
-
-function hasLanguagePrefix(string) {
-  return string.startsWith('/en/') || string === "/en";
-}
-
-function stripPrefix(string) {
-  return string.startsWith('/en') ? string.substr(0, 3) : string;
-}
+import { hasLanguagePrefix, stripPrefix } from '../utilities/functions';
 
 function LocalizedLink(props) {
   const { children, location, to, ...rest } = props;
   const { pathname } = location;
 
   const nextLocation = stripPrefix(to);
-  const routePrefix = hasLanguagePrefix(pathname) ? "/en" : "";
+  const routePrefix = hasLanguagePrefix(pathname) ? '/en' : '';
 
   return (
     <Link to={routePrefix + nextLocation} {...rest}>
@@ -26,8 +19,6 @@ function LocalizedLink(props) {
 
 export default props => (
   <Location>
-    {({location}) => (
-      <LocalizedLink location={location} {...props} />
-    )}
+    {({ location }) => <LocalizedLink location={location} {...props} />}
   </Location>
 );

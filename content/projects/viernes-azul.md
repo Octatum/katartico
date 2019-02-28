@@ -1,38 +1,67 @@
 ---
 type: project
-index: 11
+index: 18
 title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
-highlightedImage: /assets/viernesazul_-_1_foto_principal.JPG
+highlightedImage: /assets/principal.jpg
+bodyEnglish: >-
+  # Viernes Azul
+
+
+  ## Branding, social media, graphic design, photography, and video
+
+
+  Viernes Azul is a Tecnológico de Monterrey’s event that aims to promote a
+  sense of belonging among the students of the Monterrey Campus, encouraging
+  them to own the university’s blue color.
+
+
+  We created the brand from scratch, designed the logo, created the brand
+  culture, positioned the brand through social media networks and events on
+  campus, made graphic design and content for social media networks, promotional
+  videos and media coverage for events. 
+
+
+  Collaboration: Paulina Zambrano, Rebeca Valencia, Laura Barbosa, Ana Sofía
+  González, Ingrid Rivera, Diana Lagunes, Lucas Salinas, and Ana Victoria
+  Chávez.
 content:
-  - height: '2'
+  - height: '1'
+    image: /assets/1.2-4-.jpg
     type: image
-    image: /assets/viernesazul_-_2.png
     width: '3'
   - height: '2'
+    image: /assets/1.4-6-.jpg
     type: image
-    image: /assets/viernesazul_-_3.png
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/viernesazul_-_4.JPG
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/viernesazul_-_5.JPG
-    width: '2'
-  - height: '3'
-    type: image
-    image: /assets/viernesazul_-_6.png
-    width: '2'
-  - height: '3'
-    type: image
-    image: /assets/viernesazul_-_7.jpg
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/viernesazul_-_1_foto_principal.JPG
     width: '3'
+  - height: '2'
+    image: /assets/5-6-.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/6.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/banner.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/1-foto-principal-7-.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    type: youtube-video
+    videoId: 9PSTEKKsPOg
+    width: '2'
+  - height: '2'
+    type: youtube-video
+    videoId: d1Y42X2_xHg
+    width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: vUtoHxWK8gk
+    width: '1'
 ---
 # Viernes Azul
 

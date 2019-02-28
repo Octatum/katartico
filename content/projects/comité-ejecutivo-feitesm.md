@@ -1,11 +1,12 @@
 ---
 type: project
-index: 14
+index: 13
 title: FEITESM
 banner: /assets/feitesm-portada.jpg
 highlightedImage: /assets/feitesm-principal.jpg
+bodyEnglish: "# Comité Ejecutivo FEITESM\n\n## Graphic design and video\n\nThe Student Government of Tecnológico de Monterrey is a student lead administration that represents the students of the Tecnológico de Monterrey at the Monterrey campus.\r\n\nKatartico conducted a video where students from the council presented a report of all the activities carried out throughout their administration."
 content:
-  - height: '2'
+  - height: '3'
     type: youtube-video
     videoId: kmX0ZGU_e4E
     width: '3'

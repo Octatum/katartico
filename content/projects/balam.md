@@ -1,20 +1,39 @@
 ---
 type: project
-index: 17
+index: 12
 title: BALAM
 banner: /assets/balam-0-portada.jpg
 highlightedImage: /assets/balam-1.jpg
-content:
-  - height: '1'
-    type: image
-    image: /assets/balam_-_1_foto_grande.jpg
-    width: '1'
----
-# **BALAM
-**
+bodyEnglish: >-
+  # BALAM
 
-## Grabación y edición de video_
-_
+
+  ## Recording and video post production
+
+
+  BALAM is the meeting point for the Latin American Entrepreneurship Network,
+  where the best entrepreneurship platforms share their practices and tools.
+
+
+  We carried out the recording and editing of the videos for the introduction of
+  the event and the speakers.
+content:
+  - height: '3'
+    type: youtube-video
+    videoId: RGOzF8m1e3A
+    width: '3'
+  - height: '3'
+    type: youtube-video
+    videoId: _JlEUlLz2pY
+    width: '3'
+  - height: '3'
+    type: youtube-video
+    videoId: Ez7KvAVDgy8
+    width: '3'
+---
+# BALAM
+
+## Grabación y edición de video
 
 BALAM es el punto de encuentro de la Red de Emprendimiento Latinoamericano, donde las mejores plataformas de emprendimiento comparten sus prácticas y herramientas.
 

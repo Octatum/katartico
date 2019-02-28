@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Navbar from './Navbar';
 import { Element } from 'react-scroll';
 import Waypoint from 'react-waypoint';
 
-const Footer = styled.footer`
+import NavbarContainer from './Navbar';
+import { device } from '../utilities/device';
+import Landing from '../page-components/home/Landing';
+import { getCurrentLanguage } from '../utilities/functions';
+
+const Footer = styled.div`
   margin: 0 auto;
   max-width: 90%;
   padding: 4em 0 1em;
@@ -12,59 +16,54 @@ const Footer = styled.footer`
   text-align: center;
   font-size: 0.9em;
 `;
+const DisplayDiv = styled('div')`
+  display: block;
 
-class ChildViewport extends React.Component {
-  state = {
-    shouldMinimizeNavbar: false,
-    scrollableAncestor: null,
-  };
+  ${device.tablet} {
+    display: inline;
+  }
+`;
 
-  componentDidMount() {
+function ChildViewport(props) {
+  const { children, path, includeLanding } = props;
+  const [shouldMinimizeNavbar, setShouldMinimizeNavbar] = useState(false);
+  const [scrollableAncestor, setScrollableAncestor] = useState(null);
+
+  useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    this.setState(() => {
-      return { scrollableAncestor: window };
-    });
+    setScrollableAncestor(window);
+  }, [shouldMinimizeNavbar, scrollableAncestor]);
+
+  function handleWaypointPositionChange(position) {
+    setShouldMinimizeNavbar(position.currentPosition === 'above');
   }
 
-  constructor(props) {
-    super(props);
+  const footerNote = getCurrentLanguage() === "en" ? "All rights reserved" : "Todos los derechos reservados.";
 
-    this.handleWaypointPositionChange = this.handleWaypointPositionChange.bind(
-      this
-    );
-  }
-
-  handleWaypointPositionChange(position) {
-    this.setState(() => {
-      return {
-        shouldMinimizeNavbar: position.currentPosition === 'above',
-      };
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Navbar
-          path={this.props.path}
-          minimize={this.state.shouldMinimizeNavbar}
-        />
-        <div id="mainContainer">
-          <Element name="top">
-            <Waypoint
-              scrollableAncestor={this.state.scrollableAncestor}
-              onPositionChange={this.handleWaypointPositionChange}
-            />
-            <main>{this.props.children}</main>
-            <Footer>
-              Copyright &copy; Todos los derechos reservados. Katartico 2019.
-            </Footer>
-          </Element>
-        </div>
+  return (
+    <div>
+      {includeLanding && <Landing />}
+      <NavbarContainer path={path} minimize={shouldMinimizeNavbar} />
+      <div id="mainContainer">
+        <Element name="top">
+          <Waypoint
+            scrollableAncestor={scrollableAncestor}
+            onPositionChange={handleWaypointPositionChange}
+          />
+          {children}
+          <Footer>
+            Copyright &copy; {footerNote} {' '}
+            <DisplayDiv>Katartico {new Date().getFullYear()}.</DisplayDiv>
+          </Footer>
+        </Element>
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+ChildViewport.defaultProps = {
+  includeLanding: false,
+};
 
 export default ChildViewport;

@@ -1,21 +1,33 @@
 ---
 type: project
-index: 6
+index: 15
 title: Bissú
 banner: /assets/bissu_-_0_portada_BISSU.jpg
-highlightedImage: /assets/bissu_-_1_foto_principal.png
+highlightedImage: /assets/1-foto-principal-1-.jpg
+bodyEnglish: >-
+  # Bissú
+
+
+  ## Graphic design
+
+
+  Bissú is a Mexican cosmetics company that designs and produces beauty products
+  trending around the world. We developed promotional graphic design for their
+  social media networks.
 content:
-  - height: '3'
-    type: image
+  - height: '2'
     image: /assets/bissu_-_1_foto_principal.png
-    width: '2'
-  - height: '3'
     type: image
+    width: '3'
+  - height: '2'
     image: /assets/bissu_-_2.png
-    width: '1'
+    type: image
+    width: '3'
 ---
 # Bissú
 
 ## Diseño gráfico
 
-Bissú es una empresa de cosméticos mexicana que diseña y elabora productos de belleza en tendencia internacional. Desarrollamos diseño gráfico de promocionales para sus redes sociales.
+Bissú es una empresa mexicana de cosméticos, que diseña y elabora productos de belleza en tendencia internacional. 
+
+Sumamos nuestros esfuerzos para posicionar la marca en el noreste del país y desarrollamos artes gráficos de promocionales para sus plataformas digitales.

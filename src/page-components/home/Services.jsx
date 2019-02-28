@@ -48,13 +48,6 @@ const Apostrophes = styled.div`
   }
 `;
 
-const content = [
-  'Construcción de Marca',
-  'Campañas Publicitarias',
-  'Presencia Digital',
-  'Ejecuciones Creativas',
-];
-
 const Text = styled.p`
   position: absolute;
   top: 10%;
@@ -88,8 +81,8 @@ const Services = props => {
       </Header>
       <Apostrophes>
         {list.map(item => (
-          <AnimatedApostrophe as={Link} to="/servicios" key={item.name}>
-            <Text>{item.name}</Text>
+          <AnimatedApostrophe as={Link} to="/servicios" key={item}>
+            <Text>{item}</Text>
           </AnimatedApostrophe>
         ))}
       </Apostrophes>

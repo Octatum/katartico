@@ -1,33 +1,41 @@
 ---
 type: project
-index: 4
+index: 22
 title: Fotografía artística
 banner: /assets/fotoarte_-_0_portada_foto_artistica.jpg
 highlightedImage: /assets/fotoarte_-_1_foto_principal.jpg
+bodyEnglish: >-
+  # Artistica photography
+
+
+  ## Photography and post production of images
+
+
+  Set of photos, where original and specific concepts were created for every
+  photoshoot.
+
+
+  _Collaboration: Sergio Vélez, Rebeca Cabello,and Silvia Ortíz._
 content:
   - height: '2'
+    image: /assets/fotoartística1.jpg
     type: image
-    image: /assets/fotoarte_-_2.jpg
     width: '2'
   - height: '2'
+    image: /assets/fotoartística2.jpg
     type: image
+    width: '1'
+  - height: '2'
     image: /assets/fotoarte_-_3.jpg
-    width: '2'
-  - height: '3'
     type: image
-    image: /assets/fotoarte_-_1_foto_principal.jpg
     width: '3'
   - height: '2'
+    image: /assets/1-foto-principal-4-.jpg
     type: image
-    image: /assets/fotoarte_-_4.jpg
-    width: '1'
+    width: '3'
   - height: '2'
-    type: image
-    image: /assets/fotoarte_-_5.jpg
-    width: '1'
-  - height: '2'
-    type: image
     image: /assets/fotoarte_-_6.jpg
+    type: image
     width: '3'
 ---
 # Fotografía artística

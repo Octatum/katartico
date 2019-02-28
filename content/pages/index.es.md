@@ -2,41 +2,34 @@
 type: page-home
 lang: es
 intro:
-  video: "/assets/intro_animation.mp4"
+  video: /assets/katarticonew.es.mp4
 aboutUs:
+  animation: ''
+  slogan: ¿Cómo creamos momentos katarticos?
   title: Nosotros
-  slogan: "El eslogan va aquí."
-  animation: ""
 homeServices:
-  title: Servicios
   list:
-    - name: "Construcción de marca"
-    - name: "Campañas publicitarias"
-    - name: "Presencia digital"
-    - name: "Ejecuciones creativas"
+    - Construcción de marca
+    - Campañas publicitarias
+    - Presencia digital
+    - Ejecuciones creativa
+  title: Servicios
+
 portfolio: 
-  title: Portafolio
-  image: "/assets/empty.png"
   customers:
-    - name: "Bissu"
-      logo: "/assets/bissu.svg"
-      url: "/project/biss"
-    - name: "Incubadora"
-      logo: "/assets/incubadora.svg"
-    - name: "Jim jams"
-      logo: "/assets/jimjams.svg"
-    - name: "New marias"
-      logo: "/assets/new-marias.svg"
-    - name: "tecnológico de monterrey"
-      logo: "/assets/tec-de-mty.svg"
-      url: "/project/74_aniversario"
-    - name: "Torre Luz"
-      logo: "/assets/torre-luz.svg"
-contact: 
-  title: Contacto
-  labels:
-    name: Nombre
-    email: Correo
-    message: Mensaje
-    sendButton: Enviar
+    - logo: /assets/bissu.svg
+      name: Bissu
+    - logo: /assets/incubadora.svg
+      name: Incubadora
+    - logo: /assets/jimjams.svg
+      name: Jim jams
+    - logo: /assets/new-marias.svg
+      name: New marias
+    - logo: /assets/tec-de-mty.svg
+      name: tecnológico de monterrey
+    - logo: /assets/torre-luz.svg
+      name: Torre Luz
+  image: /assets/empty.png
+  title: Portafolio
 ---
+

@@ -1,67 +1,96 @@
 ---
 type: project
-index: 13
-title: SERVIBOLSA
+index: 1
+title: Bol Rol
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
+bodyEnglish: >-
+  # Bol Rol
+
+
+  ## Catalog and lifestyle photography
+
+
+  Bol Rol is a brand, part of  a national leader in garbage and food bags in the
+  market of self-service in Mexico called SERVIBOLSA. They are present in
+  Mexico, the United States, Colombia, Jamaica, Panama, Costa Rica and more
+  countries.
+
+
+  In order to market your products through Amazon, we made a session of catalog
+  and lifestyle photography. 
+
+
+  ##
 content:
   - height: '2'
+    image: /assets/captura-de-pantalla-2019-02-26-a-la-s-11.37.57.png
     type: image
-    image: /assets/servibolsa_-_Copia_de_Cat_0001.jpg
+    videoId: '0'
     width: '3'
-  - height: '2'
+  - height: '1'
+    image: /assets/servibolsa1.jpg
     type: image
+    width: '2'
+  - height: '2'
     image: /assets/servibolsa_-_Copia_de_Cat_0003.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0004.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0005.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0006.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_Cat_0007.jpg
+    type: image
     width: '1'
   - height: '2'
+    image: /assets/bolrol2.jpg
     type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc1_3.jpg
-    width: '3'
-  - height: '3'
+    width: '2'
+  - height: '2'
+    image: /assets/bolrol3.jpg
     type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc1_5.jpg
+    width: '2'
+  - height: '2'
+    image: /assets/servibolsa_-_Copia_de_LS_Loc3_1.jpg
+    type: image
     width: '2'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_LS_Loc2_3.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
     image: /assets/servibolsa_-_Copia_de_LS_Loc2_6.jpg
+    type: image
     width: '1'
   - height: '1'
-    type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc2_7.jpg
-    width: '1'
-  - height: '1'
-    type: image
-    image: /assets/servibolsa_-_Copia_de_LS_Loc3_1.jpg
-    width: '3'
-  - height: '2'
-    type: image
     image: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
-    width: '3'
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/iphonebolrol.jpg
+    type: image
+    videoId: '0'
+    width: '1'
+  - height: '2'
+    image: /assets/iphonebolrol2.jpg
+    type: image
+    videoId: '0'
+    width: '1'
 ---
-# SERVIBOLSA
+# Bol Rol
 
 ## Fotografía de catálogo y lifestyle
 
-Servibolsa es una empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México desde 1981. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
+Bol Rol es una marca de la empresa líder a nivel nacional en bolsas para basura y alimentos en el mercado de autoservicios en México, llamada SERVIBOLSA. Están presentes en México, Estados Unidos, Colombia, Jamaica, Panamá, Costa Rica y más países.
 
-Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle. Estas fotografías se encuentran actualmente en el sitio web:
+Con el fin de comercializar sus productos a través de Amazon, realizamos una sesión de fotografías de catálogo y lifestyle.

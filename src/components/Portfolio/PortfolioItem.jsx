@@ -15,6 +15,7 @@ const CellItem = styled('div')`
 const Video = styled(CellItem)`
   width: 100%;
   height: 100%;
+  min-height: calc(${({ height }) => `15vw * ${height} + ${height - 1} * 2rem `});
 `;
 
 const Image = styled(GatsbyImage)`

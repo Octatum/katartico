@@ -70,6 +70,18 @@ module.exports = {
         prefixDefault: false,
       }
     },
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Katartico Agencia de Publicidad`,
+        short_name: `Katartico`,
+        start_url: `/`,
+        background_color: `#111`,
+        theme_color: `#111`,
+        icon: `static/apostrofe.png`, // This path is relative to the root of the site.
+        include_favicon: true, // Include favicon
+      },
+    },
   ],
 };

@@ -39,6 +39,14 @@ exports.createPages = ({ actions, graphql }) => {
           title: node.frontmatter.title
         }
       });
+
+      createPage({
+        path: `/en/project/${route}`,
+        component: projectTemplate,
+        context: {
+          title: node.frontmatter.title
+        }
+      });
     });
   });
 }

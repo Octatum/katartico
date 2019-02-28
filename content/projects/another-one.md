@@ -1,77 +1,69 @@
 ---
 type: project
-index: 3
+index: 5
 title: Biofase
 banner: /assets/biofase_-_0_portada_BIOFASE.jpg
 highlightedImage: /assets/biofase_-_6.jpg
+bodyEnglish: >-
+  # Biofase
+
+
+  ## Graphic design and social media networks
+
+
+  Biofase is a company that markets bioplastic products from the avocado seed.
+  They manufacture resin and raw materials, also they fabricate straws,
+  bioplastic ware and biodegradable packaging.  Katartico developed content,
+  photography, and graphic design for social media networks. Additionally we
+  managed their social media networks.
 content:
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_1_foto_principal.jpg
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_2.png
-    width: '2'
   - height: '3'
+    image: /assets/biofase1.jpg
     type: image
-    image: /assets/biofase_-_3.png
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/biofase_-_4.jpg
     width: '2'
   - height: '2'
+    image: /assets/biofase2.jpg
     type: image
-    image: /assets/biofase_-_5.jpg
-    width: '3'
-  - height: '3'
-    type: image
-    image: /assets/biofase_-_6.jpg
-    width: '2'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_7.png
-    width: '2'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_8.jpg
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/biofase_-_9.jpg
-    width: '2'
-  - height: '3'
-    type: image
-    image: /assets/biofase_-_11.jpg
-    width: '1'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_13.png
-    width: '2'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_15.png
-    width: '1'
-  - height: '3'
-    type: image
-    image: /assets/biofase_-_16.png
-    width: '2'
-  - height: '2'
-    type: image
-    image: /assets/biofase_-_17.png
     width: '1'
   - height: '1'
+    image: /assets/biofase3.jpg
     type: image
-    image: /assets/biofase_-_18.png
     width: '1'
+  - height: '2'
+    image: /assets/biofase4.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/blattsalad.jpg
+    type: image
+    width: '3'
+  - height: '3'
+    image: /assets/biofase22.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/biofase8.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/16.png
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/mockupbiofase2.jpg
+    type: image
+    width: '3'
 ---
 # Biofase
 
 ## Diseño gráfico y redes sociales
 
-Biofase produce bioplástico a base de la semilla del aguacate.
+Biofase cuenta con tecnología única en el mundo para producir bioplástico a base de la semilla del aguacate. Desarrollan desde resina y materia prima, hasta productos desechables como popotes, cubiertos y envases biodegradables.
 
-Desarrollamos contenido realizando conceptualización, diseño gráfico y administración de sus redes sociales.
+Desarrollamos contenido visual realizando conceptualización y diseño gráfico para sus redes sociales, así como la administración de las mismas.
+
+
+
+
 
 ##

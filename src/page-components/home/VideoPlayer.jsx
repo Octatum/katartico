@@ -1,63 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import _ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  height: 100%;
+  height: calc(90vh - 110px);
   width: 100%;
 `;
 
-const ReactPlayer = styled(_ReactPlayer)`
-  width: ${props => (props.big ? '100vw' : '100%')};
+const ReactPlayer = styled('video')`
+  width: 100%;
   height: auto;
   max-height: none;
+  -webkit-filter: contrast(120%);
 `;
 
-const PlayButton = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: calc(40px + 40px * 0.866) solid ${props => props.theme.main};
-  cursor: pointer;
-
-  :hover {
-    opacity: 0.7;
-  }
-`;
-
-class VideoPlayer extends Component {
-  state = {
-    playing: true,
-  };
-
-  togglePlayback = () => {
-    this.setState(prevState => ({
-      playing: !prevState.playing,
-    }));
-  };
-
-  render = () => (
+function VideoPlayer(props) {
+  return (
     <Wrapper>
-      <ReactPlayer
-        url={this.props.movie}
-        playing={this.state.playing}
-        playsinline
-        muted
-        onEnded={this.togglePlayback}
-        width="100%"
-        height="100%"
-        big={this.props.big}
-        loop
-      />
-      {!this.state.playing && <PlayButton onClick={this.togglePlayback} />}
+      <ReactPlayer playsinline muted loop autoPlay>
+        <source src={props.movie} />
+      </ReactPlayer>
     </Wrapper>
   );
 }
