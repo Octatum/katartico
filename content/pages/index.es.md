@@ -7,16 +7,15 @@ aboutUs:
   animation: ''
   slogan: ¿Cómo creamos momentos katarticos?
   title: Nosotros
-pageBody:
-  description: '-'
 homeServices:
   list:
     - Construcción de marca
     - Campañas publicitarias
     - Presencia digital
-    - Ejecuciones creativas
+    - Ejecuciones creativa
   title: Servicios
-portfolio:
+
+portfolio: 
   customers:
     - logo: /assets/bissu.svg
       name: Bissu

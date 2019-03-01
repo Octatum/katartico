@@ -3,7 +3,16 @@ import HomePresentation from '../templates/HomeTemplate';
 import { StaticQuery, graphql } from 'gatsby';
 
 const Index = props => {
-  return <HomePresentation {...props} />;
+  const contact = {
+    title: "Contact",
+    labels: {
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      sendButton: "Send"
+    }
+  };
+  return <HomePresentation {...props} contact={contact} />;
 };
 
 export default props => (
@@ -38,16 +47,6 @@ export default props => (
                 logo {
                   publicURL
                 }
-                url
-              }
-            }
-            contact {
-              title
-              labels {
-                name
-                email
-                message
-                sendButton
               }
             }
           }

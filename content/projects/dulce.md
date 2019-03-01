@@ -1,6 +1,6 @@
 ---
 type: project
-index: 22
+index: 26
 title: Dulce
 banner: /assets/dulce_-_0_portada.jpg
 highlightedImage: /assets/dulce_-_1_foto_principal.JPG
@@ -52,4 +52,4 @@ content:
 
 ## Fotografía y edición de imágenes
 
-Dulce es una emprendedora que hace tortugones en épocas navideñas. Hicimos una sesión de fotografía de producto con utilería para que las utilizara en su catálogo de Navidad 2017.
+Dulce es una emprendedora que hace tortugones en épocas navideñas. Hicimos una sesión de fotografía de producto con utilería para su catálogo de Navidad 2017.

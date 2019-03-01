@@ -1,6 +1,6 @@
 ---
 type: project
-index: 17
+index: 18
 title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
 highlightedImage: /assets/principal.jpg
@@ -50,10 +50,18 @@ content:
     image: /assets/1-foto-principal-7-.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/1.3-1-.jpg
-    type: image
+  - height: '2'
+    type: youtube-video
+    videoId: 9PSTEKKsPOg
+    width: '2'
+  - height: '2'
+    type: youtube-video
+    videoId: d1Y42X2_xHg
     width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: vUtoHxWK8gk
+    width: '1'
 ---
 # Viernes Azul
 

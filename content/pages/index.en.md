@@ -2,41 +2,33 @@
 type: page-home
 lang: en
 intro:
-  video: "/assets/katarticonew.mp4"
+  video: /assets/katarticonew.mp4
 aboutUs:
+  animation: ''
+  slogan: How do we create katarticos moments?
   title: About us
-  slogan: "How do we create katarticos moments?"
-  animation: ""
 homeServices:
-  title: Services
   list:
-    - "Lorem ipsum dolor"
-    - "Lorem donor"
-    - "Lorem ipsum"
-    - "Ipsum donor"
+    - Lorem ipsum dolor
+    - Lorem donor
+    - Lorem ipsum
+    - Ipsum donor
+  title: Services
 portfolio: 
-  title: Portfolio
-  image: "/assets/empty.en.png"
   customers:
-    - name: "Bissu"
-      logo: "/assets/bissu.svg"
-      url: "/project/biss"
-    - name: "Incubadora"
-      logo: "/assets/incubadora.svg"
-    - name: "Jim jams"
-      logo: "/assets/jimjams.svg"
-    - name: "New marias"
-      logo: "/assets/new-marias.svg"
-    - name: "tecnológico de monterrey"
-      logo: "/assets/tec-de-mty.svg"
-      url: "/project/74_aniversario"
-    - name: "Torre Luz"
-      logo: "/assets/torre-luz.svg"
-contact: 
-  title: Contact
-  labels:
-    name: Name
-    email: Email
-    message: Message
-    sendButton: Send
+    - logo: /assets/bissu.svg
+      name: Bissu
+    - logo: /assets/incubadora.svg
+      name: Incubadora
+    - logo: /assets/jimjams.svg
+      name: Jim jams
+    - logo: /assets/new-marias.svg
+      name: New marias
+    - logo: /assets/tec-de-mty.svg
+      name: tecnológico de monterrey
+    - logo: /assets/torre-luz.svg
+      name: Torre Luz
+  image: /assets/empty.en.png
+  title: Portfolio
 ---
+

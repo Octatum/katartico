@@ -37,6 +37,11 @@ collections:
         fields:
           - { name: "type", label: "Type", widget: "hidden", default: "page-home" }
           - { name: "lang", label: "Languaje", widget: "hidden", default: "en" }
+          - label: "Configuración de metadatos"
+            name: "pageBody"
+            widget: object
+            fields:
+              - { label: "Descripción de página", name: "description", widget: "text" }
           - label: "Introducción"
             name: "intro"
             widget: object
@@ -87,6 +92,11 @@ collections:
               - { label: "Título de sección", name: "title", widget: "string" }
               - { label: "Eslogan", name: "slogan", widget: "text" }
               - { label: "Animación en formato json", name: animation, widget: file, required: false }
+          - label: "Configuración de metadatos"
+            name: "pageBody"
+            widget: object
+            fields:
+              - { label: "Descripción de página", name: "description", widget: "text" }
           - label: "Servicios"
             name: "homeServices"
             widget: object

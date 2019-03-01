@@ -20,8 +20,8 @@ const GeneralLayout = ({ children }) => (
       <Helmet
         titleTemplate={'Katartico Agencia de Publicidad - %s'}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Creando momentos Katarticos.' },
+          { name: 'keywords', content: 'Agencia de publicidad, publicidad, agencia de marketing, marketing digital, marketing' },
         ]}
       >
         <html lang="en" />

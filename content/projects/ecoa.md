@@ -1,6 +1,6 @@
 ---
 type: project
-index: 26
+index: 19
 title: ECOA
 banner: /assets/00-portada.jpg
 highlightedImage: /assets/11-foto-principal.png
@@ -20,49 +20,25 @@ bodyEnglish: >-
   We worked on graphic design, promotional videos and social media network
   content.
 content:
-  - height: '1'
-    image: /assets/ecoa_-_1.jpg
-    type: image
-    width: '1'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/jR5gqac3lX0" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: jR5gqac3lX0
     width: '3'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/Y4OEC4sRoRI" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: Y4OEC4sRoRI
     width: '1'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/x4htaDJIruY" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: x4htaDJIruY
     width: '1'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/Qg7EV7Occn8" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: Qg7EV7Occn8
     width: '1'
   - height: '2'
     type: youtube-video
-    videoId: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/5BonccbFRcI" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    videoId: 5BonccbFRcI
     width: '3'
 ---
 # ECOA

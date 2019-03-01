@@ -1,6 +1,6 @@
 ---
 type: project
-index: 4
+index: 5
 title: Biofase
 banner: /assets/biofase_-_0_portada_BIOFASE.jpg
 highlightedImage: /assets/biofase_-_6.jpg
@@ -37,18 +37,18 @@ content:
     image: /assets/blattsalad.jpg
     type: image
     width: '3'
+  - height: '3'
+    image: /assets/biofase22.jpg
+    type: image
+    width: '2'
   - height: '1'
     image: /assets/biofase8.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/biofase_-_16.png
+    image: /assets/16.png
     type: image
     width: '1'
-  - height: '2'
-    image: /assets/biofase9.jpg
-    type: image
-    width: '2'
   - height: '2'
     image: /assets/mockupbiofase2.jpg
     type: image

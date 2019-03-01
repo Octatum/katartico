@@ -1,6 +1,6 @@
 ---
 type: project
-index: 23
+index: 17
 title: Tres Once
 banner: /assets/to-portada.jpg
 highlightedImage: /assets/to-1.png
@@ -16,8 +16,8 @@ bodyEnglish: >-
   social media profiles. The campaign included a photoshoot, graphic design,
   graphic animations, and content for their social media networks.
 content:
-  - height: '1'
-    image: /assets/tresonce1.jpg
+  - height: '3'
+    image: /assets/tresonce5.jpg
     type: image
     width: '3'
   - height: '1'
@@ -32,9 +32,9 @@ content:
     image: /assets/tresonce4.jpg
     type: image
     width: '1'
-  - height: '3'
-    image: /assets/tresonce5.jpg
-    type: image
+  - height: '2'
+    type: youtube-video
+    videoId: EAaj24qXLl0
     width: '3'
 ---
 # Tres Once

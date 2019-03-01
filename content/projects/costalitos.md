@@ -1,6 +1,6 @@
 ---
 type: project
-index: 26
+index: 9
 title: Costalitos
 banner: /assets/banner1.jpg
 highlightedImage: /assets/destacada.jpg
@@ -35,14 +35,14 @@ content:
     type: image
     width: '2'
   - height: '2'
-    image: /assets/iphonecostalitos2.jpg
-    type: image
-    videoId: '0'
-    width: '1'
-  - height: '2'
     image: /assets/costalitos1.jpg
     type: image
     width: '3'
+  - height: '2'
+    image: /assets/costalitos11.jpg
+    type: image
+    videoId: '0'
+    width: '1'
   - height: '2'
     image: /assets/costalitos2.jpg
     type: image
