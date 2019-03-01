@@ -281,7 +281,7 @@ function Presentation(props) {
 
   const socialMediaLinks = socialMedia.map((item, index) => (
     <SocialMediaIcon key={index}>
-      <Anchor href={item.path}>
+      <Anchor href={item.path} rel="noopener noreferrer" target="_blank">
         <i className={`fab ${item.faName}`} />
       </Anchor>
     </SocialMediaIcon>
