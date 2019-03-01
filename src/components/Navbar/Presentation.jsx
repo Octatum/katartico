@@ -196,15 +196,15 @@ const SocialMediaIcon = styled.div`
 
 const socialMedia = [
   {
-    path: '/',
+    path: 'https://www.facebook.com/katarticomx',
     faName: 'fa-facebook-f',
   },
   {
-    path: '/',
+    path: 'https://instagram.com/katarticomx',
     faName: 'fa-instagram',
   },
   {
-    path: '/',
+    path: 'https://www.linkedin.com/company/katartico/about/',
     faName: 'fa-linkedin-in',
   },
 ];
