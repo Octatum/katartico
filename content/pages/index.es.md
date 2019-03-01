@@ -7,12 +7,14 @@ aboutUs:
   animation: ''
   slogan: ¿Cómo creamos momentos katarticos?
   title: Nosotros
+pageBody:
+  description: '-'
 homeServices:
   list:
     - Construcción de marca
     - Campañas publicitarias
     - Presencia digital
-    - Ejecuciones creativa
+    - Ejecuciones creativas
   title: Servicios
 portfolio:
   customers:
