@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link as _ScrollLink } from 'react-scroll';
 import MediaQuery from 'react-responsive';
 import hexToRgba from 'hex-rgba';
-import { Link as GatsbyLink } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import BurgerMenu from './BurgerMenu';
 import { breakpoints, device } from '../../utilities/device';
@@ -151,7 +151,7 @@ const Rectangle = styled.rect`
   }
 `;
 
-const Anchor = styled.a`
+const Anchor = styled(OutboundLink)`
   margin: 1rem 0;
   transition: all 0.3s cubic-bezier(0.45, 0.05, 0.55, 0.95);
   font-size: 1em;

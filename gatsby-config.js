@@ -1,5 +1,10 @@
 module.exports = {
+  // In your gatsby-config.js
+  siteMetadata: {
+    siteUrl: `https://katartico.mx`,
+  },
   plugins: [
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     `gatsby-plugin-sharp`,
@@ -70,6 +75,7 @@ module.exports = {
         prefixDefault: false,
       }
     },
+    
     'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -81,6 +87,14 @@ module.exports = {
         theme_color: `#111`,
         icon: `static/apostrofe.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-135441326-1",
+        // Puts tracking script in the head instead of the body
+        head: false,
       },
     },
   ],
