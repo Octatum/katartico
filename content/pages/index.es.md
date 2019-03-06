@@ -16,7 +16,7 @@ homeServices:
     - Construcción de marca
     - Campañas publicitarias
     - Presencia digital
-    - Ejecuciones creativa
+    - Ejecuciones creativas
   title: Servicios
 portfolio:
   customers:
