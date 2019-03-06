@@ -20,18 +20,18 @@ homeServices:
   title: Servicios
 portfolio:
   customers:
-    - logo: /assets/incubadora.svg
-      name: Incubadora
+    - logo: /assets/logos-clientes-curvas-05.png
+      name: La Manzana Sana
+    - logo: /assets/tec-de-mty.svg
+      name: Tecnológico de Monterrey
     - logo: /assets/logos-clientes-curvas-02.png
       name: Pan de Pan
-    - logo: /assets/tec-de-mty.svg
-      name: tecnológico de monterrey
     - logo: /assets/bissu.svg
       name: Bissu
     - logo: /assets/new-marias.svg
-      name: New marias
-    - logo: /assets/torre-luz.svg
-      name: Torre Luz
+      name: New Marias
+    - logo: /assets/logos-clientes-curvas-04.png
+      name: Bol Rol
   image: /assets/empty.png
   title: Portafolio
 ---
