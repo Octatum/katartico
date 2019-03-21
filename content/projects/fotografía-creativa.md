@@ -1,6 +1,6 @@
 ---
 type: project
-index: 8
+index: 9
 title: Fotografía creativa
 banner: /assets/fotocreativa_-_0_portada.jpg
 highlightedImage: /assets/fotocreativa_-_1_foto_principal.jpg
