@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
@@ -7,6 +7,7 @@ import ChildViewport from '../ChildViewport';
 import '../assets/font-awesome-all.css';
 
 import './index.css';
+import { useSessionStorage } from 'react-use';
 
 const theme = {
   white: '#fff',
@@ -21,7 +22,11 @@ const GeneralLayout = ({ children }) => (
         titleTemplate={'Katartico Agencia de Publicidad - %s'}
         meta={[
           { name: 'description', content: 'Creando momentos Katarticos.' },
-          { name: 'keywords', content: 'Agencia de publicidad, publicidad, agencia de marketing, marketing digital, marketing' },
+          {
+            name: 'keywords',
+            content:
+              'Agencia de publicidad, publicidad, agencia de marketing, marketing digital, marketing',
+          },
         ]}
       >
         <html lang="en" />
@@ -46,8 +51,26 @@ Layout.propTypes = {
 
 export default Layout;
 
-export const HomeLayout = props => (
-  <GeneralLayout>
-    <ChildViewport includeLanding={true} {...props} />
-  </GeneralLayout>
-);
+export const LandingContext = React.createContext(null);
+
+export const HomeLayout = props => {
+  const initialValue = 'true';
+  const [showLanding, setShowLanding] = useSessionStorage(
+    'showLanding',
+    initialValue
+  );
+
+  function hideLanding() {
+    setShowLanding('false');
+  }
+
+  return (
+    <GeneralLayout>
+      <LandingContext.Provider
+        value={[showLanding === initialValue, hideLanding]}
+      >
+        <ChildViewport includeLanding={true} {...props} />
+      </LandingContext.Provider>
+    </GeneralLayout>
+  );
+};
