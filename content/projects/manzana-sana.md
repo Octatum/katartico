@@ -34,7 +34,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_1248.jpg
+    image: /assets/dsc_1605.jpg
     type: image
     width: '3'
   - height: '2'
@@ -42,7 +42,11 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dsc_1605.jpg
+    image: /assets/dsc_1248.jpg
+    type: image
+    width: '3'
+  - height: '1'
+    image: /assets/dsc_0825.jpg
     type: image
     width: '3'
   - height: '2'
@@ -51,22 +55,6 @@ content:
     width: '3'
   - height: '2'
     image: /assets/dsc_1137.jpg
-    type: image
-    width: '3'
-  - height: '2'
-    image: /assets/dsc_0928.jpg
-    type: image
-    width: '2'
-  - height: '1'
-    image: /assets/dsc_1009.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/dsc_0799.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/dsc_0825.jpg
     type: image
     width: '3'
 ---
