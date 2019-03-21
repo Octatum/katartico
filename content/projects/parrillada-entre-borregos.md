@@ -1,6 +1,6 @@
 ---
 type: project
-index: 25
+index: 26
 title: Parrillada entre Borregos
 banner: /assets/parrilladaborregos_-_0_portada_parrillada.jpg
 highlightedImage: /assets/parrilladaborregos_-_1_foto_principal.png
