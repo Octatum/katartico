@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styled from 'styled-components';
 
 import { device } from '../../utilities/device';
 import { Title, Arrow } from './assets/SVGs';
 import { Apostrophe } from '../../components/assets/ApostropheComp';
 import { useSessionStorage } from 'react-use';
+import { LandingContext } from '../../components/Layout';
 
 const Container = styled.div`
   display: ${({ show }) => (show ? 'grid' : 'none')};
@@ -100,33 +101,30 @@ function noscroll() {
 }
 
 function Landing(props) {
-  const [hideLanding, setHideLanding] = useSessionStorage(
-    'hideLanding',
-    'false'
-  );
+  const [showLanding, hideLanding] = useContext(LandingContext);
   const [animate, setAnimate] = useState(false);
 
   const handleLandingClick = () => {
     setAnimate(true);
     setTimeout(() => {
-      setHideLanding('true');
+      hideLanding();
     }, 1000);
   };
 
   useEffect(() => {
     if (typeof window === undefined) return;
 
-    if (hideLanding === 'false') {
+    if (showLanding) {
       window.addEventListener('scroll', noscroll);
     } else {
       window.removeEventListener('scroll', noscroll);
     }
-  }, [hideLanding]);
+  }, [showLanding]);
 
   return (
     <Container
       onClick={handleLandingClick}
-      show={hideLanding === 'false'}
+      show={showLanding}
       animate={animate}
       onScroll={noscroll}
       {...props}
