@@ -1,6 +1,6 @@
 ---
 type: project
-index: 21
+index: 22
 title: DELEX
 banner: /assets/delex-0.jpg
 highlightedImage: /assets/delex-1-foto-principal.png
