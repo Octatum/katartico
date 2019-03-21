@@ -14,27 +14,19 @@ bodyEnglish: >-
   post them on their social media networks.
 content:
   - height: '2'
-    image: /assets/dsc_1137.jpg
-    type: image
-    width: '3'
-  - height: '2'
-    image: /assets/dsc_0799.jpg
+    image: /assets/dsc_1188.jpg
     type: image
     width: '2'
   - height: '2'
     image: /assets/dsc_0822.jpg
     type: image
     width: '1'
-  - height: '2'
-    image: /assets/dsc_1248.jpg
-    type: image
-    width: '3'
   - height: '1'
     image: /assets/dsc_1669.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_1775.jpg
+    image: /assets/dsc_1802-4.jpg
     type: image
     width: '1'
   - height: '1'
@@ -42,21 +34,17 @@ content:
     type: image
     width: '1'
   - height: '2'
+    image: /assets/dsc_1248.jpg
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/dsc_1774.jpg
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dsc_1188.jpg
+    image: /assets/dsc_1137.jpg
     type: image
-    width: '2'
-  - height: '1'
-    image: /assets/dsc_1032.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/dsc_1802.jpg
-    type: image
-    width: '1'
+    width: '3'
 ---
 La Manzana Sana es una tienda saludable que se dedica a comercializar productos orgánicos y snacks fit de marca propia, como nieves de yogurt, smoothies naturales y licuados de frutas. 
 
