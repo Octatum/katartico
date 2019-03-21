@@ -70,6 +70,8 @@ content:
     type: image
     width: '3'
 ---
+# La Manzana Sana
+
 La Manzana Sana es una tienda saludable que se dedica a comercializar productos orgánicos y snacks fit de marca propia, como nieves de yogurt, smoothies naturales y licuados de frutas. 
 
 Con el fin de unificar su imagen y posicionarla en la Zona Metropolitana de Monterrey, realizamos una sesión fotográfica de sus productos estrella dentro de su tienda para publicarlo en sus redes sociales.
