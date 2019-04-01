@@ -40,7 +40,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dulce2.jpg
+    image: /assets/dulce_10.jpg
     type: image
     width: '3'
   - height: '2'
