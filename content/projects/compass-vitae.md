@@ -16,6 +16,22 @@ content:
       https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/termos.jpg
     type: image
     width: '3'
+  - height: '2'
+    image: /assets/tarjetas-de-presentaciónweb.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/blusascompass.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/gorra2compass.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/gorra1compass.jpg
+    type: image
+    width: '1'
 ---
 # Compass Vitae
 
