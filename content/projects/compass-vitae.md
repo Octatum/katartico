@@ -32,6 +32,22 @@ content:
     image: /assets/gorra1compass.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/termosweb.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/firmas-electronicas-web.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/firmas-electronicas-web-2.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/bolsas-compass-vitae-web.jpg
+    type: image
+    width: '1'
 ---
 # Compass Vitae
 
