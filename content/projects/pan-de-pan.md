@@ -17,7 +17,7 @@ content:
     videoId: '0'
     width: '1'
   - height: '1'
-    image: /assets/pdp-pantone-4.jpg
+    image: /assets/37-web.jpg
     type: image
     videoId: '0'
     width: '1'
