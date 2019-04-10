@@ -21,30 +21,10 @@ bodyEnglish: >-
   to carry out the event, also we create the corporative philosophy that will
   leave a mark in the assistants of this space.
 content:
-  - height: '2'
-    image: /assets/liftcorrecto.jpg
-    type: image
-    width: '2'
-  - height: '1'
-    image: /assets/lift8.jpg
+  - height: '3'
+    image: /assets/manualdeindentidad_lift17.jpg
     type: image
     width: '1'
-  - height: '1'
-    image: /assets/lift9.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/lift4.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/manualdeindentidad_lift12.jpg
-    type: image
-    width: '2'
-  - height: '1'
-    image: /assets/manualdeindentidad_lift14.jpg
-    type: image
-    width: '3'
 ---
 # **LIFT**
 
