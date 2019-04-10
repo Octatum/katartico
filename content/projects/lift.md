@@ -41,6 +41,10 @@ content:
     image: /assets/lift10.jpg
     type: image
     width: '2'
+  - height: '1'
+    image: /assets/lift11.jpg
+    type: image
+    width: '3'
 ---
 # **LIFT**
 
