@@ -21,8 +21,8 @@ bodyEnglish: >-
   to carry out the event, also we create the corporative philosophy that will
   leave a mark in the assistants of this space.
 content:
-  - height: '1'
-    image: /assets/lift7.jpg
+  - height: '2'
+    image: /assets/liftcorrecto.jpg
     type: image
     width: '2'
   - height: '1'
@@ -38,7 +38,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/lift6.jpg
+    image: /assets/lift10.jpg
     type: image
     width: '2'
 ---
