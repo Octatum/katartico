@@ -3,7 +3,7 @@ type: project
 index: 28
 title: LIFT
 banner: /assets/liftn.jpg
-highlightedImage: /assets/liftcorrecto.jpg
+highlightedImage: /assets/manualdeindentidad_lift13.jpg
 bodyEnglish: >-
   # **LIFT**
 
@@ -38,7 +38,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/lift10.jpg
+    image: /assets/manualdeindentidad_lift12.jpg
     type: image
     width: '2'
   - height: '1'
