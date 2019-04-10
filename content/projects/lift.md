@@ -25,6 +25,26 @@ content:
     image: /assets/manualdeindentidad_lift17.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/pantonelift1.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/pantonelift2.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/pantonelift3.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/pantonelift4.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/pantonelift5.jpg
+    type: image
+    width: '1'
 ---
 # **LIFT**
 
