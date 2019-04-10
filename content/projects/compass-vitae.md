@@ -50,4 +50,6 @@ content:
 
 ## _**Naming y Branding**_
 
-Compass Vitae nace a partir de la necesidad de reconocer y desarrollar a los líderes de proyectos con impacto social.
+Compass Vitae nace a partir de la necesidad de reconocer y desarrollar a los líderes de proyectos con impacto social. Compass Vitae será un bootcamp/concentración donde los líderes sociales del Tec podrán desarrollar las herramientas necesarias para impactar de manera trascendental a su comunidad. 
+
+Nos dimos a la tarea de desarrollar el naming y branding de la marca siguiendo el concepto de la brújula que guía mi vida: Compass Vitae. Los participantes de este bootcamp enfocarán sus esfuerzos en cimentar un liderazgo orientado al florecimiento humano.
