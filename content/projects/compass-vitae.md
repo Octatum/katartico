@@ -2,13 +2,25 @@
 type: project
 index: 28
 title: Compass Vitae
-banner: /assets/logo-pp-compass-vitae.jpg
-highlightedImage: /assets/foto-principal-compass-vitae.jpg
+banner: /assets/compass-vitae-banner-wed.jpg
+highlightedImage: /assets/compass-vitae-foto-principal-web.jpg
 bodyEnglish: |-
   # Compass Vitae
 
   ## _Naming y Blanding_
 content:
+  - height: '1'
+    image: /assets/logotipo-1-web.jpg
+    type: image
+    width: '3'
+  - height: '1'
+    image: /assets/logotipo-2-web.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/emblema-web.jpg
+    type: image
+    width: '2'
   - height: '2'
     image: /assets/termos.jpg
     type: image
