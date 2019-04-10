@@ -48,6 +48,11 @@ content:
     image: /assets/pantonelift5..jpg
     type: image
     width: '1'
+  - height: '1'
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patron2lift.jpg
+    type: image
+    width: '1'
 ---
 # **LIFT**
 
