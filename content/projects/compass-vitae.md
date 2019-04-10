@@ -48,4 +48,6 @@ content:
 ---
 # Compass Vitae
 
-## **_Naming y Branding_**
+## _**Naming y Branding**_
+
+Compass Vitae nace a partir de la necesidad de reconocer y desarrollar a los líderes de proyectos con impacto social.
