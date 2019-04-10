@@ -8,7 +8,7 @@ bodyEnglish: >-
   # **LIFT**
 
 
-  ## _Naming y Branding_
+  ## **_Naming y Branding_**
 
 
   Leader-Inspired Forum by TEC, it's a platform that reunites entrepreneur,
@@ -44,7 +44,7 @@ content:
 ---
 # **LIFT**
 
-## _Naming y Branding_
+## **_Naming y Branding_**
 
 Leader-Inspired Forum by TEC, será una plataforma que reunirá a líderes empresariales, educativos y tecnológicos, con el fin de compartir casos de éxito, testimonios y tendencias globales. Este foro estará dirigido a la Comunidad TEC, y se expandirá a nivel nacional. 
 
