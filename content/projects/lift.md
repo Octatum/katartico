@@ -42,7 +42,7 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: /assets/lift11.jpg
+    image: /assets/manualdeindentidad_lift14.jpg
     type: image
     width: '3'
 ---
