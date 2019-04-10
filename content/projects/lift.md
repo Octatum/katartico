@@ -37,7 +37,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift3.jpg
+    image: /assets/pantonelift3..jpg
     type: image
     width: '1'
   - height: '1'
