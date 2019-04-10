@@ -22,15 +22,18 @@ bodyEnglish: >-
   leave a mark in the assistants of this space.
 content:
   - height: '3'
-    image: /assets/manualdeindentidad_lift17.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/manualdeindentidad_lift17.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift1.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/pantonelift1.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift2.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/pantonelift2.jpg
     type: image
     width: '1'
   - height: '1'
@@ -38,15 +41,11 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift4.jpg
+    image: /assets/pantonelift4..jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift5.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/patron2lift.jpg
+    image: /assets/pantonelift5..jpg
     type: image
     width: '1'
 ---
