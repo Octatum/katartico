@@ -45,6 +45,10 @@ content:
     image: /assets/pantonelift5.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/patron2lift.jpg
+    type: image
+    width: '1'
 ---
 # **LIFT**
 
