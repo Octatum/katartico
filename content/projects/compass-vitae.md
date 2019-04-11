@@ -42,6 +42,10 @@ content:
     type: image
     width: '1'
   - height: '2'
+    image: /assets/fondo-compass-web.jpg
+    type: image
+    width: '1'
+  - height: '2'
     image: /assets/termos.jpg
     type: image
     width: '3'
