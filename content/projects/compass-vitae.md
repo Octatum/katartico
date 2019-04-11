@@ -50,7 +50,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/tarjetas-de-presentaciónweb.jpg
+    image: /assets/tarjetas-de-presentación-web-final.jpg
     type: image
     width: '3'
   - height: '2'
