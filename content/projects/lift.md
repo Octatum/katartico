@@ -22,8 +22,7 @@ bodyEnglish: >-
   leave a mark in the assistants of this space.
 content:
   - height: '3'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/manualdeindentidad_lift17.jpg
+    image: /assets/manualdeindentidad_lift17.jpg
     type: image
     width: '1'
   - height: '1'
@@ -47,8 +46,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patron2lift.jpg
+    image: /static/assets/patron2lift.jpg
     type: image
     width: '1'
   - height: '2'
@@ -60,8 +58,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/lift8.jpg
+    image: /static/assets/lift8.jpg
     type: image
     width: '1'
   - height: '1'
