@@ -55,6 +55,15 @@ content:
     image: /assets/stationerymockupliftfinal.jpg
     type: image
     width: '3'
+  - height: '1'
+    image: /assets/liftmockup1.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/lift8.jpg
+    type: image
+    width: '1'
 ---
 # **LIFT**
 
