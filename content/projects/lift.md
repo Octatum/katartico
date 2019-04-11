@@ -27,25 +27,23 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/pantonelift1.jpg
+    image: /assets/pantoneslift-01.jpg
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/pantonelift2.jpg
+    image: /assets/pantoneslift-02.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift3..jpg
+    image: /assets/pantoneslift-03.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift4..jpg
+    image: /assets/pantoneslift-04.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantonelift5..jpg
+    image: /assets/pantoneslift-05.jpg
     type: image
     width: '1'
   - height: '1'
@@ -53,6 +51,10 @@ content:
       https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patron2lift.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/stationerymockupliftfinal.jpg
+    type: image
+    width: '3'
 ---
 # **LIFT**
 
