@@ -21,6 +21,26 @@ content:
     image: /assets/emblema-web.jpg
     type: image
     width: '2'
+  - height: '1'
+    image: /assets/colores-compass-web-rojo.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/colores-compass-web-naranja.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/colores-compass-web-amarillo.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/colores-compass-web-celeste.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/colores-compass-web-azul.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/termos.jpg
     type: image
