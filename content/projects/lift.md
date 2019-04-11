@@ -64,6 +64,14 @@ content:
       https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/lift8.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/liftmockup3.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/mockuplift4.jpg
+    type: image
+    width: '2'
 ---
 # **LIFT**
 
