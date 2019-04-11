@@ -2,7 +2,7 @@
 type: project
 index: 28
 title: Compass Vitae
-banner: /assets/compass-vitae-banner-wed.jpg
+banner: /assets/banner-compass-web.jpg
 highlightedImage: /assets/compass-vitae-foto-principal-web.jpg
 bodyEnglish: |-
   # Compass Vitae
@@ -42,7 +42,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/fondo-compass-web.jpg
+    image: /assets/texturizado-compass-web.jpg
     type: image
     width: '1'
   - height: '2'
@@ -66,15 +66,11 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/termosweb.jpg
+    image: /assets/libretas-compass_mesa-de-trabajo-1.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/firmas-electronicas-web.jpg
-    type: image
-    width: '2'
-  - height: '1'
-    image: /assets/firmas-electronicas-web-2.jpg
+    image: /assets/firma-electronica-rojo-web.jpg
     type: image
     width: '2'
   - height: '1'
