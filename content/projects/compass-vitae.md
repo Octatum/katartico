@@ -10,11 +10,11 @@ bodyEnglish: |-
   ## _Naming y Blanding_
 content:
   - height: '1'
-    image: /assets/logotipo-1-web.jpg
+    image: /assets/logotipo-2-web.jpg
     type: image
     width: '3'
   - height: '1'
-    image: /assets/logotipo-2-web.jpg
+    image: /assets/logotipo-1-web.jpg
     type: image
     width: '3'
   - height: '2'
