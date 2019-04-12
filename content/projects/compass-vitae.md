@@ -42,7 +42,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/texturizado-compass-web.jpg
+    image: /assets/compass-web-fondo.jpg
     type: image
     width: '1'
   - height: '2'
@@ -66,7 +66,8 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/libretas-compass_mesa-de-trabajo-1.png
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/termosweb.jpg
     type: image
     width: '1'
   - height: '1'
@@ -74,7 +75,8 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: /assets/bolsas-compass-vitae-web.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/libretas-compass_mesa-de-trabajo-1.png
     type: image
     width: '1'
 ---
