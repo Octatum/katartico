@@ -26,23 +26,23 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantoneslift-01.jpg
+    image: /assets/pliftnew-01.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantoneslift-02.jpg
+    image: /assets/pliftnew-02.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantoneslift-03.jpg
+    image: /assets/pliftnew-03.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantoneslift-04.jpg
+    image: /assets/pliftnew-04.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/pantoneslift-05.jpg
+    image: /assets/pliftnew-05.jpg
     type: image
     width: '1'
   - height: '1'
