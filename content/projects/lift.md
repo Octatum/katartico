@@ -2,8 +2,8 @@
 type: project
 index: 28
 title: LIFT
-banner: /assets/liftn.jpg
-highlightedImage: /assets/manualdeindentidad_lift15.jpg
+banner: /assets/manualdeindentidad_lift15.jpg
+highlightedImage: /assets/liftlogo.jpg
 bodyEnglish: >-
   # **LIFT**
 
@@ -54,7 +54,7 @@ content:
     type: image
     width: '3'
   - height: '1'
-    image: /assets/liftmockup1.jpg
+    image: /assets/liftstuffnuevo.jpg
     type: image
     width: '1'
   - height: '1'
@@ -66,7 +66,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/mockuplift4.jpg
+    image: /assets/liftstuffcamisasnew.jpg
     type: image
     width: '2'
 ---
