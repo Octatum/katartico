@@ -50,6 +50,10 @@ content:
       https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patronlift.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/iconlogolift.jpg
+    type: image
+    width: '3'
   - height: '2'
     image: /assets/stationerymockupliftfinal.jpg
     type: image
