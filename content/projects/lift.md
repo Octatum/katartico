@@ -22,7 +22,7 @@ bodyEnglish: >-
   leave a mark in the assistants of this space.
 content:
   - height: '3'
-    image: /assets/manualdeindentidad_lift17.jpg
+    image: /assets/logoscoloresliftnew.jpg
     type: image
     width: '1'
   - height: '1'
