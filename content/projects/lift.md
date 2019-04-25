@@ -46,8 +46,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patronlift.jpg
+    image: /assets/patronlift.jpg
     type: image
     width: '1'
   - height: '1'
