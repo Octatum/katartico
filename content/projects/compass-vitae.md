@@ -66,8 +66,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/termosweb.jpg
+    image: /assets/termosweb.jpg
     type: image
     width: '1'
   - height: '1'
@@ -75,8 +74,7 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/libretas-compass_mesa-de-trabajo-1.png
+    image: /assets/libretas-compass_mesa-de-trabajo-1.png
     type: image
     width: '1'
 ---
