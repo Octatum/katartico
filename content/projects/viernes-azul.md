@@ -1,6 +1,6 @@
 ---
 type: project
-index: 18
+index: 19
 title: Viernes Azul
 banner: /assets/viernesazul_-_0_portada.jpg
 highlightedImage: /assets/principal.jpg
