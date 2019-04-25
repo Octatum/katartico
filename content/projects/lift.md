@@ -21,10 +21,10 @@ bodyEnglish: >-
   to carry out the event, also we create the corporative philosophy that will
   leave a mark in the assistants of this space.
 content:
-  - height: '3'
+  - height: '1'
     image: /assets/logoscoloresliftnew.jpg
     type: image
-    width: '1'
+    width: '3'
   - height: '1'
     image: /assets/pliftnew-01.jpg
     type: image
@@ -46,7 +46,8 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/patronlift.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/patronlift.jpg
     type: image
     width: '1'
   - height: '1'
