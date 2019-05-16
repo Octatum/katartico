@@ -34,7 +34,7 @@ const Presentation = props => {
       <Helmet title="Inicio" />
       <Container>
         <IntroVideo data={intro} />
-        <About data={aboutUs} />
+        <About data={aboutUs} animationName="./assets/anim_nosotros.json" />
         <Services data={homeServices} />
         <Portafolio data={portfolio} />
         <Element name="contacto">

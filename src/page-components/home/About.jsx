@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
-import ReactLottie from 'react-lottie';
 
 import { device } from '../../utilities/device';
 import Section from '../../components/Section';
-import animationData from './assets/anim_nosotros.json';
 import LocalizedLink from '../../components/LocalizedLink';
 import { LandingContext } from '../../components/Layout';
+import { AboutAnimation } from '../../components/LottieAnimations';
 
 const Header = styled.h2`
   position: relative;
@@ -70,17 +69,8 @@ const AnimationArea = styled('div')`
 `;
 
 const About = props => {
-  const { title, slogan, animation } = props.data;
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData,
-  };
-
+  const { title, slogan } = props.data;
   const [pauseAnimation] = useContext(LandingContext);
-  useEffect(() => {
-    console.log(pauseAnimation);
-  }, [pauseAnimation]);
 
   return (
     <Section>
@@ -89,14 +79,9 @@ const About = props => {
       </Header>
       <Link to="/nosotros">
         <Quote source={slogan} />
+        <AboutAnimation pauseAnimation={pauseAnimation} />
       </Link>
-      <AnimationArea>
-        <ReactLottie
-          options={defaultOptions}
-          isPaused={pauseAnimation}
-          isStopped={pauseAnimation}
-        />
-      </AnimationArea>
+      <AnimationArea />
     </Section>
   );
 };

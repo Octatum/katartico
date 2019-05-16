@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
-import VideoPlayer from './VideoPlayer';
 import { device } from '../../utilities/device';
+import { IntroAnimation } from '../../components/LottieAnimations';
+import { LandingContext } from '../../components/Layout';
 
 const Container = styled.div`
   width: 100%;
-  display: none;
+  height: 70vh;
 
   ${device.tablet} {
     display: block;
@@ -14,11 +15,11 @@ const Container = styled.div`
 `;
 
 const IntroVideo = props => {
-  const intro = props.data;
+  const [pauseAnimation] = useContext(LandingContext);
 
   return (
     <Container>
-      <VideoPlayer movie={intro.video.publicURL} big />
+      <IntroAnimation pauseAnimation={pauseAnimation} />
     </Container>
   );
 };

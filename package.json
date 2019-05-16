@@ -32,6 +32,7 @@
     "react-easy-swipe": "0.0.17",
     "react-helmet": "^5.2.0",
     "react-image-lightbox": "github:Resumane/react-image-lightbox#fix-umd-bug",
+    "react-loadable": "^5.5.0",
     "react-lottie": "^1.2.3",
     "react-markdown": "^4.0.8",
     "react-player": "^1.11.0",

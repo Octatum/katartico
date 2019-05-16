@@ -23,7 +23,6 @@ function VideoPlayer(props) {
   const videoRef = useRef();
 
   useEffect(() => {
-    console.log(showLanding);
     if (!showLanding) {
       videoRef.current.play();
     } else {
