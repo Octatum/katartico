@@ -1,28 +1,24 @@
+import React, { useContext } from 'react';
 import ReactLottie from 'react-lottie';
-import React from 'react';
-import Loadable from 'react-loadable';
 
-const IntroAnimation = Loadable.Map({
-  loader: {
-    animationData: () => import('./assets/anim_intro.json'),
-  },
-  loading: () => <div />,
-  render(loaded, props) {
-    const { animationData } = loaded;
-    const { pauseAnimation } = props;
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData,
-    };
-    return (
-      <ReactLottie
-        options={defaultOptions}
-        isPaused={pauseAnimation}
-        isStopped={pauseAnimation}
-      />
-    );
-  },
-});
+import animationData from './assets/anim_intro.json';
+import { LandingContext } from '../Layout/index.jsx';
+
+function IntroAnimation() {
+  const [pauseAnimation] = useContext(LandingContext);
+  const defaultOptions = {
+    loop: true,
+    autoplay: !pauseAnimation,
+    animationData,
+  };
+
+  return (
+    <ReactLottie
+      options={defaultOptions}
+      isPaused={pauseAnimation}
+      isStopped={pauseAnimation}
+    />
+  );
+}
 
 export default IntroAnimation;
