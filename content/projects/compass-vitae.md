@@ -42,7 +42,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/compass-web-fondo.jpg
+    image: /assets/texturizado-compass-nuevo-2.jpg
     type: image
     width: '1'
   - height: '2'
@@ -70,7 +70,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/firma-electronica-rojo-web.jpg
+    image: /assets/firma-electronica-compass-nuevo-3.jpg
     type: image
     width: '2'
   - height: '1'
