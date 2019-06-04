@@ -42,7 +42,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/texturizado-compass-nuevo-2.jpg
+    image: /assets/fondo-texturizado-compass-nuevoooo.jpg
     type: image
     width: '1'
   - height: '2'
