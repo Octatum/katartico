@@ -10,7 +10,7 @@ const createPageItem = (name, type) =>
         .documentId(type)
     );
 
-const extraDocTypes = listItem => [].includes(listItem.getId());
+const extraDocTypes = listItem => ['projectPage'].includes(listItem.getId());
 
 export default () =>
   S.list()

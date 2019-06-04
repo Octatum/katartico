@@ -15,8 +15,13 @@ const aboutPage = {
     ...defaultPageFields,
 
     {
-      title: 'Banner',
+      title: 'Banner horizontal',
       name: 'banner',
+      type: 'image',
+    },
+    {
+      title: 'Banner vertical (móvil)',
+      name: 'bannerVertical',
       type: 'image',
     },
     {

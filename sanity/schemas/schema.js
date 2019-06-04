@@ -9,6 +9,7 @@ import aboutPage, { teamMember } from './aboutPage';
 import SEOData from './SEOData';
 import servicePage, { service } from './servicePage';
 import portfolioPage from './portfolioPage';
+import project, { projectImage, projectVideo } from './project';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
     ...[aboutPage, teamMember],
     ...[servicePage, service],
     ...[portfolioPage],
+    ...[project, projectImage, projectVideo],
 
     ...[localeString, localeMarkdown, localeText],
     SEOData,
