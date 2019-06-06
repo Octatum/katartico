@@ -7,12 +7,12 @@ export default {
     {
       title: 'Título',
       name: 'title',
-      type: 'string',
+      type: 'localeString',
     },
     {
       title: 'Descripción',
       name: 'description',
-      type: 'text',
+      type: 'localeText',
     },
     {
       title: 'Keywords',
