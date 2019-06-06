@@ -39,18 +39,37 @@ const project = {
   ],
 };
 
+const projectItemCommonFields = [
+  {
+    title: 'Ancho',
+    name: 'width',
+    type: 'number',
+    validation: Rule =>
+      Rule.required()
+        .min(1)
+        .max(3),
+  },
+  {
+    title: 'Alto',
+    name: 'height',
+    type: 'number',
+    validation: Rule =>
+      Rule.required()
+        .min(1)
+        .max(3),
+  },
+];
+
 export const projectVideo = {
   title: 'Video',
   name: 'projectVideo',
   type: 'object',
   fields: [
+    ...projectItemCommonFields,
     {
       title: 'Id del video',
       name: 'videoId',
       type: 'string',
-      options: {
-        list: [{ title: 'Youtube', value: 'youtube' }],
-      },
       validation: Rule => Rule.required(),
     },
   ],
@@ -61,29 +80,12 @@ export const projectImage = {
   name: 'projectImage',
   type: 'object',
   fields: [
-    {
-      title: 'Ancho',
-      name: 'width',
-      type: 'number',
-      validation: Rule =>
-        Rule.required()
-          .min(1)
-          .max(3),
-    },
+    ...projectItemCommonFields,
     {
       title: 'Imagen',
       name: 'image',
       type: 'image',
       validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Alto',
-      name: 'height',
-      type: 'number',
-      validation: Rule =>
-        Rule.required()
-          .min(1)
-          .max(3),
     },
     {
       title: 'Descripción',
