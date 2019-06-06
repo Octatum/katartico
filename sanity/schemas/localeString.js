@@ -1,4 +1,4 @@
-const supportedLanguages = [
+export const supportedLanguages = [
   { id: 'es', title: 'Español', isDefault: true },
   { id: 'en', title: 'Inglés' },
 ];

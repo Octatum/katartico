@@ -22,14 +22,14 @@ module.exports = {
       options: {
         path: `${__dirname}/content/projects`,
         name: 'projects',
-      }
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/about`,
         name: 'about-us',
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,7 +43,15 @@ module.exports = {
         path: `${__dirname}/content/services/`,
       },
     },
-    
+
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: 'eeviws8d',
+        dataset: 'production',
+      },
+    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -70,12 +78,12 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-i18n',
-      options: {        
+      options: {
         langKeyDefault: 'es',
         prefixDefault: false,
-      }
+      },
     },
-    
+
     'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -92,7 +100,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-135441326-1",
+        trackingId: 'UA-135441326-1',
         // Puts tracking script in the head instead of the body
         head: false,
       },

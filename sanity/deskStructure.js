@@ -16,6 +16,7 @@ export default () =>
   S.list()
     .title('Páginas')
     .items([
+      createPageItem('Configuración', 'config'),
       createPageItem('Inicio', 'homePage'),
       createPageItem('Nosotros', 'aboutPage'),
       createPageItem('Servicios', 'servicesPage'),

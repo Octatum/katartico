@@ -10,6 +10,7 @@ import SEOData from './SEOData';
 import servicePage, { service } from './servicePage';
 import portfolioPage from './portfolioPage';
 import project, { projectImage, projectVideo } from './project';
+import generalConfig from './config';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -17,6 +18,7 @@ export default createSchema({
   // Then proceed to concatenate our our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    ...[generalConfig],
     ...[homePage, customer],
     ...[aboutPage, teamMember],
     ...[servicePage, service],
