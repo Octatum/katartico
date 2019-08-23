@@ -14,5 +14,21 @@ content:
     image: /assets/dsc_6307.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/dsc_5983.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/_mg_4765.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_6583.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_6890.jpg
+    type: image
+    width: '1'
 ---
 lorem ipsum
