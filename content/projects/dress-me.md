@@ -37,6 +37,18 @@ content:
     image: /assets/pamlea-2.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/fer-2.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/angie-2.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/_mg_4972.jpg
+    type: image
+    width: '3'
 ---
 # Dress Me
 
