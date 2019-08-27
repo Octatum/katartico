@@ -22,27 +22,19 @@ bodyEnglish: >-
   currently also manage their social media.
 content:
   - height: '2'
-    image: /assets/_mg_4972.jpg
+    image: /assets/fer.jpg
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dsc_6307.jpg
+    image: /assets/pamela.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_5983.jpg
-    type: image
-    width: '2'
-  - height: '2'
-    image: /assets/_mg_4765.jpg
+    image: /assets/angie.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_6583.jpg
-    type: image
-    width: '1'
-  - height: '2'
-    image: /assets/dsc_6890.jpg
+    image: /assets/pamlea-2.jpg
     type: image
     width: '1'
 ---
