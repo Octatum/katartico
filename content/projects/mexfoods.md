@@ -32,10 +32,6 @@ content:
     image: /assets/9mexfoods.jpg
     type: image
     width: '1'
-  - height: '1'
-    image: /assets/10mexfoods.jpg
-    type: image
-    width: '3'
   - height: '2'
     image: /assets/2mexfoods.jpg
     type: image
@@ -44,6 +40,10 @@ content:
     image: /assets/1mexfoods.jpg
     type: image
     width: '2'
+  - height: '1'
+    image: /assets/10mexfoods.jpg
+    type: image
+    width: '3'
 ---
 # Mexfoods
 
