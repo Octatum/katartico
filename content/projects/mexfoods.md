@@ -24,26 +24,26 @@ content:
     image: /assets/3mexfoods.jpg
     type: image
     width: '3'
-  - height: '2'
-    image: /assets/5mexfoods.jpg
+  - height: '1'
+    image: /assets/8mexfoods.jpg
     type: image
     width: '2'
-  - height: '2'
-    image: /assets/4mexfoods.jpg
+  - height: '1'
+    image: /assets/9mexfoods.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/10mexfoods.jpg
+    type: image
+    width: '3'
   - height: '2'
     image: /assets/2mexfoods.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/6mexfoods.jpg
+    image: /assets/1mexfoods.jpg
     type: image
     width: '2'
-  - height: '2'
-    image: /assets/7mexfoods.jpg
-    type: image
-    width: '3'
 ---
 # Mexfoods
 
