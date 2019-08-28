@@ -44,7 +44,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/lapaste9.jpg
+    image: /assets/lapaste11.jpg
     type: image
     width: '1'
   - height: '2'
