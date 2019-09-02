@@ -1,6 +1,6 @@
 ---
 type: project
-index: 9
+index: 14
 title: ANKAH
 banner: /assets/banner-ankah-02.jpg
 highlightedImage: /assets/ankah_-_1_foto_principal.png
