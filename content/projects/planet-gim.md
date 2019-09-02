@@ -29,15 +29,15 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: /assets/planetgim4.jpg
+    image: /assets/horario_anahuac-01.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/plnaetgim5.jpg
+    image: /assets/horario_anahuac-09.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/planetgim1.jpg
+    image: /assets/horario_anahuac-10.png
     type: image
     width: '1'
 ---
