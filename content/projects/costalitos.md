@@ -1,6 +1,6 @@
 ---
 type: project
-index: 10
+index: 9
 title: Costalitos
 banner: /assets/banner1.jpg
 highlightedImage: /assets/destacada.jpg
