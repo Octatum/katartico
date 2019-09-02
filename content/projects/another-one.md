@@ -1,6 +1,6 @@
 ---
 type: project
-index: 5
+index: 22
 title: Biofase
 banner: /assets/biofase_-_0_portada_BIOFASE.jpg
 highlightedImage: /assets/biofase_-_6.jpg
