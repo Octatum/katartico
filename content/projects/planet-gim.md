@@ -25,7 +25,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/planetgim3.jpg
+    image: /assets/planetgim-02-1-.png
     type: image
     width: '2'
   - height: '1'
