@@ -49,6 +49,10 @@ content:
     image: /assets/_mg_4972.jpg
     type: image
     width: '3'
+  - height: '2'
+    image: /assets/post_dm17-14-08.jpg
+    type: image
+    width: '2'
 ---
 # Dress Me
 
