@@ -53,6 +53,10 @@ content:
     image: /assets/post_dm17-14-08.jpg
     type: image
     width: '2'
+  - height: '2'
+    image: /assets/dsc_6448-1-.jpg
+    type: image
+    width: '1'
 ---
 # Dress Me
 
