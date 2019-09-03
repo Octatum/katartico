@@ -57,6 +57,22 @@ content:
     image: /assets/dsc_6448-1-.jpg
     type: image
     width: '1'
+  - height: '3'
+    image: /assets/_mg_5173.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/posts_dm23-20-08.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/posts_dm27-24-08.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/post_dm15-12-08.jpg
+    type: image
+    width: '1'
 ---
 # Dress Me
 
