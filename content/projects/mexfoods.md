@@ -21,29 +21,29 @@ bodyEnglish: >-
   photo shoot.
 content:
   - height: '2'
-    image: /assets/3mexfoods.jpg
+    image: /assets/dsc_9695.jpg
     type: image
     width: '3'
-  - height: '1'
-    image: /assets/8mexfoods.jpg
+  - height: '2'
+    image: /assets/dsc_9510.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/9mexfoods.jpg
+  - height: '2'
+    image: /assets/dsc_9360.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/2mexfoods.jpg
+    image: /assets/dsc_9578.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/dsc_9854.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/1mexfoods.jpg
+    image: /assets/dsc_9622.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/10mexfoods.jpg
-    type: image
-    width: '3'
 ---
 # Mexfoods
 
