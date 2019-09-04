@@ -21,19 +21,35 @@ bodyEnglish: >-
   photo shoot.
 content:
   - height: '2'
-    image: /assets/dsc_9695.jpg
-    type: image
-    width: '3'
-  - height: '2'
-    image: /assets/dsc_9510.jpg
+    image: /assets/dsc_9200.jpg
     type: image
     width: '2'
   - height: '2'
-    image: /assets/dsc_9360.jpg
+    image: /assets/dsc_9193.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_9578.jpg
+    image: /assets/dsc_9851.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/dsc_9431.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/dsc_9669.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_9730.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_9730.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_9684.jpg
     type: image
     width: '3'
   - height: '2'
@@ -41,9 +57,37 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_9622.jpg
+    image: /assets/dsc_9531.jpg
     type: image
     width: '2'
+  - height: '1'
+    image: /assets/dsc_9404.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_9604.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_9718.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/dsc_9578.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/dsc_9813.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/dsc_9622.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_9478.jpg
+    type: image
+    width: '1'
 ---
 # Mexfoods
 
