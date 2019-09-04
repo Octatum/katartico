@@ -24,7 +24,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/lapaste6.jpg
+    image: /assets/cursointsept_mesa-de-trabajo-5.jpg
     type: image
     width: '2'
   - height: '1'
