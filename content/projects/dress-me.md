@@ -50,7 +50,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/post_dm17-14-08.jpg
+    image: /assets/instagram-dress-me-feed.jpg
     type: image
     width: '2'
   - height: '2'
