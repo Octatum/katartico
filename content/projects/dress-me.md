@@ -30,10 +30,6 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/fer.jpg
-    type: image
-    width: '3'
-  - height: '2'
     image: /assets/pamela.jpg
     type: image
     width: '1'
@@ -45,6 +41,10 @@ content:
     image: /assets/pamlea-2.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/fer.jpg
+    type: image
+    width: '3'
   - height: '2'
     image: /assets/fer-2.jpg
     type: image
