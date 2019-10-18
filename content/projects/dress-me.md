@@ -21,6 +21,14 @@ bodyEnglish: >-
   graphic design, animation and audiovisual production to launch the brand. We
   currently also manage their social media.
 content:
+  - height: '1'
+    image: /assets/dsc_0371.jpg
+    type: image
+    width: '3'
+  - height: '3'
+    image: /assets/dsc_0389.jpg
+    type: image
+    width: '3'
   - height: '2'
     image: /assets/fer.jpg
     type: image
