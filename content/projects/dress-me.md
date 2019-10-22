@@ -42,6 +42,10 @@ content:
     type: image
     width: '1'
   - height: '2'
+    image: /assets/iphones.jpg
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/fer.jpg
     type: image
     width: '3'
@@ -58,17 +62,9 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/instagram-dress-me-feed.jpg
-    type: image
-    width: '2'
-  - height: '2'
     image: /assets/dsc_6448-1-.jpg
     type: image
     width: '1'
-  - height: '3'
-    image: /assets/_mg_5173.jpg
-    type: image
-    width: '2'
   - height: '1'
     image: /assets/posts_dm23-20-08.jpg
     type: image
