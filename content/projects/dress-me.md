@@ -38,7 +38,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/pamlea-2.jpg
+    image: /assets/b-w.jpg
     type: image
     width: '1'
   - height: '2'
@@ -46,7 +46,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/fer.jpg
+    image: ''
     type: image
     width: '3'
   - height: '2'
@@ -58,17 +58,9 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/_mg_4972.jpg
+    image: ''
     type: image
     width: '3'
-  - height: '2'
-    image: /assets/dsc_4272.jpg
-    type: image
-    width: '1'
-  - height: '2'
-    image: /assets/dsc_3759.jpg
-    type: image
-    width: '2'
   - height: '1'
     image: /assets/posts_dm23-20-08.jpg
     type: image
@@ -81,6 +73,14 @@ content:
     image: /assets/post_dm15-12-08.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/dsc_4272.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_3759.jpg
+    type: image
+    width: '2'
   - height: '2'
     image: /assets/_mg_4916-edit.jpg
     type: image
