@@ -81,6 +81,18 @@ content:
     image: /assets/post_dm15-12-08.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/_mg_4916-edit.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/_mg_6433.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_1971.jpg
+    type: image
+    width: '1'
 ---
 # Dress Me
 
