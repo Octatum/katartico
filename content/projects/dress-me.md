@@ -62,7 +62,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dsc_6448-1-.jpg
+    image: /assets/dsc_4272.jpg
     type: image
     width: '1'
   - height: '2'
@@ -91,6 +91,18 @@ content:
     width: '1'
   - height: '2'
     image: /assets/dsc_1971.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_3621.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_2280.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_2489-edit.jpg
     type: image
     width: '1'
 ---
