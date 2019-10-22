@@ -46,6 +46,10 @@ content:
     type: image
     width: '3'
   - height: '2'
+    image: ''
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/fer-2.jpg
     type: image
     width: '2'
@@ -53,6 +57,10 @@ content:
     image: /assets/angie-2.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: ''
+    type: image
+    width: '3'
   - height: '1'
     image: /assets/posts_dm23-20-08.jpg
     type: image
@@ -97,6 +105,54 @@ content:
     image: /assets/dsc_2489-edit.jpg
     type: image
     width: '1'
+  - height: '3'
+    image: /assets/dsc_4829.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/_mg_6756.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/dsc_4854.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_5844-1.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_7784-1.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_4228.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/_mg_5299.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_7377-edit-1.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/_mg_5474-1.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/_mg_5425-edit-1-1-.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/dsc_3237.jpg
+    type: image
+    width: '1'
+  - height: '3'
+    image: /assets/dsc_4046.jpg
+    type: image
+    width: '3'
 ---
 # Dress Me
 
