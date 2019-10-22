@@ -65,6 +65,10 @@ content:
     image: /assets/dsc_6448-1-.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/dsc_3759.jpg
+    type: image
+    width: '2'
   - height: '1'
     image: /assets/posts_dm23-20-08.jpg
     type: image
