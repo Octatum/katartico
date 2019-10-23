@@ -46,10 +46,6 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: ''
-    type: image
-    width: '3'
-  - height: '2'
     image: /assets/fer-2.jpg
     type: image
     width: '2'
@@ -57,10 +53,6 @@ content:
     image: /assets/angie-2.jpg
     type: image
     width: '1'
-  - height: '2'
-    image: ''
-    type: image
-    width: '3'
   - height: '1'
     image: /assets/posts_dm23-20-08.jpg
     type: image
