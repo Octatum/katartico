@@ -98,7 +98,7 @@ content:
     type: image
     width: '1'
   - height: '3'
-    image: /assets/dsc_4829.jpg
+    image: /assets/dsc_4819.jpg
     type: image
     width: '3'
   - height: '2'
