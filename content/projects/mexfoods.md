@@ -76,7 +76,7 @@ content:
     image: /assets/caja-2-oz.png
     type: image
     width: '2'
-  - height: '2'
+  - height: '1'
     image: /assets/11once.png
     type: image
     width: '1'
