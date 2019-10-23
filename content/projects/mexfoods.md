@@ -49,7 +49,7 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/dsc_9531.jpg
+    image: /assets/5cinco.jpg
     type: image
     width: '2'
   - height: '1'
