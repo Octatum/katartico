@@ -20,22 +20,6 @@ bodyEnglish: >-
   developed their website and packaging design based on our lifestyle product
   photo shoot.
 content:
-  - height: '2'
-    image: /assets/dsc_9797.jpg
-    type: image
-    width: '2'
-  - height: '2'
-    image: /assets/dsc_9193.jpg
-    type: image
-    width: '1'
-  - height: '2'
-    image: /assets/dsc_9851.jpg
-    type: image
-    width: '3'
-  - height: '1'
-    image: /assets/1uno.jpg
-    type: image
-    width: '1'
   - height: '1'
     image: /assets/2dos.jpg
     type: image
@@ -45,19 +29,39 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/4cuatro.jpg
+    image: /assets/1uno.jpg
     type: image
-    width: '3'
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_9193.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/5cinco.jpg
     type: image
     width: '2'
+  - height: '2'
+    image: /assets/dsc_9232.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_9797.jpg
+    type: image
+    width: '2'
   - height: '1'
-    image: /assets/7siete.jpg
+    image: /assets/4cuatro.jpg
+    type: image
+    width: '3'
+  - height: '1'
+    image: /assets/10diez.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/8ocho.png
+    image: /assets/9nueve.png
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/caja-2-oz.png
     type: image
     width: '1'
   - height: '2'
@@ -65,21 +69,25 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: /assets/9nueve.png
+    image: /assets/8ocho.png
     type: image
     width: '1'
-  - height: '1'
-    image: /assets/10diez.png
-    type: image
-    width: '1'
-  - height: '2'
-    image: /assets/caja-2-oz.png
-    type: image
-    width: '2'
   - height: '1'
     image: /assets/11once.png
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/dsc_9622.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_9564.jpg
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/dsc_9851.jpg
+    type: image
+    width: '3'
 ---
 # Mexfoods
 
