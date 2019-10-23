@@ -69,11 +69,11 @@ content:
     type: image
     width: '2'
   - height: '1'
-    image: /assets/8ocho.png
+    image: /assets/11once.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/11once.png
+    image: /assets/8ocho.png
     type: image
     width: '1'
   - height: '2'
