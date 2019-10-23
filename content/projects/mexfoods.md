@@ -21,7 +21,7 @@ bodyEnglish: >-
   photo shoot.
 content:
   - height: '2'
-    image: /assets/dsc_9200.jpg
+    image: /assets/dsc_9797.jpg
     type: image
     width: '2'
   - height: '2'
@@ -32,60 +32,52 @@ content:
     image: /assets/dsc_9851.jpg
     type: image
     width: '3'
-  - height: '2'
-    image: /assets/dsc_9431.jpg
-    type: image
-    width: '2'
   - height: '1'
-    image: /assets/dsc_9669.jpg
+    image: /assets/1uno.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9730.jpg
+    image: /assets/2dos.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9730.jpg
+    image: /assets/3tres.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9684.jpg
+    image: /assets/4cuatro.jpg
     type: image
     width: '3'
-  - height: '2'
-    image: /assets/dsc_9854.jpg
-    type: image
-    width: '1'
   - height: '2'
     image: /assets/dsc_9531.jpg
     type: image
     width: '2'
   - height: '1'
-    image: /assets/dsc_9404.jpg
+    image: /assets/7siete.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9604.jpg
+    image: /assets/8ocho.png
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_9718.jpg
-    type: image
-    width: '2'
-  - height: '2'
-    image: /assets/dsc_9578.jpg
-    type: image
-    width: '3'
-  - height: '2'
-    image: /assets/dsc_9813.jpg
+    image: /assets/6seis.jpg
     type: image
     width: '2'
   - height: '1'
-    image: /assets/dsc_9622.jpg
+    image: /assets/9nueve.png
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9478.jpg
+    image: /assets/10diez.png
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/caja-2-oz.png
+    type: image
+    width: '2'
+  - height: '2'
+    image: /assets/11once.png
     type: image
     width: '1'
 ---
