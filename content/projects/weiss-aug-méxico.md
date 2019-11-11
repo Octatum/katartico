@@ -22,7 +22,11 @@ bodyEnglish: >-
 content:
   - height: '3'
     type: youtube-video
-    videoId: 'https://youtu.be/pt1A44wxD2o'
+    videoId: >-
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/pt1A44wxD2o" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
     width: '3'
 ---
 # Weiss-Aug México
