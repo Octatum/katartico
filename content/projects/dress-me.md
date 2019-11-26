@@ -150,6 +150,8 @@ content:
 
 ## Creación de contenido para redes sociales
 
-Dress Me es una nueva plataforma en México donde puedes rentar ropa de diseñador. La nueva fashionista es una mujer empoderada, exclusiva y consciente de su entorno.
+La nueva fashionista es una mujer empoderada, exclusiva, y consciente de su entorno. No solo le importa su expresión creativa mediante la moda, sino también el efecto que esto puede generar en ella y en lo que la rodea.
 
-Desarrollamos la campaña “Be The New Fashionista” para medios digitales. Llevamos a cabo conceptualización de campaña, estrategia digital, sesiones fotográficas, diseño gráfico, animación y producción audiovisual para lanzar la marca. Actualmente manejamos también sus redes sociales.
+Dress Me es una nueva plataforma en México donde puedes rentar ropa de diseñador. Apoyan a mujeres para expandir su clóset sin gastar tiempo, dinero y espacio de más. 
+
+“Be The New Fashionista” fue la campaña lanzada en medios digitales, para la cual realizamos la conceptualización, estrategia digital, sesiones fotográficas, diseño gráfico, animación y producción audiovisual para lanzar la marca. Actualmente manejamos también sus redes sociales.
