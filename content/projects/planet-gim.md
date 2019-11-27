@@ -1,6 +1,6 @@
 ---
 type: project
-index: 4
+index: 7
 title: Planet Gim
 banner: /assets/bannerplanetgim.jpg
 highlightedImage: /assets/coverplanetgim.jpg
