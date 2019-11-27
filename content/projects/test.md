@@ -1,6 +1,6 @@
 ---
 type: project
-index: 19
+index: 21
 title: Premio Luis Elizondo
 banner: /assets/categoriahumanitario1-03111.jpg
 highlightedImage: /assets/principalpel.jpg
