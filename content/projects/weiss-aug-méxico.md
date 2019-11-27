@@ -1,6 +1,6 @@
 ---
 type: project
-index: 31
+index: 5
 title: Weiss-Aug México
 banner: /assets/weissaugbanner1.jpg
 highlightedImage: /assets/weissauglogo_mesa-de-trabajo-1.jpg
