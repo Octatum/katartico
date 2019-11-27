@@ -1,6 +1,6 @@
 ---
 type: project
-index: 8
+index: 10
 title: La Manzana Sana
 banner: /assets/bannermanzana.jpg
 highlightedImage: /assets/dsc_1136.jpg
