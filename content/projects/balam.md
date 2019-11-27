@@ -1,6 +1,6 @@
 ---
 type: project
-index: 17
+index: 19
 title: BALAM
 banner: /assets/balam-0-portada.jpg
 highlightedImage: /assets/balam-1.jpg
