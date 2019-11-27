@@ -1,6 +1,6 @@
 ---
 type: project
-index: 30
+index: 32
 title: 'México: El país del sí'
 banner: /assets/mexicosi_-_0_portada_mexico.jpg
 highlightedImage: /assets/mexicosi_-_1_foto_principal.png
