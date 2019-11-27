@@ -1,6 +1,6 @@
 ---
 type: project
-index: 5
+index: 8
 title: Bol Rol
 banner: /assets/servibolsa-portada.jpg
 highlightedImage: /assets/servibolsa_-_Copia_de_LS_Loc3_4.jpg
