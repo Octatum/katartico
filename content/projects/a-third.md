@@ -1,6 +1,6 @@
 ---
 type: project
-index: 18
+index: 20
 title: 74 Aniversario
 banner: /assets/portada-74-aniversario-min.jpg
 highlightedImage: /assets/74aniversario_-1_foto_principal.png
