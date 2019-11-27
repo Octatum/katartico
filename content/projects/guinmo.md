@@ -1,6 +1,6 @@
 ---
 type: project
-index: 32
+index: 4
 title: Guinmo
 banner: /assets/bannerguinmo.jpg
 highlightedImage: /assets/fotoprincipalguimno.jpg
