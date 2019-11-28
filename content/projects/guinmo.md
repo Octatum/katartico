@@ -36,6 +36,18 @@ content:
     image: /assets/guinmo3.jpg
     type: image
     width: '1'
+  - height: '2'
+    image: /assets/promocionesfbnov-02.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/promocionesfbnov-03.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/promocionesfbnov-04.jpg
+    type: image
+    width: '1'
   - height: '1'
     image: /assets/guinmo1.jpg
     type: image
