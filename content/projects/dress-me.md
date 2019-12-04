@@ -42,7 +42,7 @@ content:
     type: image
     width: '1'
   - height: '2'
-    image: /assets/iphones.jpg
+    image: /assets/iphone-dress-me-ig-mockup.jpg
     type: image
     width: '3'
   - height: '2'
