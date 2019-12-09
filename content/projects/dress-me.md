@@ -33,6 +33,14 @@ content:
     type: youtube-video
     videoId: ILCZzwDOwvQ
     width: '2'
+  - height: '1'
+    image: /assets/jessica1.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/jessia2.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/pamela.jpg
     type: image
