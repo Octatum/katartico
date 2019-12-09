@@ -30,6 +30,10 @@ content:
     type: image
     width: '3'
   - height: '2'
+    type: youtube-video
+    videoId: ILCZzwDOwvQ
+    width: '2'
+  - height: '2'
     image: /assets/pamela.jpg
     type: image
     width: '1'
