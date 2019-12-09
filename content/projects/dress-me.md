@@ -114,14 +114,6 @@ content:
     type: image
     width: '3'
   - height: '2'
-    image: /assets/_mg_6756.jpg
-    type: image
-    width: '2'
-  - height: '2'
-    image: /assets/dsc_4854.jpg
-    type: image
-    width: '1'
-  - height: '2'
     image: /assets/dsc_5844-1.jpg
     type: image
     width: '1'
