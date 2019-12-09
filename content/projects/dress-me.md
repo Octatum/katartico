@@ -50,7 +50,7 @@ content:
     type: image
     width: '1'
   - height: '1'
-    image: /assets/jessia2.jpg
+    image: /assets/jessica3.jpg
     type: image
     width: '1'
   - height: '2'
