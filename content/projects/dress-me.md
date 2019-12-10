@@ -57,6 +57,18 @@ content:
     image: /assets/iphone-dress-me-ig-mockup.jpg
     type: image
     width: '3'
+  - height: '1'
+    image: /assets/camilasaracho2.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    type: youtube-video
+    videoId: xo1xhSeQtXU
+    width: '1'
+  - height: '1'
+    image: /assets/camilasaracho1.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/fer-2.jpg
     type: image
