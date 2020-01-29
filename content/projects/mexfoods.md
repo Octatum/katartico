@@ -52,6 +52,14 @@ content:
     image: /assets/4cuatro.jpg
     type: image
     width: '3'
+  - height: '1'
+    image: /assets/mexfoodempaque1.jpg
+    type: image
+    width: '1'
+  - height: '1'
+    image: /assets/mexfoodempaque2.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/6seis.jpg
     type: image
