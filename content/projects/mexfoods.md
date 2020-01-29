@@ -52,30 +52,10 @@ content:
     image: /assets/4cuatro.jpg
     type: image
     width: '3'
-  - height: '1'
-    image: /assets/10diez.png
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/9nueve.png
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/caja-2-oz.png
-    type: image
-    width: '1'
   - height: '2'
     image: /assets/6seis.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/11once.png
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/8ocho.png
-    type: image
-    width: '1'
   - height: '2'
     image: /assets/dsc_9622.jpg
     type: image
