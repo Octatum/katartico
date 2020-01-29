@@ -60,10 +60,18 @@ content:
     image: /assets/mexfoodempaque2.jpg
     type: image
     width: '1'
+  - height: '1'
+    image: /assets/mexfoodempaque3.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/6seis.jpg
     type: image
     width: '2'
+  - height: '1'
+    image: /assets/mexfoodempaque4.jpg
+    type: image
+    width: '1'
   - height: '2'
     image: /assets/dsc_9622.jpg
     type: image
