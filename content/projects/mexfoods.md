@@ -21,71 +21,94 @@ bodyEnglish: >-
   photo shoot.
 content:
   - height: '1'
-    image: /assets/2dos.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/2dos.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
-    image: /assets/dsc_4292.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_4292.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/3tres.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/10mexfoods.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
-    image: /assets/1uno.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9193.jpg
     type: image
     width: '1'
   - height: '1'
-    image: /assets/dsc_9193.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/5cinco.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/5cinco.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_9232.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_7594.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_4316.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9232.jpg
     type: image
     width: '1'
   - height: '2'
-    image: /assets/dsc_9797.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_4316.jpg
     type: image
     width: '2'
   - height: '1'
-    image: /assets/4cuatro.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/4cuatro.jpg
     type: image
     width: '3'
   - height: '2'
-    image: /assets/6seis.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9797.jpg
     type: image
     width: '2'
-  - height: '2'
-    image: /assets/dsc_7594.jpg
+  - height: '1'
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/mexfoodslogo-07.jpg
     type: image
-    videoId: ''
     width: '1'
   - height: '1'
-    image: /assets/mexfoodslogo-07.jpg
+    image: /assets/dsc_8062.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '2'
-    image: /assets/dsc_9622.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9622.jpg
     type: image
+    videoId: ''
     width: '1'
   - height: '2'
-    image: /assets/dsc_9564.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9564.jpg
+    type: image
+    width: '2'
+  - height: '1'
+    image: /assets/dsc_8100-2.jpg
+    type: image
+    width: '3'
+  - height: '2'
+    image: /assets/dsc_7741.jpg
     type: image
     width: '2'
   - height: '2'
-    image: /assets/dsc_9851.jpg
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9669.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: >-
+      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9851.jpg
     type: image
     width: '3'
 ---
