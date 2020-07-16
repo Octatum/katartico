@@ -1,6 +1,6 @@
 ---
 type: project
-index: 26
+index: 29
 title: Agronegocios El Vaquerito
 banner: /assets/vaquerito-banner.jpg
 highlightedImage: /assets/vaquerito-foto.jpg
