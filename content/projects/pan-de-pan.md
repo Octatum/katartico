@@ -1,6 +1,6 @@
 ---
 type: project
-index: 6
+index: 7
 title: 'Pan de Pan '
 banner: /assets/pdp-banner.jpg
 highlightedImage: /assets/pdp-imagen.jpg
