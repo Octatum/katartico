@@ -1,6 +1,6 @@
 ---
 type: project
-index: 27
+index: 30
 title: LIFT
 banner: /assets/manualdeindentidad_lift15.jpg
 highlightedImage: /assets/liftlogo.jpg
