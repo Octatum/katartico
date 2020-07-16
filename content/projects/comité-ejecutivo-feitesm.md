@@ -1,6 +1,6 @@
 ---
 type: project
-index: 24
+index: 27
 title: FEITESM
 banner: /assets/feitesm-portada.jpg
 highlightedImage: /assets/feitesm-principal.jpg
