@@ -1,6 +1,6 @@
 ---
 type: project
-index: 18
+index: 20
 title: Premio Rómulo Garza
 banner: /assets/prg-02.jpg
 highlightedImage: /assets/prg-02.png
