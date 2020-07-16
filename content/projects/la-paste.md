@@ -1,6 +1,6 @@
 ---
 type: project
-index: 3
+index: 12
 title: La Paste
 banner: /assets/lapaste2.jpg
 highlightedImage: /assets/lapaste3.jpg
