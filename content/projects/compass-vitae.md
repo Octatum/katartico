@@ -1,6 +1,6 @@
 ---
 type: project
-index: 9
+index: 21
 title: Compass Vitae
 banner: /assets/banner-compass-web.jpg
 highlightedImage: /assets/compass-vitae-foto-principal-web.jpg
