@@ -5,10 +5,10 @@ title: MexFoods
 banner: /assets/covermexfood.jpg
 highlightedImage: /assets/bannermexfoods.jpg
 bodyEnglish: >-
-  # Mexfoods
+  # MexFoods
 
 
-  ## Branding, graphic design, lifestyle photography, and web design
+  ## Branding, social media, lifestyle photography, and web design
 
 
   Avocado is the “green gold” of Mexico. Thanks to its conservative-free
@@ -23,25 +23,35 @@ content:
   - height: '1'
     image: /assets/2dos.jpg
     type: image
+    videoId: ''
+    width: '1'
+  - height: '1'
+    image: /assets/dsc_4292.jpg
+    type: image
     width: '1'
   - height: '1'
     image: /assets/3tres.jpg
     type: image
+    videoId: ''
     width: '1'
   - height: '1'
     image: /assets/1uno.jpg
     type: image
     width: '1'
-  - height: '2'
+  - height: '1'
     image: /assets/dsc_9193.jpg
     type: image
     width: '1'
-  - height: '2'
+  - height: '1'
     image: /assets/5cinco.jpg
     type: image
-    width: '2'
+    width: '1'
   - height: '2'
     image: /assets/dsc_9232.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dsc_4316.jpg
     type: image
     width: '1'
   - height: '2'
@@ -52,29 +62,19 @@ content:
     image: /assets/4cuatro.jpg
     type: image
     width: '3'
-  - height: '1'
-    image: /assets/mexfoodempaque1.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/mexfoodempaque2.jpg
-    type: image
-    width: '1'
-  - height: '1'
-    image: /assets/mexfoodempaque3.jpg
-    type: image
-    width: '1'
   - height: '2'
     image: /assets/6seis.jpg
     type: image
     width: '2'
-  - height: '1'
-    image: /assets/mexfoodempaque4.jpg
+  - height: '2'
+    image: /assets/dsc_7594.jpg
     type: image
+    videoId: ''
     width: '1'
   - height: '1'
-    image: /assets/mexfoodmockup5.jpg
+    image: /assets/mexfoodslogo-07.jpg
     type: image
+    videoId: ''
     width: '1'
   - height: '2'
     image: /assets/dsc_9622.jpg
@@ -89,9 +89,9 @@ content:
     type: image
     width: '3'
 ---
-# Mexfoods
+# MexFoods
 
-## Branding, diseño gráfico, fotografía lifestyle y diseño web
+## Branding, social media, fotografía lifestyle y diseño web
 
 El aguacate es el “green gold” de México. Gracias a su tecnología de empaques libres de conservadores, Mexfoods es una empresa que exporta pulpa de aguacate y sus derivados al extranjero, siempre manteniendo la receta tradicional mexicana.
 
