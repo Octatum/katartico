@@ -14,7 +14,24 @@ bodyEnglish: >-
   Encuentro LiFE is an event at Tec de Monterrey where teachers who have a big
   impact on the success of the students with their career and performance are
   recognized.
-content: []
+content:
+  - height: '2'
+    image: /assets/dossier_mesa-de-trabajo-1.jpg
+    type: image
+    videoId: ''
+    width: '1'
+  - height: '2'
+    image: /assets/dossier-02.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/dossier-03.jpg
+    type: image
+    width: '1'
+  - height: '2'
+    image: /assets/bannerganadores.jpg
+    type: image
+    width: '3'
 ---
 # Encuentro LiFE
 
