@@ -22,59 +22,59 @@ bodyEnglish: >-
 content:
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/2dos.jpg
+      /assets/2dos.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_4292.jpg
+      /assets/dsc_4292.jpg
     type: image
     width: '1'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/10mexfoods.jpg
+      /assets/10mexfoods.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9193.jpg
+      /assets/dsc_9193.jpg
     type: image
     width: '1'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/5cinco.jpg
+      /assets/5cinco.jpg
     type: image
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_7594.jpg
+      /assets/dsc_7594.jpg
     type: image
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9232.jpg
+      /assets/dsc_9232.jpg
     type: image
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_4316.jpg
+      /assets/dsc_4316.jpg
     type: image
     width: '2'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/4cuatro.jpg
+      /assets/4cuatro.jpg
     type: image
     width: '3'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9797.jpg
+      /assets/dsc_9797.jpg
     type: image
     width: '2'
   - height: '1'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/mexfoodslogo-07.jpg
+      /assets/mexfoodslogo-07.jpg
     type: image
     width: '1'
   - height: '1'
@@ -84,13 +84,13 @@ content:
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9622.jpg
+      /assets/dsc_9622.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9564.jpg
+      /assets/dsc_9564.jpg
     type: image
     width: '2'
   - height: '1'
@@ -103,12 +103,12 @@ content:
     width: '2'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9669.jpg
+      /assets/dsc_9669.jpg
     type: image
     width: '1'
   - height: '2'
     image: >-
-      https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/dsc_9851.jpg
+      /assets/dsc_9851.jpg
     type: image
     width: '3'
 ---
