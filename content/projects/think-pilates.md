@@ -3,7 +3,7 @@ type: project
 index: 6
 title: Think Pilates
 banner: >-
-  https://raw.githubusercontent.com/Octatum/katartico/master/static/assets/thinkpilates-bannerbn.jpg
+  /assets/thinkpilates-bannerbn.jpg
 highlightedImage: /assets/thinkpilates-banner.jpg
 bodyEnglish: |-
   # Think Pilates
