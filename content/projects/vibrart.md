@@ -14,7 +14,11 @@ bodyEnglish: >-
   VIBRART is an event for all the iconic artistic activities that Tec de
   Monterrey offers, this festival promotes a week of cultural explosion in the
   host city.
-content: []
+content:
+  - height: '2'
+    type: youtube-video
+    videoId: VPHv-lq25bM
+    width: '3'
 ---
 # VIBRART
 
