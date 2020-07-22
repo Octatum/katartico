@@ -21,11 +21,11 @@ content:
   - height: '2'
     image: /assets/medidashigienicas-celular.jpg
     type: image
-    width: '1'
+    width: '3'
   - height: '2'
     image: /assets/bluelava-1.png
     type: image
-    width: '2'
+    width: '3'
   - height: '2'
     image: /assets/selecciondeproductos.jpg
     type: image
