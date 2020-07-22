@@ -32,6 +32,10 @@ content:
     image: /assets/bannerganadores.jpg
     type: image
     width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: fuuTJDtAEus
+    width: '3'
 ---
 # Encuentro LiFE
 
