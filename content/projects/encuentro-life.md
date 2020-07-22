@@ -40,6 +40,10 @@ content:
     type: youtube-video
     videoId: fuuTJDtAEus
     width: '3'
+  - height: '2'
+    type: youtube-video
+    videoId: 6Qs2-h9U7Sg
+    width: '3'
 ---
 # Encuentro LiFE
 
