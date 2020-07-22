@@ -87,11 +87,11 @@ content:
   - height: '2'
     image: /assets/dsc_7741.jpg
     type: image
-    width: '2'
+    width: '3'
   - height: '2'
     image: /assets/dsc_9669.jpg
     type: image
-    width: '3'
+    width: '1'
   - height: '2'
     image: /assets/dsc_9851.jpg
     type: image
