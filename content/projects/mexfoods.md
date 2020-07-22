@@ -21,60 +21,49 @@ bodyEnglish: >-
   photo shoot.
 content:
   - height: '1'
-    image: >-
-      /assets/2dos.jpg
+    image: /assets/2dos.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
-    image: >-
-      /assets/dsc_4292.jpg
+    image: /assets/dsc_4292.jpg
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      /assets/10mexfoods.jpg
+    image: /assets/10mexfoods.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '1'
-    image: >-
-      /assets/dsc_9193.jpg
+    image: /assets/dsc_9193.jpg
     type: image
     width: '1'
   - height: '1'
-    image: >-
-      /assets/5cinco.jpg
+    image: /assets/5cinco.jpg
     type: image
     width: '1'
   - height: '2'
-    image: >-
-      /assets/dsc_7594.jpg
+    image: /assets/dsc_7594.jpg
     type: image
     width: '1'
   - height: '2'
-    image: >-
-      /assets/dsc_9232.jpg
+    image: /assets/dsc_9232.jpg
     type: image
     width: '1'
   - height: '2'
-    image: >-
-      /assets/dsc_4316.jpg
+    image: /assets/dsc_4316.jpg
     type: image
     width: '2'
   - height: '1'
-    image: >-
-      /assets/4cuatro.jpg
+    image: /assets/4cuatro.jpg
     type: image
     width: '3'
   - height: '2'
-    image: >-
-      /assets/dsc_9797.jpg
+    image: /assets/dsc_9797.jpg
     type: image
     width: '2'
   - height: '1'
-    image: >-
-      /assets/mexfoodslogo-07.jpg
+    image: /assets/mexfoodslogo-07.jpg
     type: image
     width: '1'
   - height: '1'
@@ -83,14 +72,12 @@ content:
     videoId: ''
     width: '1'
   - height: '2'
-    image: >-
-      /assets/dsc_9622.jpg
+    image: /assets/dsc_9622.jpg
     type: image
     videoId: ''
     width: '1'
   - height: '2'
-    image: >-
-      /assets/dsc_9564.jpg
+    image: /assets/dsc_9564.jpg
     type: image
     width: '2'
   - height: '1'
@@ -102,13 +89,11 @@ content:
     type: image
     width: '2'
   - height: '2'
-    image: >-
-      /assets/dsc_9669.jpg
+    image: /assets/dsc_9669.jpg
     type: image
-    width: '1'
+    width: '3'
   - height: '2'
-    image: >-
-      /assets/dsc_9851.jpg
+    image: /assets/dsc_9851.jpg
     type: image
     width: '3'
 ---
