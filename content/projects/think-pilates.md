@@ -2,8 +2,7 @@
 type: project
 index: 6
 title: Think Pilates
-banner: >-
-  /assets/thinkpilates-bannerbn.jpg
+banner: /assets/thinkpilates-bannerbn.jpg
 highlightedImage: /assets/thinkpilates-banner.jpg
 bodyEnglish: |-
   # Think Pilates
@@ -28,11 +27,11 @@ content:
     image: /assets/plantillas_mesa-de-trabajo-1.png
     type: image
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/thinkpilates1.jpg
     type: image
     width: '1'
-  - height: '1'
+  - height: '2'
     image: /assets/thinkpilates-sadie2.jpg
     type: image
     width: '1'
