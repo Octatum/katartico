@@ -29,6 +29,10 @@ content:
     type: image
     width: '1'
   - height: '2'
+    image: /assets/mensaje-por-escuela.png
+    type: image
+    width: '3'
+  - height: '2'
     image: /assets/bannerganadores.jpg
     type: image
     width: '3'
